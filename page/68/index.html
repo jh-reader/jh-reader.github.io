@@ -1,0 +1,1453 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="JH Notes Easy Reader">
+              
+                JH Notes Easy Reader
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/nan-peng-you-ye-ye-ke-neng-kuai-bu-xing-le-shuo-yao-dai-wo-hui-jia-jian-yi-xia-wo-gan-jue-hen-bu-he-shi-wo-ying-gai-zen-yao-ju-jue-bu-rang-ta-nan-kan-/">男朋友爷爷可能快不行了，说要带我回家见一下，我感觉很不合适，我应该怎么拒绝不让他难堪也不让我自己尴尬?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/nan-peng-you-ye-ye-ke-neng-kuai-bu-xing-le-shuo-yao-dai-wo-hui-jia-jian-yi-xia-wo-gan-jue-hen-bu-he-shi-wo-ying-gai-zen-yao-ju-jue-bu-rang-ta-nan-kan-/">
+          
+          
+            
+          
+          你觉得不合适，大概是他的那个提法不合适——我估计他是想要你以“孙媳妇”的身份去。
+你可以修正一下看他能不能接受——以“不拒绝结婚可能的女友”的身份去。
+他如果“不接受”，那么他可以再提一个说法来看看你能不能接受。
+他如果能在这种前提下感谢你能认真考虑他的诉求，那么他可以大大加分——因为这需要非常坚定清晰的价值观来抵抗自己内心的傲慢和贪婪。
+他如果动怒，那就没办法了。这可以理解，但是很遗憾——这意味
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Feminism/">Feminism</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%B4%E7%BB%88/">临终</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-ping-jia-ze-lian-si-ji-he-wu-mei-pu-ma-ke-long-jian-yi-wu-ke-lan-ge-di-qiu-he-rang-pu-jing-wan-hui-dian-mian-zi/">如何评价泽连斯基和乌媒曝马克龙建议乌克兰割地求和，让普京挽回点面子？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-ping-jia-ze-lian-si-ji-he-wu-mei-pu-ma-ke-long-jian-yi-wu-ke-lan-ge-di-qiu-he-rang-pu-jing-wan-hui-dian-mian-zi/">
+          
+          
+            
+          
+          这事真正的细节，恐怕不在于法国建议泽连斯基投降，而在于泽连斯基居然公布出来，在于他为什么现在公布出来。
+因为从法国的立场，恐怕从第一天就提过这个建议了。一轮轮的给普京打电话，主要内容估计也不过是不断的从普京那里要deal往泽连斯基那边传。这对泽连斯基根本就不会是一个新闻，要公开早就可以公开了，为什么要现在公开？
+所谓的“斡旋”，实际上是一个三赢的结构。
+它本身就是不断的提出斡旋者自己能接受、对立双
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E9%97%B4%E4%BA%BA/">中间人</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-shuo-zhong-wen-shi-di-yu-nan-du/">为什么说中文是地狱难度？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-shuo-zhong-wen-shi-di-yu-nan-du/">
+          
+          
+            
+          
+          中文的语法、变格这些不算是难的。
+中文的汉字显然是难的，大概只有古埃及语和玛雅文可以对比——而它们的字符数量要少得多。
+不过这不算是地狱难度。
+中文难是难在文化背景上，难在成语、典故、独有的经典概念和伦理架构。
+比如“你不仁，我不义”，“义结金兰”，“气冲斗牛”，“凄凄惨惨戚戚”，“人比黄花瘦”。
+说一个人一门语言说得好，主要的测度在于能准确的理解意思、表达意思和影响ta人的行为。而要理解中文，最
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E6%96%87/">中文</a>
+            
+              <a href="/tags/%E9%9A%BE/">难</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-w-h-o-xin-guan-fei-yan-wen-da-bu-yao-chi-chuan-tong-cao-yao-de-jian-yi-bei-shan-chu/">如何看待 WHO 新冠肺炎问答「不要吃传统草药」的建议被删除？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-w-h-o-xin-guan-fei-yan-wen-da-bu-yao-chi-chuan-tong-cao-yao-de-jian-yi-bei-shan-chu/">
+          
+          
+            
+          
+          我先声明一点，我是不支持中医理论作为医疗指导的。
+但是我对这篇问题的答案下对这个traditional medicine冷嘲热讽的各位要问一个问题。
+美洲大蠊提取物，算不算中药？
+在美国广泛使用的阿片类止痛剂，是西药还是中药？
+请你们回答的时候思考两个问题：
+A）从动植物里提取的药物是不是有“医学原罪”？应该划入绝对禁用范围？
+B）如果直接提取自动物植物和矿物中的药物并没有原罪，那么大规模使用过数
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E8%8D%AF/">中药</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-ping-jia-wen-zhang-xiao-xian-cheng-de-zhong-nian-fen-hong-zai-hun-chi-deng-si-zhong-yan-jiu-shi-jie-ju-shi/">如何评价文章《小县城的中年粉红：在混吃等死中研究世界局势》?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-ping-jia-wen-zhang-xiao-xian-cheng-de-zhong-nian-fen-hong-zai-hun-chi-deng-si-zhong-yan-jiu-shi-jie-ju-shi/">
+          
+          
+            
+          
+          那把 小县城、粉红、混吃等死、研究世界局势这一组合改成一个什么组合呢？
+小县城，中年，不粉红，纯混吃等死？
+小县城，中年，粉红，混吃等死，但不研究世界局势？
+小县城中年，粉红，不折腾混吃，纯等死、研究世界局势？
+总不能自己出钱把小县城中年都集体迁移到大城市，或者只手擎天把小县城统统升级为大城市呀。
+还是说是想把“粉红”改成“粉绿”？
+对此现状不满，是想改成什么样的更好的理想状态呢？
+要有一个更好的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%B9%B4/">中年</a>
+            
+              <a href="/tags/%E7%B2%89%E7%BA%A2/">粉红</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/xian-zai-ru-he-kan-dai-jian-zhong-hu-lian-wang-zhe-yi-ci-yu/">现在如何看待「简中互联网」这一词语？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/xian-zai-ru-he-kan-dai-jian-zhong-hu-lian-wang-zhe-yi-ci-yu/">
+          
+          
+            
+          
+          这是个以谁为本位的问题。
+使用“简中”一词的人脑海里的概念是
+简中互联网 vs 非简中互联网
+而不是
+简中互联网 vs 繁中互联网。
+他们的言下之意，是“非简中互联网”（即包含了英文、繁体中文在内的所谓“世界网络”）代表了“世界主流立场”。
+这往最小里说，也没有把阿拉伯语、俄语、波斯语、印地语之类计算在内。
+而且，ta们肯定还忘了新加坡和马来西亚也是简中的一部分。
+其实ta们心里清楚得很，拿“繁中
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E6%96%87/">中文</a>
+            
+              <a href="/tags/%E6%AD%A3/">正</a>
+            
+              <a href="/tags/%E4%B8%AD%E5%A4%AE/">中央</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-he-tai-wan-ren-shen-zhi-you-xie-da-lu-ren-du-jue-de-zhong-mei-hui-wei-tai-wan-yi-zhan/">为何台湾人，甚至有些大陆人都觉得中美会为台湾一战？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-he-tai-wan-ren-shen-zhi-you-xie-da-lu-ren-du-jue-de-zhong-mei-hui-wei-tai-wan-yi-zhan/">
+          
+          
+            
+          
+          普通人对中国四十年来卧薪尝胆的结果、对中国现在的工业规模、经济体量普遍没有确切概念。
+更不用说西方媒体那种写修真小说一样的所谓“新闻报道”的导向是种什么样的胡话了——所以西方媒体的读者们还大面积的抽象的以为美国还有某种余地和中国一战，甚至有所谓“取胜”的可能，甚至还会想象存在某种“把握”。
+对这种幻想，下面给你们一种统一的、简单的、直观的回答法——带ta们从视觉上直接体会一下。
+https://w
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD/">中国</a>
+            
+              <a href="/tags/%E8%A7%84%E6%A8%A1/">规模</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhong-mei-yuan-shou-si-ge-yue-nei-di-er-ci-shi-pin-hui-wu-you-na-xie-xin-xi-zhi-de-guan-zhu/">中美元首四个月内第二次视频会晤，有哪些信息值得关注？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhong-mei-yuan-shou-si-ge-yue-nei-di-er-ci-shi-pin-hui-wu-you-na-xie-xin-xi-zhi-de-guan-zhu/">
+          
+          
+            
+          
+          中国的表态存在这样一种解读的角度：
+那就是我们不认为你要强扣我们“在军事支援俄罗斯”是一个“关于俄罗斯的问题”。
+我们认为这属于“违背四不一无意”的基本表态的问题，属于“坚持要向台独分子发送错误信号”的问题。
+因此，如果你们一意孤行，一定要继续坚持这样做，我们将采取某种“断然措施”，回应你的图谋。
+你放心，我们如果出手，绝对不会和乌克兰有任何关系。
+谁以“中国支持俄罗斯”为名与中国为敌，中国将对这
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD/">中国</a>
+            
+              <a href="/tags/%E7%AB%8B%E5%9C%BA/">立场</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhong-guo-ren-li-kai-zhong-guo-hou-hen-rong-yi-bei-tong-hua-ma/">中国人离开中国后很容易被同化吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhong-guo-ren-li-kai-zhong-guo-hou-hen-rong-yi-bei-tong-hua-ma/">
+          
+          
+            
+          
+          谢谢各位提醒我有一样的回答，不过我已经说过这是许可的。
+即使没有注明转载，都一并许可。
+
+中国人、犹太人都是出了名的难同化，甚至有二代同化了、一句中文都不会说了，到三代四代又回来寻根返乡的。
+何来“容易同化”一说？
+如此强势的文化背景，你想同化，人家还不信你真的同化了呢。
+永远以为你是装的。
+其实你别装了，你确实是装的。
+是的，从书本上你也许会逻辑性的赞同某些中国文化所不赞同的逻辑。
+但是当你接触
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD%E5%BC%8F/">中国式</a>
+            
+              <a href="/tags/%E5%8F%8D/">反</a>
+            
+              <a href="/tags/%E5%90%8C%E5%8C%96/">同化</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhong-guo-xian-zai-you-na-xie-zuo-de-bu-hao-de-di-fang/">中国现在有哪些做得不好的地方？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhong-guo-xian-zai-you-na-xie-zuo-de-bu-hao-de-di-fang/">
+          
+          
+            
+          
+          中国现在最大的问题，是被宏观组织的有效性掩盖的微观组织的无效性。
+央企领航的国企舰队、党政一体 - 中央到地方的高度协调一致的政府体制和从中科院、大学到大规模义务教育一体的教育体系，以及有效管制的新闻舆论场域，给了中国举世无双的整体竞争力。
+在国家竞争这个层面上，中国如同一个睁着眼睛、竖着耳朵、四肢健全的脊椎动物。
+而世界上的绝大多数的其他国家，在国家意志和总体行动力方面，落后的如同水母，好一些的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD/">中国</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/cong-ni-de-jing-li-lai-kan-shi-yao-shi-hou-gan-dao-zuo-yi-ge-zhong-guo-ren-hen-xing-fu/">从你的经历来看，什么时候感到做一个中国人很幸福？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/cong-ni-de-jing-li-lai-kan-shi-yao-shi-hou-gan-dao-zuo-yi-ge-zhong-guo-ren-hen-xing-fu/">
+          
+          
+            
+          
+          谢邀。
+1）写毛笔字
+2）阅读古文 / 看日文 / 读韩语
+3）吃饭
+4）移动支付——这个算喜忧参半
+5）在地铁、高铁、大巴上用4G
+6）半夜撸串
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD/">中国</a>
+            
+              <a href="/tags/%E5%B0%8F%E7%A1%AE%E5%B9%B8/">小确幸</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-zhong-guo-de-zong-jiao-wen-ti/">如何看待中国的宗教问题？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-zhong-guo-de-zong-jiao-wen-ti/">
+          
+          
+            
+          
+          中国的宗教问题，主要是一个固步自封、自轻自贱的心态问题。
+中国的基督教，欠缺与其西方分支分庭抗礼的平视心态，甚至都没有这样的追求可言。
+中国的佛教，没有领导世界佛教的自觉。
+中国的道教，似乎只打算寄居在中国传统文化那点遗产上，满足于华人世界里的那点余绪。
+其实中国的宗教有非常好的天资和遗产，有着世界第一流的思想禀赋，不但不该成为中国受制于人的短板，反而应该成为中国的向外输出文化成就的一部分。
+因为
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD/">中国</a>
+            
+              <a href="/tags/%E5%AE%97%E6%95%99/">宗教</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-zhong-guo-dao-zai-guo-ji-shang-bu-ru-ri-ben-dao-chu-ming/">为什么中国刀在国际上不如日本刀出名？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-zhong-guo-dao-zai-guo-ji-shang-bu-ru-ri-ben-dao-chu-ming/">
+          
+          
+            
+          
+          中国是以文官政治和惊人早熟的官僚制度作为立身之本，又不是以军功贵族为立身之本。
+后者只能支撑四面有山川之险的州县规模的政治实体，根本不能适用于中国这种动辄天下三十几州、绵延万里的生存状态。
+一夫之勇，无非十人敌百人敌，这完全不能解决中国的问题。即使在春秋战国时代，意识到千秋霸业与一隅偏安的不同要求的诸侯们就已经在思考王道与霸道的区别，喊出了“要学万人敌”的需求。
+中国的规模必须依靠某种意识形态来赢
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD/">中国</a>
+            
+              <a href="/tags/%E5%88%80/">刀</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhong-guo-da-xing-qi-ye-wei-shi-yao-nan-yi-quan-qiu-hua/">中国大型企业为什么难以全球化？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhong-guo-da-xing-qi-ye-wei-shi-yao-nan-yi-quan-qiu-hua/">
+          
+          
+            
+          
+          这是因为中国人还全球化得不够。
+全球化的主要部分并不是一种“大国博弈”，类似“中车”“中石化”那样的“走出去”。
+全球化的大头是一个侨居海外的中国人或者侨居中国的外国人因为看到某个跨国资源整合的商机而做的创业工作。
+中国人的海外经验还远远的不够，绝大多数中国人仍然没有足够长的海外生活经验，没有全景式的沉浸式的对海外的深入交往和理解。
+这个光旅游、住唐人街、宅学生宿舍、混中餐馆是不够的，必须要和当地
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD/">中国</a>
+            
+              <a href="/tags/%E5%85%A8%E7%90%83%E5%8C%96/">全球化</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/xian-cun-de-chuan-tong-yi-xue-hui-zou-xiang-xiao-wang-ma/">现存的传统医学会走向消亡吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/xian-cun-de-chuan-tong-yi-xue-hui-zou-xiang-xiao-wang-ma/">
+          
+          
+            
+          
+          中医不会灭绝，因为人的绝望不会灭绝。
+人的绝望不灭绝，则在绝望之中提供希望的东西就不会因为任何原因灭绝。
+这些东西一定是纯理性所不能支持的。因为人之绝望，一定是运用了自己一切的理性能力尽了力所能及的一切努力之后，看不到任何出路、才生出绝望。
+凡绝望者，必定是对一切理性的工具都绝望了。这时还能给他希望的，只有先前理性所支撑不了的东西了。
+人类的绝望不会灭绝。
+除非人类自身灭绝。
+除非人类灭绝，这些东
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E5%8C%BB/">中医</a>
+            
+              <a href="/tags/%E7%81%AD%E7%BB%9D/">灭绝</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhi-hu-shi-fou-ying-gai-yun-xu-fa-bu-ge-ren-jie-da-xiang-wen-ti-zhe-lei-wen-ti-dui-yong-hu-shi-fou-you-jia-zhi/">知乎是否应该允许发布个人解答向问题，这类问题对用户是否有价值？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhi-hu-shi-fou-ying-gai-yun-xu-fa-bu-ge-ren-jie-da-xiang-wen-ti-zhe-lei-wen-ti-dui-yong-hu-shi-fou-you-jia-zhi/">
+          
+          
+            
+          
+          任何问题都是成本收益问题。
+其实并没有禁止的必要，因为显然算法上不会加以强力推荐，没多少人会看到。没有什么必要去赶尽杀绝。
+立下了这条禁令，就要投入裁判资源去维护这条禁令，也同时要承担维护不力导致的规则严肃性认知度的损失。这是一场注定失败、只是看输到什么程度的努力。
+而这个努力到底换到了什么好处呢？一种“我们重视问题质量，而且像猎犬一样严防死守”的“美誉”？
+这个“美誉”一反手就会变成“你问的问题
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-zhong-yi-qian-shu-nian-quan-mian-he-zuo-xie-yi/">如何看待中伊签署25年全面合作协议?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-zhong-yi-qian-shu-nian-quan-mian-he-zuo-xie-yi/">
+          
+          
+            
+          
+          我感觉很多人对这个协议的意义看得过于理想了。
+这种理想化的一个表现就是认为这个协议既然签了就可以按照将被理想的执行了来看待其后果了。
+客观来说，这个协议目前来说主要意义仍然应该是中伊双方用来向美国施压的共享筹码，而暂时还不成其为“反美大计划”。
+简单来说，对双方而言，手持这份协议都等于向美国喊出了这样一句话——“这份协议你希望我执行到什么程度，就看你要怎么做”。
+你如果不上道，那么我这边就会积极执
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AD%E4%BC%8A/">中伊</a>
+            
+              <a href="/tags/25/">25</a>
+            
+              <a href="/tags/%E5%B9%B4/">年</a>
+            
+              <a href="/tags/%E5%8D%8F%E8%AE%AE/">协议</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/shi-yao-shi-yan-su-shi-yao-shi-hou-ying-gai-bao-chi-yan-su-wei-shi-yao/">什么是严肃？什么时候应该保持严肃？为什么？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/shi-yao-shi-yan-su-shi-yao-shi-hou-ying-gai-bao-chi-yan-su-wei-shi-yao/">
+          
+          
+            
+          
+          严肃就是对自己说的话负责。
+说的任何话被别人当真了，你都不会拿出“我是开玩笑”来当免罪牌，这就叫严肃。
+严肃的人会说“抱歉，我是开玩笑的。是我说得不够清楚，这怪我，损失我来承担”。
+说话就允许ta人当真，就会产生责任以及基于你会负责而产生的影响，这对严肃的人是个常态、基准，以至于任何一句被认为不该产生影响的话都要被立刻显式的标明，以免自己的对话对象有误解。
+因为ta们长期坚持这种“说当真的话”的策
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%A5%E8%82%83/">严肃</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ni-jue-de-ni-neng-kang-de-zhu-yan-xing-kao-da-ma/">你觉得你能扛得住严刑拷打吗?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ni-jue-de-ni-neng-kang-de-zhu-yan-xing-kao-da-ma/">
+          
+          
+            
+          
+          用刑有几个方向。
+1）纯报复或威吓。
+这种根本不是为了得到你什么情报，只是在实施一种报复，发泄一种愤恨。
+类似比利时人砍刚果人的手，墨西哥黑帮虐杀，古代各种花样百出的虐杀示众其实都是这类。
+这本身就是一种折磨而已，没有所谓的扛不扛。扛不了人家也不会停手。
+2）杀鸡骇猴。
+对你用刑，不是为了直接从你身上得到什么情报，而是为了进一步的恐吓你的同伙，向你的同伙制造恐怖想象，实际上是为了突破ta。所以也无
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%A5%E5%88%91%E6%8B%B7%E6%89%93/">严刑拷打</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-zhou-wei-zuo-sheng-yi-de-ren-du-kai-shi-shuo-xiang-bi-yi-qian-sheng-yi-yue-lai-yue-nan-zuo/">为什么周围做生意的人都开始说相比以前，生意越来越难做？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-zhou-wei-zuo-sheng-yi-de-ren-du-kai-shi-shuo-xiang-bi-yi-qian-sheng-yi-yue-lai-yue-nan-zuo/">
+          
+          
+            
+          
+          市场竞争这种事，一般有两轮。
+第一轮是空白市场，百兽出笼竞争圈地。
+出现了任何比较赚钱的门路，各地都会群起模仿，这种模仿往往也是有效的。这会出现大量的彼此类似的小实体，各自占住自己的一个小市场。
+第二轮是强龙压倒地头蛇，八仙过海各显神通占领生态位。
+很快会出现更优秀、更有视野也更有资本的新秀，开始向上下游整合生产链，开始提供明显胜过其他同行的产品。它会携着整合生态的合力，从品牌、质量、功能、价格、
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Business/">Business</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%A4%E8%BD%AE/">两轮</a>
+            
+              <a href="/tags/%E7%AB%9E%E4%BA%89/">竞争</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/67/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/66/#board">66</a><a class="page-number" href="/page/67/#board">67</a><span class="page-number current">68</span><a class="page-number" href="/page/69/#board">69</a><a class="page-number" href="/page/70/#board">70</a><span class="space">&hellip;</span><a class="page-number" href="/page/74/#board">74</a><a class="extend next" rel="next" href="/page/69/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

@@ -1,0 +1,1457 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="JH Notes Easy Reader">
+              
+                JH Notes Easy Reader
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/li-hai-de-ren-yu-dao-wen-ti-shi-de-si-wei-mo-shi-yu-pu-tong-ren-zhi-jian-cha-bie-zai-na/">厉害的人遇到问题时的思维模式与普通人之间差别在哪？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/li-hai-de-ren-yu-dao-wen-ti-shi-de-si-wei-mo-shi-yu-pu-tong-ren-zhi-jian-cha-bie-zai-na/">
+          
+          
+            
+          
+          所谓厉害的人，当然是拥有很多处理问题的技巧。但你如果认为这只是学习的事，你就看错方向了。
+他们是受了上天宠爱，被赐予了那些能力的。他们与其他人的差异在于他们的失败因为某种原因没有造成他们的恐惧，于是遇到了事情，不太会第一时间被“完了又要失败了，这次怎么解释啊”的情绪拖入深渊。“能力较差”的人，是在这一点上输掉了。他们的资质被浪费在了寻找托辞和借口上，所有的智慧都用在“如何可以不被认定为责任人”上了
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/None/">None</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8E%89%E5%AE%B3/">厉害</a>
+            
+              <a href="/tags/%E6%80%9D%E7%BB%B4/">思维</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-ren-lei-tian-tian-chi-tong-yang-de-dong-xi-hen-kuai-hui-ni-dan-shi-dong-wu-bi-ru-shuo-niu-tian-tian-chi-cao-que-cong-bu-hui-ni/">为什么人类天天吃同样的东西很快会腻，但是动物比如说牛天天吃草却从不会腻？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-ren-lei-tian-tian-chi-tong-yang-de-dong-xi-hen-kuai-hui-ni-dan-shi-dong-wu-bi-ru-shuo-niu-tian-tian-chi-cao-que-cong-bu-hui-ni/">
+          
+          
+            
+          
+          易代入、易厌倦、易上瘾，是人的定义中三个不可分割的要素，是区分人与动物的关键所在。
+易代入，是指人类拥有将自己代入其它事物的本能能力。
+人类很容易设想“假如我是一只老虎，我看到了一只羊”，或者“假如我是一只羊，我看到了一只老虎”。也很容易设想“如果我是张三，但是是我站在老虎面前，我将xxx”。
+这种本能的代入能力，实际上是理性思维、抽象思维的起点。
+而这种代入能力带来了几个直接后果：
+1）它带来了
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8E%8C%E5%80%A6/">厌倦</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/bao-li-dui-ren-lei-she-hui-du-you-na-xie-yi-yi/">暴力对人类社会都有那些意义？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/bao-li-dui-ren-lei-she-hui-du-you-na-xie-yi-yi/">
+          
+          
+            
+          
+          暴力当然不是没有任何意义的。
+它有个最大的作用，就是“收敛事实”。
+因为暴力的结果是最hardcore的事实，最强烈、最不容否认的事实。
+你长篇大论认定自己走在光荣正确的道路上，判定我的道路直通历史的垃圾堆，我对你也作如是观，我们到底谁对？
+对“两种不相容的道路到底谁对”这个问题，双方都可以找到无穷的智力资源自圆其说，搞出各自完全自洽而又彼此绝不相容的一套公理和一套婆理。
+如果这事关生存、关系到谁
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8E%86%E5%8F%B2/">历史</a>
+            
+              <a href="/tags/%E7%87%83%E6%96%99/">燃料</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-sui-zhao-zhong-guo-de-jue-qi-zhou-bian-xiao-guo-pu-bian-du-biao-xian-chu-le-di-dui-de-tai-du-er-fei-shun-cong-ju-shi-ji-ji-pei-he/">为什么随着中国的崛起，周边小国普遍都表现出了敌对的态度而非顺从局势、积极配合？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-sui-zhao-zhong-guo-de-jue-qi-zhou-bian-xiao-guo-pu-bian-du-biao-xian-chu-le-di-dui-de-tai-du-er-fei-shun-cong-ju-shi-ji-ji-pei-he/">
+          
+          
+            
+          
+          随便上中国的哪个大流量的网站采样，只要稍微样本量大一点，都足以支撑各国情报机构作出“中国如果强大，可能在民族主义情绪的裹挟下对周边国家谋求极大的霸权”的结论。
+没有一点勉强，没有一点悬念。
+这题目下九成答主都会对这个结论有卓有成效的贡献。——很多人干脆就是以“能不能欺压其他国家”作为“中国强大了”的鉴定指标，怎么可能“将来强大了不威胁其他国家”？逻辑上就是必然的。
+我们扪心自问，这样去鉴定“中国强
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8E%86%E5%8F%B2/">历史</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/yang-pu-man-bao-ni-zen-yao-kan/">杨浦瞒报你怎么看?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/yang-pu-man-bao-ni-zen-yao-kan/">
+          
+          
+            
+          
+          经常讲做人要读历史。
+为什么呢？
+因为主导历史的人一定会读，而且会读得很透、很认真。你不读，你不认真，你经常会下错注，做一些在错误的时间出现在错误的地点说错误的话之类的蠢事。
+比如这一次。
+中国的领导层绝不是三岁小孩子或者不谙世事的小学生。
+ta们见过的造假的招数、蒙混的胆子，远比某些自以为可以安全过关的蠢蛋想象得到的还多。
+ta们闭着眼睛猜都知道哪些人会犯这种蠢，到了时候直接去概率比较大的地方，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8E%86%E5%8F%B2/">历史</a>
+            
+              <a href="/tags/%E5%B8%B8%E8%AF%86/">常识</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-bian-bie-he-yuan-li-xin-li-bian-tai-deng-ji-duan-ren-shi/">如何辨别和远离心理变态等极端人士？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-bian-bie-he-yuan-li-xin-li-bian-tai-deng-ji-duan-ren-shi/">
+          
+          
+            
+          
+          有一些比较确切的危险迹象，在结交人的时候要慎重考虑。
+这些是极端危险的信号，如果甚至不止匹配一条，一般来说要避免深交，避免利益纠葛，感情羁绊。
+1）杀生取乐。
+表现为对“打猎”特别感兴趣，而猎杀的对象常是随机碰到的、计划外、法规外的小动物和鸟类。甚至购买活物圈起来射杀，以验证“枪法”、“箭法”。以造成最大痛苦、最大伤害为追求，而且用“所有权”、“非保护动物”这类理由予以辩护。
+2）赞同“正义的虐待
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+              <a href="/categories/Clan/Feminism/">Feminism</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%B1%E9%99%A9/">危险</a>
+            
+              <a href="/tags/%E8%BF%B9%E8%B1%A1/">迹象</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/jia-ru-tai-hai-bao-fa-zhan-zheng-da-lu-jing-ji-zou-xiang-ru-he/">假如台海爆发战争，大陆经济走向如何？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/jia-ru-tai-hai-bao-fa-zhan-zheng-da-lu-jing-ji-zou-xiang-ru-he/">
+          
+          
+            
+          
+          台湾危险就危险在大陆攻台代价最低的时刻即将到来，犹不知悔改。
+这个道理极其简单——无论俄乌之战的结局如何，以俄罗斯的韧性和全方位的斗争能力，可想而知事毕欧洲将会精疲力竭，而北约将会受到最大限度的牵制——大量部队被迫要在俄欧边境上站岗，担当人肉长城。
+日元已经与舰同沉了——作为一个资源匮乏、人口极度老龄化的国家，对俄交恶本身就会导致它卷入日俄争端。
+韩国在中朝俄的三面包夹中根本不敢动弹——哪怕它有核
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%B1%E9%99%A9/">危险</a>
+            
+              <a href="/tags/%E6%97%B6%E5%88%BB/">时刻</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/da-liang-yin-du-wang-min-qiang-lie-zhi-chi-e-luo-si-wang-luo-zhang-hao-da-chu-le-wo-zhi-chi-e-luo-si-de-kou-hao-yin-du-min-jian-wei-shi-yao-hui-chu-xi/">大量印度网民强烈支持俄罗斯，网络账号打出了「我支持俄罗斯」的口号，印度民间为什么会出现这种态度？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/da-liang-yin-du-wang-min-qiang-lie-zhi-chi-e-luo-si-wang-luo-zhang-hao-da-chu-le-wo-zhi-chi-e-luo-si-de-kou-hao-yin-du-min-jian-wei-shi-yao-hui-chu-xi/">
+          
+          
+            
+          
+          这其实是一种经典的外交战略。
+印度作为有成为世界一极的大国雄心的国际战略玩家，在大国对手中是最为弱小的一个。
+它的战略路线总是围绕两个基本原则——首重保持独立性，其次是寻求自身最大的发展。
+保持独立性是一切战略考量里的重中之重，如果任何决策可能威胁到自己的独立性或者未来的独立性，印度就会加以避免。
+这就意味着印度在选择亲密伙伴的时候总是会选择最弱的域外大国合作。
+为什么要大国？这个很简单——以印度
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%B0%E5%BA%A6/">印度</a>
+            
+              <a href="/tags/%E4%BA%B2/">亲</a>
+            
+              <a href="/tags/%E4%BF%84/">俄</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-e-luo-si-t-e-l-e-g-r-a-m-pin-dao-r-y-b-a-r-ren-wei-bu-cha-da-tu-sha-wei-xing-tu-pian-yi-si-wei-zao/">如何看待俄罗斯Telegram频道“Rybar”认为布查大屠杀卫星图片疑似伪造？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-e-luo-si-t-e-l-e-g-r-a-m-pin-dao-r-y-b-a-r-ren-wei-bu-cha-da-tu-sha-wei-xing-tu-pian-yi-si-wei-zao/">
+          
+          
+            
+          
+          1）世界上那几天盯着这片地方的卫星没有十颗也有八颗。
+多来几颗不同卫星的图不就行了？
+事实上，即使同一颗卫星，应该也拍了不止一张。
+要不然都拿出来，看看不同卫星的不同的角度是不是都有这同样的内容，是不是都对得上？
+第一时间不拿出来，或者要很久的“准备时间”才能拿出来，甚至这段时间的商业卫星图像还不卖了……
+这就让围观者有点不太好形容。
+主要是这种几乎不带任何透视的p图，技术上并没有什么困难的，美国
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%AB%E6%98%9F/">卫星</a>
+            
+              <a href="/tags/%E5%9B%BE/">图</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/yong-a-zhi-ji-lu-yi-ge-g-de-shu-ju-xu-yao-duo-shao-qian/">用 A4 纸记录一个 G 的数据需要多少钱？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/yong-a-zhi-ji-lu-yi-ge-g-de-shu-ju-xu-yao-duo-shao-qian/">
+          
+          
+            
+          
+          在平面印刷上最有效记载数据的手段，目前来说是二维码。
+不是简单的“用彩色”就行，还要考虑容错性/可靠性。
+目前来说，现在的二维码技术在这个主题上是考虑得最成熟的。它其实远超过一般人的日常认知。
+如果人类要永久保留某种信息，其实最好的选择是用二维码物理保存。
+随手查一下：
+  
+二维码信息容量是多少？
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%B0%E5%88%B7/">印刷</a>
+            
+              <a href="/tags/%E4%BF%A1%E6%81%AF%E9%87%8F/">信息量</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/mao-mi-zhe-yao-ke-ai-you-rou-ruo-de-dong-wu-shi-ru-he-zai-ruo-rou-qiang-shi-de-jin-hua-shi-shang-xing-cun-de/">猫咪这么可爱又柔弱的动物是如何在弱肉强食的进化史上幸存的？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/mao-mi-zhe-yao-ke-ai-you-rou-ruo-de-dong-wu-shi-ru-he-zai-ruo-rou-qiang-shi-de-jin-hua-shi-shang-xing-cun-de/">
+          
+          
+            
+          
+          动物有一种基本的战术来放大自己的战斗能力，就是利用地形。
+ 比如钻进一定尺寸的洞穴里，体重明显大过它的动物不可能进来，它就瞬间成为洞穴里的百兽之王了。
+又或者它有独特的树上活动技能，幼弱的树枝只能承受得住它这么大的个体，它就成了树上之王。
+又或者因为夜间视力最强，比它壮的都没它夜间视力好，它就成了夜间之王。
+猫科动物之强，往往是在它们所处的环境条件下的强悍。
+别看你家的猫个头不大，在它们的老家它很
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%A0%E5%B1%B1%E4%B8%BA%E7%8E%8B/">占山为王</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/e-luo-si-guo-fang-bu-cheng-dui-ji-fu-she-shi-jin-xing-dao-dan-xi-ji-de-shu-liang-he-gui-mo-jiang-hui-zeng-jia-mu-qian-e-wu-ju-shi-ru-he/">俄罗斯国防部称，对基辅设施进行导弹袭击的数量和规模将会增加，目前俄乌局势如何？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/e-luo-si-guo-fang-bu-cheng-dui-ji-fu-she-shi-jin-xing-dao-dan-xi-ji-de-shu-liang-he-gui-mo-jiang-hui-zeng-jia-mu-qian-e-wu-ju-shi-ru-he/">
+          
+          
+            
+          
+          很遗憾的讲，俄军还有很大的进一步剥夺乌克兰战争能力的空间。
+比如打击“可为乌军供电/供水/供油/运输/通信的基础设施”，以使认为必要的地区总停电、停水、断油、断气、断交通、断通信。
+前线电都没有，油都加不上，车辆都开不动、修不成，乌军就只剩下不需要用电用油的作战手段可以用了。
+就算是星链，也是要电的。
+每一样都可以很大程度上减轻俄军的军事压力，也就是存在军事上的必要。
+导致它不这么做的理由更多的是
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%87%E7%BA%A7/">升级</a>
+            
+              <a href="/tags/%E7%90%86%E7%94%B1/">理由</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/yi-zhi-guan-zhu-yi-ge-zhi-hu-da-shen-kan-ta-de-ge-zhong-wen-ti-hui-da-jin-tian-tu-ran-fa-xian-dui-ta-hen-you-hao-gan-zen-yao-ban/">一直关注一个知乎大神，看他的各种问题回答，今天突然发现对他很有好感怎么办?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/yi-zhi-guan-zhu-yi-ge-zhi-hu-da-shen-kan-ta-de-ge-zhong-wen-ti-hui-da-jin-tian-tu-ran-fa-xian-dui-ta-hen-you-hao-gan-zen-yao-ban/">
+          
+          
+            
+          
+          这里嘲讽你的人很多，但是这事本来是不该受到嘲讽和调侃的。
+觉得对方才华出众，忍不住爱慕，这是人之常情。想要奋身一跃、勇敢追求，尤其是对方没有什么不接受这样做的禁令、也没有什么已知的道德上的违碍可言，那么这是无可厚非的事。
+是不是一定会有好结果？这没人能保证。
+那些自认为自己的选择足够靠谱、肯定会有好结果所以嘲笑你“不现实”的人，ta们自己也不是自己命运的主宰，谁说得准ta们自己就不是高估了自己而已
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+              <a href="/categories/Clan/Feminism/">Feminism</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%91%E5%BE%AE/">卑微</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wu-ke-lan-ju-shi-zou-xiang-dui-zhong-guo-you-shi-yao-ying-xiang/">乌克兰局势走向对中国有什么影响?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wu-ke-lan-ju-shi-zou-xiang-dui-zhong-guo-you-shi-yao-ying-xiang/">
+          
+          
+            
+          
+          1）乌克兰战败概率很大
+目前战局对乌克兰不利自不必说。我们只说对乌克兰比较有利的场景——假设乌克兰阿富汗化，乌克兰战局长期化，是否导致“乌克兰最终获得越南式胜利”的可能性？
+如果俄罗斯未能速胜，局势会如何发展？
+局势会对乌克兰更加不利。
+原因是俄罗斯是背水一战，不可能接受战败的结局。这意味着任何明显走向战败的因素——例如北约露出了打算干预乌克兰战局的意思、被证实以哪怕最隐蔽的手段真实的支援到乌克兰
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%83%E5%B1%82%E6%B5%AA/">千层浪</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/xie-ni-ming-xin-de-xing-wei-ben-shen-ju-you-zheng-dang-xing-ma/">写匿名信的行为本身具有正当性吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/xie-ni-ming-xin-de-xing-wei-ben-shen-ju-you-zheng-dang-xing-ma/">
+          
+          
+            
+          
+          写匿名信没什么不正当的，
+捏造和夸大事实、
+假公器以泄私怨、
+浪费公共资源，
+这些才是不正当的。
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8C%BF%E5%90%8D/">匿名</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-hua-wei-zai-ci-cheng-li-shi-ge-jun-tuan/">如何看待华为再次成立十个军团?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-hua-wei-zai-ci-cheng-li-shi-ge-jun-tuan/">
+          
+          
+            
+          
+          这不是“华为的十个军团”，这是新基建的十个军团。
+顺着这十大业务的方向倒捋，你很可能会发现一些“不起眼”的国家政策和一系列几乎新闻不报道、但对所在国属于历史性工程的重大一带一路项目，以及国内一些即将开始的城市试点项目。
+这其实是华为受到国家认可、获得了在中国经济秩序中的战略地位的一种内部回应。
+不是任正非要拿他们搞内部创业，而是国家要尽最大可能的发挥华为研发体制和人力资源进行战略攻坚。
+仔细看看，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Business/">Business</a>
+            
+              <a href="/categories/Business/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%81%E4%B8%AA/">十个</a>
+            
+              <a href="/tags/%E5%86%9B%E5%9B%A2/">军团</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-guo-mo-ke-er-huan-zai-ren-mian-dui-jin-ri-nian-yue-ri-de-e-luo-si-wu-ke-lan-ju-shi-hui-you-zen-yang-de-ying-dui/">如果默克尔还在任，面对今日（2022年3月4日）的俄罗斯乌克兰局势，会有怎样的应对？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-guo-mo-ke-er-huan-zai-ren-mian-dui-jin-ri-nian-yue-ri-de-e-luo-si-wu-ke-lan-ju-shi-hui-you-zen-yang-de-ying-dui/">
+          
+          
+            
+          
+          其实，这问题的关键在北溪二号上。
+北溪二号就是俄罗斯支持德国主导欧洲、而德国支持俄罗斯重返欧盟的盟约。
+如果北溪二号能够开通，只要短短的两三年，德法俄就可以以协调的声音说话，主导与中国携手推进欧亚大陆一体化。并且经济深度交融后获得安全感的欧洲和俄国可以就军控、核控等一系列问题展开谈判，俄罗斯进一步削减常规军备和核武库，从而历史性的削弱和掏空北约的存在意义。
+新的欧亚合作在这个和平框架下进展必然大幅
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8C%97%E6%BA%AA/">北溪</a>
+            
+              <a href="/tags/%E4%BA%8C%E5%8F%B7/">二号</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/bei-yue-dong-kuo-de-yuan-yin-shi-shi-yao/">北约东扩的原因是什么?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/bei-yue-dong-kuo-de-yuan-yin-shi-shi-yao/">
+          
+          
+            
+          
+          苏联崩溃了，原西欧南欧盟友对俄罗斯的态度实际上软化了，大有把美国请出欧洲的意思。
+不拉进足够的东欧国家，北约内部开起会来都不知道要说什么。
+“下面我们来讨论一下俄罗斯进攻德国/希腊的加强防御方案”——这会开得下去吗？是不是在浪费时间和金钱？
+如果不纳入东欧国家，北约根本和俄罗斯不接壤，何止不接壤，平均都隔着两个以上的国家。
+这种组织，存在的价值何在？
+所以，不是北约要东扩，而是北约不东扩自己就要解
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8C%97%E7%BA%A6/">北约</a>
+            
+              <a href="/tags/%E4%B8%9C%E6%89%A9/">东扩</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zai-bei-ji-ke-kao-que-yu-dao-bei-jing-zhao-yang-qu-de-xiao-xue-sheng-bi-ye-lv-xing-fan-ying-le-shi-yao-wen-ti-ru-he-gei-hai-zi-yi-ge-te-bie-de-bi-ye-j/">「在北极科考，却遇到北京朝阳区的小学生毕业旅行」反映了什么问题？如何给孩子一个特别的毕业季？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zai-bei-ji-ke-kao-que-yu-dao-bei-jing-zhao-yang-qu-de-xiao-xue-sheng-bi-ye-lv-xing-fan-ying-le-shi-yao-wen-ti-ru-he-gei-hai-zi-yi-ge-te-bie-de-bi-ye-j/">
+          
+          
+            
+          
+          这好事啊，中国有小孩小学毕业就能到北极毕业旅行，这不是很好的事吗？
+富人富了，对穷人真的是坏事吗？
+别人过好了，对仍然过得不好的人真的是坏事吗？
+这中间差着一个环节——一个好人富了，对穷人当然不是坏事；甚至就是一个坏人富了，对穷人也未必是全是坏事。
+只有故意浪费财富换取没有价值的东西——例如虚荣和没有人会记得的体验，或甚至换取以制造他人痛苦为形式的享乐，这才是坏事。
+否则就是南霸天，这钱ta只要不
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8C%97%E6%9E%81/">北极</a>
+            
+              <a href="/tags/%E5%A4%8F%E4%BB%A4%E8%90%A5/">夏令营</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/mai-cai-zhe-jian-shi-shang-bei-fang-he-nan-fang-dao-di-you-duo-da-qu-bie-wei-shi-yao-hui-zhe-yang/">买菜这件事上北方和南方到底有多大区别？为什么会这样？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/mai-cai-zhe-jian-shi-shang-bei-fang-he-nan-fang-dao-di-you-duo-da-qu-bie-wei-shi-yao-hui-zhe-yang/">
+          
+          
+            
+          
+          看了一下，大多数答案都把北方饭食的特点归结于“生活智慧”“因为严寒”“游牧民族风格影响”。
+这恐怕是是不准确的。
+有没有注意到，北方地名极多“x宁”“x镇”“x屯”“x堡”“x卫”。这是因为北方，尤其是山东以北的东北地区，向来是以军屯军镇为主要行政形态、以坞屯堡寨为主要聚居方式的，以军事化方式生活的人口占压倒性的优势。这个状态几乎贯穿两千年东北文明史——仅以最近的一百年除外。
+这给出了一个重要线索
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-26 18:48" pubdate>
+              2022-06-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8C%97%E6%96%B9/">北方</a>
+            
+              <a href="/tags/%E8%8F%9C/">菜</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/56/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/55/#board">55</a><a class="page-number" href="/page/56/#board">56</a><span class="page-number current">57</span><a class="page-number" href="/page/58/#board">58</a><a class="page-number" href="/page/59/#board">59</a><span class="space">&hellip;</span><a class="page-number" href="/page/74/#board">74</a><a class="extend next" rel="next" href="/page/58/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
