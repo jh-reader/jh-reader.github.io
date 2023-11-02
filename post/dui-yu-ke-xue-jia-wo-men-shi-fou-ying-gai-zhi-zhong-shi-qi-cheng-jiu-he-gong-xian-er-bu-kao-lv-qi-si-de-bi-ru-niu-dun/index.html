@@ -1,0 +1,567 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>对于科学家，我们是否应该只重视起成就和贡献，而不考虑其私德(比如牛顿)? - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="对于科学家，我们是否应该只重视起成就和贡献，而不考虑其私德(比如牛顿)?">
+              
+                对于科学家，我们是否应该只重视起成就和贡献，而不考虑其私德(比如牛顿)?
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      15
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">对于科学家，我们是否应该只重视起成就和贡献，而不考虑其私德(比如牛顿)?</h1>
+            
+            <div class="markdown-body">
+              <p>“私德”到底是什么？</p>
+<p>假设一个官员一方面努力建设城市，成绩斐然，另一方面收受贿赂，这个算不算“私德问题”？</p>
+<p>并不算。因为作为国家工作人员收受贿赂不属于“私人事务”。这并不是只和行贿而没达到目的的冤大头有关，这属于<strong>公诉案件</strong>。</p>
+<p>假设一个科学家得了诺贝尔奖，但是另一面却把邻居一猎枪打死了，这算不算“私德问题”？</p>
+<p><strong>其实也不算</strong>。</p>
+<p>因为杀人罪行也并非某甲和某乙的私事。张三把李四杀了，绝不是“只要李四家里有人去找张三报仇就行了，与别人无关”。</p>
+<p>杀人也是<strong>公诉案件。</strong></p>
+<p>一个博士生导师成果斐然，但是把某学生强奸了，这个算不算私德问题？</p>
+<p>规律你们应该看出来了——强奸罪也属于公诉案件。</p>
+<p>所以这<strong>也不是私德问题</strong>。</p>
+<p>属于公诉案件范围的，并不叫做私德问题。并不因为你个人觉得“这个事情没有直接伤害我的利益，我不关心”，就会因为你的不关心，而变成“直接当事人之间的私事”。</p>
+<p>不然，杀人也一样可以循着这个逻辑成为凶手与受害人家族之间的私事，从而推出“杀孤儿、杀流浪汉无罪”这样荒唐的结论。</p>
+<p>很多人在谈论私德问题的时候，不假思索的认为公众（甚至任何个人，比如自己）理所当然的拥有对个人私德的评判权，其实主要是将上面所举的公诉案件的例子误以为属于“私德受审判”的确据，认为这些例子证明了“私德评判权”的普遍存在。</p>
+<p>这其实是一个普遍存在的误解。</p>
+<p>那些<strong>并不是私事</strong>，体现的也并不是<strong>私德，所以根本就不属于私德问题的范畴。</strong></p>
+<p>哪些属于私事？</p>
+<p><strong>“民不告，官不究”的，其实就属于原告与被告之间的私事——尽管这根线还算有模糊性可言。</strong></p>
+<p><strong>但“即使民告，官也不究”的事务，就不折不扣的、确定无疑的属于私事。</strong></p>
+<p>什么属于“民告官也不究”的事？</p>
+<p>比如性取向、生育愿望、职业兴趣、审美情趣、消费习惯、生活方式、感情观、作息习惯……等等等等。</p>
+<p>在这类事务上的行为是否符合某种“规范”，才构成真正意义上的“私德”问题。</p>
+<p>那么，现在问题来了，<strong>人处理私人事务时——金钱也罢、感情也罢、人际关系也罢——有义务要符合什么法律之外的标准吗</strong>？</p>
+<p>这个标准，由谁说了算？</p>
+<p>由人多的一方说了算吗？</p>
+<p>说白了，“私德”问题是一群人希望凭借多数优势——或者更准确的说，利用大众心理中的生存的焦虑——去达成自己干预其他人的私人事务的目的。</p>
+<p>因为对这些期望者自己有利——甚至仅仅只不过是“让我觉得习惯和舒服”这样的蝇头小利而已。</p>
+<p>因为有利益存在——哪怕只是蝇头小利——就不但要规范人在公共空间的作为，还要规范人在个人空间的作为。</p>
+<p>希望强迫他人按照自己的要求作息、消费、生育、交往……生活。</p>
+<p>要求人按照自己的利益作息、消费、生育、交往……生活，这是奴隶主才对奴隶拥有的权力。</p>
+<p>这说白了，只是一种冷酷的贪婪罢了。</p>
+<p>可惜，尽管能找到这个原因，也能简单的论证这是错的，却并不足以让人就此放下这个执着。</p>
+<p>因为“别人在按照我所不知道或者不认可的方式过自己的生活”，意味着极大的不确定性，随时可能因此造成对我的威胁和我的损失啊。</p>
+<p>我看不见你们在说什么，我怎么能确定你们不是在密谋要伤害我呢？</p>
+<p>我看不到你们在做什么，我怎么知道你们不是在算计我呢？</p>
+<p>所以，什么公德母德？我只不过是要获得这份窥探权、干预权，好让我晚上能闭得上眼、能睡得着而已。</p>
+<p>其实你怎么论证我这是错的、是不该的、是无权的，我睡不着是最实在的，这样做了我就觉得舒缓点——不管这是不是自欺欺人、是不是安慰剂——这个舒缓点，总是事实。</p>
+<p>我没这点舒缓，睡不着觉，活不下去。</p>
+<p>它是“错的”又怎样？</p>
+<p>实际上，公众对“私德”的执着，是一种心理焦虑汇聚成河的表现。</p>
+<p>问题并不在于论证“私德是否重要”——这个根本没有什么可讨论的，如果不建立“警察国家”、建立无隐私社会——注意是所有人对所有人均无隐私的社会——“私德管理体系”根本就没有实践上的可操作性，根本是一个伪问题。</p>
+<p>问题在于要治疗大众心理的这种焦虑症。</p>
+<p>这个心病不好，这份病态的执着就会一直客观存在。</p>
+<p>说它不应该，并不能帮助消解支持它存在的根源。</p>
+<p>更不是去“提高私德水平”——这干脆是一种多样性屠杀。而多样性是人类应对一切未来风险的最大保险。换言之，这是一种反人类的蠢行，一种物种自杀。</p>
+<p>要解决它，只有一条路，就<strong>普遍提高人对爱的视觉。</strong></p>
+<p>是帮助人看到爱其实普遍存在，只是被你自己因焦虑造成的恐惧，由恐惧催生的名为“警惕”、实为非理性扭曲的习惯遮蔽了。</p>
+<p>你比自己想象的安全，你可以从容努力，一切并不晚，事情没你想的那么难。</p>
+<p>你并没有必要恐慌到用干预别人私德的方式“自救”。</p>
+<h2 id="你其实没有这个必要。"><a href="#你其实没有这个必要。" class="headerlink" title="你其实没有这个必要。"></a><strong>你其实没有这个必要。</strong></h2><p>把我的答案都看完。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%A7%81%E5%BE%B7/">私德</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-wo-gen-bie-ren-liao-tian-kai-shi-bie-ren-zong-hui-fu-wo-hou-lai-hui-fu-bian-shao-zui-hou-zhi-jie-bu-hui-le-dan-huan-gei-gong-tong-hao-you-/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么我跟别人聊天，开始别人总回复我，后来回复变少，最后直接不回了，但还给共同好友的动态点赞或评论？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/mei-guo-niu-yue-zhou-bu-fa-luo-shi-qiang-ji-an-zhi-ren-si-wang-xian-fan-ke-neng-zai-zuo-an-shi-jin-xing-le-wang-luo-zhi-bo-mu-qian-qing-kuang-ru-he/">
+                        <span class="hidden-mobile">美国纽约州布法罗市枪击案致 10 人死亡，嫌犯可能在作案时进行了网络直播，目前情况如何？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

@@ -1,0 +1,1438 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="JH Notes Easy Reader">
+              
+                JH Notes Easy Reader
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-li-jie-zui-zai-dang-dai-gong-zai-qian-qiu-zhe-ju-hua/">如何理解「罪在当代，功在千秋」这句话？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-li-jie-zui-zai-dang-dai-gong-zai-qian-qiu-zhe-ju-hua/">
+          
+          
+            
+          
+          这话没说完整。
+不但有“罪在当代、功在千秋”这种事，
+还有“功在当代、罪在千秋”。
+这没什么荒谬的，只不过是最基本的认识问题。
+你现在喜欢的一切，显然并不仅仅是过去的一切“好事”的结果，它同时也是一切“罪恶”的结果。
+你现在憎恶的一切，显然也不仅仅是过去一切“罪恶”的结果，也同样是一切“好事”的结果。
+因果链条上的一切环节是紧紧相扣的。
+好好坏好好，坏好坏坏好。你拿掉一个好，从它之后的一切都被取消
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8A%9F%E7%BD%AA/">功罪</a>
+            
+              <a href="/tags/%E5%8D%83%E7%A7%8B/">千秋</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-ping-jia-ru-guo-zi-you-bu-jia-yi-xian-zhi-yi-ding-hui-dao-zhi-qiang-zhe-dui-ruo-zhe-de-bo-xue-zhe-ju-hua/">如何评价「如果自由不加以限制，一定会导致强者对弱者的剥削」这句话？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-ping-jia-ru-guo-zi-you-bu-jia-yi-xian-zhi-yi-ding-hui-dao-zhi-qiang-zhe-dui-ruo-zhe-de-bo-xue-zhe-ju-hua/">
+          
+          
+            
+          
+          “剥削”是一个很特别的概念。
+它是由交易双方之外的第三方对交易作出的定性。这导致了一种非常复杂的问题——交易的旁观者，是否有权利做出这种判断？
+或者说，是否有一种旁观者，即使ta并非买方、也不是买方、也不承担潜在交易被阻止所造成买卖双方的机会成本，却有某种不可置疑的权利来对交易是否合法、是否道德做出判断？
+坦白说，我不同意这种权利的合法性。
+其实，使得强大的旁观者可以阻止这些交易的，并不是某种基于
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%A5%E5%89%8A/">剥削</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/qiang-ji-ji-hua-zui-zhong-hui-ru-he-shou-chang/">强基计划最终会如何收场?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/qiang-ji-ji-hua-zui-zhong-hui-ru-he-shou-chang/">
+          
+          
+            
+          
+          借这个问题说一下到底人要怎么选择自己的人生前途。
+这一共有三个流行的策略：
+A）根据主流意见来办——即从众流。
+B）根据自己对未来趋势的判断来办——即先知流。
+C）按照“无论世界怎样发展，这种选择总不会被淘汰”的法则，做万全的保守选择——即稳健流。
+我们一个个的看这些方法的优缺点。
+首先是从众流。从众流的好处，是最好操作，而且在决策后有最好的心理体验——如果这是错的，那么我也不会是唯一错的那个，跟
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E9%80%94/">前途</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-pi-chai-zui-hao/">如何劈柴最好？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-pi-chai-zui-hao/">
+          
+          
+            
+          
+          对没技巧的人来说，最好的办法是用劈柴神器。
+用法很直白了。先轻敲把木头固定在尖头上，然后抡锤敲下去即可，这基本上不需要什么特别的技巧。
+几十块钱一个，便宜得很。
+但是要注意几点——
+第一，高度要合适发力，这个要跟操作者的身材匹配，先自自己模拟计算一下，问清楚商家尺寸再下单。
+第二，在适合发力的前提下，越高越好。因为劈开的木柴会自然掉落在四周，如果越高，就会散落得越远，可以劈一大堆再收拾。如果太矮，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8A%88%E6%9F%B4/">劈柴</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/yue-nan-zhi-zao-hui-ti-dai-zhong-guo-zhi-zao-ma/">越南制造会替代中国制造吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/yue-nan-zhi-zao-hui-ti-dai-zhong-guo-zhi-zao-ma/">
+          
+          
+            
+          
+          越南要替代中国，难点并不在于什么人才、能源、技术。
+而在于金融主权。
+这是个死结。
+如果越南金融“开放”，又“民主”，又“自由”，那么越南的命运注定会和阿根廷等拉美国家一样——欧美一个地龙翻身，就可以制造你国内的重大经济危机，逼得越南把辛辛苦苦养大的黄花闺女卖了换方便面。
+这些企业想不卖都不行，一边投资人撤资，一边“国际市场不景气”没有订单，一面是劳动密集型企业几万张有罢工权的嘴等着吃饭，拿什么抗
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Business/">Business</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%B6%E9%80%A0%E4%B8%9A/">制造业</a>
+            
+              <a href="/tags/%E9%97%A8%E6%A7%9B/">门槛</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/jia-ru-ci-shi-nian-yue-ri-chu-yu-wei-zhi-yuan-yin-mou-shen-fen-wei-zhi-de-di-san-fang-jiang-ze-lian-si-ji-an-sha-le-ju-shi-jiang-ru-he-fa-zhan/">假如此时（2022年5月30日）出于未知原因，某身份未知的第三方将泽连斯基暗杀了，局势将如何发展？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/jia-ru-ci-shi-nian-yue-ri-chu-yu-wei-zhi-yuan-yin-mou-shen-fen-wei-zhi-de-di-san-fang-jiang-ze-lian-si-ji-an-sha-le-ju-shi-jiang-ru-he-fa-zhan/">
+          
+          
+            
+          
+          泽连斯基如果突然死亡而被公布死因是暗杀，只有两种可能——
+1）在美国认为时机还不成熟的阶段扛不住压力和良心折磨想投降甚至露出了反咬美国一口的迹象而被CIA提前灭口。
+固然会往俄罗斯和乌克兰亲俄派的身上嫁祸，但这没什么特别的实际意义——一个连泽连斯基这么善于自欺欺人的人都绝望了的局面，换一个更认知失调的人上来也没有挽回的余地。
+2）被某个怨恨在心的乌克兰民族主义分子刺杀。
+这不是指那种纳粹般的民族主
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%BA%E6%9D%80/">刺杀</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ke-qi-k-i-t-s-c-h-shi-shi-yao-ru-he-ke-fu-ke-qi/">刻奇（Kitsch）是什么？如何克服刻奇？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ke-qi-k-i-t-s-c-h-shi-shi-yao-ru-he-ke-fu-ke-qi/">
+          
+          
+            
+          
+          一个为了凝视你而骗你去凝视的深渊。
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Literal-Art/">Literal-Art</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%BB%E5%A5%87/">刻奇</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/shang-qi-dong-shi-chang-cheng-bu-neng-jie-shou-yu-hua-wei-he-zuo-zi-dong-jia-shi-ta-cheng-le-ling-hun-er-shang-qi-jiu-cheng-le-qu-ti-ni-zen-yao-kan/">上汽董事长称不能接受与华为合作自动驾驶：它成了灵魂，而上汽就成了躯体。你怎么看？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/shang-qi-dong-shi-chang-cheng-bu-neng-jie-shou-yu-hua-wei-he-zuo-zi-dong-jia-shi-ta-cheng-le-ling-hun-er-shang-qi-jiu-cheng-le-qu-ti-ni-zen-yao-kan/">
+          
+          
+            
+          
+          汽车制造厂的灵魂可以是什么？该是什么？
+先看一个消息——鸿海前几天宣布成立了新产业联盟，这家产业联盟截止现在已有1737家成员企业，准备共同推出统一的开放纯电平台——MIH EV Kit。
+MIH EV Open Platform │ Foxconn Technology Group自主研发也是分方向的。
+它也分苹果模式——即软硬一体寻求极限性能面向高端市场的模式，和台积电、富士康模式——即追求极
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Business/">Business</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%B6%E9%80%A0%E4%B8%9A/">制造业</a>
+            
+              <a href="/tags/%E7%81%B5%E9%AD%82/">灵魂</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-guo-wo-guo-yue-lai-yue-fa-da-zhi-zao-ye-shi-bu-shi-ye-hui-kong-xin-hua/">如果我国越来越发达，制造业是不是也会空心化？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-guo-wo-guo-yue-lai-yue-fa-da-zhi-zao-ye-shi-bu-shi-ye-hui-kong-xin-hua/">
+          
+          
+            
+          
+          制造业不会是未来五十年最主要的人力资源去向，这个对全球都一样。
+以人力密集为基础的工业正在整体蒸发，未来最底端产业就是机器人生产线。
+自信“机器人终究比不过人”的，需要走出来看看现在的机器人是什么样的。
+未来大部分人的主要收入会是来自受教育和服务业从业。
+“老龄化”虽然不算是纯然的伪问题，但大大的低估了脑力劳动者的劳动力寿命的延长效应的影响。智力劳动者的有效劳动年龄被自动化和社会支撑体系大大的延长
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Business/">Business</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%B6%E9%80%A0%E4%B8%9A/">制造业</a>
+            
+              <a href="/tags/%E7%A9%BA%E5%BF%83%E5%8C%96/">空心化</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-you-xiao-de-zhi-nu/">如何有效的制怒？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-you-xiao-de-zhi-nu/">
+          
+          
+            
+          
+          生活在爱你的人中间，这样你发怒的后果常会被自然消解。
+不要向对你无爱的人发怒，这不仅仅是无用和有害的问题。最重要的是无爱的人不配得。
+第二，不要把发怒看成是一种正义的表现。不要觉得自己都被激怒了，就一定是自己在正义的一方——这是无数小孩敢把怒发出来的根本原因。
+人们总以为自己肯定是正义的，不发怒是因为够宽容，发怒是对方罪有应得。其实事实绝大多数情况下都不如ta们所料，只不过ta们听不进去。
+爱不受
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%B6%E6%80%92/">制怒</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-bai-gong-xin-wen-mi-shu-yang-yan-ruo-zhong-guo-bu-zun-shou-dui-e-zhi-cai-mei-guo-you-ban-fa-cai-qu-cuo-shi-qi-zhong-tou-lu-chu-na-xie-xi/">如何看待白宫新闻秘书扬言「若中国不遵守对俄制裁，美国“有办法采取措施” 」 ，其中透露出哪些信息？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-bai-gong-xin-wen-mi-shu-yang-yan-ruo-zhong-guo-bu-zun-shou-dui-e-zhi-cai-mei-guo-you-ban-fa-cai-qu-cuo-shi-qi-zhong-tou-lu-chu-na-xie-xi/">
+          
+          
+            
+          
+          “制裁”这件事有个最大的问题，就是它伤害的首先是与你合作的那部分人。
+比如这次美国对俄罗斯海外资产的大冻结，可能最大效果是搞得普京的敌人都没钱雇刺客买流量了。更糟的是——刺客和流量现在全都不肯收卢布。
+俄罗斯的“反对派”集体陷入了经济绝境。
+普京印了一万亿卢布“帮助企业渡过难关”，恐怕客观的结果是将俄罗斯经济的国有比重凭空起跳了。
+这一万亿给谁、不给谁，恐怕也是普京体系的政治力量在管理。可想而知，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%B6%E8%A3%81/">制裁</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-gen-chu-du-yin/">如何根除赌瘾？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-gen-chu-du-yin/">
+          
+          
+            
+          
+          最近有包钢的事，据说是“投资失败”，借这个问题，来讲一下戒赌问题。
+家长们对赌博问题的纠结之处在于，ta们常常暗地里抱着“不能放弃投机暴富的一切可能”的不甘，不是去教育子女必须坚守“不劳不获”原则，而是去以“不要冒自己不能承受的风险”和“不要做和自己能力不能匹配的事情”这样的教诲来抑制赌博的可能。
+在他们心里，其实生怕子女变成“老黄牛”，“一辈子赚死工资”，在潜意识里暗暗相信“人无横财不富，马无夜
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%B6%E8%B5%8C/">制赌</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-mou-mei-ti-fa-wen-hao-zhao-nian-qing-ren-dao-zhi-zao-ye-qu-qu-gong-chang-shi-fou-hui-fa-zhan-cheng-wei-lai-jiu-ye-de-qu-shi/">如何看待某媒体发文号召年轻人到制造业去，去工厂是否会发展成未来就业的趋势？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-mou-mei-ti-fa-wen-hao-zhao-nian-qing-ren-dao-zhi-zao-ye-qu-qu-gong-chang-shi-fou-hui-fa-zhan-cheng-wei-lai-jiu-ye-de-qu-shi/">
+          
+          
+            
+          
+          修改一下就好——
+年轻人应该到先进制造业去。
+搞清楚什么是工业4.0。
+智能制造前途非常光明。特斯拉和丰田地球上绝对不会只需要一家。
+单中国起码也要千家起步。
+道理很简单——任何领域和新通信技术、新能源技术、新生物技术这类技术革命中的突破性成果结合，都可能产生颠覆性的新产品。
+这产品总是面向全球制造的，制造要求常常是在发布会前后两三个月的保密期内就要完成产能爬坡。
+这会让“某大厂在疯狂寻找智能制造
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Business/">Business</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%B6%E9%80%A0%E4%B8%9A/">制造业</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/pu-jing-biao-shi-e-luo-si-zhan-lve-wei-she-li-liang-zhuan-ru-te-shu-zhan-bei-zhuang-tai-zhe-yi-wei-zhao-shi-yao/">普京表示俄罗斯战略威慑力量转入特殊战备状态，这意味着什么？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/pu-jing-biao-shi-e-luo-si-zhan-lve-wei-she-li-liang-zhuan-ru-te-shu-zhan-bei-zhuang-tai-zhe-yi-wei-zhao-shi-yao/">
+          
+          
+            
+          
+          现在的要害，是俄罗斯要打政治仗、文明仗，牢固的在占领区乌克兰人的面前树立威武之师、文明之师的深刻印象。
+依靠压倒性的武力和系统的优势，俄军可以从容的控制平民伤亡，甚至乌军的伤亡。可以大方的围三缺一，给战斗意志不够坚定以及真正面对死亡觉得为现政府拼命实属荒唐的乌军机会离开，以保证战死的尽可能的是意志最坚定的反对者。
+这一点，对俄罗斯避免在占领区陷入泥潭有至关重要的作用。
+但这前提，是北约不干涉、不能
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%89%E5%A4%BA/">争夺</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ren-dao-lao-le-cai-fa-xian-zi-ji-gen-zi-nv-bu-shi-li-yi-gong-tong-ti-er-shi-liang-ge-jia-ting-ni-zen-yao-kan/">人到老了，才发现自己跟子女不是利益共同体，而是两个家庭，你怎么看？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ren-dao-lao-le-cai-fa-xian-zi-ji-gen-zi-nv-bu-shi-li-yi-gong-tong-ti-er-shi-liang-ge-jia-ting-ni-zen-yao-kan/">
+          
+          
+            
+          
+          利益共同体，并不意味着“你的就是我的”，而是“我获益就会对你有好处，我受损就会对你有坏处”。
+这就像“军阀和政客勾结在一起，结成了利益共同体”，那只意味着北伐军打军阀也会损害政客的利益，所以ta们要相互合作。
+你让政客没收一下军阀的部队试试看，你看利益共同体能支撑这种操作吗？
+子女就算跟你再怎么闹，如果你在别人面前破衣烂衫，ta们一样名誉受损，你发财了ta们也有遗产继承/减轻赡养负担。是这个一损俱
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%A9%E7%9B%8A/">利益</a>
+            
+              <a href="/tags/%E5%85%B1%E5%90%8C%E4%BD%93/">共同体</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/lian-ren-de-xing-ge-hu-bu-hao-huan-shi-xiang-tong-hao/">恋人的性格互补好，还是相同好？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/lian-ren-de-xing-ge-hu-bu-hao-huan-shi-xiang-tong-hao/">
+          
+          
+            
+          
+          互补论有个根本的逻辑问题，那就是它基本不考虑人的变化。
+设若两个人现在很互补，明天A变了，不需要这个技能或者性格特质了，B将立刻变得不互补，B是要自己跟上呢，还是要分手呢？
+要是B自己也变化了呢？A是要同时跟上还是要分手呢？
+要是A和B同时发生的变化对其互补的需求是互相矛盾的呢？
+以前A需要人耐心一点忍受ta的毛躁，现在ta需要人激进一点激励ta的沮丧呢？B将置身何处？
+互补论非常容易导致两个人在
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+              <a href="/categories/Clan/Feminism/">Feminism</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%92%E8%A1%A5/">互补</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/bie-shu-da-sao-qi-lai-tai-ma-fan-le-you-shi-yao-qing-jie-hao-wu-huo-miao-zhao-tui-jian-ma/">别墅打扫起来太麻烦了，有什么清洁好物或妙招推荐吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/bie-shu-da-sao-qi-lai-tai-ma-fan-le-you-shi-yao-qing-jie-hao-wu-huo-miao-zhao-tui-jian-ma/">
+          
+          
+            
+          
+          别再迷信“开窗开门换气”，窗和门一开，阿姨要累死。
+门窗无事不开，靠新风系统提供新鲜空气，直接断绝灰尘最大根源。
+你要是够钱还可以考虑做正压系统，也就是自然通道气压都是对外的，那可以在一定程度上缓解你的开窗狂带来的灰尘问题。
+但是实话告诉你苍蝇、蛾子、蟑螂、蜥蜴、老鼠、蚂蚁、蝙蝠这些可管不了你这么多，你开着我就进。啥正压系统都顶不住。
+说实话——大部分人真的没有自己想象的那么“热爱大自然”。
+进户
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%81%B0/">灰</a>
+            
+              <a href="/tags/%E5%88%AB%E5%A2%85/">别墅</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-zui-jin-bu-fen-wang-luo-yu-lun-cun-zai-zhi-chi-ta-li-ban-de-qing-xiang/">为什么最近部分网络舆论存在支持塔利班的倾向？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-zui-jin-bu-fen-wang-luo-yu-lun-cun-zai-zhi-chi-ta-li-ban-de-qing-xiang/">
+          
+          
+            
+          
+          这道理很朴素——
+不管是谁，公开主张不支持分裂中国的恐怖活动，中国老百姓都会支持、也没有任何理由不支持。
+ta过去做了相反的事，那些事该追究继续追究，对支持ta现在的态度无影响。
+ta将来说了不该支持的话，那就在ta将来说了这些话后不支持，对支持ta现在的态度无影响。
+ta说了结果将来没有做，那就将来不支持，对支持ta现在的态度无影响。
+对认可和鼓励ta人的善意设立各种各样的门槛，不管你自以为这门
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%AB%E6%83%B3/">别想</a>
+            
+              <a href="/tags/%E9%AA%97/">骗</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wo-shi-yi-ge-sui-de-ma-ma-ai-zheng-wan-qi-ke-yi-gei-sui-de-nv-er-liu-xia-xie-shi-yao-you-yi-yi-de-dong-xi/">我是一个34岁的妈妈，癌症晚期，可以给5岁的女儿留下些什么有意义的东西?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wo-shi-yi-ge-sui-de-ma-ma-ai-zheng-wan-qi-ke-yi-gei-sui-de-nv-er-liu-xia-xie-shi-yao-you-yi-yi-de-dong-xi/">
+          
+          
+            
+          
+          每一个已知必死的人，能留给所有所爱之人的最好的礼物，就是自己与死亡的和解。
+不欢迎死亡，不迷恋死亡，不崇拜死亡，
+不厌恶死亡，不回避死亡，不恐惧死亡。
+和死神平辈论交，烹茶下棋，闲话家常。
+自己认识这位朋友，再介绍给家里人认识。
+通过自己的示范和努力，消除自己所爱之人对死亡的欢迎、迷恋、崇拜和厌恶、回避、恐惧。
+当生则尽力生，当死即从容死。
+示范这个健康的态度，成为一个家人朋友内心觉得可以效仿的例
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%AB%E6%97%B6/">别时</a>
+            
+              <a href="/tags/%E7%A4%BC/">礼</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-ping-jia-zhang-wei-wei-ru-zhu-b-zhan-de-ping-lun-qu-da-liang-ping-lun-bei-shan-chu-de-xian-xiang/">如何评价张维为入驻B站的评论区大量评论被删除的现象？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-ping-jia-zhang-wei-wei-ru-zhu-b-zhan-de-ping-lun-qu-da-liang-ping-lun-bei-shan-chu-de-xian-xiang/">
+          
+          
+            
+          
+          这对高关注用户完全正常，没什么奇怪的。
+其实哪来的“删评就是不行”的“规矩”？
+主张这种法则的人，主要的依据总不过以下几条：
+1）压制反面意见会破坏观点争鸣。
+很奇怪，你完全可以自己写出你自己单独的相反意见，平等的上架到意见市场上竞争别人的注意。
+保证你的平等发布权是平台的责任，根本就不是别的作者要在自己评论区对你承担的责任。恰恰相反，平台既然给了作者任意删除评论的权力设置，就表示这是平台正式授予
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%A0/">删</a>
+            
+              <a href="/tags/%E8%AF%84%E6%9D%83/">评权</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/91/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/90/#board">90</a><a class="page-number" href="/page/91/#board">91</a><span class="page-number current">92</span><a class="page-number" href="/page/93/#board">93</a><a class="page-number" href="/page/94/#board">94</a><span class="space">&hellip;</span><a class="page-number" href="/page/117/#board">117</a><a class="extend next" rel="next" href="/page/93/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

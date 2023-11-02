@@ -1,0 +1,626 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何看待质疑? - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何看待质疑?">
+              
+                如何看待质疑?
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      31
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何看待质疑?</h1>
+            
+            <div class="markdown-body">
+              <p>一次把质疑问题说透。</p>
+<p>什么叫质疑？</p>
+<p>疑不用说，质是什么？</p>
+<p><img src="https://picx.zhimg.com/50/v2-137d17aad42229c67eb17346068f5a90_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>质的古体其实是个会意字，上面两把斧头，下面一个贝壳。啥意思呢，给你两把斧头，你给我钱。</p>
+<p>但是“质”和买卖有什么不同呢？</p>
+<p>质这种做法是双向的。我给你斧头你给我钱，回头我再拿回钱来，你要把斧头还我。我若拿不出钱来，这斧头你可以一直拿着，但你不能搞丢，不能弄坏，不然我拿钱来时你没得还我了。</p>
+<p>注意，质和现在的典当估计是不同的。典当是有利润的，是一种抵押放贷关系。你拿钱来赎斧头，比我当初给你的钱要多，不然我一开始不接你这单了。而这个在远古时期估计是不存在的。</p>
+<p>一来，质最典型的运用其实是质子，质押、人质。看出问题了吗？我把我儿子放你这里，换你相信我会履行我们之间的合同。我合同履行完了，儿子你要完整的还我。你不能再把我儿子卖我一次再赚一笔钱。赚钱的部分在我们另外的合同里面，不在我儿子身上。</p>
+<p>这就是质和典当的区别。</p>
+<p>二来，这个字发明时人类还在用贝壳。这时候财富不是货币本位的，而是实物本位的。拿到斧头要比拿到贝壳重要。拿贝壳换到斧头你本身就赚了，回头人家拿贝壳来还斧头你还不长眼要加价，人家下回都不跟你玩了。实物本位时代有一个要害——交易双方往往是几百年的邻居，几百上千年里技术几乎毫无进步，需求和产出极其稳定，价格几乎是恒定的。</p>
+<p>所以几乎没有“涨价”“利息”这一说。</p>
+<p>五头羊换六袋米，换一百年都是五头羊换六袋米。我们村每年就多这五头羊，你们村每年就多这六袋米。你要加价你只管加，你就说你要不要吧，不要我牵走。</p>
+<p>所谓“贝壳”“货币“，与其说是财富，不如说是一种简单的记账方式交割完毕即为废物。大家要的是羊和米，要贝壳干啥。</p>
+<p>不过这扯远了，我们要讲的不是货币史，回到本题上。</p>
+<p>本题要害在于——这是一种<strong>双向的交换关系，一种“绝对真等价”</strong>。</p>
+<p>质的左右两边之物，就是任何时候可以绝对互换的东西。</p>
+<p>换句话来说，“质”的最初含义，就是 “A=B” 中的“=”。</p>
+<p>象形文化全是一群“引申”之王，这是天然本性决定的。朋是两串玉，友是两只手，美是一头羊，家是个猪圈。“质”这个字也不例外。</p>
+<p>这个“中文等号”，很快就发生了进一步的引申——即从A=B的谓语“=”，迁移成了宾语“B”。</p>
+<p>左边是个意象，右边也是一个意象，我们称后者为前者之“质”，即指“B即为A的理想等价物”——B是A的等价物，而且B比A更为完美，更接近真实、本源、简洁、实质。</p>
+<p>换言之，<strong>质</strong>即<strong>物之真相</strong>。</p>
+<p>是A去掉了矫饰的结果，是A的a。</p>
+<p>所以我们在所有使用“质“字的地方，都可以用“真”、“实”、“使真实”来进行替换。</p>
+<p>比如，</p>
+<p>质量（物理）——实在的量，</p>
+<p>质量（管理）——真实性的量度，</p>
+<p>本质——本原的真相</p>
+<p>实质——实在的真相</p>
+<p>质押——使诚意为真的抵押（引申义与本意可互换）</p>
+<p>质感——（使）真实感</p>
+<p>质证——证实证据的真实性（使证据为实）。</p>
+<p>这时候，我们就顺着这条线落到问题的核心了——<strong>质疑。</strong></p>
+<p><strong>质疑是什么？</strong></p>
+<p><strong>质为真且实，疑为惑而求。</strong></p>
+<p><strong>这两者存在天然的矛盾。</strong></p>
+<p><strong>质疑，是先确定了自己找到了实在的问题、找到了真确的破绽，然后通过“疑问”的形式要将自己找到的真实现实化、共识化。</strong></p>
+<p>这一系列的行为，无论是质疑、质询还是质问，都有一个共同前提，就是我自己已有上升到信念的定见，确知为真实和本原之断言，我现在来给你一系列问题，只是要借由这种形式引导你或者其他旁观者认知这一真理。</p>
+<p>是为<strong>质疑</strong>。</p>
+<p>质疑的前提，就是我已经确信我是对的，只是要办个手续来让你和旁人接受真理。</p>
+<p><strong>它事实上是一种（被企图的）教育（education）。</strong></p>
+<p>法庭上允许律师质疑证人，本质上是要求律师扮演教师的角色，尝试用自己认定的真相完成对法庭成员的教育。</p>
+<p>老师可以质疑学生，因为本来就有教育的职权。</p>
+<p>监护人可以质疑被监护人，因为监护关系本身就是基于意志的欠有效。</p>
+<p>民意代表可以质询事务官员，因为人民意志的权威高于服务机构的意志，有权纠正后者的理解。</p>
+<p>质问、质询、质疑，都有一个程序上的特点，都是<strong>不允许受动方反问</strong>。</p>
+<p>法庭上律师质问证人，证人只能回答或者不回答，不能反问律师。<strong>律师没有回答义务。</strong></p>
+<p>民意代表质询官僚，官僚不能反问。民意代表<strong>没有义务回答</strong>。</p>
+<p>可以回答，但不存在回答的义务，不回答的特权受到外部承认，是“保持教育的效率”的天然合理安排。</p>
+<p>所以“质疑”才如此的令人陶醉。</p>
+<p>因为<strong>质疑权就是上位的证明</strong>。</p>
+<p>质疑者已经坐在了王座上。</p>
+<p>但这也意味着——<strong>自授质疑权即为侵犯。</strong></p>
+<p>我如果是向你求教，即尊你为师，你就因为我的授权而有了质疑权。这时候我确定你说的就是对的，我只是要尽快搞个明白，所以要给你质疑权，方便你完成我的委托。</p>
+<p>我如果是法庭受审——我通过入籍和不移民声明了我愿意接受这种方式来保护我的权利——那么我已经授权律师和检察官有单向发问尝试证明ta们观点的特权，以便让所有的案件都审得快点，减少我的税务负担。</p>
+<p>你如果是我的被监护人，那么上帝——或曰命运——给了你授权，以降低全社会教育下一代的成本。上天有一切主权，我只能接受。</p>
+<p>我如果是你的下属，要按照约定为你的目标提供服务，那么我已经授权给你在工作范围内质询我的理解和你的意图是否一致。</p>
+<p>但是你有什么权利<strong>不经我允许</strong>，自行决定你所认定的真实一定比我所认定的真实为高、然后强行把我按在证人席上受你盘问，为你的case作人证？</p>
+<p>如果是我进你家，你把条款写在大门口“凡进门的默认受审”也罢了。</p>
+<p>现在是<strong>你冲进我家要审我。</strong></p>
+<p>你有没有这权利，你自己掂量一下。</p>
+<p>你会受到对方的什么招待，是美酒还是霰弹，你思考思考。</p>
+<p>你之所以不明白这个道理，是因为你的前半生，从老师到家长到训导主任到课代表到学生干部到追求对象到岳父母/公婆到警察到官员到老板到上司甚至到管居委会管物业看大门的，都获得了某种授权。</p>
+<p>在你的客观世界里，似乎人人都天然的对你有质疑权。</p>
+<p>你没有，似乎唯一的原因就是你还不是成人。</p>
+<p>现在你是成人了——或者，借着互联网的遮蔽，别人无法确知你不是成人了——你应该自动获得了这个“人人都有的普遍权利”了吧，不是吗？</p>
+<p><strong>不是。</strong></p>
+<p><strong>我完全理解你的心情，但答案仍然是NO。</strong></p>
+<p><strong>Big Hard F*cking NO.</strong></p>
+<p>这话说得极其的硬，就是为了让你记牢一点，不要有任何侥幸。</p>
+<p>坦率讲，这个错误是最容易导致你重大损失的致命误解，因为人类对这种“自授质疑权”的侵犯极端敏感，而且<strong>报复性极强</strong>。</p>
+<p>眼都不眨把你简历丢垃圾桶，给你未来五年绩效都打C，“对不起我有喜欢的人了”<strong>这都算轻的</strong>——因为那还算是对方权利范围内的合法行为。</p>
+<p>你只是错过了收益，但你<strong>其实没有遭受损失</strong>。（不捡钱算丢的人除外）</p>
+<p>世上多的是一句“你瞅啥”，为“你知道这里不能抽烟吗”“你知道电影院不能大声说话吗”，<strong>拼着坐牢枪毙也要砍死你的</strong>。</p>
+<p>看到抽烟，打市场监督电话。这你有权。叫店经理来要求按照服务条款提供服务，你有权。但是“你知道这里不能抽烟吗”，你<strong>无权</strong>。</p>
+<p>龙哥进来吃饭的时候只同意了店主人觉得我不合规矩可以说我，可没有同意过全屋谁都可以觉得我不合规矩，谁都可以说我。</p>
+<p>你要干，你就是村口打枪的鬼子，老子要跟你拼了。</p>
+<p>“我是为了维护社会秩序”？鬼子也是来“推广民主”和“建立王道乐土”的。</p>
+<p>乡亲们很质朴——你看这个质用得准不准——老子跟你拼了。</p>
+<p>不容擅自质疑，这是“人的自由不容剥夺”的<strong>自然法</strong>。</p>
+<p>这种冲动高于一切人间一切立法，根本不跟你商量，也不管你觉得合理不合理。</p>
+<p>你把牛顿剁馅包饺子，你跳崖也会死。</p>
+<p>聪明人视质疑人为龙潭虎穴。</p>
+<p>别说没授权，就算是当事人斩鸡头烧黄纸割手指洒酒摔碗赌咒发誓保证“畅所欲言，绝不报复”，也别想老子上当。</p>
+<p>这事就是赌命，你要给我赌命的理由，光赌咒发誓跟我保证这“不是赌博”，谁要上当？</p>
+<p>除非<strong>我的质疑权合法到你反抗我可以叫出警察来</strong>或者因为某种原因我觉得这概率这样赌了我不后悔——比如先发我个万八千的，</p>
+<p>否则白白的想要我质疑你，<strong>你想得美哦</strong>。</p>
+<p>你们明白了吗？</p>
+<p>质疑是把脑袋别在裤腰带上的活计，</p>
+<p>拿它来寻求心理快感，和拿俄罗斯轮盘赌来娱乐没有本<strong>质</strong>区别。</p>
+<p>扣动扳机的价码就是你的命价。</p>
+<p>开一枪换两秒哈哈乐，值不值？</p>
+<p>除非这可以换回谁的命，否则<strong>永远不值</strong>。</p>
+<p>再说一遍——这规矩不是什么“邪恶父权集团”立的，所以质疑ta们没用。</p>
+<p>立这规矩的，不受质疑。</p>
+<p>问题来了，要是你实在心痒难熬，就是觉得你真的看到了问题，有个绝妙好槽，不吐就要死，怎么办呢？</p>
+<p><strong>那么你装也要装出你没有把握，用求证实、求解惑、求进一步说明的姿态提出来。</strong></p>
+<p>掐着自己大腿也要加上“我<strong>觉得</strong>”、“我<strong>猜想</strong>”、“个人感觉”、“似乎”、好像”这些不确定语气。</p>
+<p>如果你是真诚的能养成这个自觉——就是真的不因为自己很肯定就断言是真理——那是最好，那表示你知礼。</p>
+<p>你要知不了礼，那么你也要求<strong>礼貌</strong>。</p>
+<p>没真家伙，你<strong>怎么着也要做出个样子</strong>。哪怕对方明知你是做个样子，对方狂暴发作的概率都会下降一个数量级，你都安全一大截。</p>
+<p><strong>还是俄罗斯轮盘赌——注意，不是没风险了——但起码换了个大转盘</strong>。</p>
+<p>这不是“认怂”或者“作假”，而是<strong>懂得好歹</strong>，<strong>知道死活</strong>。</p>
+<p>因为你“投降”和“认怂”的对象，<strong>不是你保持礼貌的这个人</strong>，而是“谁不努力守礼就发动人类灭了谁”的老天爷。</p>
+<p>顺天者昌，逆天者亡，这里认怂不丢人。不认纯傻x，活该中达尔文奖。</p>
+<hr>
+<p>当父母的，记住跟你家小崽子讲明白，保ta们一条小命。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%B4%A8%E7%96%91/">质疑</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/peng-dao-cheng-shi-bu-zu-bai-shi-you-yu-de-ren-zen-yao-chu-li-hao/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">碰到成事不足败事有余的人怎么处理好？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/zen-yao-li-jie-tan-lan/">
+                        <span class="hidden-mobile">怎么理解贪婪？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

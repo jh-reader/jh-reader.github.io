@@ -1,0 +1,587 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>人生而平等吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="人生而平等吗？">
+              
+                人生而平等吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.5k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      25
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">人生而平等吗？</h1>
+            
+            <div class="markdown-body">
+              <p>人人平等，是一个非常复杂的概念。</p>
+<p>究竟什么是平等呢？它大概是一个许诺——无论你的出身贵贱、身价贫富、知识高低、权位大小，只要你做出同样的行为，在法律上你会得到<strong>同等的处置</strong>。</p>
+<p>比如，你杀了个人，按犯罪情节要判无期徒刑，那么无论你贵贱、贫富、贤愚……你都会被判一样的无期徒刑。</p>
+<p>就好像法庭根本不知道第AZS354320号被告到底有多少钱、有多高地位……一样。</p>
+<p>这其实是一个法律上的理念。</p>
+<p>这个就叫做法律上的同等待遇，也就是平等的根本定义。</p>
+<p>有人问，那么14岁以下杀人没有刑事责任，这不就不平等了吗？</p>
+<p>不，这意味着无论你贵贱、贫富、贤愚如何，你14岁杀人都不被追究责任。</p>
+<p>这种区别对待，实际上是针对所有人均等的区别对待。于是仍然是平等的。</p>
+<p>那么又有人问——那么妇女保护法呢？难道不是专门偏向妇女的吗？</p>
+<p>还有外国人管理条例呢？不是专门区别对待外国人的吗？</p>
+<p>这并没有问题——在法理上，经过全体代表民主决议形成的优待某一特殊群体的法令，是出于每个人对等的表决权最后形成的集体意志。</p>
+<p>理论上、逻辑上，你有平等的发起、赞同或反对这些政策的机会，尽管这些政策结果偏向某些人，但是因为这个决策权理论上是对等的，所以它仍然属于平等的被决定的不平等，因此本质上仍然平等。</p>
+<p>真正的问题，是<strong>前人对后人的绝对不平等</strong>解决不了。</p>
+<p>前人制定的法律，你十八岁前没有任何公平的投票权，你没有选择，必需接受。这个你吃亏了，你的先辈实际上比你占据了更优势的地位。</p>
+<p>他人从自己的先辈处继承下来的优势，尤其是知识的、经验的、社会关系的优势解决不了。</p>
+<p>本质上这仍然是历史的先来者对后来者的不平等。</p>
+<p>这是人类社会的一个死结，因为人类社会不可能宣布100%的遗产税和子女完全公共抚养。</p>
+<p>100%的遗产税只会导致资产被合法的以“亏损交易”的形式从父亲的公司变成服务费支付给子女的公司。</p>
+<p>而强行从一切父母手里夺走一切子女交由公家机关统一整齐划一的抚养，成为“公共后代”……这么说吧，推行这政策的实体目前似乎没有活着的了。</p>
+<p>于是，这些平等的制度，坦白说并没有保证平等的结果。</p>
+<p>因为先辈优势，部分先辈比较幸运的人在“平等的体制”下会自然而然的获得战略性的、不容无视、不容否认的优势。</p>
+<p>哪怕是像一些面临过重大社会变革的国家那样有机会来一个大清盘，一切归零，所有人都从0资产从头再来，不过三四代人，就会重新出现沿着血缘代际积累而形成的明显的分层。</p>
+<p>而且势必会一代比一代严重。</p>
+<p>制度无论如何深刻的具有程序性的平等，制度的结果也无法在实践上平等。既然结果其实无法平等，那么是否意味着制度应该改变程序上的平等，用程序的不平等来修正结果的不平等？</p>
+<p>也就是优待穷人、优待愚人、优待低权力地位的人，来均衡富人、聪明人和有权力的人的系统性的优势？</p>
+<p>实际上这里才是人类社会的制度分界线。</p>
+<p>是对这个问题的态度，将人类社会分成了两类。</p>
+<p>一类是认定人类应该仅仅实现程序的平等而接受因此造成的一切现状和未来。因为人自己没有权柄去决定一种片面的、永远充满时代局限的价值观，去人为的将这些结果认定为“不公平”，然后径直剥夺幸运的人、努力的人的成果，去分配给不幸的、努力却能见效的人。</p>
+<p>这反而是对努力的人、冒险成功的人的不平等。</p>
+<p>只要程序是平等的，则结果无论多么悬殊，都必须被认定为平等的——就像赌博下注赌大小，只要下注的人在数学上有一样的概率会赢，那么无论最后是谁输掉底裤、谁满载而归，都不可以认定结果是不平等的。</p>
+<p>这一类被称为“资本主义”，但本质上这是一种“古典平等主义”。“在经济生活上上实施无人为干预的资本主义制度”只是这一理念在经济制度上的实践，实际上并非它的本质，而只是这种意识形态最引人注意的行为。</p>
+<p>另一类，则认定最终人类必需消除和修正这种沿着血缘传承的历史性优势对程序上平等的机制的影响。</p>
+<p>这并非要抛弃平等的程序设计，而是要在机会均等的赌局之前，还要均分筹码，确保每个人入局时筹码一样。</p>
+<p>甚至，在最终还要将尘埃落定的结果重新均分，以免对下一场机会均等赌局带去不均衡的影响（即保证下一场的入场时大家又有一样的筹码）。</p>
+<p>即不但赌局本身数学上要平等，入场的筹码也要平等（而且下一场的筹码仍然要平等）。</p>
+<p>这两种模式都存在自己要面对的困难——</p>
+<p>前者存在周期性的极端不平等导致的社会倾覆。</p>
+<p>不管你自己觉得这是多么公平的程序造成的结果，没有饭吃、没有衣穿的人们都将转向自然法则——弱肉强食的自然法——去实现自我救济。</p>
+<p>我穷到要死了，我不甘心，什么程序公平、什么自然选择？我要穷尽我一切的手段获得一切我能获得的利益。</p>
+<p>“今亡亦死，举大事亦死，等死，死国可乎？”</p>
+<p>敬酒不吃，你们就吃罚酒。</p>
+<p>后者存在替代性的积极性机制的缺失问题。</p>
+<p>赌局规则对等当然好，入场筹码一样，也罢，但下注开宝之后不管结果如何，筹码一概全部重新分配……那么我为什么还要参加？</p>
+<p>我为什么还要花心思保证不输？</p>
+<p>我为什么不直接等着重新分配？</p>
+<p>原则上，后一种模式考虑了这种替代激励机制的安排——也就是人类天生拥有的神性可以经过长期的打磨和养护发挥出来，不再仅仅被利益和匮乏驱动，而是被高贵的利他精神、献身的神性享乐所驱动。</p>
+<p>但这需要长期的培育和养护，尤其是需要长期维持这样的文化土壤和社会环境。</p>
+<p>但至少逻辑上这是通的，问题只是怎么度过这一场旧的引擎已经关闭，而新的引擎转速还没有爬升起来的时期？</p>
+<p>尤其是，这时候还有来自外部的敌意竞争甚至恶意攻击，要怎么度过这个困难时期？</p>
+<p>这就是所谓的“初级阶段”。</p>
+<p>这，就是人类到目前为止的前情提要。</p>
+<p>换句话说，这答案有两个版本。</p>
+<p>版本A，即在“古典平等主义者”眼里，人人生而平等是一种<strong>现状</strong>。</p>
+<p>你一生下来，就生在一个理论上已经构建完成的待遇均等的系统里，尽管你的落地点不同会导致你在这台毫无感情的机器里被抛至不同的出口，但从这台机器的角度看来，所有从这个点落进投料口的与你差不多的物料，的确也都抛到了差不多的出口。</p>
+<p>即使这台机器的抛洒还不够均匀，表现还不够稳定，更不用说会导致千差万别的悬殊的结果，但这种不稳定、不均匀，对每一个待降生的灵魂风险都是均等的——你不能因为发给你的牌和别人不一样而认为牌局本身不公平。</p>
+<p>所以，人人已经生而平等。</p>
+<p>版本B，在另一部分人眼里，“人人生而平等”仍然是一个正在追求的远大目标。</p>
+<p>这不是说赌局本身不平等，而是要解决入场时带着的筹码不一样多导致的不平等。</p>
+<p>而后者还需要非常漫长的摸索。</p>
+<p>所以，版本B实际上是“人人<strong>理应</strong>生而平等”。</p>
+<hr>
+<p>在这些之外，我们不得不再补充一条更原初、更先在的观察。</p>
+<p>实际上，每个人在自然法面前是天然平等的。</p>
+<p>在万有引力面前，人人都是平等的，无论你的贫富、贵贱、贤愚，你从同样高度跳下来，落地的速度都是一样的。</p>
+<p>在死亡面前，人人都是平等的，无论你的贫富、贵贱、贤愚，大脑不供氧都一样会死掉。</p>
+<p>硫酸不会因为你有钱就不烧手，雨水也不会因为你穷就往上飞。</p>
+<p>从这个意义上讲，你也可以说人人生而平等。</p>
+<p>毕竟人类所谓的平等，本质上只是一种观点，是可以随血糖浓度就发生巨幅变化的——这样的结论未必具有实际的参考意义。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%94%9F%E8%80%8C%E5%B9%B3%E7%AD%89/">生而平等</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-wang-luo-xiao-shuo-zhong-zuo-zhe-yue-shi-yong-xin-xie-zuo-pin-cheng-ji-xiang-dui-yue-bu-hao/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么网络小说中，作者越是用心写，作品成绩（相对）越不好？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-guo-zhi-dao-zi-ji-jiang-pin-kun-yi-sheng-ni-huan-yuan-yi-sheng-hai-zi-ma/">
+                        <span class="hidden-mobile">如果知道自己将贫困一生，你还愿意生孩子吗?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

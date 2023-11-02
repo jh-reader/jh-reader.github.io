@@ -1,0 +1,605 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何做到爱你的仇敌？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何做到爱你的仇敌？">
+              
+                如何做到爱你的仇敌？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      38
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何做到爱你的仇敌？</h1>
+            
+            <div class="markdown-body">
+              <p>这个问题的核心，是担忧说爱自己的仇敌是否会导致自己被害而无还手之力，甚至更可怕——因为这种“不设防”的策略，平白无故就会引来人害自己，谋夺自己赖以安身立命的财产。</p>
+<p>这样岂不是越是主张爱的人，越是灭亡得快吗？这岂不是一种“找死”的活法？</p>
+<p>这个问题不解开，爱怎么能行得通呢？或者至少说——这种“连仇敌也要爱”的行为怎么行得通呢？</p>
+<hr>
+<p>这里的第一个问题是——人为什么非要学会爱自己的仇敌不可？</p>
+<p><strong>因为世界上最容易成为你的仇敌的，就是你所“爱”的人。</strong></p>
+<p>即使是不成熟的幼稚的爱，人也总能在付出时本能的感受到巨大的自由和快乐——我连牺牲都可以甘之如饴，我可以为这人坦然接受死亡，世界上哪还有我不能战胜的东西呢？这是何等样的自由，何等样的如释重负？</p>
+<p>既然这是无比快乐的，谁能不上瘾呢？于是自己一头享受、沉迷着“付出”，在另一头却积累着“我付出了这么多，受了这么多委屈，多少总该换点什么”的理直气壮。</p>
+<p>对方是不可能永远满足你这无限自动加码的“你起码应该”的。</p>
+<p>一旦满足不了这“起码”的要求，那就“满腔的热血都被辜负”了。</p>
+<p>比一开始就是恶棍的敌人伤你更深。敌人不过是害，负心薄幸之人有仇，不是仇敌，还能是什么？</p>
+<p>ta若喜欢，则必爱上；</p>
+<p>若爱上，则必付出；</p>
+<p>若付出，则必欣喜；</p>
+<p>若欣喜，则必沉迷；</p>
+<p>若沉迷，则必远超过可不计较的极限；</p>
+<p>若远超过可不计较的极限，则必计较；</p>
+<p>若计较，则必失望；</p>
+<p>若失望，则必怨恨；</p>
+<p>若怨恨，终必成仇。</p>
+<p>幼稚的爱是一条从欢爱起始，直奔仇恨的单行道。你们可能以为这里要谴责幼稚，要求你们成熟，但这却是猜错了。</p>
+<p>首先，人是绝对幼稚的，再“成熟”，也只是相对的不幼稚，也就是说这个进程缓慢一些而已。</p>
+<p>其次，人几乎是不太可能不经幻灭凭空提高成熟水平的。即使你看了这篇东西，完全认同、全心努力，你仍然有极大的概率仍然要把这错犯个结实。甚至在自认为已经接受教训之后，再犯个结实。</p>
+<p>绝大多数人最后真正“改正”的，其实是再也不爱、不付出了，而不是能“爱而不入地狱”了。</p>
+<p>你看出人要学会爱仇敌的必要了吗？</p>
+<p>人如果不爱仇敌，认定“对仇敌就该冷酷无情”，则越是这样认定的人，其人的爱越会更快、更无意外的走完这个过程，越确定的兑换为对所“爱”之人理直气壮的仇恨。</p>
+<p>ta的“爱”在事实上只是一种仇恨的卵，一种不久后就会发作的可怕的诅咒。</p>
+<p>只有“即使仇敌也要爱”这种简单而清晰的信念，能真正有效的在你尚不够成熟的漫长时间里，为你所“爱”的人<strong>留一条活路</strong>。</p>
+<p>它还有另一层绝对凶险的诅咒附加其上——如果一个人问你“仇敌该不该爱”，你说“爱仇敌荒谬而愚蠢”，然后ta表示赞同，你们更因为共同的仇恨互相引为知己。</p>
+<p><strong>那么ta恰恰也是这样一个必由爱生恨、将来也必会对你如秋风般无情的人。</strong></p>
+<p>你是，ta也是。</p>
+<p>你们会双倍的自信、双倍的快乐、双倍的沉迷、双倍的怨恨，双倍的恨之入骨。其恶性循环之快、发作之猛烈，如同正反馈的音爆一样快到超过你的想象。而且是双重命运锁定，哪怕有一方在半途醒悟都没有意义，另一方会把对方拖回原轨道。而ta自己醒悟时，被ta拖回原轨道的这位也容不得ta独自脱身。</p>
+<p>ta的引线会点燃你的引线，你的爆炸会触发ta的爆炸。</p>
+<p>而那些比较确定能给你出路，能比较确定能让你至少安全脱身的人，ta们能做到这一点的原因，首先就在于ta们深知这句话的重要性。</p>
+<p>ta们自己守这句话，心知肚明结局如何，却肯跟对这话嗤之以鼻、以为“脑残”的你进入将来只有你会安然脱身，ta们自己却可能被你仇恨的关系，你想想，概率大吗？</p>
+<p>若是依然如此，那是对你爱得有多深？</p>
+<p>从一开始，那就是奋不顾身。</p>
+<p>所以，不要有丝毫的侥幸——“要爱你的仇敌”绝不是一种“你要追求高尚才需要学的屠龙之技”，而是你爱的人能活命，以及有能爱人的人来爱你的<strong>致命的</strong>关键。</p>
+<p>除非平安和幸福对你是可选项，否则它是必修课。</p>
+<p>明确了是必修，再看如何让它可行起来。</p>
+<hr>
+<p>让“连仇敌也爱”可行起来的第一个前提，是管理仇敌的定义，控制敌人的产生。</p>
+<p><strong>第一个诀窍，是严守对事不对人。</strong></p>
+<p>你反对与抗争的对象只能是罪行，抗争的目的是停止罪行。抗争和反对的不可以是具体的人，追求的目的不能是消灭具体的人。</p>
+<p>在追求停止某事的过程中，你始终要保持着面向和解的可能性。你希望停止的事停止了，这个人就要让ta能活。该产生的赔偿和惩罚是另一回事，该索赔索赔、该惩罚惩罚，但是一旦那行为停止，对你而言可反对的东西就停止了。</p>
+<p>不过，如果对方逃避赔偿责任和公平程序生成的惩罚，这两件事会成为另一轮要受反对的行为。</p>
+<p>直到对方停止逃避为止。</p>
+<p>但这仍然是只对这种行为，不是对这个人。</p>
+<p>侵害的行为停止，承担应有的责任，哪怕这责任尚在偿付中，并未付完，关系也一样可以正常化。</p>
+<p>这没有勉强你要友好话、亲密化——你如果真有这份胸襟，那你绝非凡物，但没有就是没有，也勉强不来。</p>
+<p>你做得到正常化，乃至于做不到、只是追求正常化，你也算及格了。</p>
+<p>你站定了这个原则，那么可以这么说——你的敌人天生就基本都有一个保质期，过段时间敌意自然会降低甚至反转。</p>
+<p>于是让你艰难万分的试炼自然也就被限制在了一个普通资质的人可以管理的水平上。</p>
+<p><strong>第二个诀窍，建立吓阻体系，让想要以你为敌的人想想清楚后果。</strong></p>
+<p>这包含几条。其中主要的技术部分，见这里：</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/29141214/answer/1764795653">怎么培养安全感？</a>除了这个之外，你有必要让对方明白一个客观存在的危险——虽然你自己会坚守爱的原则直到最后一刻，但是人力有时而穷，这不能保证你绝对不会忍不住反击。</p>
+<p>（未完，待续）</p>
+<p>有些事情的确无可逆转，你能做的是尽可能的推迟和避免这些不可逆转的做法。不主动升级对抗，不寻求过度报复，更不追求彻底毁灭谁。</p>
+<p>一个停止了罪行的人，即使曾经欠下种种伤害的债，对于基督徒而言都一样要是帮助和接纳的对象，而不是“有待讨还血债的仇敌”。别人所不愿原谅的，你们都有义务去原谅。</p>
+<blockquote>
+<p>我把话说直白一点——凡不守此原则，皆为违背基督教最根本原则的冒名者。不管它历史多悠久、势力多强横、人数多庞大，它都算不上基督教，不过是另一个最终必会败亡的自欺欺人者而已。所以这里不谈论“不接受这一点的‘基督徒’”。</p>
+</blockquote>
+<p>如此，哪里有“仇敌”呢？世界上应该只有以你为敌的人，并无你以之为敌的人。如果对于你而言存在后者，那么你已经偏离了基督的道路，理当尽力回归，而不是去研究如何巧妙的攻击。</p>
+<p><strong>仁者无敌，不是说仁者谁都打得赢，而是说仁者没有敌人可言。后一条路，才能做到无敌。</strong></p>
+<p>所以，<strong>仇敌不该包括你所愤恨的对象。合法的来说，这句话里的“仇敌”只是指那些单方面以你为敌的人。</strong></p>
+<p>对于你所愤恨的，如何消化你对他的愤恨、消解你自己的攻击冲动，那是一个漫长的心理构建过程，自然有全部制怒自控的功课。你去努力的做这番功课，矢志不渝的克制自己的攻击欲望和消解自己的愤恨心，就是对对方的爱。但不要误以为你需要词卑意谦，低声下气，曲意逢迎。你的合法权利你有权合法运用，在你的合法权利之内拒绝服务于对方的意愿，是你正当的权利，是受世界允可的应许。无论如何，在你的<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E6%9D%83%E7%95%8C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:616085492%7D">权界</a>之内行使你的自由是不会触怒上帝的。</p>
+<p>举个例子来说，你可以一声不吭的拉黑，可以不予回应，可以拒绝服务，可以拒绝行便利，可以在你的<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E8%87%AA%E7%94%B1%E8%A3%81%E9%87%8F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:616085492%7D">自由裁量</a>范围之内作出对对方不利的判决。对方将这些定义为“攻击”，只是一种不正当的定性，本身只是一种对自身侵犯的正当化，在上帝面前没有分量。作为这“没分量”的证据，你会发现这种“自入人罪”的行为在哪里都不受支持——支持这种行为的社会会自我毁灭。</p>
+<p><strong>但是——注意这个但是——但是，上帝盼望你在你有权做的一切之中，尽可能的容让和宽免。</strong></p>
+<p><strong>一分不让，你没有过错。</strong></p>
+<p><strong>让得一分，就是爱。</strong></p>
+<p>请相信，对于那些欺压人成性的色厉内荏之辈，基于个人自由的拒绝就已经是很大的“攻击行为”了。他所指望的“起码态度”要比这条线低得多。于是你完全可以在“完全顺从攻击者的期望”和“权界之内一分不让”之间取到任意中间态度，从而达到既让对方不敢轻慢，又已经实质的有爱的两全之美。</p>
+<p>这个空间不但存在，甚至当你经验积累到一定程度，你还会发现它简直可以说广阔的很。不但可以足够你游刃有余了——甚至够你“海阔凭鱼跃，天高任鸟飞”了。</p>
+<p>但我仍然建议你以上帝为重，在你的心灵能承受的前提下尽可能的从“权界之内一分不让”尽力向内走远一些，多免一些人的债。并且将这种承受力作为自己长期追求的目标。</p>
+<hr>
+<p>这问题的第二个出口，是依赖旁观者。</p>
+<p>作为一个有所作为的基督徒，你理当对你所在的社群有重大的贡献，理应有无数人深深受惠，乃至于要依赖你的贡献生存。你的受逼迫，是一种安排至为巧妙的考验。</p>
+<p>层面A——它在考验你所提供的价值是否真的得到珍视。人们是否会珍视它到不息为了维护它而直面邪恶，与之抗争。尤其是——按照直观的“爱仇敌”的教诲，同为基督徒的其他教内者是不该出手的，这意味着只有非基督徒有担当这武力保卫者的资格。你的价值对于非基督徒是否同样珍贵？在需要付出代价包围你时，会见真章。这是任何虚与委蛇的客气所不能替代的烈火的检验。</p>
+<p>层面B——如果一个群体仅仅只享受你的输出，而不愿挺身而出施以保护，那么很自然，他们就会失去你。或者是以你被消灭的方式，或者是以你的信仰崩溃的方式，或者是以你不得不迁移的方式。不管是哪一种方式，他们都将回到没人会自愿为人牺牲的“<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E4%BB%A5%E7%9C%BC%E8%BF%98%E7%9C%BC&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:616085492%7D">以眼还眼</a>、以牙还牙”的状态中去。他们的群体动力学必走下坡路，在热力学上必然趋向低级混乱——实则那是另一种无声的判决——你若不保护不设防的贡献者，你便不配拥有这贡献。若无这贡献，你便将灭亡。无论这放弃自卫的善者是因为什么样的理由放弃自卫，只要他确然是行善的，则无论你是否认同什么，你都负有天然的责任去保护他。否则你就会失去他。失去这样的人，社群必然被削弱，一定胜不过拥有这种人的其他社群。无论是经济上的竞争、还是文化上的竞争，甚至武力上的竞争，你必将被拥有这保护意识的社群压倒。</p>
+<p>这与你自己是否相信基督信仰无关，是否认同<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E6%9C%89%E7%A5%9E%E8%AE%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:616085492%7D">有神论</a>无关，仅仅只是赤裸裸的社会动力学，纯的数学逻辑——最终意义上，这是由自然规则决定的。</p>
+<p>从一神论的立场上，既然自然规则来自于神的设计，那么可以说——上帝事实上为一切旁观者下了命令——“护卫放弃自卫者”是一种无论你是否赞同，也不论你是何文化背景，是何意识形态，只要你不想灭亡，你就必须主动承担的绝对义务。甚至这都不适用于“不知者无罪”的条款——不管你知不知，也不管你是有意还是无意，只要你没做到，你就将灭亡。</p>
+<p>只要你拒绝，必受诅咒。其强制性等同于无论你有意还是无意，只要你滚落悬崖，一定要面对重力的惩戒一样。</p>
+<p>这就是所谓的“旁观者义务”。上帝在叫你爱仇敌之前，已经对旁观者下了必须保护你的绝对命令。换句话说——仇敌攻击你，处在最大的危险之中的，反而不是你，而是那些平时受惠于你，此时却缩头袖手的食利者。你大有可能自有出路——惹不起，你还躲得起。但那些自以为占了便宜又逃了义务的人们，自然会因为他们的作为付出长远的代价——你就像长着脚的矿产资源。</p>
+<p>前提是，你之前的确有实在的贡献。</p>
+<p>你的爱就是你的铠甲和武士。</p>
+<p>（未完，待续）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%88%B1/">爱</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%BB%87%E6%95%8C/">仇敌</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/cong-zhe-xue-shang-kan-ai-de-ben-zhi-shi-shi-yao/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">从哲学上看，爱的本质是什么？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wo-de-xin-li-zi-xun-shi-zhu-dong-gei-wo-jiang-jia-bing-zhi-fu-bu-qi-fei-yong-de-shi-hou-rang-wo-xian-qian-zhao-zhe-yang-kao-pu-ma/">
+                        <span class="hidden-mobile">我的心理咨询师主动给我降价并支付不起费用的时候让我先欠着，这样靠谱吗?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

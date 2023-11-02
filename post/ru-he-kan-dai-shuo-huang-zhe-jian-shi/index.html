@@ -1,0 +1,609 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何看待说谎这件事？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何看待说谎这件事？">
+              
+                如何看待说谎这件事？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.5k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      35
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何看待说谎这件事？</h1>
+            
+            <div class="markdown-body">
+              <p>说谎这件事，我想人人都觉得是一个麻烦，甚至是威胁。</p>
+<p>因此，关于对待说谎的态度问题（也就是自己的“说谎政策”）就有一个天然的质量标准——看它能不能最有效的抑制说谎现象的发生。</p>
+<p>一般流行的策略是<strong>“做我的朋友绝对不能对我说谎，也不能对我隐瞒可能与我利害相关的重要信息，否则就是背叛我。背叛我我非弄死你丫的不可”。</strong></p>
+<p>但我不是这样设计我的策略。</p>
+<p>我的策略是以下几条——</p>
+<p>第一，首先认识到人是不可能做到“不说谎”的。<strong>这个首先客观上就做不到</strong>。因为这里存在一个致命的问题，就是不管是对自己还是对事物，人很少（或者根本就不可能）有完全客观真实的认知。因此<strong>人类对自身也罢，对事态也罢，无论其主观意愿如何积极，所有的描述本身就是错的（不精确即是错误）</strong>。</p>
+<p>那些被认为没有问题的表达，只是其错误和误差不是很大，没有酿成当事人有明显痛感的后果，所以没有被拿来说事罢了。</p>
+<p>一旦发生了，这种“表述不符合事实”的现象就会被捕捉到，就会被审视。</p>
+<p>而这个时候，人的罪原就会发生作用——一次两次，损失不大时，你可以有心情谅解对方是无心之失。但是次数多了，或者损失太大了，你就会无法抑制自己的疑心——“这人多半只是假装不是故意的”。</p>
+<p>这种疑心一起，对方除了全额赔偿一切潜在损失，是不可能通过逻辑说明来说服你的——因为这时候任何摆事实、讲道理的话从一个被认为有说谎嫌疑的人嘴里说出来，都不过是抵死也不承认的表现罢了，根本没有证明效力。</p>
+<p>仔细去审视这条链条——表述错误，<strong>无可避免</strong>；表述错误造成有痛感的损失，<strong>迟早无法避免</strong>；只要相处够密切、时间足够久，有痛感的损失一再发生，<strong>迟早不能避免</strong>；有痛感的损失一再发生人的疑心，<strong>无可避免</strong>；人有疑心后辩解不清，<strong>无可避免。</strong></p>
+<p><strong>这就意味着一切亲密关系，迟早会因为“对谎言的绝对罪化”和“对谎言的高度敏感”而不可避免的走向失败。</strong></p>
+<p><strong>仔细反复的看清楚——“对谎言的绝对罪化”和“对谎言的高度敏感”，</strong>这是两根埋在一切亲密关系里的雷管。</p>
+<p>这不是什么价值判断，而是一种不以人的意志喜好为转移的<strong>客观事实</strong>。</p>
+<p>而亲密关系，不仅仅指恋人关系，还指一切长期而关键的关系——比如朋友关系，同志关系，同事关系，师生关系。</p>
+<p><strong>如果你不打破这道铁链，你的任何亲密关系都注定不能持久。</strong></p>
+<p>当然，你可以选择“我宁肯选择不再追求长期亲密关系，也不会改变这两个立场”，这个也未必不可行。那样的话，下面的话你就不用继续往下看了，因为下面的话是基于“将有效关系视为人生的绝对核心资产”的价值观而做的设定。</p>
+<p>这个设定就是“<strong>不计较人的恶”。</strong></p>
+<p>追根到底，人都是恶的。即使抱有极大的善意和决心，人也管理不住自己的潜意识和本能，即使竭力管理了，人的能力也满足不了全善的技术性要求。</p>
+<p>你若是计较人的恶，你就只能和人浅交，无法和人深交。</p>
+<p>交往久了<strong>必然要反目成仇，无论是对方还是你自己，只要计较人的恶，且又是每天（或者高频度的）打交道，很快就会进入彼此计较但是勉强忍受阶段，随后进入忍无可忍的阶段，随后进入反目成仇阶段。</strong></p>
+<p><strong>最后只会是双双后悔认识对方，觉得还不如不要认识。</strong></p>
+<p><strong>越爱，越成仇。</strong></p>
+<p>因为，<strong>不容忍人的恶本身是一件残忍的事。</strong></p>
+<p><strong>记住这句话——</strong></p>
+<p><strong>不容忍人的恶，是一件足称残忍的事。</strong></p>
+<p><strong>丝毫不能容忍人的恶，是一件大残忍的事。</strong></p>
+<p>在我的眼里，一件事情如果可以被称之为一种能力，有一个最基本的衡量方式——它是否会提高你对他人的恶的耐受程度？</p>
+<p>如果是，那么无论它体验多痛苦，也是一种能力。（比如它能赚很多钱，其实也提高了你对他人的恶的耐受力）</p>
+<p>如果不是，那么无论它体验多么畅快，也是一种缺陷。（比如你是守财奴，钱越多越疑心别人要绑票你）</p>
+<p><strong>人有能还是无能，“我有多能承受弱人的恶”是一个绝对有效的标准。</strong></p>
+<p>人与人相交，不应该是以“我肯定会从这关系里有净获益”为前提的，而是以“我愿意以忍受我可以忍受的痛苦，来赌我会获得足够的收益”为前提的。</p>
+<p>如果我赌输了，只能说遗憾无缘，于人无尤，我愿赌服输。</p>
+<p>总的来说，这个策略在撒谎问题上的具体应用，就是<strong>尽可能豁免人的诚实义务</strong>。</p>
+<p>何谓尽可能的豁免人的诚实义务？</p>
+<p>1）奉行“没有承诺就无诚实义务”的原则。</p>
+<p>2）尽可能的少索取这种承诺。具体来说，就是可以不问的，就索性不问。</p>
+<p>不积极利用人们下意识的“有问必答，答必诚实”的习惯，尽可能遏制自己的不安全感驱动的隐私刺探冲动，尽可能的把各种事务安排成“不需要了解对方的这些信息也能正常进行”，管理好自己的这个信息焦虑。</p>
+<p>我根本没问过，你也没说过，因此也就不存在你欺骗我的问题了，我也就无从去因为你骗我而怀恨在心。</p>
+<p>我是记恨的人，这个是无法强行“宽宏大量”来练好的。所以不妨连根拔起，完全不给怀疑生长的机会。</p>
+<p>而在没有明文承诺的部分，如果发现了对方在说谎，也不予追究。</p>
+<p>所谓的“不予追究”，是指不自行授予自己惩罚、讨还的权利，不包括终止关系。</p>
+<p>终止关系是完全的个人自由，其实不需要对方有任何过错，也不需要什么公正的审判。</p>
+<p>举个例子，我十块钱一包卖米给你。你找我买米但说你没钱，我问你明天会给钱我吗？你说会。</p>
+<p>于是我就给了你一包米。</p>
+<p>结果事后证明我上当了，你并没有给我这十块钱。</p>
+<p>那么我如何处理这事呢？——首先，我给你一袋米的时候就没计划你一定会来给这十块钱。我只是确信这十块钱我赔得起。我如果给你十袋米、给到了我承受不起的程度，那是我对我自己的承受能力的估计错误问题。</p>
+<p>无论是一袋还是十袋，我选择了相信你，我就自己负全责。你第二天没有还钱，我责怪我自己的判断力，而不去找你追索。</p>
+<p>但我会停止再次卖米给你。——我本来就可以毫无理由不卖米给你，其实这不需要证明你有什么罪，属于我的完全自由。</p>
+<p>我靠什么来管理谎言的发生呢？</p>
+<p>靠几条——</p>
+<p>第一，靠我的米好。然后你不得不掂量被我切断交易资格的损失。</p>
+<p>第二，靠我对“无抵押绝对信任风险承受力”的保守掌握。你冒失去交易资格的风险只得到这么一袋米，不太值得。</p>
+<p>第三，靠我是一个如此快捷授信、交易成本如此低、次生风险如此小的优秀交易对象。哪怕我的米品质只是一般，我这个交易对象本身也足够罕见。如果这样的人你都视为可趁之机，不薅羊毛白不薅，那么你是一个很容易走上绝路的人。这样危险的人，只用完全亏得起的一袋米就阻绝了进一步发生更深的信托关系的可能，是非常划算的。</p>
+<p>城门洞开，严控风险、快捷授信、不加追索（那么小的损失，甚至不值当追索），但极其严苛的审查继续来往的资格。</p>
+<p>在这个基础之上，如果你果然把钱还来了，我收到了十块钱，我赚了三块钱，那么你下次再赊账，我可以给你十一块钱或者十二块钱的米。</p>
+<p>如果你没还，我一样不会找你追索，一笑置之。</p>
+<p>你若还了，我这次可能就赚了四块钱了，而我从你身上赚得的总利润就达到了7块。那么你下次再开口，我就可以给你15块钱的授信。</p>
+<p>你的信用，其实是你打拼出来的。而我其实一直是先伸出橄榄枝的一方。</p>
+<p>我的能力越强，你的信用越来之不易，你越会发现因为某些小事导致我误以为你欺骗我是一种风险。</p>
+<p>一旦发生这种风险，我在你心中的价值就是你用于澄清误会的成本的基本下限。</p>
+<p>但无论怎么说，因为风险管理得好，整个过程里我所冒的最大风险就是10元，实际上还随着交往日深，我所冒的险是越来越小的。</p>
+<p>但我们的“交易额”越来越大。</p>
+<p>在这个例子里，是用“货币”来表示，但实际上这个“交易额”是合作深入程度的另一种表述罢了。</p>
+<p>而一般人为什么会采用“疾谎如仇”模式呢？</p>
+<p>是因为ta们不耐烦（或者因为种种原因没有）进行精细的风险管理和关系运营，而ta们面对的生存挑战，逼迫ta们必须尽快结成远超自己风险承担能力的关系。为了补救这种超高风险，ta们动用了自己的暴力威胁能力，强行夺取了对方的未来利益作为了自己所承担风险的抵押。</p>
+<p>并且即使是这样也只不过是事后追责而已，不能防患于未然。为了防患于未然，那就有必要进行大量的隐私调查。</p>
+<p>于是就会摸底调查，上查三代，外查九族，一日三查，外加不定时抽查，以确保自己安全。</p>
+<p>而自己能给出的唯一“补偿”，是理论上我猜到你也一样绝望，你势必也要一个能接受同样条款的“伙伴”——就像我一样，于是我可以用我也接受这样的惩罚条款和调查权来给你对等补偿。</p>
+<p>这样我们就可以借着相互威慑回避那个漫长的信用积累过程，直接缔结我们彼此都急需的关系。</p>
+<p>而这个基于相互威慑的关系，就如我们前面所分析的，其实存在着一个天然的半衰期。</p>
+<p><strong>这其实是不可选的，不是因为什么形而上的原因，而是实践上逻辑不通。</strong></p>
+<p><strong>如果你嫌这个一步一个台阶的方法太慢，怎么办？</strong></p>
+<p>显然你不能因为嫌一个可行的方法慢而换成一个不可行的方法。</p>
+<p>你的选择有三——</p>
+<p>第一，尽早开始，加快往复授信的节奏。</p>
+<p>第二，自强不息，提高自己的承受力，提高自己首次授信的额度，这可以给予你的一切关系一个更高的起点。比如你是马云的话，那么你一开口就可以授信100万了，就不是10块了。</p>
+<p>而这种打个响指就可以托付众多的气质，就是<strong>爽快</strong>的本质。谁也舍不得失去爽快的人，这就是爽快人最大的屏障——谁愿意为了一百万失去马云的信任？</p>
+<p>第三，提高自己的经营能力，使得每次交互的利润率够高。这个利润率和关系的最大健康进展速度有直接关系——而且是指数关系。</p>
+<p>利润率20%的经营者和利润率10%的经营者，在关系构建的效率上显然是不可同日而语的，不信你拿出计算器试试，要循安全操作法达到200万的无抵押授信额度，大家都是1万的起点，20%利润率要多少次交易，10%要多少次交易？</p>
+<p>以上就是系统战胜谎言的方法，只要你有足够耐心，这是必胜之策。</p>
+<p>胜券在握的人，自然而然有更大的仁慈。</p>
+<p>这个能给你们双方自由。</p>
+<p>然后你会发现，人们宁可对别人说谎，也不愿对你说谎。</p>
+<p>恰恰对你说谎是最安全、最不会被追讨的，所以反而最不愿对你说谎。</p>
+<p>那些绝不能吃亏，吃亏了就要找我连本带利追讨回去不死不休的人物，对人有什么可惜的呢？</p>
+<p>是对你说谎而失去你会很可惜，才使得人们主动的不愿意以谎言对你。</p>
+<p>这才是成本最低、最有效的解决谎言问题的方法，不是拿刀架在别人脖子上外加疯狂交叉抽查。</p>
+<p>那么，以你所做的，失去你真的值得可惜吗？</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/Feminism/">Feminism</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AF%B4%E8%B0%8E/">说谎</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/gang-sheng-zhi-wei-bu-men-jing-li-fa-xian-yuan-lai-de-tong-shi-xian-zai-de-xia-shu-bu-pei-he-gong-zuo-zen-yao-ban/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">刚升职为部门经理，发现原来的同事现在的下属不配合工作，怎么办？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/shuo-fu-ta-ren-de-neng-li-tai-qiang-zen-yao-ban/">
+                        <span class="hidden-mobile">说服他人的能力太强怎么办？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

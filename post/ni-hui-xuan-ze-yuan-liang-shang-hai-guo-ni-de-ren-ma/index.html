@@ -1,0 +1,584 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>你会选择原谅伤害过你的人吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="你会选择原谅伤害过你的人吗？">
+              
+                你会选择原谅伤害过你的人吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      19
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">你会选择原谅伤害过你的人吗？</h1>
+            
+            <div class="markdown-body">
+              <p>下面这些话你们听起来也许匪夷所思，也许现在也还接受不了，但建议先记住了，将来再慢慢验证。</p>
+<p><strong>原谅，不是一种选择，而是一种生而为人的义务。</strong></p>
+<p><strong>无论人有多正当的理由、有多值得人同情的遭遇，如果不能原谅，到最后都一定会在灵魂上受到得不偿失的伤害，而且损失本来可以得到的幸福。</strong></p>
+<p><strong>甚至可能以人生相殉。</strong></p>
+<p><strong>这种诅咒的存在，已经等于以人性为质押，宣告了原谅是一种义务，一种不容不选择的选择。</strong></p>
+<p>你们一定会问，那么公平呢？正义呢？如果一律都必须原谅，那么公平和正义要怎么办？</p>
+<p>这里就是原谅这件事的要害所在。</p>
+<p>张三穷困，你答应他每天可以赊账吃一碗面，到了周末再结账。</p>
+<p>即使你全额收款，你对张三也有爱——因为你既没有要利息，也没有要抵押，承受了全部的风险。</p>
+<p>结果张三周末没有付款。</p>
+<p>你跟张三说——不着急，慢慢来，只要你补齐面钱，我还可以继续这样赊给你；</p>
+<p>或者你跟张三说——不着急，慢慢来，在你没补齐之前，我得降低你的赊欠额度，</p>
+<p>这就是<strong>原谅</strong>。</p>
+<p>你跟张三说——你还我钱，还上以后再也不要出现了；</p>
+<p>或者你跟张三说——你不用还了，你以后也别来了，</p>
+<p>这就是<strong>不原谅</strong>。</p>
+<p>你跟张三说——你还我钱，以后再也别出现了，plus，我要罚你多还利息 / 我要揍你一顿 / 再见你一次打你一次 / 我要告诉全世界你是个什么东西 / 我要不让你知道我不是好惹的，我就不姓赵 / 总有一天我要让你知道辜负我的代价 ……等等等等</p>
+<p>这就是<strong>报复</strong>。</p>
+<p>你跟张三说，“我原谅你，你什么都不必还，你就当一切都没发生过”；</p>
+<p>或者你对张三说，“我原谅你，你慢慢找机会还，现在先一切照旧”，</p>
+<p>这<strong>不叫原谅，这叫做纵容和溺害——不错，即使加上溺，这也不配称为爱。</strong></p>
+<p>这第三种“原谅”，并不是“宽宏大量”，而是不惜超越人的有限，像无限的神一样施恩惠，以求虚假的爱罢了。</p>
+<p>因为这样的“宽宏大量”，勾起来的并不是爱。而是贪求、是出于软弱和贪婪的依赖、是因为害怕这依赖可能会被取消而不敢不做的逢迎而已。</p>
+<p>那只是味道极其相似的慢性毒药罢了。</p>
+<p>看懂了吗？</p>
+<p>原谅是指<strong>不报复。</strong></p>
+<p><strong>原谅并不破坏公平与正义，甚至也不允许人贪图原谅所带来的“爱”而损害公平与正义。</strong></p>
+<p>那么反过来，若是原谅并没有免除任何约定的责任，公平和正义固然保全了，那么<strong>宽容</strong>何在呢？</p>
+<p>原谅的宽容，在于<strong>不追索。</strong></p>
+<p><strong>不抹去，是为公平；不追索，是为宽容。</strong></p>
+<p>既然不追索，何不大方一点索性抹去呢？是为了怕爱会亏本吗？</p>
+<p>不，不抹去，等着你来还，<strong>是为了给你机会原谅你自己</strong>。</p>
+<p>辜负爱己之人，是一种会让人念念不忘的亏欠。人们往往因为这亏欠的沉重，反而要否认、要逃避。但否认和逃避之后，灵魂也要受伤，人性也要扭曲。治愈这伤害最好的机会，绝不是受伤害的一方对伤害和辜负的遗忘——那不但谈不上痊愈，反而是永远的留下疤痕了。</p>
+<p>治愈最好的途径，就是对方记得这账，而自己也终于还上了。</p>
+<p>那么，“免人的债，如同你免了我的债”怎么办呢？一直记着，岂不是没有所谓“免人的债”了吗？</p>
+<p>当你定意“绝不追索”的时候，你已经免了人的债了。</p>
+<p>为了给对方保留痊愈的机会而记住未还的债，且又要克制和告诫自己严守不可追索的自诫，是要消耗能量的。</p>
+<p>这些挣扎的能量，是对对方最后的祭献。</p>
+<p>你的能力不是无限的。</p>
+<p>之后，你就会忘记。ta的债也就彻底免了。</p>
+<p>那么原谅到底在何时呢？</p>
+<p>是在张三没有还上钱、亏欠了你，你对ta说出这话的时候发生的吗？</p>
+<p>并不是，<strong>是你清楚这一切，提前已经想好这一切的一切，已经定意要如此，开口对张三说——“你可以先在我这吃着，周末再结算”的时候。</strong></p>
+<p><strong>原谅是爱中预定的，原谅即爱的预表。</strong></p>
+<p>爱并不是为你摘星掬月、鞠躬尽瘁——它可以只是举手之劳。</p>
+<p>爱是对可能的一切辜负的、预先许诺的和最后赠予的原谅。</p>
+<p><strong>爱不是供养，爱是原谅。</strong></p>
+<p>那么，若是受伤极深，被辜负得极大，乃至于实在实在做不到不追索、不报复呢？</p>
+<p>首先，死死的守住不报复的红线。尽管困难，尽管有时失控，但是仍然要坚持一贯的压制自己的报复欲。做不到归做不到，做归做。做不到一定是因为坚持不懈的尽力而为而仍然存有的失误，而绝不应该是因为自己故意的不做于是“做不到”。</p>
+<p>这和对方配不配这样的优待无关，这是因为人要<strong>对自己有信用</strong>。</p>
+<p>说好是爱，那就要是爱。</p>
+<p>第二，反思自己为什么如此轻视“一切可能的辜负”到底可能意味着什么。</p>
+<p>爱绝非轻易的事，它是人类可做的最接近神的事，是人间至难。</p>
+<p><strong>难不是难在付出，而是难在被辜负的痛苦</strong>。</p>
+<p>人往往贪图爱另一个人的巨大享受，而假装辜负的可能性和深刻不存在。</p>
+<p>你有几次机会以“无知”自辨，但超过一定的限度，被辜负而无法接受的责任就在你的头上。</p>
+<p>你有不低估辜负的责任。低估辜负的爱，不过伪劣的假冒之物而已。</p>
+<p>第三，宽容自己。你不是无限胸怀的存在，你总要在错误的自我估计中学会正确的自我估计。你所要在意的，是不要自我欺骗，不要作弊。</p>
+<p>没有自欺、没有作弊、尽力相爱而又因为人必有的能力不足所造成的痛苦的结果，是错误，但是<strong>正确的错误</strong>。</p>
+<p>因为将来会有最终伟大的正确，在你回首它的孕育和分娩时，你会发现之前的每一个错误都与它血肉相连，无可分割。恰恰是那些错误，才造就了你，才进而引导你可以做到这事。这事是正确的，于是之前的那些错误也都是这正确的一部分。</p>
+<p>你们不要怕错误，你们要怕的是<strong>错误的错误</strong>。</p>
+<p>因为错误的错误里没有真正的教训，甚至根本没有教训可言。</p>
+<p>宽容自己，当然意味着原谅自己。但是你们要记清楚，原谅的红线何在。</p>
+<p>这也是为什么你若失控越过了红线，你要对对方抱歉的原因——因为这是你欠你自己的，未被你自己免除的债。</p>
+<p>我实实在在的告诉你们——如果你们真切的这样行事，而能贯穿一生，那么将来必会有人回首ta的一生时，称遇见你为ta一生中最大的幸运，永不相忘。</p>
+<p>努力原谅一切，是人作为人的<strong>义务</strong>。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8E%9F%E8%B0%85/">原谅</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/hua-yuan-hua-zou-dao-zhe-yi-jie-duan-gai-ru-he-ji-xu/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">画原画走到这一阶段该如何继续？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/li-hai-de-ren-yu-dao-wen-ti-shi-de-si-wei-mo-shi-yu-pu-tong-ren-zhi-jian-cha-bie-zai-na/">
+                        <span class="hidden-mobile">厉害的人遇到问题时的思维模式与普通人之间差别在哪？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

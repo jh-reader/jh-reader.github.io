@@ -1,0 +1,592 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>“木秀于林，风必摧之”。你认为，应该“秀”吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="“木秀于林，风必摧之”。你认为，应该“秀”吗？">
+              
+                “木秀于林，风必摧之”。你认为，应该“秀”吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      32
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">“木秀于林，风必摧之”。你认为，应该“秀”吗？</h1>
+            
+            <div class="markdown-body">
+              <p>人类是很没有安全感的。ta们对于“会在竞争中赢过我让我失去机会”或者“万一成为敌人可能压制我”的人抱有<strong>本能的敌意</strong>。面对的优势越明显，弱者们越容易在强者势单力孤的时候抱团“消除隐患”。这是一种被幸存本能驱动的下意识行为。你不喜欢也罢、觉得不公也罢，事实就是如此，这是不由你的主观好恶为转移的客观事实。</p>
+<p>你只能考虑怎么面对它的挑战，怎么与这种世界的设定共存。</p>
+<p><strong>第一件你可以做的事，就是停止抱怨这对你不公平</strong>。把这理解为“飞到三万英尺高，你就得额外背一副氧气瓶“这样的中性事务。</p>
+<p>停止再要求“普通人的待遇”——因为你<strong>不是普通人</strong>。你不能一边享受远超普通人的天赋，一边还要求普通人的福利。</p>
+<p>It simply does not work that way, just quit bitching about it already.</p>
+<p><strong>先承认问题，然后毫不犹豫的跳过“控诉这不公平”阶段，专注在怎么解决问题上，这是你想要幸存于你的天赋所必须要养成的习惯。</strong></p>
+<p>如果你始终养不成这习惯，你只会和那些“普通人”一样把“质疑这不公平”看作解决问题的全部努力，长期任由自己陷入在这种“悲愤的控诉”之中，以为这样可以召唤出某种神奇的化学反应自动地让你认为不公平的东西被“改正”——那么你先放下你的幻觉吧，你谈不上什么“木秀于林”，“摧”你的也根本不是什么“风”。你恰恰只是有着最常见的“主角想象”，然后被这种想象毫不稀奇的打磨成最庸常的样子的泯然众人之一罢了。</p>
+<p>通过保持“抱怨木秀于林”的恶习，你自动的脱离了这个问题的困扰范围。</p>
+<p>（注意，这倒不是说真正的“秀才”们就会放弃利用社会的公平机制去实现自己的目标——但精英们利用这些机制是工具性的、实事求是的。ta们不会感情用事，比如会觉得证据不足的正义诉求也一定应该获得最终的胜利。）</p>
+<p>以下的所有论述，都是在你的确有超人的才能和优势（这包括“含着金汤匙出生”）而且已经停止在“这不公平”这种无意义追问上浪费精力的前提下谈论你要具体有效的如何处理你和“普通人”的关系。</p>
+<p>1）理解你的道路。</p>
+<p>除非你打算放弃你的天赋，否则你生存的必要已经给你划定了一条你必须遵循的道路——建立你自己的生态圈。</p>
+<p>你最后只能依赖必要数量的、对你有坚强共生关系的人——你的团队、你的家族成员、你的朋友、你的同志——去结成一个结构去对抗外界对你的压力。</p>
+<p>这是一个你身负天赋就必须达成的目标。你没得选择，对你没有任何其他选择这一点你千万要<strong>提前绝望</strong>。</p>
+<p>不要在花了半辈子想要离群索居失败之后再绝望；不要在花了半辈子想把依赖你的人变成豢养奴隶失败之后再绝望；不要在花了半辈子赚钱打算用钱摆平一切失败后再绝望；不要在花了半辈子练功打算让全世界人“为了求你办事不得不屈服”失败后再绝望。</p>
+<p>不要花时间在这些低级愚蠢的尝试上，提前死了这些心，不然你会极大的浪费自己，而且还会遭遇足以让你自我毁灭的失败。到头来你还是要回到我现在说的这些话上来，只不过你浪费了半辈子。甚至一辈子。</p>
+<p>所以，麻烦你先<strong>直接绝望</strong>，先接受这道路的不容选择性再往下看。</p>
+<p>因为下面所有的东西都是被这条所决定的。</p>
+<p>2）<strong>避免一切不必要的自我暴露</strong>。</p>
+<p>不妨把话说直白点——你一暴露，就会为自己招惹数不清的威胁，而且全是你在明，敌在暗。任何不必要的自我暴露，都要毫无侥幸的看做安全事故，是在自陷险境。</p>
+<p>任何时候你需要向任何人展现你的才能，你都要先问自己几个问题：</p>
+<p>a）知情范围是不是收敛的？</p>
+<p>比如，你是展现给有保密动机也有保密能力的人看到，那么这危险性较小。你如果是在大庭广众之下展现给不特定的人群看，或者展现给某个没有保密动机或者有保密动机却没有保密能力（比如答应了不外传却毫无自制力）的人看，这是一种红灯到发亮的极大<strong>禁忌</strong>。</p>
+<p>这顺便对父母们也提出了客观的要求——对待有超常能力的子女，要及早提供真正有爱的教育使ta尽早的对肤浅的夸赞和吹捧脱敏、免疫。否则这幼稚的天才极其容易拿自己的异能作为“交朋友”的道具，为自己招来严重伤害，而且防不胜防，你根本护不住。</p>
+<p>至于要怎么做到，把我的答案全看完会让你有个概念。</p>
+<p>b）暴露是否绝对必要、无可避免的？</p>
+<p>举个例子，会公布成绩的升学考试，你将不得不暴露你超出常人的学习能力，这个没法避免。但是把好成绩拿来到处挤兑人，这就属于没有必要可以避免的行为。</p>
+<p>你很会打篮球，技术远超过同班同学，那么就去水平更高、观众资格更有门槛的地方打球，不要在食堂门口的球场上招惹阵阵惊叹。</p>
+<p>你身手矫捷，非常能打，那么遇到不出手不能救人的关头你可以考虑出手，不要在普通人面前随便提起，也不要为了“套近乎”翻给异性看。</p>
+<p>某种意义上说，暴露的“必要性”在于它是否存在暴露的正当理由——<strong>只有同时满足“涉及到自己或他人生存的必要”和“没有更好的选择”这两个条件，才会产生这种的正当性。</strong></p>
+<p>比如为了救人、救己，情况紧急。又比如为了你自己觉得值得直面危险的事业。</p>
+<p>实际上，只要你始终对这危险性的存在不抱任何侥幸，从不忘怀，也从未低估，在这前提下你仍然认为有冒险的必要，你这时的理由多半是正当的。</p>
+<p>反过来，只要你对这个危险不以为然，不管你觉得已经有多“够谨慎了”，恐怕实际上都仍然是自欺欺人。</p>
+<p>3）认识到唯有爱是你唯一的庇护。</p>
+<p>这分为两个方面。</p>
+<p>a）你要明白，只有有爱的人能保护你。</p>
+<p>你要学会识别这种人，靠拢这种人，帮助和保护这种人获得更多的资源和能力。只有这种人能而且真的会保护你。不要用你的异能为无爱的人服务——哪怕看起来ta给你报出了极其诱人的价格。因为到最后这些人的贪婪和恐惧会逼得你走投无路。</p>
+<p>ta们见识了你的能力，自然会欲罢不能，一步就会迈到“如果我失去ta的效力，对我维持现在的优势有重大威胁”。而ta们接下来会立刻想到靠不断的提高待遇来保证你绝不转投它处是不够牢靠的。ta们势必要采取或明或暗的“套牢”法来消解ta们自己的焦虑。比如制造一些你的把柄、比如绑架你的某些要害、比如让你染上某种只有ta们可以满足的瘾，或者干脆直接“恩威并施”。</p>
+<p>你的能力越是令人一见难忘、惊为天人，这贪欲的捕鲸叉越是投得快、刺得深。</p>
+<p>你形同飞蛾扑火，自投罗网，最后输的一定是你。</p>
+<p>b）你自己必须是有爱的人。</p>
+<p>你要意识到原谅和宽容是你不容回避的义务。因为你如果不原谅、不宽容，你肯定要陷入那种“我只是能力强一点，为什么都要针对我”的悲愤中去。</p>
+<p>其实弱者们能怎么办呢？ta们有权穷尽自然所许可的一切自由去争取一切可以争取幸存概率。</p>
+<p><strong>公平并不是指强者和弱者应该有一样的行事自由，而是指“无论是谁当上强者，都要同样受到强者要受的束缚”、“无论谁是弱者，都可以同样利用弱者可用的特权”。</strong></p>
+<p><strong>明明不同，却强索一样的待遇，这才是不公平。</strong></p>
+<p>你要想想，ta们能有什么选择呢？</p>
+<p><strong>弱者们下意识的协同打压所有被发觉的强者，这是一种只有懂得谦抑、理解、宽容和原谅的强者可以真正穿过的考验。</strong></p>
+<p><strong>这是客观世界约束强者、保存弱者的内在设计。</strong>实际上是客观世界设下了这道“陷阱”，要持续惩罚和最终毁灭拒绝接受这禁忌和责任的强者。</p>
+<p>你很强，你要么就自行放弃这份强大，安心过小日子，要么你就不要抱怨这份不公平——不但不要抱怨，还要视为一种良好、公平、真正仁慈的的安排去主动接受它。</p>
+<p><strong>你接受这份“不公平”，本身就是对世人的爱。</strong></p>
+<p><strong>最后消解世人莫名的敌意的，不是你移山倒海的神通，而是这份自觉自愿的接受。</strong></p>
+<p>而这才恰恰解开了你自己的结——<strong>你别忘了，其他的强者也在受这份约束，ta们也正在这规则下考虑向你显现的必要性。</strong></p>
+<p>你不能接受这份额外的约束，ta们也不能<strong>向你</strong>显现，你也就得不到ta们的服务和庇护，你也就走不了你必须要走的道路。</p>
+<p>这是互相锁定的。</p>
+<p>你把这些全都看明白，没有侥幸的想清楚，你的生存概率会大为提高。</p>
+<p>你不会那么招风，你也不容易被风吹倒。</p>
+<p>最重要的是，你不容易自己死掉。</p>
+<hr>
+<p>这里再给年轻人一些必要的补充。</p>
+<p>“木秀于林”怎么认定？</p>
+<p>用秒表、硬度计、激光尺、双盲测试去认定，实在不能用仪器手段的，也要用完全不知道你身份背景的陌生人的看法去认定，不要用“我身边的人的看法”和“自我感觉”去认定。</p>
+<p>你需要的是秒表的承认，不是“观众”、更不是“亲友团”的承认。后者没有什么参考性。</p>
+<p>你别认定错了，认定错了这些指引对你是没啥用的。</p>
+<hr>
+<p>如果你受到了无礼冒犯，要怎么办？</p>
+<p>你什么都不用办，让对方见不到你可以做什么，不能再得到打扰你的机会，就是最大的反击了。因为那意味着这些人想要得到你的能力的帮助的概率会变小，优先级会滞后。</p>
+<p>ta们本来可以靠你解决或者避免的问题，现在得靠自己去解决了。</p>
+<p>这本身就是一种很大的惩罚。</p>
+<p>这跟你自己的能力完全对等。如果你其实没本事只是自己脑补有本事，这惩罚自然就微不足道。如果你是真的有本事——注意，这是指秒表或者市场发了证书给你的这种——那么对方得到的惩罚自然也就会变大。</p>
+<p>你有多强的“惩罚能力”，全看你自己到底有多强。所以不要花时间去“愤恨”、“攻击”、“惩罚”对方，而要把时间花在练功夫上。</p>
+<p>作为利益输出者，你的拒绝接近，本身就是极大的惩罚。</p>
+<p>让对方将来慢慢在困境咀嚼自己的悔恨去吧。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%9C%A8%E7%A7%80%E4%BA%8E/">木秀于</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%9E%97/">林</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-guan-li-ta-ren-de-qi-wang/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何管理他人的期望？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wei-le-neng-kua-yue-jie-ceng-nian-qing-ren-ying-gai-ju-bei-na-xie-ge-ren-su-yang-he-ji-zhu/">
+                        <span class="hidden-mobile">为了能跨越阶层，年轻人应该具备哪些「个人素养」和「技术」？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

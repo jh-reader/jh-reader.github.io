@@ -1,0 +1,577 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>这个时代，我们到底应该怜悯什么，我们是否有资格怜悯，什么是怜悯? - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="这个时代，我们到底应该怜悯什么，我们是否有资格怜悯，什么是怜悯?">
+              
+                这个时代，我们到底应该怜悯什么，我们是否有资格怜悯，什么是怜悯?
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      16
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">这个时代，我们到底应该怜悯什么，我们是否有资格怜悯，什么是怜悯?</h1>
+            
+            <div class="markdown-body">
+              <p>问“人有没有怜悯的资格”的时候，言语里包含了一个悄无声息的逻辑前提——怜悯的前提是你是强者，然后以强者的身份去怜悯弱者。</p>
+<p>这种想法暗含着一个“信念”——你如果自己不是强者，你就不会处在一个可以主宰别人命运的位置上，别人也就不需要你怜悯，于是你怜不怜悯都没有意义。</p>
+<p>同时，这还暗含着这样一种心态——就算你是强者，你去怜悯别人，谁来怜悯你？就算不去谈那些无关的人，在最低的底线上，你也应该保证被你怜悯的人到了关头上也会同样怜悯你吧。</p>
+<p>ta们忍不住要向你揭露这样一个事实——你所怜悯的人，往往并不会怜悯你。</p>
+<p>ta们甚至忍住了这句话没说——何止不会怜悯你，甚至你如果对对方说你当初曾经怜悯过对方，要求对方也同样——甚至打点折扣也行——怜悯你一下，对方很可能还恰恰因为你说这话还额外多捅你一刀，捅得更深一点。</p>
+<p>所以，怜悯有何用？它哪有什么可能能在什么情境下是“合理”的？</p>
+<p>所以，人为什么要怜悯呢？</p>
+<p>让我们从最最前面开始——怜悯不是强者对弱者的特殊权利。</p>
+<p>“强者”和“弱者”，是一个非常愚蠢的二分法。这两者根本不是对称关系，而是<strong>所有人</strong>在大多数时候、大多数场合下<strong>都是弱者</strong>，仅仅在特定的场合、特定的时候才是一个<strong>相对的</strong>强者。</p>
+<p>你就是霸王项羽又如何？你也有霸王别姬，四面楚歌，垓下之辱。</p>
+<p>怜悯，不是发生在强者与弱者之间的，而是发生在弱者与弱者之间的。</p>
+<p>它不是强者对弱者的施舍——甚至更低下、卑贱的“霸权展示”——而是<strong>弱者对同为弱者的同类的同情</strong>。</p>
+<p>怜悯，不是在怜悯你失败了很落魄。</p>
+<p>而是在怜悯你无时无刻不像我一样忧虑生老病死、恐惧死亡的必然、害怕孤独和背叛。</p>
+<p>你没有强大到可以脱离这些痛苦——没有人能能强大到脱离这些痛苦——甚至，恰恰因为你强大、富有，某些痛苦和恐惧比不如你的人更大。</p>
+<p>我没坐到你那个位置上，我已经觉得人类太难相处，众口实在难调。</p>
+<p>你坐在那个位置上，我更难以想象多十倍的人类有多么难相处，多十倍的口有多难调。</p>
+<p>欲壑难填，对更有钱的你，你身边包围的欲壑更难填。</p>
+<p>暗箭难防，对更有权的你，那多出百倍的暗箭更难防。</p>
+<p>你所享有的那点“荣耀”、“风光”，根本抵消不了这份实际的恐惧，不是吗？</p>
+<p>而你其实是骑虎难下，没得选择，不是吗？</p>
+<p>怜悯，哪里需要发生在强者和弱者之间？</p>
+<p><strong>它是发生在明白这些的人和一切人类之间。</strong></p>
+<p>这是一种自发的现象，即使当事人想要自己关掉，也办不到。</p>
+<p>就像你无法决定不喜欢可爱的猫咪。</p>
+<p>你觉得萌，就是觉得萌，你无法“决定”不去觉得萌。</p>
+<p>觉得萌有什么用、有什么好处、有什么坏处、应不应该……这都跟你会不会觉得小猫咪很萌没有关系。</p>
+<p>人怜悯人的唯一必要条件，就是你看不看得懂众生皆苦。</p>
+<p>不是抽象的、理论的从逻辑上去“承认”这么一个优美的理论声明。</p>
+<p>而是实实在在的、感同身受的、如历历在目的感应到这种痛苦。</p>
+<p>你能感受到，那么无论你是强是弱，有没有“资格”，这样做了“有用”“没用”，会不会被人说居高临下，<strong>你都会怜悯</strong>。</p>
+<p>换句话来说，只要是有智能、能够进行换位代入思考的人类，都会感到怜悯，那么为什么看起来有人怜悯有人没有呢？这取决于人有没有后天的压抑和摈弃这种本能。并不是人没有怜悯，而是当出现了怜悯，有些人把它当成坏事、错事扔掉了。</p>
+<p>坏、错在哪？因为怜悯心态趋向于让自己承担而不是转移损失，似乎是“苦果自吞”了。</p>
+<p>但你想过没有，如果你抱定这种念头，在旁人看来是什么效果？</p>
+<p>不管我强或者不强，我都会犯错，我都需要人的合作，这种合作如果总是出于我对你的威慑和要挟，先不谈心累不累，首先我要花成本，而且还要为威慑失效的可能性买保险。这是很大的一块成本。</p>
+<p>很显然，我作为有选择权的一方，我当然会选择不需要威慑和要挟就能良好稳定合作的一方。</p>
+<p>良好，而且<strong>稳定。</strong></p>
+<p>“稳定”从何而来？从<strong>能容我犯错</strong>而来。</p>
+<p>这时谁强谁弱？</p>
+<p>我强你弱。</p>
+<p>你是个弱者，你信奉“身为弱者考虑怜悯强者是可笑的”这样的观点，那么很显然我不能指望你的原谅和宽容。</p>
+<p>那就意味着我不能犯错，我如果犯错就不能再指望你主动合作。</p>
+<p>我为什么要选择一个更不能容错、成本更高的团队成员？</p>
+<p>每一个强者都会思考这个问题，而且基本逻辑会保证ta们的答案总是一样的——ta们没有人在有得选择的情况下会接受“弱者怜悯强者真可笑”论者。</p>
+<p>而一般情况下，ta们的选择余地并不小——否则谈什么强者呢？</p>
+<p>于是综合的结果是什么呢？是在任何团队里很自然会经由自然选择产生“体贴老大”的天然氛围。</p>
+<p>而信奉“弱者怜悯强者很可笑”论者会怎么看待这种氛围呢？</p>
+<p>——“软骨头”，“拍马屁”。</p>
+<p>当然是待不下去的了。</p>
+<p>那么还能待哪里呢？</p>
+<p>“创业”。</p>
+<p>创业成与不成且再谈，这位新创业的老大，自己愿意接受自己的同类做下属吗？</p>
+<p>看到了吗？</p>
+<p><strong>其实自然法没有给“弱者怜悯强者可笑”论者容身之地。</strong></p>
+<p><strong>（未完，待续）</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%BB%A5%E5%BC%B1/">以弱</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%82%AF/">悯</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%BC%BA/">强</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-ha-mei-nei-yi-guan-yu-yi-se-lie-huo-bu-guo-nian-de-yan-lun/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何看待哈梅内伊关于“以色列活不过25年”的言论？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/yi-bao-zhi-bao-shi-he-li-de-ma/">
+                        <span class="hidden-mobile">以暴制暴是合理的吗？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

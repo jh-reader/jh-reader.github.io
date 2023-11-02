@@ -1,0 +1,569 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>怎么证明上帝是不存在的？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="怎么证明上帝是不存在的？">
+              
+                怎么证明上帝是不存在的？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      20
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">怎么证明上帝是不存在的？</h1>
+            
+            <div class="markdown-body">
+              <p>我们来探讨一下“上帝”的存在性问题。</p>
+<p>先看下图：</p>
+<p><img src="https://pica.zhimg.com/50/v2-7b96a6b9a0a1e6cb4c2fc917b37dd2bd_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>图里有什么？</p>
+<p>看得出来的举手。</p>
+<p>很好，你们很正常。</p>
+<p>很简单，过不了这个测试的动物，没能进化成人类。</p>
+<p>在一切意识形态出现之前，连人类都还称不上人类之前，“准人类”的最基本的智力的最基本功能，就是做到你刚才做到的这件事。那些还不成其为人类的祖先如果普遍看不出沙里的蛇，草丛里的老虎，显然是没有机会进化成人类的。“智能”的最起码性能，就是能从“知觉”之中感知“异常”，从“背景”中区分出“前景”。</p>
+<p>我们的大脑如何感知到这个画面里存在值得注意的异常，这至今是一个谜。这也是强人工智能至今迈不过去的坎。我们在目前弱人工智能里做的一切努力，都是作了弊的——我们首先会用小纸条告诉我们的电子造物“这个是异常”，甚至是“这个是xx异常”。</p>
+<p>人类始祖是近乎随机被制造出来，然后靠死亡测试筛选下来的。注意，当我说起先祖，我并不是在说类人猿这么近的前代。我指的是鹦鹉螺、菊石乃至三叶虫的时代。</p>
+<p>它们只是对概念的“分辨率”比较低，但是它们也一样遵循同样的考试规则——你能在这480x320的黑白画面里识别出哪些像素是你的食物吗？</p>
+<p>看得见吗？看得见，你就有得吃，看不见，那就byebye了。</p>
+<p>这就是智能的元本质——发现“异常”的能力。注意，这“异常”不是智能体自己定义的，而是“自然”通过淘汰机制强行嵌入的。</p>
+<p>我们如果失去发觉异常的能力，我们将不会有任何的智能。因为一切在我们眼前都会是无意义的像素组合和震动组合。其中的任何一个部分也不比任何其它的一部分更有意义。白天与夜晚，不过是温度亮度不同的随机事件，我们将不能意识到它们之间存在“差别”。如果我们捕捉不到“差别”，我们就无法构建任何概念，无法构造任何概念之间的联系。</p>
+<p>OK，下面看这一幅图：</p>
+<p><img src="https://pic1.zhimg.com/50/v2-ac8e1dad6fb92bb6155f5f75d59da106_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>这是什么？</p>
+<p>不着急，再看这一张：</p>
+<p><img src="https://pica.zhimg.com/50/v2-df97cd45285d6c2299d2318b95eefef9_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>这是什么？</p>
+<p>是随机斑块，对吧？不错，有人能从这里面看到河马、鳄鱼、乃至飞机、人的瞳孔。但是你心目中的“异常”探测机制还没有被说服，对吧？大体来说，这是两片混沌，任何对它们的定性，都仍是牵强附会的。能解释其中的一个斑块，但若是按照这个解释，这两张图的其他部分就解释不通。于是你的大脑拒绝接受这些假说。</p>
+<p>那么，看看这张图：</p>
+<p><img src="https://picx.zhimg.com/50/v2-24a2e0986ba8586f89a34ed2d31a53c5_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p>你看见了吗？</p>
+<p>这张图还是“随机混沌”吗？</p>
+<p>看得见一条斑点狗在正午阳光下斑驳的树影里徜徉的人举手。</p>
+<p>再看一遍：</p>
+<p><img src="https://picx.zhimg.com/50/v2-24a2e0986ba8586f89a34ed2d31a53c5_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p>很好，记住，<strong>上帝就是这条“斑点狗”。</strong></p>
+<p>认为这张图只能准确的描述为“黑色不规则斑块组合”，主张<strong>“‘斑点狗’只是巧合，是人的幻觉和希望所构造出来的意识形态构建”的人——也就是无神论者们——当然并不算错。</strong></p>
+<p><strong>但是认为这些斑块并非纯属巧合，而是“徜徉在午后的林荫大道上的斑点狗”的人——也就是有神论者们——也没有疯。</strong></p>
+<p>站在有神论的视角，人是因为能最敏锐的、毫不困难的看见各种各样的“斑点狗”，才有别于其它一切动物与无智能的存在的。这是人的智能的根基所决定的。勾股定律是条斑点狗、牛顿定律也是条斑点狗、供求关系也是条斑点狗。</p>
+<p>从这个意义上讲，“上帝”也是一条这样的“斑点狗”。</p>
+<p>（出于对阅读能力实在捉急的小朋友的同情，补上下面这一段）<br><strong>人类究竟是什么？人类是涵摄能力冠绝于一切造物的造物，是万灵之长。人类不仅仅能本能的发现草丛里的狮虎，还能发现昼夜、季节，能发现板块漂移，能“看见”时空连续体。如此之强的灵感之冠，不能从对历史的观察中产生“上帝”的直觉，是违背基本逻辑的。</strong></p>
+<p>强行主张“我就是看不到”，这要么是不诚实的，要么意味着这个个体是否有能运转的心智都很有争议了。</p>
+<p>但是，<strong>看见了，仍然相信这仅仅是无意义的随机斑块，这可以成立的，是可以自洽的，于是也就是在技术上可行的。</strong></p>
+<p>只是，<strong>again，看得见的人也没有疯。</strong></p>
+<p>真正关键的是——<strong>对这斑块的形状、分布，其中对比最强烈的的部分等等等等客观属性，这两类人应该有共识。</strong></p>
+<p><strong>真正的危险，是斑点狗派总会试图将某些会造成解释困难的斑块斥为“幻觉”予以抹杀——只要回避掉某些斑块，那就是完美的斑点狗，谁都不能提出异议。</strong></p>
+<p><strong>而随机画面派为了将斑点狗派表述为疯子而要将画面做某种切割——只要切的巧妙，那画面上就自然什么都没有，谁都不能提出异议。</strong></p>
+<p>要知道，这幅图同时还是人类在历史的海洋中航行的海图。</p>
+<p>这种裁切和处理，如果不发生在关键位置，不在关键的航路上，那便由得你罢了。</p>
+<p>如果发生在要害的位置、应景的时刻，这些出于心灵软弱造成的认知扭曲就会造成严重的客观损害。</p>
+<p>在宗教领域，<strong>拒绝客观世界的基本图景，就产生了邪教。</strong></p>
+<p>正教与无神论之间就黑白斑块的分布与形状本身（亦即世界的物理层面）是没有也不该有争议的。如果这图转化为一个迷宫，那么对“从图上A点到B点，不触及黑块的最短路线”的求解，正教和无神论者得到的答案将完全一致。这就是为什么说正教与理性毫无违背——也只有满足这一基本要求的，在将来无限的未来里才能一直存在，才有机会成为正教。强行抹去某些不喜欢的斑块或者改变其形状的，将会发现它们所遵循的迷宫路线会让他们触礁死在荒岛上。</p>
+<p>上帝早就淘汰过他们的祖先——那些不管因为什么原因看不清图的存在。亚伯拉罕诸教能撑过三千四百年风雨在今天还保持几十亿信徒的规模，认为他们是在“完全不具备理性认识世界的能力”的前提下全靠运气，这显然是蠢人梦话。</p>
+<p>诚实的有神论者与无神论者在黑白斑块的分布与基本形状问题上，将永远而且必须有共识——除非他们有人不诚实。这也是现代社会能够兼容多种信仰体系，承认和接受信仰自由，却又能有效的处理实际事务的原因。</p>
+<p>看懂了的话，就不要再指望能“根除有神论”。你就是把他们杀光，把他们的著作烧尽，你也会有一天听到一个清脆的童声——“好像有条斑点狗耶”。</p>
+<p>只要人类成其为人类，人类就能看见神。至于祂是不是“真实存在”，这个看见是真实还是幻觉，或者更进一步的说——是把这感受当作幻觉更好，还是当作真实更好，这是另一个问题。</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/317766244/answer/644332964?hb_wx_block=0">动量是实际存在的吗？</a>  </p>
+<p>但不要对有人觉得这里有一条“斑点狗”觉得太惊讶。</p>
+<p>不觉得的，才奇怪。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/AI/">AI</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%96%91%E7%82%B9%E7%8B%97/">斑点狗</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/zen-yang-kan-dai-wang-luo-shang-de-nan-nv-dui-li-wen-ti/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">怎样看待网络上的男女对立问题？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-ti-sheng-yi-ge-ren-de-wen-bi/">
+                        <span class="hidden-mobile">如何提升一个人的文笔？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

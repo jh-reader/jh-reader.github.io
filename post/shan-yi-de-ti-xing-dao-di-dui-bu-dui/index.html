@@ -1,0 +1,575 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>善意的提醒到底对不对？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="善意的提醒到底对不对？">
+              
+                善意的提醒到底对不对？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">善意的提醒到底对不对？</h1>
+            
+            <div class="markdown-body">
+              <p>我这经常发现一种善意提醒现象，不止一人，不止一时，不止一处，而是长期反复的、持续的发生。今天就专门把这个问题说透。  </p>
+<p>这些提醒的主要根据不是这些答案有什么可以明确指出的问题，而是“这太好了，不能轻易相信，当心有危险”。  </p>
+<p>这种“提醒”的逻辑非常奇妙——恰恰是因为好，所以信不得。  </p>
+<p>那么问题来了——如果你把这些公开发表的、经过平台和举报群体交叉审查的、几乎完全用论证建立的、没有任何手段可以逼你非读不可的东西划归到“危险内容”范围，把作者划入“危险人物”范围，那就不能不让人比较好奇你觉得可以划为“安全人物”、“安全内容”的是什么。  </p>
+<p>“不危险人物”的标准是什么？有具体的界定吗？  </p>
+<p>相信什么东西对人就可以叫肯定没有危险？相信做好事也可能会被讹，什么东西算没危险？  </p>
+<p>还是说什么都不应该相信？是要主张““什么都不相信”才是幸福平安之道”吗？——“什么都不相信”的人坐出租车都会忍不不住跳车啊，这有什么安全可言？  </p>
+<p>这些善意提醒，到底在提醒什么？  </p>
+<p>坦率讲，这似乎在专门提醒人“不要去相信看上去好的东西”，因为“那些看上去就坏的东西，用不着提醒”，不是吗？那么问题来了——<strong>看上去坏的不能信，看上去好的更不能信，那这些“善意提醒”给人类还留下了什么</strong>？  </p>
+<p>你得给人留条路啊，一条路都不留的“善意提醒”，对人不是一种毫无意义的骚扰吗？  </p>
+<p>这跟小孩选了任何职业爹妈都要拿出一堆“恐怖案例”来说你这个“职业没前途”有什么区别？那么“保证有前途、保证没危险的职业选择”是啥？包分配吗？介绍人是不是包赔？  </p>
+<p>如果你有更好的选择可以提供，那你就直接去提供这个选择，世界上当然选择越多越好。  </p>
+<p>但请停止这种单纯出于“看上去太好，所以不可信”的“善意提醒”。</p>
+<p>然后再说点真正重要的——</p>
+<p><strong>善意的提醒如果没有实际的逻辑、实际的内容做救赎，实际上只是一种纯打扰。</strong>  </p>
+<p>生活中充斥着一类更空洞的善意提醒。</p>
+<p>例如“你小心点”。</p>
+<p>小心什么？不知道，或者可能是知道了不说，总之，你“小心点”。</p>
+<p>叫你“小心点”有啥错的吗？这能有啥错？这不是关心吗？</p>
+<p>这个关心算算收支账看看——关心者收获了“我很关心”的道德收入，没有产生任何新的契约责任，唯一的成本就是“你要小心点”这句话的成本。</p>
+<p>这个成本据说低到了说一整年的能量都烧不开一壶水的程度。</p>
+<p>被关心者付出了巨大的心理能量去“小心”所谓的“一点”，晚上开探照灯的电费都不知烧开几壶水，没有获得任何可审计的可记账收益，另外凭空收获了一笔应付道德欠款，最起码也得现付一个“谢谢”。</p>
+<p>这种奇妙的机制之神奇，足以和真空涨落产生物质与能量相媲美，属于创世纪级的神技。</p>
+<p>正因为如此神奇，这类不含任何具体内容的“小心点”在人间泛滥成灾。看不透的人莫名其妙的就会深陷到的债务，欠下亲戚朋友无数的“提醒之恩”。</p>
+<p>这事的微妙之处在于——因为社会规则的庇护，即使那是“空提醒”，你仍然不能用惩罚机制吓止阻绝对方的再犯。这显然也是这种“空提醒”行为模式严重泛滥的另一个原因。</p>
+<p>但你的正确选择——甚至可以说是唯一选择——必然是“谢谢提醒”，并且降低这类信源的权重，尽可能拉开距离，避免这种净损失的反复发生。</p>
+<p>对于你自己，你也要警醒——发出“空提醒”将会直接损害你和对方的关系，等于逼迫对方拉远社交距离以避免损失。</p>
+<p>正因为这个行为难以阻止和防御，对方尤其会对这类行为做出激烈的反应。</p>
+<p>这就像如果有一家银行有一个解决不了的bug，会随机损失五分钱，用户没有任何可做的操作可以阻止，那么别看只有五分钱，只要有哪怕稍微好一丁点的其他选择，客户都会飞速逃走。</p>
+<p>只不过，因为父母、配偶这类有极强其他羁绊保障的人大量滥用自己的特权，就给很多年轻人造成了一种错觉，<strong>不但不把“空提醒”视为一种绝不能触碰的高压线、甚至还反过来，视为“爱的表达”、“亲密的证明”，用来向对方表达善意</strong>。</p>
+<p>这不知造成了多少让人不知怎么评价是好的遗憾。</p>
+<p>恰恰恰是你喜欢、热爱的人，最容易因此受到损失、遭受痛苦。</p>
+<p>恰恰是自认为美好善意的表达，把自己喜欢的对象逼得非断绝关系不可。</p>
+<p>人间无谓的痛苦，几乎莫此为甚。</p>
+<p>为什么要写这几千个答案，用无数的案例来教你们“算账”？因为避免这种“自我破坏的爱”是极为重要的事情。</p>
+<p>不要只考虑自己的善意有多真实，你要像会计一样替对方算算清楚这个善意对别人到底是得到了什么，损失了什么。  </p>
+<p>对方光是听到、看到善意提醒，就已经付出了不可挽回的时间，那是无法挽回的生命，如果只是“这看上去很好，所以不能信”这样的东西，而且反复反复又反复，这对人是一种迅速趋于不能容忍的损失。</p>
+<h3 id="喜欢对方，爱对方，更重要的是算清楚对方的收支账，而不是“审查自己的心意是不是真诚”。"><a href="#喜欢对方，爱对方，更重要的是算清楚对方的收支账，而不是“审查自己的心意是不是真诚”。" class="headerlink" title="喜欢对方，爱对方，更重要的是算清楚对方的收支账，而不是“审查自己的心意是不是真诚”。"></a>喜欢对方，爱对方，更重要的是算清楚对方的收支账，而不是“审查自己的心意是不是真诚”。</h3><p>爱的深刻不体现在在对方的墓碑前烧祭文“公虽遇害，但我情至真，天地为证”，而体现在你站在对方立场上为对方算的账算得有多完整，根据这个计算你对自己的行为管理得有多好，以及最后切实的给对方多少真正<strong>具有可审计性</strong>的收益。</p>
+<p>那是可以真金白银拿来算一算的、会得到广泛市场认同的、可以转化为可交换价值的收益，而不全是无法兑换、无法流通、无法转化为具体福利的“总之小心点”。</p>
+<p>爱是利他，而不是“付出”。付出仅仅是作为某些特殊情况下不得不付出才能实现利他的场景下的一种<strong>可选</strong>项。</p>
+<p>甚至，它都不是推荐可选项，而是一个<strong>不推荐选项</strong>。</p>
+<p><strong>利他</strong>才是爱的必选项。</p>
+<p>自然规律已经用了不知几百亿条人命、几千年的文明史告诉了你ta的评分标准——</p>
+<p><strong>达成利他</strong>而有收益的爱 <strong>&gt; 达成利他</strong>而无付出的爱 &gt; <strong>达成利他</strong>而有少量付出的爱 &gt; <strong>达成利他</strong>而大量付出的爱 &gt; </p>
+<p>————及格线————</p>
+<blockquote>
+<p>未达成利他而无付出的爱 &gt; 未达成利他而少量付出的爱 &gt; 未达成利他而大量付出的爱 &gt;</p>
+</blockquote>
+<p>————零分线————</p>
+<p> 造成损害而获得收益的行为 &gt; 造成损害而没有付出的行为 &gt; 造成损害而少量付出的行为 &gt; <strong>造成损害而大量付出的行为</strong></p>
+<p>看到<strong>及格线</strong>在哪了吗？</p>
+<h3 id="及格线不是用“付出”来划的，是用“利他”来划的。"><a href="#及格线不是用“付出”来划的，是用“利他”来划的。" class="headerlink" title="及格线不是用“付出”来划的，是用“利他”来划的。"></a>及格线不是用“付出”来划的，是用“<strong>利他”</strong>来划的。</h3><p>不要用“我是好意”来申诉“不公平，因为<strong>“我是好意”并不是考察项目</strong>。</p>
+<p>第二，看清楚，“造成损害而大量付出的行为”，不但远在及格线一下，而且<strong>垫底</strong>。</p>
+<h2 id="垫底！"><a href="#垫底！" class="headerlink" title="垫底！"></a>垫底！</h2><p>再说一遍，这标准不是我定的，是客观规律拿幸存机会、繁衍机会、历史地位、社会地位、财富分配……等等等等可怕的客观权力暴力实施的，跟我申诉没有意义。</p>
+<p>看清楚及格线在哪里，</p>
+<h3 id="不要垫底。"><a href="#不要垫底。" class="headerlink" title="不要垫底。"></a>不要<strong>垫底。</strong></h3>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%96%84%E6%84%8F/">善意</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%8F%90%E9%86%92/">提醒</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/jia-ru-ni-yi-hou-you-le-xiao-hai-shi-jiao-ta-shan-liang-huan-shi-rang-ta-bian-de-xian-shi/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">假如你以后有了小孩，是教他善良，还是让他变得现实？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/zhong-guo-gu-dai-wei-shi-yao-yao-yi-shang-ta-men-bu-zhi-dao-ba-tu-di-fen-gei-san-fen-zhi-yi-de-ren-qi-ta-ren-cong-shi-gong-shang-ye-zhe-yang-dui-guo-j/">
+                        <span class="hidden-mobile">中国古代为什么要抑商，他们不知道把土地分给三分之一的人，其他人从事工商业这样对国家好处更大吗?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

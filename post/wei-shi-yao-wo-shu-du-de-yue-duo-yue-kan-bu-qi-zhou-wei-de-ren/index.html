@@ -1,0 +1,561 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>为什么我书读得越多，越看不起周围的人？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="为什么我书读得越多，越看不起周围的人？">
+              
+                为什么我书读得越多，越看不起周围的人？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      948 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      9
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">为什么我书读得越多，越看不起周围的人？</h1>
+            
+            <div class="markdown-body">
+              <p>很多知识分子在这方面不清醒，生怕自己犯了“看不起人”的错误，怕犯了“精英罪”，“脱离了群众”。</p>
+<p>于是天天自我反省，“我是不是看不起群众啦”。</p>
+<p>“我要自我纠正，我要避免看不起人民群众这种心态，我要看得起群众。”</p>
+<p>然后不管哪里跑出个人来批评“你是不是看不起群众”，都要战战兢兢的灵魂清洗一番。</p>
+<p>“为了证明我没有看不起你，你的作业我包了。”</p>
+<p>我先不说这对不对，只说这办法有没有可持续性吧。</p>
+<p>有吗？</p>
+<p>自我反省不要时间啊，时间就是生命。</p>
+<p>照这个模式跑下去，我看你累都要累死。</p>
+<p>阿猫阿狗来一句“看不起”就可以兑走你两个小时的生命，你说你这叫不叫烂命一条。</p>
+<p>你们一定要注意一个基本原则——<strong>不经济的解决方案，都是伪方案</strong>。</p>
+<p>你可以拿来对付一下，但是不要认为这就算解决了问题。</p>
+<p>解决问题，不光要把症状抑制，还<strong>必须要在成本上压倒攻击手段</strong>。</p>
+<h3 id="只有防御策略对进攻策略拥有了成本优势，你才能满意的说我找到了方案。"><a href="#只有防御策略对进攻策略拥有了成本优势，你才能满意的说我找到了方案。" class="headerlink" title="只有防御策略对进攻策略拥有了成本优势，你才能满意的说我找到了方案。"></a>只有防御策略对进攻策略拥有了成本优势，你才能满意的说我找到了方案。</h3><p><strong>所以，用“触及灵魂”法“扭转态度”法并不是“你是不是瞧不起我”的解决方案。</strong></p>
+<p>你可以直接把它丢进垃圾桶了。</p>
+<p>我来告诉你这件事的正解是啥。</p>
+<p>就是把一切问出这个问题的人送出门外，请ta要么自己解决好这个问题再来，要么找一个ta认为没有这个问题的供应商。</p>
+<p>你们记得那个“闲鱼方案”吗？</p>
+<p>在下提供的是“无售后服务”，这是我的价格之所以你可以负担得起的原因。</p>
+<p><strong>任何尝试抬高售后成本的需求，都会导致你的交易资格被取消。</strong></p>
+<p>解决好“我是不是看不起你”的成本，理所当然的要由你承担。</p>
+<p>你觉得我看不起你，要么你自己学会憋住，藏好了别让我看出来，要么你自己向你自己证实我没有。</p>
+<p>总之，你不解决好，你到我这来要求这种根本没提供的服务，你只会被保安架出去。</p>
+<p>哪有到医院求听相声的？</p>
+<p>我这低价割肿瘤，你觉得我看不起你，你别割或者找别人割就行了。</p>
+<h3 id="另外，这个答案我可以直接告诉你——"><a href="#另外，这个答案我可以直接告诉你——" class="headerlink" title="另外，这个答案我可以直接告诉你——"></a>另外，这个答案我可以直接告诉你——</h3><h3 id="我是看不起你，"><a href="#我是看不起你，" class="headerlink" title="我是看不起你，"></a>我是看不起你，</h3><h3 id="我不是看不起你“不读书”，"><a href="#我不是看不起你“不读书”，" class="headerlink" title="我不是看不起你“不读书”，"></a>我不是看不起你“不读书”，</h3><h3 id="我是看不起你问这种问题。"><a href="#我是看不起你问这种问题。" class="headerlink" title="我是看不起你问这种问题。"></a>我是看不起你问这种问题。</h3><h3 id="我看不起你想通过问这个问题达成的一切目的。"><a href="#我看不起你想通过问这个问题达成的一切目的。" class="headerlink" title="我看不起你想通过问这个问题达成的一切目的。"></a>我看不起你想通过问这个问题达成的一切目的。</h3><blockquote>
+<p>无非是想要逼出一个“看得起”，再妄想借这种逼出来的“看得起”撬动点什么本来拿不到的利益，想想不觉得猥琐吗？</p>
+</blockquote>
+<h3 id="更看不起你为追求那些目的而选择的手段。"><a href="#更看不起你为追求那些目的而选择的手段。" class="headerlink" title="更看不起你为追求那些目的而选择的手段。"></a><strong>更看不起你为追求那些目的而选择的手段。</strong></h3><blockquote>
+<p>就算你要追求别人的“看得起”，你不去练点硬功夫、干点硬成就，却靠问这种问题投机取巧，猥琐之上叠猥琐。  </p>
+<p>流氓大爷“小娘子手真白，陪大爷喝一杯”比这都要光明磊落一次方。  </p>
+<p><strong>我看不起上再叠看不起。</strong></p>
+</blockquote>
+<p><strong>这甚至跟我读没读书，读的书比你多不多无关。</strong></p>
+<p><strong>我就是小学没毕业，而你是双博士学位，你来我这“你是不是看不起我”，</strong></p>
+<p><strong>我都一样看你不起。</strong></p>
+<h3 id="这不妨碍我给你割肿瘤，话说清楚——妨碍你在我这割肿瘤的可不是我。"><a href="#这不妨碍我给你割肿瘤，话说清楚——妨碍你在我这割肿瘤的可不是我。" class="headerlink" title="这不妨碍我给你割肿瘤，话说清楚——妨碍你在我这割肿瘤的可不是我。"></a>这不妨碍我给你割肿瘤，话说清楚——妨碍你在我这割肿瘤的可不是我。</h3><p>你就给个痛快话，要不要割。</p>
+<p>不割请出去，别挡着别人。</p>
+<p>下一位。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/"> </a>
+                    
+                      <a class="hover-with-bg" href="/tags/game/">game</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%9C%8B%E4%B8%8D%E8%B5%B7/">看不起</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ri-chan-qi-che-ti-chu-de-yong-heng-de-ri-shi-wei-lai-zhu-yi-she-ji-li-nian-ying-gai-ru-he-li-jie/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">日产汽车提出的「永恒的日式未来主义」设计理念，应该如何理解？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/zhong-guo-tian-yan-fa-xian-di-wai-wen-ming-ke-yi-xin-hao-xiang-guan-tuan-dui-zheng-jin-yi-bu-pai-cha-xin-hao-ru-bei-zheng-shi-cun-zai-zhe-jiang-yi-wei/">
+                        <span class="hidden-mobile">中国天眼发现地外文明可疑信号，相关团队正进一步排查，信号如被证实存在这将意味着什么？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

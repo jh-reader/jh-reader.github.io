@@ -1,0 +1,569 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>正确的专制和民主，哪个更好？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="正确的专制和民主，哪个更好？">
+              
+                正确的专制和民主，哪个更好？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      27
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">正确的专制和民主，哪个更好？</h1>
+            
+            <div class="markdown-body">
+              <p>把“专制”和“民主”对立起来，其实是一种相当奇妙的表达。</p>
+<p><strong>事实上，这个世界上不存在真正意义上的“专制”，即使是传说中的“奴隶制”，“神权统治”，都并不是本质意义上“专制”的。</strong></p>
+<p>一切的制度都只是<strong>名义性</strong>的权力安排，在<strong>实践</strong>上，一切的社会制度都会不由人类自主的向它应有的机制靠拢。权力的设计在各个时代有着大量不同的理想图纸，它们是被后世的学者/政治家简化和抽象化出来的。在<strong>实践</strong>上，几千年来所有的制度在本质上一向都没有改变过——<strong>人类一直都是实质意义上的精英共和制。</strong></p>
+<p><strong>换言之，人类只有一种制度，即实质意义上的民主制。</strong></p>
+<p>哪怕一个社会立法从名义上规定“所有人人都必然是某一个人的直属奴隶、对其主人没有财产权、没有生存权”，即便就是这样，这个社会只要运行起来，仍然会是本质意义上的精英共和制。</p>
+<p>按制度，曹操是汉献帝的绝对下属。</p>
+<p>按制度，鳌拜是康熙的奴才。</p>
+<p>按制度，任何一个朝代的军队都理应绝对服从中央的一切指令。</p>
+<p><strong>制度只是理想</strong>，实践才是要害。</p>
+<p>人类是严格的依靠合作来达成生存目标的动物。而只要是依赖合作，则对合作过程拥有的天然影响力就背书了参与者的权力。<strong>你在多大程度上能影响结果，你就有多大的实际权力——无论你名义上的地位有多低，名义上的权力有多小。</strong></p>
+<p>举个例子——很少有人想得起来，排除掉股东大会，其实几乎所有的企业的业务部门都是绝对的专制体制。</p>
+<p>没有哪个部门会用投票来决定这个部门应该怎么做业务。理论上，上司可以随时决定炒掉下属。但是真的就因为这样一个部门就全是上司说了算，不必在意下属的感受和意愿了吗？</p>
+<p>即使下属们没有名义上的投票权，下属对于事情应该怎么做、什么样的事情可做、什么样的事情不可做，真的就没有影响力吗？</p>
+<p>他没有投票权，你就不给他“票”了吗？你就不必考虑他会把票投给谁吗？不必考虑他是否赞成和热爱你的决定吗？</p>
+<p>任何一个稍微对事情是如何做成有点概念的话事人，无论是铜锣湾的扛把子也罢，是软银的董事长也罢，是苹果的ceo也罢，是天皇也罢、女王也罢、首相也罢、元首也罢——无论其名义的权力如何绝对，名义的地位如何至高无上、“永久”和强势，都会明白一个道理——他人的影响力是天然无法剥夺的，而且是绝对的。</p>
+<p>因为同一个合作机制里的其他人是积极的愿意配合还是消极的勉强敷衍，是能决定成败乃至存亡的决定性因素。</p>
+<p>无论你是否在名义上给我权力，我都有决定自己是积极还是消极的权力。只要人类还是拥有自由意志的自主的意识体，这一权力都是无可剥夺的。这就是天赋之人权——出于自然法则的人的权力。</p>
+<p>一个组织要成功，领导者必须照顾合作机制中其它参与者的意愿。</p>
+<p><strong>是依靠高瞻远瞩的智慧猜到也罢，靠运气赌中也罢，是靠某种教育塑造对方的需求来匹配自己的供应也罢，是通过投票机制来测量也罢，这些都只是识别“民意”的方法问题。绝没有因为这些方法的隐性或者显性，就真的去掉了这个基本要素。</strong></p>
+<p>如果你不照顾，其他参与者就会消极，组织的生产率就会跳水般的下降，甚至下降到入不敷出的负数水平。</p>
+<p>暴力并不能解决问题。因为即使你有无比强大的暴力机构能以生死威胁强迫参与者“配合”，你也会发现两个问题：1）这种“配合”流于表面而缺少实质产出。因为人们可以装傻，可以称病，可以扼杀突出的高效者来保持统治者对效率的低期待（社会性处决“劳模”）2）这些暴力手段的维持本身需要高昂的成本。几乎会吃掉一个消极的生产结构所能生产的一切微薄的产出（如果还谈得上有产出的话）。事实上，这种结构的产出一定是支撑不了暴力的成本的，暴力成本的缺口往往是靠前代的积蓄在临时维持，一旦耗尽了积蓄就会崩溃。</p>
+<p>这还没有涉及到更强烈的用脚投票的权力——辞职、逃亡、发起和协助拼死反抗。</p>
+<p>所以，在实践意义上，世界上从来就没有任何真正意义上的“专制国家”或者“专制社会”，甚至都不存在“专制的组织”。</p>
+<p><strong>“专制社会”只是一种被概念性的构建出来的，如同“绝对光滑平面”、“理性自私人”一样的学术概念，一种数学性的抽象，一种理式。</strong></p>
+<p>它从未在真实的意义上存在过，此刻也不存在，在可见的将来也不可能存在。因为它在现实里根本无法运转，一定会在激烈的同类竞争和外部挑战中迅速的被击溃和消灭。</p>
+<p><strong>换句话说，世界上事实上只存在一种民主与另一种民主的竞争，根本就不存在“民主与专制之争”。</strong></p>
+<p>名义制度之间的差异被某些强烈的需求猛烈的放大和扭曲了。被敌对的社会形态在宣传中被描绘成了“全面的专制”，似乎每一滴血每一个毛孔都是专制的，生活在其下的成员似乎每一秒钟，每一毫米都是“不自由”的。实际上根本就不是这样，只是小朋友们总是迫不及待的想要获得令自己满意的“主权”，所以要去响应这样的描绘罢了。</p>
+<p>人类最大的悲剧，就是权力结构的新成员因为缺少足够的阅历和深入思考，极其容易信从心中的本能冲动，在系统的引导下去将承诺赋能给自己的方案美化如天堂，将拒绝承诺赋能自己的方案丑化如地狱，在思想中构造出势不两立和黑白分明来，变成一块强大的破坏力量，极碎原有的权力结构造成洗牌式的动荡。</p>
+<p>动荡落定之后，用不了一百年，自然法则会将情况回归到几乎始终一致的实质的“精英共和”状态。名义体制或有改变，礼仪细节或有变更，但对实际的权力序列和实际的合作机制的影响微乎其微——于是又开始孕育“再来一次“的新冲动。</p>
+<p>那么在“这种民主”与“那种民主”之间，是不是更民主一点——或者说放在现代的语境下——更接近“把人头投票，按多数票指向管理一切公共事务”的制度就一定更好呢？</p>
+<p>这才算是正确的提出了问题。</p>
+<p>那些“民主体制信仰者”们认为当然是这样。</p>
+<p>真的吗？</p>
+<p><strong>如果的确是这样，作为最重视有效性的组织，为什么军队普遍不是这种体制？</strong></p>
+<p>你们没有发现这样一种充满讽刺意味的事实吗？</p>
+<p>一旦要真刀真枪、立见生死的以命相搏，一旦去掉一切的Bullshit的空间，<strong>没有人会认为“民主”的军队会是赢家。</strong></p>
+<p><strong>如果民主是绝对更好的组织形式，何以解释“为什么现代化的军队的班组不安排成由士兵们投票来决定战术”这个尴尬的普遍事实？</strong></p>
+<p>如果民主是绝对更好的组织形式，则也没有任何理由解释为什么公司不是靠一人一票来管理。——为什么超市不把所有的员工集中起来一人一票来决定商品卖多少钱？为什么不把研发中心的所有员工集中起来一人一票来决定未来的产品设计和薪酬方案？</p>
+<p>这些事实里有人最诚实的答案。任何主张“民主一些一定更好”的人，都要解答这个问题——<strong>既然你如此有信心，你是否愿意用真金白银购买一家“民主的公司”的股票？</strong></p>
+<p>这就是你真正诚实的立场。</p>
+<p>一边主张你自己组织的军队和你自己出资的企业万万不能搞民主投票，一边宣称更民主<strong>总是</strong>更好的，是一种显而易见到令人头晕目眩的虚伪。退一万步说，你也至少要解释这其中的矛盾如何不构成问题。</p>
+<p>真正的事实是——<strong>只有在有效专制不可能达成的时候，民主才成其为不坏的替代选择。</strong></p>
+<p>在严格意义上说，这才是几千年文明史所体现的事实，也是唯一与组织逻辑，自然法则协调的结论。</p>
+<p>问题从来就不是“要不要更多民主”，而是“如果再减少一点民主成分还能不能继续保持有效”。</p>
+<p>在自然界存在着一种来自生存竞争的天然压力，迫使人将不必要的民主压缩到尽头，并且不断的再向极限尝试。</p>
+<p>但自然法里又给了人类一种限制，就是一旦你低于它圣心默许的极限，它会用失败教训你的傲慢——你们没有承受那种高度的专制的能力，勉强不来。</p>
+<p>这种“越深越好，但越过承受力就崩溃”的客观限制，和“不试试怎么知道不能承受”的测量手段的无能，是人类一切历史悲剧的最好总结。</p>
+<p>但再怎么悲剧也罢，事实没有改变——<strong>在可以有效运转的前提下，尽可能排除民主成分才会提高组织效能，而不是相反。</strong></p>
+<p><strong>这才是朴素的事实。</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%B0%91%E4%B8%BB/">民主</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%B8%93%E5%88%B6/">专制</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-shen-wei-you-pai-de-chuan-pu-fan-er-cheng-le-min-cui/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么身为右派的川普反而成了民粹？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-wu-ke-lan-shu-xue-jia-kang-si-tan-ding-ao-er-mei-zuo-fu-zi-sha/">
+                        <span class="hidden-mobile">如何看待乌克兰数学家康斯坦丁·奥尔梅佐夫自杀?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

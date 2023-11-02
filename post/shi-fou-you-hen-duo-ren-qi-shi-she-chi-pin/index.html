@@ -1,0 +1,576 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>是否有很多人歧视奢侈品？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="是否有很多人歧视奢侈品？">
+              
+                是否有很多人歧视奢侈品？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      21
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">是否有很多人歧视奢侈品？</h1>
+            
+            <div class="markdown-body">
+              <p>我发现国内有一种非常奇妙的传统心态——仇视奢侈品消费。</p>
+<p>似乎觉得富裕阶层花几百万买一件珠宝、花几个亿买一艘游艇、花几万买一双皮鞋，是不可容忍的奢侈浪费，是一种罪恶，并且把政府征收奢侈品税的政策视为一种对这种观点的背书和赞同。</p>
+<p>把这理解为“保持艰苦朴素的优良传统”的一部分。</p>
+<p>这<strong>大错而特错</strong>。</p>
+<p>中国征收奢侈品税的关键原因根本不是“奢侈品有罪”，而是<strong>因为现阶段奢侈品多为进口产品</strong>。</p>
+<p>如果你们把视角转换过来考虑，假设奢侈品都是来自中国国内的产品，那么富人们购买奢侈品到底直接的结果是什么？</p>
+<p>是用<strong>极少的边际成本</strong>获得了<strong>极高效率的、基于完全自愿的</strong>财富转移，并且转移的方向是从各种原因良莠不齐的财富集中处，转向确定无疑的<strong>技艺精湛、经营艺术卓越</strong>的<strong>实业部门</strong>。</p>
+<p>一次交易，只不过涉及到二十克媒介物，或者一张几平方英尺的皮革、甚至只是一张纸加一点颜料，就可以将以亿计的闲置的、富余的财富转移到一家对本行业积累至深、经营传承世代不衰、世界领先的实业机构里去，这笔交易有极高的税收效率。</p>
+<p>这家实业机构拿到这笔钱难道是锁进金库里去吗？当然不是，它们要去研发下一代领先全球的技术，去占住下一个世代的顶尖。你以为德国瑞士的精密制造优势是哪里来的？意大利的设计传统和法国的文化品牌是怎么来的？</p>
+<p>瑞士的精密机床是为做出更精致的机芯而创造出来的，这些机床技术、精湛技艺，真的只拿来做了手表吗？</p>
+<p><img src="https://picx.zhimg.com/50/v2-19c3b16ed1ac70964c16ec8e978235c6_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>这家Bumotec是怎么来的？</p>
+<p><img src="https://pic1.zhimg.com/50/v2-c1da6cbdb9ee5b97152c6146a41f6d26_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>最后来一锤定音，看看Bumotec的logo：</p>
+<p><img src="https://picx.zhimg.com/50/v2-129904c8adbffcc5fb669ee321aee6b2_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>够直白了吗？</p>
+<p>给你们看看他们的宣传手册：</p>
+<p>头几页就是珠宝、钟表加工。</p>
+<p><img src="https://picx.zhimg.com/50/v2-2e6e06e7a8b97c746c8e11887fe553f1_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>反手就是涡轮叶片。</p>
+<p><img src="https://pic1.zhimg.com/50/v2-ce3c60a74d26ff599d86121e85467451_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>超级跑车零件：</p>
+<p><img src="https://picx.zhimg.com/50/v2-2646e816ef0c29dcf34526bdca10630a_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>这够典型了吗？</p>
+<p>直接受益的工匠、工程师、技师……因为这项肥美的交易，有很大机会摆脱996的拼体力劳动方式——这甚至是最好的途径之一。</p>
+<p>相比之下，富人拿到那一张纸、一块皮革制品、一瓶香料调和物、一块钢铁橡胶塑料结构物，交出沉淀在他们手里的亿万资金，这安排有何不好？</p>
+<p>真正的问题是ta们现在是在<strong>进口</strong>奢侈品。</p>
+<p><strong>问题在“进口”，而不在“奢侈品”消费本身</strong>。</p>
+<p>在本国消费中发生的本国奢侈品交易对于本国实业部门是一种非常美好的安排。甚至是<strong>中国制造业由大而强的必由之路</strong>。</p>
+<p>难道中国有一天走向了世界第一制造业强国，竟然不会生产出大批被其他国家视为值得用超额溢价去追求那一点极致性能和底蕴的产品？</p>
+<p>难道谁世界第一了，要勒令它“不准往贵里卖”？</p>
+<p>想穷一辈子？</p>
+<hr>
+<p>那么，作为你自己，什么是消费奢侈品的健康心态？</p>
+<p><strong>第一，不要基于炫耀或者“证明实力”的目的购买奢侈品，因为这对你自己是一种极其深刻的损害。</strong></p>
+<p>坦率的告诉你，“通过展现自己很有钱然后指望勾出别人的钱来”这种“策略”，只是一种只对脑子还不清楚的尚未摆脱拜物冲动的愚人有用的骗术。在明白人——也就是真正握有生产力优势，能扎实的改变你的命运的人——眼里，只会是扣分信号。</p>
+<p>要么你是没看出来我是什么样人，以至于还想用这个初级手段来套我，于是你眼瞎且人品不行——主要是眼瞎得受不了；</p>
+<p>要么你是根本不懂事，根本无法有效的将自己的行为和预期后果做有效的逻辑联接。</p>
+<p>这种精神上的残疾多少钱都填不平，绝对的成事不足败事有余。你会出来行走江湖只能说明要么你爹妈不爱你，要么你家教不严。</p>
+<p>你很穷，你用这一手来搞第一桶金，在抛开道德评价的前提下好歹还有一定合理性。如果你真是已经有了第一桶金，你还来这套，只能说明你没这个命。八成机会五年内你不是赌光就是乱投亏光，九成九的机会你的子女不成器，“富”半代而已。</p>
+<p>第二，<strong>确实打算买真正意义上的奢侈品，必须要抱着“这是在选择一个够资格的对象接受我这笔财富”的心态。</strong></p>
+<p>只有这种心态不会败坏家风、破坏子孙的品格；不会导致个人欲望膨胀、触发毒瘾；不会扭曲积极健康的价值观，丧失工作欲望、沉湎享受。</p>
+<p>什么是真正意义上的奢侈品？就是它并没有特别的实用价值，它不是超高速的最新显卡、不是可以下潜到一万米的深潜器，不是极端轻薄的超科技防寒服、不是可以全球保密通话的卫星电话——这些东西再贵，贵破天际，也不叫奢侈品。</p>
+<p>空军一号值53亿美金，但它并不是奢侈品。</p>
+<p>奢侈品是一种并非绝对必要的“多余之物”。</p>
+<p>它天生带着“超出必要的享受”的属性，于是逻辑内嵌了“引人沉迷享受”的毒性。这种毒性你没有东西对冲，做给子女看就会带偏ta们的价值观，贻害无穷；做给自己看，会损伤意志和品格，绝非良兆。</p>
+<p>它必须被转性，必须找到救赎才有可能是安全的。</p>
+<p>而最大的救赎，就是奢侈品天生带有的慈善性质——<strong>在正确的鉴赏观的界定下，它是奖励极致技艺和卓越思考的最贴切的形式。</strong></p>
+<p>其实我不需要这么精准的手表，但我很欣赏这块表上所花的心思，尊敬这位师傅倾注在这表上的功夫和心血。能让这样的英勇行为不至于因为无人相助而受损失落，这样的心思不至于沦入无人理解的孤独迷茫，对我而言是一种特殊的值得争取的荣誉。</p>
+<p>被幸运赐给我看守的财富，本来就应该用在奖励和赞助这样的精神和努力上。</p>
+<p>这是一切财富所能达到的最高的价值之一，因为这个理由而将它们移交给配得的人，是一种对财富最正确的处置。</p>
+<p>由此而能得到那些精彩绝伦的东西，只是一个额外的奖赏。</p>
+<p>这不是“消费”，而是基于惺惺相惜、心意相通的<strong>捐赠</strong>。</p>
+<p>红粉遗佳人，宝剑赠英雄——这不叫“奢侈”，不叫“浪费”，这叫<strong>见义勇为</strong>。</p>
+<p>看清楚那个关键词——<strong>正确的鉴赏观。</strong></p>
+<p>什么叫正确的鉴赏观？</p>
+<p>就是你要懂。</p>
+<p>不只是懂那些“官网八卦”，“品牌故事”，还要懂那背后的心思、懂那背后的可贵之处。</p>
+<p>你自己没有人海沉浮、大起大落，没胼手胝足、流汗流泪乃至流血的拼杀过，你是不会懂的。</p>
+<p>所以，记住了，在你自己历尽千般、有所建树、八风不动心之前，你根本没有无害的参与奢侈品买卖的资格。</p>
+<p>什么是“有所建树”的标准？</p>
+<p>传世之作，可称有所建树——你创造了一番事业，有人肯接而且有人接了，这叫做有所建树。</p>
+<p>在这之前，你的任何购买行为没有充分的实用理由都是应该避免的。</p>
+<p><strong>这跟价格没有关系。</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Business/">Business</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%A5%A2%E4%BE%88%E5%93%81/">奢侈品</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-he-hong-meng-chu-lai-zhi-hou-shuo-hong-meng-shi-tao-pi-an-zhuo-de-sheng-yin-ji-hu-mei-you-le/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为何鸿蒙2.0出来之后，说鸿蒙是套皮安卓的声音几乎没有了？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-ping-jia-xiang-gang-yi-bo-shi-sheng-yin-sa-yan-sha-si-zhi-da-gua-niu-er-bei-jing-fang-dai-bu/">
+                        <span class="hidden-mobile">如何评价香港一博士生因撒盐杀死 3 只大蜗牛而被警方逮捕？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

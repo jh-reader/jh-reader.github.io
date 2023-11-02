@@ -1,0 +1,561 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何权衡感性和理性？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何权衡感性和理性？">
+              
+                如何权衡感性和理性？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      18
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何权衡感性和理性？</h1>
+            
+            <div class="markdown-body">
+              <p>“感性”其实是个伪概念。</p>
+<p>当一个人评价另一个人“很感性”的时候，ta事实上是在评价对方“不理性”，只不过做了“礼貌上的中和”罢了。</p>
+<p>这种评价表明了两层态度——</p>
+<p>首先，ta相信自己可以分辨何谓理性的，何谓不理性的。</p>
+<p>其次，ta基本认为理性是高贵的、非理性的决策逻辑是落后的、低贱的，因而是值得怜悯的。为了不刺激这可怜的人，所以假装“感性很重要”“感性也很好”，最后把“你这是感性”作为一种真诚的施舍送给对方——有时是自己。</p>
+<p>送给自己的时候，更多是因为这时理性的权威在别人手里，自己也不能不承认这一点，于是在恐慌性之下为了对抗理性霸权的绝对统治，自己必须要拿出一种看上去与理性势均力敌的“敌体”来作为基本后盾。</p>
+<p>这基本上就是“感性”概念被“哲学家”们制造出来，而又被渴望这盾牌的人们热烈欢迎的诞生过程。</p>
+<p>事实上，“感性”的定义不过是一缕青烟，仔细看看背后说来说去不过是不敢坦白承认的“非理性”三个字而已。</p>
+<p><strong>问题是，对抗“理性的霸权”，你并不需要高举“感性”这样的劣等品来自我防卫。</strong></p>
+<p><strong>因为在对方的道理和你的决策之间本来就隔着一层对方无法涉足的领域，就是你的决策数据和你的价值观自由。对方在对方所假设的前提上是正确的，并不意味着你必须依从对方给出的具体指示，因为没人能如同你一样了解你的条件、意图和价值观。</strong></p>
+<p>你根本用不着整个的否定理性的有效性，靠主张“理性推断并不是都能说中”这种事实上没有意义论述来对抗理性霸权。</p>
+<p><strong>因为理性本来就只能指出最好的赌注。</strong></p>
+<p><strong>（顺便，那些认为自己理性的结果等于真理的人，根本不知道理性是什么东西。）</strong></p>
+<p>你并不应该因为看得到这仍然不是100%把握，就放弃理性的结果，这就好像你不应该因为觉得“走下山也不能保证不摔跤”，于是决定滚下山一样。</p>
+<p>看明白了这个问题，我们再来谈“感性”问题。不过，从这里开始，我们不再使用这种“被赏赐的怜悯”，直接使用“非显式理性决策“这个更精确的称呼。</p>
+<p><strong>常被称为“感性”的东西，实际上是内嵌在人类本能之中的一种“非显式理性决策系统”。</strong></p>
+<p>举个例子来说，你明知某种蜘蛛是无毒的，但你一伸手就会寒毛直竖；你明知尿液是无菌的，但你想起来就皱眉；你明知某种蠕虫是无害甚至营养丰富的蛋白质，但你想象一下口感就感到恶心。</p>
+<p>你明知某事在账面计算上有盈利，但你无法接受——到了这一步，是不是“感性”的的评价就出来了？</p>
+<p>举凡种种被称为“感性”的决策方法，都是先于人的理性由长期自然演化和长期群里实践积淀下来的文化影响的结果。它或者通过基因、或者通过语言学习、文化浸润而绕过了人类的显式理性机制，在底层深刻的影响着人的行为。</p>
+<p>受影响者往往根本不理解这样做的理由是什么，只是被不这样做的想象所触发的直接生理反应所限制而被动的遭遇了那样高决策门槛。</p>
+<p>如没有绝对充分的理由和绝对明确的危机，人们仅仅凭着“纸上计算可行”，并不能翻越这些门槛。</p>
+<p>这使得打算靠这些“完美纸上作业”来决定性的影响ta人行为的人倍感挫折。——ta们其实是想骂对方“不理性”的，只不过年头久了学精了，改用“你很感性”这种政治正确话术罢了。</p>
+<p>但是这些从<strong>广泛的幸存事实</strong>里被遗传和直接写入的既定决策逻辑，真的因为当事人自己自觉的欠缺而是“非理性”的吗？</p>
+<p>你们觉得老鹰、章鱼的身体设计合理吗？</p>
+<p><strong>你们要记住那不是任何人类的理性过程的结果。</strong></p>
+<p><strong>不走人类显式理性路线的结果，在确切意义上当然一定是“非理性”的，但是并不意味着它一定不是合理的。</strong></p>
+<p>凭着本能的强烈不安、拿不出任何说得通的理由，却不能听从你的说服的人，其决策未必真的没有合理性。不梳理和分析具体的原因，仅仅凭着扣上“感性”或者“非理性”的帽子，强行压制对方顺从，结果往往不是你可以得意洋洋的说“我早说过吧”，而是一场大败。</p>
+<p>你想真正说服人，并不是只要赢得与人显式理性的论辩而已，<strong>你还要对那个ta自己也说不清的道理做出交代。</strong></p>
+<p>所以不用奇怪为什么你头头是道，而对方却不“服气”。</p>
+<p><strong>你所讨厌人的“感性”，本质上是一种人自己没有掌握的超理性。</strong></p>
+<p>最后我们来回答这个问题——“如何权衡理性与感性”？</p>
+<p>答案是理性和“感性”并不是一个“权衡”、“取舍”的关系。</p>
+<p><strong>人的理性必须要学会尊重和敬畏自己的非理性本能。</strong></p>
+<p>你的感性“坚决的反对”，绝不是因为它真的反对和抗拒你的理性本身，而是在强烈的提示理性的论述尚有遗漏，其自洽仍然是傲慢的。</p>
+<p>是的，这不是在否定你是自洽的，但这是在提示你的自洽是视野局限的结果。</p>
+<p>你的直觉本能在反复的、焦虑的希望你看到一个ta说不出来的点，好像一头忠犬扯着你的裤腿不让你上车一样。</p>
+<p>ta说不出来，但是ta有一个point。</p>
+<p>ta不是要反对你、不是要妨碍你、而是想要帮助你，想要你看到某个ta知道，但是无法借着你现在粗糙的理智来告诉给你的要害。</p>
+<p>如果你是时间紧迫，你只需要向ta恳切的说明——</p>
+<p>“我知道你虽然说不出来，但我相信你必有point，但很抱歉已经没有时间继续谈论了，不得不如此。我无法选择听从你的提醒而放弃现在的打算，但我会尽可能小幅、尽可能可逆的稳健推进，并且我答应你永远不放松对你所担忧的问题的警惕和对周期性回顾的坚持。”</p>
+<p>ta要的只是这句话。</p>
+<p>你说了这句话，ta就会坐下，不再需要你“权衡”是丢掉它，还是丢掉你的理性。</p>
+<p><strong>不过，你最好不要欺骗ta。</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%84%9F%E6%80%A7/">感性</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ying-gai-dui-fu-wu-yuan-shuo-xie-xie-ma/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">应该对服务员说「谢谢」吗？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-qia-ru-qi-fen-di-gan-xie-ren/">
+                        <span class="hidden-mobile">如何恰如其分地感谢人？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

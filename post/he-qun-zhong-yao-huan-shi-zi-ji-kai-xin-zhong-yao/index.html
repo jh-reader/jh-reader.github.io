@@ -1,0 +1,584 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>合群重要还是自己开心重要？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="合群重要还是自己开心重要？">
+              
+                合群重要还是自己开心重要？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      11
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">合群重要还是自己开心重要？</h1>
+            
+            <div class="markdown-body">
+              <p>第一个问题——</p>
+<p><strong>唯开心是从，是开心最大化的最佳策略吗？</strong></p>
+<p>我们可以把这个问题换个更通俗的形式——</p>
+<p>总是循着香味吃掉离自己的最近的花生，是使得花生获得量最大化的最佳策略吗？</p>
+<p>请先查看此链接：</p>
+<p><a href="https://link.zhihu.com/?target=https://m.baidu.com/sf/vsearch?pd=video&word=%25E6%258D%2595%25E9%25BC%25A0%25E9%2599%25B7%25E9%2598%25B1&tn=vsearch&sa=vs_tab&lid=10555846209837742083&ms=1&from=844b&atn=index">花生问题</a>  </p>
+<p>告诉我——</p>
+<p>这个问题的答案是什么？</p>
+<p>合群重不重要，这个再说。</p>
+<p><strong>开心绝对不能成为你的人生首要需求。</strong></p>
+<p>你要是不服，就再往下多翻十页、二十页，体会一下，这些视频极其形象和直白的向你展示了这个世界为执行“开心首要算法”的人准备了什么样的惊喜。</p>
+<p>这么跟你说吧—— 一个小小的游戏，只为了赚你那30块钱下载费，是完全不忌讳让你留级、辍学、失恋、失业的。</p>
+<p>它处心积虑的研究人对什么样的声光色艺、什么样的软语娇言、什么样的功名利禄无法抗拒，使尽浑身解数把你像老鼠一样诱进它那带倒刺的深井里，就为了从你身上割掉30块钱。</p>
+<p>这样的东西，遍布着这个世界，平均每一步都有至少三个。</p>
+<p>它们挤满货架柜台、玫瑰色的小门脸儿沿着马路两旁一字排开，饥渴难耐的等着把“开心最重要”的人零切碎割，生吞活剥。</p>
+<p>为什么“开心”不能成为人生的首要追求？</p>
+<p>因为如果它成了首要追求，你还有个狗屁的人生。</p>
+<p>更可悲的是——遵循永远直奔离自己最近的花生的老鼠，能吃到最多的花生吗？</p>
+<p>你再翻二十页。</p>
+<p>能吗？</p>
+<p>“开心最重要”的人，能得到最多的开心吗？</p>
+<p>来，</p>
+<p><a href="https://link.zhihu.com/?target=https://m.baidu.com/sf/vsearch?pd=video&word=%25E6%258D%2595%25E9%25BC%25A0%25E9%2599%25B7%25E9%2598%25B1&tn=vsearch&sa=vs_tab&lid=10555846209837742083&ms=1&from=844b&atn=index">花生问题</a>你再翻二十页。</p>
+<p>能吗？</p>
+<p>第二，“是快乐重要还是合群重要”，这个问法太没效率了。</p>
+<p>相信我，其实你是想问一整个系列——</p>
+<p>是工作重要还是快乐重要？</p>
+<p>是爱情重要还是快乐重要？</p>
+<p>是学位重要还是快乐重要？</p>
+<p>是赚钱重要还是快乐重要？</p>
+<p>是权力重要还很快乐重要？</p>
+<p>等等等等。</p>
+<p>一整个“还是快乐重要”系列，不是吗？</p>
+<p>你的整个point，主要就是没有快乐，这些东西你就干不下去了。很自然的，有十百千人对你说过“先把xx搞好你才会有快乐”。</p>
+<p>不搞好，哪来快乐？</p>
+<p>不快乐，怎么能搞好？</p>
+<p>你先把它搞好。</p>
+<p>你先给我快乐。</p>
+<p>你搞好，我包你快乐。</p>
+<p>你先给我快乐，我包给你搞好。</p>
+<p>看出这个模式没有？——要有蛋先要鸡，要有鸡先要蛋。</p>
+<p>不是吗？</p>
+<p>这类问题不是无解的。</p>
+<p>很简单，一定是先有蛋，这个蛋是一只恐龙下的。</p>
+<p>一只恐龙下了个鸡蛋，孵出了一只鸡，接着这只鸡以后生的都是鸡蛋了。</p>
+<p>快乐和这些ABCDEFG呢？</p>
+<p><strong>永远是你先“不快乐”的搞定ABCDEFG，然后再从中得到快乐。</strong></p>
+<p>无论ABCDEFGHIJK……是什么，永远只有这一种出路。</p>
+<p>为什么？</p>
+<p>因为 “快乐 &gt; 快乐的成果 &gt; 快乐”的两冲程循环就像一台发动机。虽然看似有自持性，但是本身是有内在脆弱性的，稍有风吹草动就会因为接力失误而熄火，被锁定在“不快乐也无成果”的阶段。</p>
+<p>而从不快乐的状态创造出成果来，就是这台两冲程发动机的冷启动。</p>
+<p><a href="https://link.zhihu.com/?target=https://www.zhihu.com/video/1517365031805493248"><img src="https://pic1.zhimg.com/v2-447bb3e5c7e0cd5d2590d4bc3e31ddc8.jpg" srcset="/img/loading.gif" lazyload>https://www.zhihu.com/video/1517365031805493248</a>你如果学不会启动这台发动机，随你怎么去照料它，它必定有一天会停转，而且永远的锁定在停转状态。</p>
+<p>你学会了手动启动，就不管多冷的天，总能一脚发动，说走就走。</p>
+<p>这个答案是确定无疑的，没有任何可转圜的余地。</p>
+<p><strong>没有能力在不快乐的状态下先把事情干成的人，最后一定失去一切快乐。</strong></p>
+<p>逻辑显然、不言自明。</p>
+<p><strong>从现在这一秒起，放弃一切侥幸。</strong></p>
+<p>我赢不赢，跟我快不快乐没有必然关联。</p>
+<p>“心情好”才能打，算个什么东西？</p>
+<p>心情不好，照杀。</p>
+<p>心情不好，那就去斩个华雄回来下酒。</p>
+<p>斩完了自然心情就好了。</p>
+<p>冷启动，哐哐哐哐哐。</p>
+<p>有点费华雄而已。</p>
+<p>记住这个答案，再喊什么“快乐重要还是xx重要”，想想华雄。</p>
+<p>他刚才心情就不好。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%BC%80%E5%BF%83/">开心</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-yi-yong-hu-fa-bu-shi-pin-qu-ni-ma-de-ji-ti-rong-yu-gan-lao-zi-mei-you-ji-yi-ming-zheng-zhi-lao-shi-de-hui-ying/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何看待一用户发布视频《去你妈的集体荣誉感，老子没有》及一名政治老师的回应？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ren-men-zong-shuo-bie-shuo-fei-hua-ting-le-yi-dui-fei-hua-dao-di-shi-yao-shi-fei-hua/">
+                        <span class="hidden-mobile">人们总说别说废话，听了一堆废话，到底什么是废话？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

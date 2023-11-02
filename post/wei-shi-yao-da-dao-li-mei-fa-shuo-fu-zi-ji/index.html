@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>为什么大道理没法说服自己？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="为什么大道理没法说服自己？">
+              
+                为什么大道理没法说服自己？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      19
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">为什么大道理没法说服自己？</h1>
+            
+            <div class="markdown-body">
+              <p>这问题在于把大道理和具体的操作打通，创造真正的“正体验循环”的条件越来越苛刻了。</p>
+<p>比如，在儒家独尊的时代，社会根据儒家的价值观被改造了几百年，它已经实现了“遵从儒家价值观，将会在现实层面得到奖励”的真实效应。</p>
+<p>比如，</p>
+<blockquote>
+<p>有子曰：“其为人也孝弟，而好犯上者，鲜矣;不好犯上而好作乱者，未之有也。君子务本，本立而道生。孝弟也者，其为仁之本与!”</p>
+</blockquote>
+<p>这个就是大道理。告诉你，你要听父母的话，尊重兄长。</p>
+<p>然后呢，社会对此作出了相应的安排——如果你在这方面成为了模范，那么社会的决策者会真正的考虑仅凭这一点就把行政权力分到你手里——也就是举孝廉制度；如果你不符合这个规范，那么你可能受到社会规则的惩罚——如“忤逆罪”可能落到你头上。</p>
+<p>社会成员们也会按照同一套价值观来评价你，来决定自己对你是不是要亲、疏、助、罚。</p>
+<p>你是个大孝子，那么当时的生意伙伴们会乐意给你商机。你爹妈都不顾，那么大家集体不跟你合作。</p>
+<p>当时的社会共识是——“不错，你的爹妈就是不讲理，大家都看在眼里，但尤其是ta们不讲理而你能坚守孝道，你才真的是一个值得信赖的交易对象。”于是，你在对父母尽孝时所受的委屈，所作的牺牲，会直接转化成你的社会资本，甚至社会地位。</p>
+<p><strong>这就是我们所说的“正体验循环”。——你相信了，你实践了，你验证了，于是这经验就会有力的改变你的行为。</strong></p>
+<p>孝道只是一个例子。礼义廉耻忠孝仁爱信义和平，没有一个字是空话。</p>
+<p>你守住了，整个社会都会自动协同的奖励你；</p>
+<p>你违反了，整个社会都会自动协同的惩罚你。</p>
+<p>整个社会的每一个细节、每一个角色的自我教育，都是按照这个价值观设计的。</p>
+<p>不但如此，当时的“中国”，就是一个人所能想象和抵达的整个文明世界。这种举世一致的价值观，是没有所谓的“定义域”或者“前提”的。你不需要遇到一个人就琢磨——“不晓得这个人认不认同孝道，没准ta是另一个思想派别的”或者到了一个没去过的地方就犹豫“不晓得这个地方的人讲不讲究忠义”。</p>
+<p>在那个时候，就算你去的是日本、朝鲜或者越南，或者琉球，你只管按照在家乡一样的价值观行事。你觉得按照这个价值观你受了不公待遇，你只管去当地官府告官，你会发现尽管细节为不相同，但是当地一样会按照你的价值观来判断问题。</p>
+<p>所以，在这个时候，“大道理”一点也不空泛，它非常现实。</p>
+<p>为什么现在“讲大道理”没有这么强的说服力了？</p>
+<p>第一，因为现在的人讲道理的时候往往忘记了这个“放诸四海而皆准”的前提已经消失了。而ta们在讲了自己的道理——也就是价值观——后，往往忘了补充这价值观到底在哪个人群中适用、如何分辨会使得它可行的人群。这份判断的方法和判断力的养成，本身就是一个巨大的挑战。</p>
+<p>第二，因为失去了社会的默认支持，你得把整个协议都私有化，不再能假定已经预先存在一个默认的公有协议。这就使得现在的大道理们要被讲述的话，其篇幅要比古代长得多。</p>
+<p>以前你提到一个点，你可以简单的说“此处详情参看论语第十三”，现在可不行，你得把论语第十三直接引述出来，加上解释，加上论证，然后才能在这基础上继续往下讲。</p>
+<p>但绝大多数人在教育自己的子女晚辈的时候根本不会做这个功夫。</p>
+<p>没有做这个功夫，事实上听道理的人根本就没有接收到任何有效的内容，想跟你讨论都没起点。</p>
+<p>这导致“讲道理”变成了一种用无效信息强行占用精力的荒唐行为。</p>
+<p>第三，因为失去了社会的多角度、多层次的制度安排的配合，现在的道理必须配合实际操作的具体指南。</p>
+<p>以前社会就是这么设计的，就好像一只排球队，你只管把球推向网前，那里必定会有一个队友跳起来完成二传，这样跟你讲的话只需要如何接好发球，怎样向前场传球就可以了。</p>
+<p>现在还得给你讲上哪去找愿意配合着战术的二传手、如何判断这二传手会传球，还得找到主攻手，还得找到按照这规则来主持比赛的裁判，甚至得找到按照这个规则来参赛的对手。</p>
+<p> 必须讲完一揽子的完整解决方案。</p>
+<p>两百万字，才刚刚能讲完这几大环节的导论。全都讲到能具体实操还能处理最常见的意外情况，不晓得一千万字够不够。</p>
+<p>先不谈讲道理的人有没有足够强烈的意愿来给你讲完，首先真的把这一千万字自己先搞得七七八八、有这一千万字可以拿来讲的人，就已经凤毛麟角了。</p>
+<p>更糟糕的是，对方肯讲，你有这听一千万字的耐心吗？</p>
+<p>在这个时代，要在两个陌生人之间同时凑齐这三个因素，一场道理才算是真的没白讲，可以真的触及灵魂、改变行为。</p>
+<p>否则，它只会有一个结果——“这太空了，不实用”。</p>
+<p>当然“不实用”了，因为你才听了五千字，这五千字只解决了一个问题，却引发了一大堆你觉得解决不了的问题。</p>
+<p>而那一大堆“解决不了的问题”的答案，在另外的九百九十九万五千字里面，你已经没有耐心去听了。</p>
+<p>有这个机缘给你讲完这一千万字的导论的，客观来说，可以说只有会和你相处十几年的你的父母。</p>
+<p>而你的父母凭自己凑得齐这一千万字的概率之低……低到令人感慨。</p>
+<p>ta们自己也只得一百万字，剩下百分之九十的问题，ta们自己也没有答案。因为那百分之九十的部分其实没有答案，其实这一百万字的所谓“可行”，ta们自己也拿不准是不是仅仅只是因为ta们自己运气足够好。</p>
+<p>但总不能面对面都不说话吧？</p>
+<p>所以，只好拿起大喇叭——</p>
+<p>“我是总督察黄启法，你已经被重重包围了，限你三分钟以内弃械投降！”</p>
+<p>倾完之后唯一的改变，就是大巴车换直升机。</p>
+<p><a href="https://link.zhihu.com/?target=https://b23.tv/Y7ABAc">我是总督察黄启发</a>  </p>
+<p>这极其难以构建出扎实的正体验循环，所以它很难见效。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%A4%A7%E9%81%93%E7%90%86/">大道理</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/er-shi-nian-nei-zhong-guo-zao-yu-da-gui-mo-zhan-zheng-de-ke-neng-xing-you-duo-da/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">二十年内，中国遭遇大规模战争的可能性有多大？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/zhong-guo-gong-min-ru-jing-e-luo-si-shou-zu-zhong-shi-guan-e-fang-ye-man-zhi-fa-yu-liang-guo-you-hao-da-ju-bu-fu-na-xie-xi-jie-zhi-de-guan-zhu/">
+                        <span class="hidden-mobile">中国公民入境俄罗斯受阻，中使馆：俄方野蛮执法，与两国友好大局不符。哪些细节值得关注？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

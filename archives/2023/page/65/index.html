@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>归档 - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 60vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="归档">
+              
+                归档
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">共计 2329 篇文章</p>
+  <hr>
+  
+  
+    
+      
+      <p class="h5">2023</p>
+    
+    <a href="/post/zhi-zi-yao-huan-shen-wo-pei-xing-he-shi-er-wo-cai-sui-gang-da-er-wo-gai-zen-yao-ban/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">侄子要换肾，我配型合适，而我才20岁刚大二，我该怎么办？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/guo-nei-hen-duo-jia-ting-bu-gou-zheng-jie-shen-ceng-ci-yuan-yin-shi-shi-yao/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">国内很多家庭不够整洁，深层次原因是什么？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/fen-lan-he-rui-dian-zui-zao-yu-nian-xia-tian-shen-qing-jia-ru-bei-yue-zhe-dui-liang-guo-yi-wei-zhao-shi-yao/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">芬兰和瑞典最早于 2022 年夏天申请加入北约，这对两国意味着什么？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-guo-xi-huan-yi-ge-nv-sheng-bu-xiao-xin-bei-zhi-dao-le-dan-ta-shuo-zi-ji-bu-gou-cheng-shu-ke-yi-dang-hao-peng-you-huan-you-ji-hui-ma/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如果喜欢一个女生不小心被知道了，但她说自己不够成熟，可以当好朋友还有机会吗?</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-he-kan-dai-xing-ren-chuang-hong-deng-cuo-wu-la-ji-fen-lei-deng-xing-wei-bei-na-ru-shi-xin-ji-lu/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何看待行人闯红灯、错误垃圾分类等行为被纳入失信记录？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-he-cong-you-jing-yan-de-ren-na-li-zheng-qiu-jian-yi/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何从有经验的人那里征求建议？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-he-ping-jia-wang-shang-de-er-shi-er-sui-shao-nv-jia-gei-yi-lang-ren-xian-zai-you-xiang-hui-zhong-guo-que-hui-bu-lai/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何评价网上的二十二岁少女嫁给伊朗人，现在又想回中国却回不来?</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/nan-sheng-zhen-de-hen-bu-neng-jie-shou-cai-li-ma/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">男生真的很不能接受彩礼吗？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/de-guo-zong-li-shuo-er-ci-guan-zhu-fa-guo-sao-luan-ju-shi-cheng-dui-ma-ke-long-you-xin-xin-ru-he-kan-dai-zhe-yi-biao-tai-sao-luan-shi-jian-bei-hou-she/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">德国总理朔尔茨关注法国骚乱局势，称对马克龙有信心，如何看待这一表态？骚乱事件背后深层原因有哪些？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/da-ling-hai-gui-hui-guo-hou-hen-shou-cuo-xiang-wen-wen-yi-zhi-zai-guo-nei-zen-yao-cai-neng-hun-hao/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">大龄海归回国后很受挫，想问问一直在国内怎么才能混好?</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/zai-da-cheng-shi-gong-zuo-zhong-ya-xia-yuan-zi-hua-de-wo-men-ru-he-zhong-shi-ai-ren-de-neng-li/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">在大城市工作重压下原子化的我们，如何重拾爱人的能力？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-he-xun-su-qie-he-li-di-fan-bo-bie-ren/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何迅速且合理地反驳别人？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ming-ming-shi-zi-ji-zai-li-ming-ming-dui-fang-shi-qiang-dao-luo-ji-ke-jiu-shi-bu-neng-you-li-fan-bo-zen-yao-ban/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">明明是自己在理，明明对方是强盗逻辑，可就是不能有力反驳，怎么办？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/wo-jiao-peng-you-zong-shi-xu-yao-xiang-xia-jian-rong-yin-wei-wo-fei-chang-nan-yi-xin-ren-bi-wo-qiang-de-ren-dan-shi-wo-you-xiang-yao-jiao-dao-you-xiu-/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">我交朋友总是需要向下兼容，因为我非常难以信任比我强的人，但是我又想要交到优秀的朋友，我该怎么办呢？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-he-rang-zi-ji-zai-wei-ren-chu-shi-shang-bian-de-qiang-shi/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何让自己在为人处世上变得强势？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/sha-te-yu-yi-lang-hui-fu-wai-jiao-guan-xi-shi-fou-yi-wei-zhao-qi-dui-mei-xi-fang-wai-jiao-de-zhuan-xiang-mei-guo-hui-ru-he-ying-dui-wei-lai-sha-yi-de-/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">沙特与伊朗恢复外交关系，是否意味着其对美西方外交的转向？美国会如何应对未来沙伊的合作？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/xian-dai-mei-jun-dao-di-you-duo-qiang/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">现代美军到底有多强？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/zen-yao-guan-li-neng-li-bi-ni-qiang-de-xia-shu/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">怎么管理能力比你强的下属？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/niu-dun-li-xue-dan-sheng-qian-dan-dao-shi-ru-he-ji-suan-de/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">牛顿力学诞生前弹道是如何计算的？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/wei-shi-yao-chuang-shi-shen-rang-zhe-ge-shi-jie-shi-ruo-rou-qiang-shi-de-nan-dao-he-ping-gong-chu-yi-qie-gong-ping-yi-dian-bu-xing-ma/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">为什么创世神让这个世界是弱肉强食的?难道和平共处一切公平一点不行吗？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+</div>
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/archives/2023/page/64/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/archives/2023/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2023/page/63/#board">63</a><a class="page-number" href="/archives/2023/page/64/#board">64</a><span class="page-number current">65</span><a class="page-number" href="/archives/2023/page/66/#board">66</a><a class="page-number" href="/archives/2023/page/67/#board">67</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2023/page/117/#board">117</a><a class="extend next" rel="next" href="/archives/2023/page/66/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

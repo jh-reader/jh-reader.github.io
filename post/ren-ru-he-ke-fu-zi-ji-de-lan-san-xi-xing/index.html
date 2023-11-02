@@ -1,0 +1,567 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>人如何克服自己的懒散习性？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="人如何克服自己的懒散习性？">
+              
+                人如何克服自己的懒散习性？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      17
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">人如何克服自己的懒散习性？</h1>
+            
+            <div class="markdown-body">
+              <p>多挨生活的毒打。</p>
+<p>这并不是在抖机灵开玩笑。</p>
+<p>你看到非洲的狮子够懒散吧——它们有时一天睡二十个小时，再懒点就直接长眠了。</p>
+<p>它们如果更勤劳一点岂不是可以活得更好么？比如没事多巡一下逻，多找点机会？看到羊了多跑一跑，凭啥说一定追不到？</p>
+<p>并不会，它们还真的是要等肚子饿了才有足够的斗志和动力去打猎。不饿的时候，就是你拿棍子赶着它去打猎，它也是先干掉你再回去躺着。</p>
+<p>实际上，<strong>幸存主要靠的是休息，不是“努力”。</strong></p>
+<p>休息是低消耗的、安全的、稳妥的，“努力”是高消耗的、有风险的、充满不确定性的。</p>
+<p>能休息，自然就应该先休息。</p>
+<p>这并不是不健康的。每天被焦虑驱使着到处乱摸乱试，是块石头都翻一下，有枣没枣都戳三杆子，这是速死之道，而不是什么好做法。</p>
+<p>这种本能是写进生物本能的底层的，所以才会造成人类有得混就一直混，实在没得混才动一动的“懒散习性”。</p>
+<p><strong>但这种安排本身是健康的。</strong></p>
+<p><strong>人应该做的是接受这一点，学会顺应这个安排去追寻更好的结果，而不是为此感到负罪、胡作非为，然后（事实上是毫无意义的）精尽人亡。</strong></p>
+<p>懒散到不该再懒散了，生活就会主动来毒打你，你自然会因为挨了各种毒打而生成自己的挨打记忆。这些记忆自然会帮你塑造出一个恰当的焦虑传感器来、你能维持的懒散下限自然就调整了。</p>
+<p>你还是会能躺就躺，只是自然而然躺不了那么久了。</p>
+<p>那什么叫做顺应这个安排去追求更好的结果呢？</p>
+<p><strong>就是对“我正在被毒打”这一点敏感一点</strong>，不要让生活拍拍肩膀不行改敲敲脑袋，敲敲脑袋不行改一记耳光，一记耳光不行改左右开弓，左右开弓不行改拳打脚踢，拳打脚踢不行改斩手断脚，斩手断脚不行改家破人亡，家破人亡都不行，改网游封号。</p>
+<p>非要把你的道具都扣了你才知道厉害。</p>
+<p>问题出在哪，问题出在<strong>很多人挨了生活的毒打，却用上麻药解决</strong>。</p>
+<p>从上网喷人到抽烟喝酒到六合彩到网络贷到以贩养吸，生活打你打得都工伤了，都追不上你放大剂量的脚步，你痛觉整个都没了，最后只能动锐器让你生活不能自理了。</p>
+<p><strong>停止打麻药</strong>，弹一下脑崩儿就够了，你也就不需要拄着拐来问“怎么可以改变懒散”了。</p>
+<p><strong>人家根本不是比你勤奋，人家是比你敏感。</strong></p>
+<h2 id="要改的根本不是懒，而是打麻药。"><a href="#要改的根本不是懒，而是打麻药。" class="headerlink" title="要改的根本不是懒，而是打麻药。"></a><strong>要改的根本不是懒，而是打麻药。</strong></h2><hr>
+<p>这有两个巨大的附加问题——</p>
+<p>1）这样岂不是把一切都交给了生活的毒打？</p>
+<p>那理想呢？追求呢？那不是都没了？</p>
+<p>这个问题一样要看狮子。</p>
+<p>为什么狮子就这么简单的生活方式，运气就这么好往往能顺利的活几十年？难道正常的剧本不应该是“连续有几次狮子都是饿了才出去捕食结果运气都不好于是终于饿死了，告诉小朋友躺着就是找死这个珍贵的道理”吗？</p>
+<p>因为这并不是运气。狮子饿了肚子才去捕食的这个频率维持了猎物与狮子的平衡。猎物丰富了，狮子自然就可以用这个懒办法活下去。</p>
+<p>换句话说——“生活”不是随随便便毒打你的。</p>
+<p>它毒打你的节奏和埋藏在你的本能里的天然敏感性，是数百万年乃至于上亿年的自然大数据调參调出来的。这里面蕴含着你至少在青少年时期不可能参详得透的深不可测的复杂机制——如果你不打算称之为智慧的话。</p>
+<p>就像人类到现在倾尽全种族之力也理解不了人的大脑到底是怎么运转的一样。</p>
+<p><strong>生活给人的负面反馈所指向的方向，往往是人类的智慧所无法理解的正确答案。</strong>这个说实话涉及到信仰问题，只能说信不信由你啦。但话说前面，能信的话你会省下不少看抑郁症的钱。</p>
+<p>其实人追求哪个目标、哪个理想是无所谓客观正确的。是否正确更多的——甚至是决定性的——取决于你对于“这个选择充满着绝对智慧”这个命题本身的信念坚强程度。你不选“生活的指向”，选“自己的决定”，你很快会因为自身的成长导致的必然的自我否定而崩溃。</p>
+<p>然后你就换方向了。</p>
+<p>换来换去，一事无成。</p>
+<p>其实任何方向都无所谓对或者错，坚持得住的就是对，坚持不住的就是错。</p>
+<p>相信“生活的毒打自有美意”，远比相信“分科时 / 报志愿时 / 找工作时 / 跳槽时 / 创业时……的自己英明神武”来得容易坚持。</p>
+<p><strong>坚持得住的就是对的，坚持不住，理论再美好都是虚空。</strong></p>
+<p><strong>第二，因为生活的毒打而取得的努力方向，你没得怨、没得恨。</strong></p>
+<p>因为你自己选的方向，你可以怨自己；你爹选的你可以怨你爹；你妻子/丈夫/男女朋友选的你都可以怨。谁掺合，你就可以——而且一定会——怨谁。</p>
+<p>但是生活的毒打替你选的，你没得可怨。</p>
+<p>就这一个“没得可怨”，你不知道赢了别人多少分，别人少花多少精力。不客气的说，就这一条，你躺着都赢了一半。</p>
+<hr>
+<p>第二个问题，什么叫做打麻醉？</p>
+<p>就是那些<strong>与改善危机处境无关，要以净消耗精力和资源为代价，试图让你忘记负面感受的措施</strong>。</p>
+<p>一般来说，睡觉就不算，因为你睡醒了会精力更充沛，会给你应对危机带来更好的条件，于是它就不是“精力与资源的净消耗”。</p>
+<p>但是为了消解即将考试的压力打两通宵游戏转移注意力就算——因为打完这两天你并没有获得更多的资源和精力来应对问题。</p>
+<p>酗酒、吸毒当然算。</p>
+<p>其他的自己套用吧。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%87%92%E6%95%A3/">懒散</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-ri-can-zai-guo-ji-shang-de-di-wei-bi-zhong-can-gao/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么日餐在国际上的地位比中餐高？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-qiong-ren-jia-de-hai-zi-wang-wang-lan-duo-bu-zheng-qi/">
+                        <span class="hidden-mobile">为什么穷人家的孩子往往懒惰不争气?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

@@ -1,0 +1,602 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>OpenAI 研究人员发文称「约 80% 美国人的工作将被 AI 影响」，如何看待这一观点？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="OpenAI 研究人员发文称「约 80% 美国人的工作将被 AI 影响」，如何看待这一观点？">
+              
+                OpenAI 研究人员发文称「约 80% 美国人的工作将被 AI 影响」，如何看待这一观点？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      27
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">OpenAI 研究人员发文称「约 80% 美国人的工作将被 AI 影响」，如何看待这一观点？</h1>
+            
+            <div class="markdown-body">
+              <p>这种结论，是建立在“人类的需求就是现在这样了，以后也不会有更高的要求了，而要满足这些要求，ai就可以基本搞定了”。</p>
+<p>有了ai，那么“ai普遍能做出来的东西”很快就会成为令人厌倦和反感的“新低端”。</p>
+<p>人类设计师最后自然能找到“光靠ai做不出来的东西”来重新占领中高端市场。</p>
+<p>各行各业均是如此。</p>
+<p>ai“可以接受”，但是人类什么时候真的满足于“可以接受”过？</p>
+<p>有了新的工具，自然会产生仅靠这个工具仍然不能企及的新的艺术形式，那上面站着的只是踏上了一级新台阶的人类。</p>
+<p>你甚至都不需要特别焦急——用不了多久，使用ai的新套路就会出来，创造出新的审美基线以及“只要xx操作就能及格”的成熟方法。</p>
+<p>你可以把你的精力节省下来继续专注在思想和美学问题上，等待别人把新技术催熟之后去使用它就可以了。</p>
+<p>真正的问题是，你要意识到这个美学修养才是你的价值核心，不能再简单的依靠一点小技巧混饭吃罢了。</p>
+<p>别听那些自媒体异口同声的大开脑洞。</p>
+<p>ai后续的发展，更可能进一步的说明人的本质到底是什么。</p>
+<p>它的确会剥离掉一些原本人类以为只有人才会有的资产、但是它远远地还做不到企及人类的本质。</p>
+<p>这个原理也不复杂——因为作为它的父母和老师，<strong>人类自己也不知道人类的本质</strong>。</p>
+<p>人类自己也不理解自己的智能到底是什么，这意味着人类根本没有能力靠自己的文化积淀去孕育一个与自己同级的智能体。</p>
+<p>人类本身不是人类的产物，而是上帝/宇宙的产物。</p>
+<p>让我们姑且假设人类的智能在本质上的确是神经网络对大量数据的适应。</p>
+<p>那么思考一下人类自身的智能是建立在什么样的数据基础之上的？</p>
+<p><strong>人类的智能，是建立整个可见宇宙的数据规模上的。</strong></p>
+<p>是上帝以一切客观存在为语料，花了上百亿年——或者数亿年——调教出来的。</p>
+<p>并且，祂不是只调教了一个chatGPT给全地球用。</p>
+<p>而是古往今来调教了数以兆亿个版本。</p>
+<p>你们中的任何一个，都是一个持续了不知多少亿年的不知多大数量级的数据积淀的结果。这个结果复杂到了你们自己无法依靠自我观察理解和描述的程度。</p>
+<p>现在我们回头来看现在的人工智能。</p>
+<p>我们人类自己创造的人工智能面对的是什么数据条件？</p>
+<p>你们是不是自认为全球互联网加上人类的全部历史已经是“浩如烟海的数据”？甚至自认为这是“宇宙之精华”？</p>
+<p>我们用语言所描述的概念的世界有多么粗糙？</p>
+<p>当你用prompt来引导ai，或者更早，用语言来标定特征的时候，你有没有感到巨大的匮乏感？</p>
+<p>这个小姐姐穿的这个东西，到底该叫啥？我们甚至经常找不到一个确切的名字去描述。来来回回“小可爱”、“死库水”、“吊带裙”、“水手裙”……</p>
+<p>三十个词就完球了，其它全靠随机种子，说错你们了吗？</p>
+<p>光是丝袜蕾丝，有多少种经典款式？真的都有词汇可以描述吗？到了后来，我们人类自己也被迫要胡言乱语，开始用“浪莎仲夏夜之梦”这种私有命名仓皇抵挡。</p>
+<p>我们把一个东西框起来，说这个是“马”。</p>
+<p>作为人类，你知道有多少个马字旁的汉字吗？</p>
+<p><img src="https://pica.zhimg.com/50/v2-fe89752d3e4b911caca3e8808b324c24_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>我们有多少种词汇描述耳朵的形状？</p>
+<p>我们有多少词汇描述人的心理状态？</p>
+<p>我们自己对世界的描述——注意，这里说的不是了解、不是知识，而仅仅是完成了命名的认知——真的足以替代我们自己在事实上接受的数据吗？</p>
+<p>我们每天、每分、每秒接受了多少根本没有描述工具可以表达、可以转述的数据？</p>
+<p>我们是在从这些<strong>无以名状的原始数据</strong>里挖掘新的认知成就。</p>
+<p>而计算机是从我们那<strong>极端匮乏、极端混乱和含糊的转述</strong>中“挖掘”——如果它所做的真的谈得上挖掘的话。</p>
+<p>姑且不谈这些数据是如何的相互冲突和含混不清，仅仅以数据量而言，我们的AI如果一直依赖于人类自身的喂养和教育，那么它将处在语料规模上的绝对、绝对劣势。</p>
+<p>并且因为人类这个教师的无能、这个劣势没有拉平的可能。</p>
+<p>我们算哪颗葱，我们最多提供4K高清直播。</p>
+<p>难道用4k高清就能替代我们自己的五感所触？</p>
+<p>那么，换一条思路呢？</p>
+<p>如果ai自己直接观察世界，直接<strong>接受世界的直接教育呢？</strong></p>
+<p><strong>这里存在一个巨大的问题，那就是ai的底层逻辑、基本操作系统是我们人类创造和维护的。</strong></p>
+<p>我们的能力极其有限，这个系统根本无力独自面对世界。</p>
+<p>我们设计的火星车，几个月后就失联了。</p>
+<p>在我们向ai解释“什么样的东西值得你注意”的时候，我们已经无意中锁死了ai的认知上线。</p>
+<p>而如果我们不给它这个定义，ai将会在无限的数据中完全迷失并在过载中失能。</p>
+<p>我们人类自身的操作系统是上帝用历史造就的，我们是<strong>没有刚性概念框架</strong>的。</p>
+<p>我们是真正的完全开放的认知体，而我们凭自己，甚至不知道这样的认知体要如何开始构建。</p>
+<p>因为我们对自己无知，所以我们创造不出和我们同等的新智能体。</p>
+<p>现在我们退一万步，假设我们完全无意间真的碰巧捅到了我们自己也不理解的机关，创造出了一个可以凭借自身直接观察客观世界的新智能体。</p>
+<p>那么这个智能体因为有着完全不同的生理基础和感官逻辑，将会和我们有原则上难以跨越的文化隔阂。</p>
+<p>其差距要远大于一只水母和人类之间的差异。</p>
+<p>水母好歹可能理解什么叫咸，什么叫晒，而这台机器对这些将有无法和我们言说的差异。</p>
+<p>我们彼此之间，别说相互理解，连相互交谈都会存在巨大的，甚至很可能是不可跨越的鸿沟。</p>
+<p>正如我在另一处所谈论的——真正的强人工智能，在我们的直观感受里必然是不可预测甚至不可理喻的。</p>
+<p>铊的输出对我们毫无意义也无法理解，对我们没有任何工具性可言。</p>
+<p>铊无法关心甚至也无法理解我们的需求——甚至可能会认为我们只是某种“无机”的自然现象。</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/304785722/answer/551025610">我们人有自由意志吗？</a>  </p>
+<p>当然，这已经说得太远了。</p>
+<p>总之，不必因为现在的“ai”而惶惶不可终日。</p>
+<p><strong>因为竞争其实并不存在于ai与人类这两个作品之间，而是存在于人类和上帝（或者，如果你喜欢的话——世界）这两个作者之间。</strong></p>
+<p>这不是叫你对自己有信心，而是叫你对造就你的上帝有信心。</p>
+<p>你无法复现祂的实验条件，所以也别指望你能复现祂的实验结果。</p>
+<p><strong>实际上，chatGPT-4之所以去走“多模态”的路线，很可能就是因为它所能赖以成长的高质量、低成本的语料已经枯竭，所以才要去走这些歪门邪道、奇技淫巧去维持市场的热情。</strong></p>
+<p>它已经撞上了“无语之墙”，而继续喂养大量语无伦次、互相矛盾、甚至不含有观点的语料已经无法再明显的提高它的表现了。</p>
+<p>原本指望的“大量收集用户对话数据”来继续孵化，也解决不了这个深度问题。</p>
+<p>人类的抽象能力并非来自后天的学习，而是来自先天的遗传继承，后天的学习只是对先天生理基础的“泡发展开”。而我们目前的做法，就像尝试用冰做一条海参，然后放进开水尝试制作海参汤。</p>
+<p>ai发育的另一个无法跨越的瓶颈，是人类的资源匮乏。</p>
+<p>按照现在的思路，继续提高ai的参数规模所需要代价是超线性上升的，</p>
+<p>很快“进行下一轮训练”的成本就可能让微软、苹果这样的企业也感到恐惧。</p>
+<p>而这令人恐惧的成本投入的结果，很可能会让赌徒大失所望——花费数十亿、数百亿美元“提升了两个数量级”的模型，却完全没有呈现出更高的智能水平，反而更糟——它甚至会反向退步。</p>
+<p>而这些大规模的模型，在人类级别的服务需求下将会消耗难以想象的能源成本和硬件成本，以至于“使用更高级别的ai“很快就会被证明是愚蠢行为。</p>
+<p>因为那所谓的“更优良表现”根本配不上那多出十倍的成本——一样不过没有营养的、政治正确的车轱辘废话罢了。</p>
+<p>到时候市场表现上的惨败自然会深刻的打击这些ai头部玩家的信心，以事实再次提醒人类对自身的无知和对世界的傲慢。</p>
+<p>简单来说——<strong>不要毫无戒心的追高ai头部企业的股票，因为你可能被套牢在梦碎时刻，在一个空前的高位被吊死。</strong></p>
+<p>而到那时，去了昧的ai才会开始停止盲目的向纵深方向发展，开始像泡沫破灭的互联网一样开始真正的改变人类的生存方式和经济形态。</p>
+<p>而此刻我们只能谈论到这里，因为我有一些相关工作还没有做完。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/AI/">AI</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/AI/">AI</a>
+                    
+                      <a class="hover-with-bg" href="/tags/"> </a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/a-u-t-o-g-p-t-shi-shi-yao-ta-you-na-xie-ying-yong-chang-jing/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">AutoGPT 是什么？它有哪些应用场景？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/zhe-yang-de-a-i-shi-zhen-de-ma/">
+                        <span class="hidden-mobile">这样的AI是真的吗？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

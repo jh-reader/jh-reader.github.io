@@ -1,0 +1,574 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>科学技术能不能被看作一种信仰？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="科学技术能不能被看作一种信仰？">
+              
+                科学技术能不能被看作一种信仰？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">科学技术能不能被看作一种信仰？</h1>
+            
+            <div class="markdown-body">
+              <p>这科学建立在两个基本信仰之上：</p>
+<p>第一，相信“绝对一致的前提必然导致绝对一致的结果”而绝不怀疑；</p>
+<p>第二，相信上述关系与时间、空间均无关。也就是如果一个规律有效，则在全部时间（至少是全部未来）和全部空间内同样有效。</p>
+<p>这两条不能有丝毫的怀疑，否则科学将失去意义。</p>
+<p>但是遗憾的是，这两条都是纯粹的无证据的信仰。连一条证据都没有。</p>
+<p>我可以估计到很多逻辑不行的人要跳出来，还是提前帮你们把话说明白——</p>
+<p>亿万个今天与亿万个昨天一致，并不能<strong>证明</strong>明天必将与今天一致。更何况，所谓的“亿万个昨天”根本不存在。你所能确认的，仅仅只是你自己亲身经历过的昨天，和你基于对科学社区全体无条件的信任所能加上的他们能看见的昨天。严格意义上来说，这仅仅只有两百多年。这之前的记录是不可靠的。事实上，我们并没有<strong>绝对充分的论据</strong>认定遥远的过去一定与今天共享同样的物理定律。我们甚至有一个黄色警报——按照目前的绝对均一这种最简单的模型倒推，我们已经看到现有的物理定律在奇点不成立。我们并不知道目前的物理定律是如何从奇点状态展开来的，我们甚至要承认，对我们而言这一展开的路径很可能像量子世界一样永远的处在我们的观测能力之外，是无法企及的。严格地说历史上曾经存在过物理定律与此刻地球时空状态下全然不同的先例，我们仅仅是在凭着信心相信这一状态不可能在未来复现。</p>
+<p><strong>全无分毫证据，只是信了而已。</strong></p>
+<p>人们全然忘了自己并无把握，只是没有选择。就好像人并不能天天计划着明天会死于非命而活着，人在少年时会忘记自己随时会死。</p>
+<p>第二条呢？</p>
+<p>认为此处的规律在一切地方均有效？</p>
+<p>抱歉，人类有谁、在何时，曾经完成过这么一次宇宙大普查？</p>
+<p>有一次吗？</p>
+<p>哪怕0.00000000000001次？</p>
+<p>这跟抗日神剧里的日本兵捅了四个麻袋就认定车上没人有什么本质的区别？</p>
+<p>again，我们是因为能力有限，不得不满足于目前的观测结果，就像那日本鬼子也是因为能力资源有限，只能满足于车上没人的结论一样。</p>
+<p><strong>没有分毫的本质的区别。</strong></p>
+<p><strong>到这里结束了吗？问题仅仅是均一律而已吗？</strong></p>
+<p><strong>呵呵，那么我们再看看看似更不可动摇的“同一前提必导致同一结果”吧。</strong></p>
+<p>各位，什么叫同一前提？你们什么时候真正的做到过绝对的同一前提啊……真是扶额。</p>
+<p>还没明白过来吗？</p>
+<p>因为量子效应，事物的绝对精确状态永远在我们的观测之外。我们所说的“同一前提”统统是有默然隐去的前提的——当系统状态的差异不大于某种宏观尺度——某种我们认为其差异将不可能改变结果的尺度——时，我们将其视为同一状态。如果不做这种近似，我们将永远找不到任何两个系统处在可以比较和归纳的严格意义上的“同态”。</p>
+<p><strong>问题是，谁说它们全无扰动的可能？</strong></p>
+<p>在严格意义上说，我们所做的一切“控制变量”的实验，变量都根本没有被真正的控制住，也永远都不可能真正的被控制住。我们对此心知肚明，以至于在对微小扰动高度敏感的复杂系统好的研究中——譬如复杂的免疫实验中——我们敢于（也不得不）大刀阔斧的去除“异常结果。</p>
+<p><strong>在一个因为狂傲而构建的极尽精致、彻底耦合的行星上，一个跃迁，何止可以杀死一只猫，还可以毁灭一整个迷信的文明。</strong></p>
+<p>顺便我要泼一瓢冰冷的冷水——你们有没有意识到，微观世界的不受控和对微观扰动极其敏感、却又对宏观世界能动性极强的智慧生命这两个要素存在，已经意味着仅仅依赖科学将完全不可能对世界作出确切可靠的预测了？</p>
+<p>科学越发达，智慧生命对微观扰动会越敏感，对宏观世界的能动性越强，到将来甚至会发生地球的轨道因为人类感受到微不足道的刺激而被人类移动的事件。科学的发展本身就在使得对世界的预测更加困难。终究到底是它的预言能力胜过人摆脱预言的能力，还是相反？答案是<strong>后者必胜</strong>。</p>
+<p>依靠科学解决人类的一切问题这种指望，<strong>在原则上就不可追求。</strong></p>
+<p><strong>死了这条心。</strong></p>
+<p>如果科学教徒要把一切“没有足够证据而生的绝不更改的信”统统称为迷信，那么请告诉我，<strong>为什么人对这种粗陋程度的观测结果的绝对信心不是迷信？</strong></p>
+<p>如果科学教徒要把一切“没有充分证据而生的绝不更改的信”之上建立的一切意识形态都视为宗教，请问科学教的本质区别又在哪里？</p>
+<p>科学教徒经常宣称科学的事实若是错误，可以随时修改，似乎这是一种“独特的优越性”。但是事实上所有的主流宗教，都会随时召开大公会议修订教义和信条。人家一直强调永远不变的，是对最初最根本的几条的无法质疑。这跟你们从不质疑科学的方法、立论的根基又有何本质的分别？</p>
+<p>先去掉你眼中的梁木，再去拔他人眼里的刺。</p>
+<p>给你们个总集：</p>
+<p><a target="_blank" rel="noopener" href="https://zhihu.com/collection/304168613">科学答集</a>  </p>
+<p>这里再补充两种对我的命题的错误套用，以免又有低水平的无谓尝试浪费彼此的时间：</p>
+<p>第一种，认为只要存在一种科学论断谈及不确定性和概率，就说明“科学并不绝对强调可重复性”，或曰意味着“同一前提导致同一结果”法则失效。</p>
+<p>这属于套用错误。因为在谈论<strong>确定的不确定，时，科学的论述不是在谈这个论述的不确定的一面，而是在谈其确定的一面。</strong></p>
+<p>看一个极其浅显的例子——“重量均匀的硬币抛出后正面朝上的几率为50%”，这是不是科学论断？</p>
+<p>什么是其确定的、科学的一面？</p>
+<p><strong>你造上一万个符合条件的硬币，每个扔上一万次，看看是否证实这结论。这才是其科学论述的核心。</strong></p>
+<p>你要鉴定这论述的真伪的前提，是去制造这一万个硬币，而不是拿一个硬币丢两次。</p>
+<p><strong>有人列举这种例子——“在某个前提下，不能断言物理量的测量值”，这个“不能断言”，本身是不是断言？</strong></p>
+<p><strong>“粒子的位置和动量不可以同时确定”，这个“不可被确定”，本身是不是确定的？</strong></p>
+<p><strong>仔细想想清楚什么叫【确定的不确定仍是一种确定】。</strong></p>
+<p><strong>你这是在证伪这个命题，还是在证实？想明白了吗？</strong></p>
+<p><strong>无效辩驳二</strong></p>
+<p><strong>尝试通过“在xx前提下xx关系成立，在另一个前提下，xx关系不成立”的现象，说明“规律不具备时空无关性”。</strong></p>
+<p>这同样是一种逻辑套用错误。</p>
+<p>如果是要反驳“同一前提必有同一结果”，那么这个举例自己就切换了前提。你明明证明的是“不同的前提有不同的结果”。</p>
+<p>如果是要驳斥“时空无关性”——那么你正确的套用应该是这样的——<strong>“能量守恒在宇宙尺度上不成立”现在有效，明天无效。</strong></p>
+<p><strong>如果你发现一个规律，在其他一切条件都完全相同的前提下，仅仅是换了一个时间和参考系就无效了，你的反驳才能成立。</strong></p>
+<p>你想开口反驳之前，先把你的论述补全，不要采用高中式的无前提表述，然后自问一下这个完整表述是不是就失效了。然后再来“反驳”。</p>
+<p>如果你想用补充时空前提、凸显残缺表述无效的手段去证明“科学论断有时空有限性”，是一种无可辩护的逻辑套用错误。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Science/">Science</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%BF%A1%E4%BB%B0/">信仰</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%A7%91%E5%AD%A6/">科学</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/mu-qin-ba-xin-li-yi-sheng-ma-zou-le-xin-li-yi-sheng-ba-wo-wei-xin-ye-shan-le-zen-yao-ban/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">母亲把心理医生骂走了，心理医生把我微信也删了，怎么办？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/shi-jie-ren-min-lian-he-qi-lai-ke-yi-xiao-mie-wu-ke-lan-na-cui-yao/">
+                        <span class="hidden-mobile">世界人民联合起来可以消灭乌克兰纳粹么？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

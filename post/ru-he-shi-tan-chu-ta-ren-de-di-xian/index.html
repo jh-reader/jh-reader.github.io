@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何试探出他人的底线？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何试探出他人的底线？">
+              
+                如何试探出他人的底线？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      20
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何试探出他人的底线？</h1>
+            
+            <div class="markdown-body">
+              <p>“底线”说是一个对人的决策算法的的简化模型，而且是一个非常危险的简化。</p>
+<p>这是在将人类视为一种简单的常见物品，譬如弹簧，或者高压锅，或者温度计。</p>
+<p>这类物品都有一个共同的特点——对外界的某种刺激的反应是单纯的而且是可逆的。温度升高，压力表数值也升高，快逼近警戒线了，只要及时降压，就会恢复如初。</p>
+<p>于是一切的关键就在于不要超过那个会引发爆炸的屈服极限/压力线/温度线——这种策略就是建立在这种模型之上的。也正是基于这种模型，才会高度的在意这种“试探底线”的方法问题。</p>
+<p><strong>这是一种危险的误解</strong>。</p>
+<p>因为除了把自己当成高压锅来自我体察的人，人类其实不是这样一种行为方式。</p>
+<p>什么叫把自己当成高压锅来体察？这不是在开玩笑。这种将自我模拟成高压锅来理解的行为已经不知不觉渗入了人类文化的底层。</p>
+<p>你有没有说过或者听过“我最近压力很大”、“我需要发泄一下”、“我憋不住了，快爆炸了”、“I need to blow off some steam”……</p>
+<p>这其实都是在无意间将自己视为一个蒸汽机。这是第一次工业革命生产力的陡然飞跃给人类文化留下的痕迹。是人类对蒸汽文明的一种下意识崇拜——这才是真正的“蒸汽朋克”。不是法兰、齿轮和铜头仪表，而是人类无意识的自己把自己理解成了一台“只是复杂一些，实际原理没啥两样的蒸汽机”。</p>
+<p>所有的文明都受过蒸汽机的洗礼，一说“压力太大”都有种种印象深刻的经验。以至于这种自我体认成了一种人类共通的进行自我状态描述的术语体系。</p>
+<p>不加谨慎的反思，你就会通过滥用和接受滥用这类词汇被传染上这种“蒸汽机病”——你也会下意识的把自己（以及所有他人）当成蒸汽机。你会接受他人关于“你现在压力太大了，找点事发泄一下”这样的建议，并且相信把你的暴戾情绪化为猛烈的动作向一个沙袋倾泻出去，你就会“好起来”。</p>
+<p>因为这个模型是如此的深入下意识，你会在这样做了之后，把这之后感受的那种感觉认定为“好多了”“如释重负”这样的感觉，并对自己说——“嗯，我感觉自己真的好多了”。</p>
+<p>你相信自己是蒸汽机，然后相信自己刚发泄了多余的蒸汽，于是你当然觉得自己轻松多了。</p>
+<p>明天（或者下一分钟）又倍感压力，这对你而言逻辑上就不是“发泄无效”，而是“压力积累得太快”。</p>
+<p>看到这里的问题了吗？这种“医疗理论”，只是一种心理上的“顺势疗法”，一种“扎小人”式的感应巫术。</p>
+<p>它就像“跳大神”、“出马仙”也能有一定效果一样，的确可以有相当程度的实效，甚至足以支撑对它的相当程度的信仰——否则它也不会如此流行了。</p>
+<p>但就像毕竟“出马仙”不是长久之计那样，“蒸汽机自觉”也并非人自我认知的理想解决方案。</p>
+<p><strong>人毕竟并不是一台蒸汽机。</strong></p>
+<p>假设我们把“底线”重新表述为“关系不可逆阈限”，那么你会发现一个问题——</p>
+<p>首先，这个界限是动态的。</p>
+<p>它首先受到主体多种状态的动态影响。主体的处境、心态甚至生理状态的不同，都会影响这界限的具体位置。</p>
+<p>而且它的幅度波动之大，会使得退而求其次去探索“其相对稳定波动范围”都变得没有意义。 </p>
+<p>设想一种特殊液体，可能因为十几种变幻莫测（甚至至今仍未找全）的原因导致在一个大气压下其凝固相变发生在从120K到360K之间的任何温度上，于是传统的“冰点“概念对它几乎是无意义的。</p>
+<p>这也是为什么说“底线”说害死人——上一次你遭遇了对方勃然大怒的情境，从这里提炼出了“底线”，下一次按你的理解你明明没有触及这个底线，却再次遭遇勃然大怒。</p>
+<p>这样的“底线”就如同自己想象的斑马线，不但没有带来什么安全保护，反倒可能导致你格外容易被车撞死。</p>
+<p>第二，这个界限是多维的。</p>
+<p>它不是一个单一的指标。而更类似是十几个参数交联的“立体防线”。形象点说，它就像罩住十几条四面乱窜的大鱼的一张大网。这张网的形状变幻莫测，而且这十几条大鱼之间经由网的张力在互相牵扯，能形成极其复杂的多种极限形态。想要准确的预测它在某一时刻的具体边界，其数学复杂度远超过三体问题。</p>
+<p><strong>它根本不可以被归约成一个由z值标定一下高度即可定义的水平面</strong>。</p>
+<p>将这张不定型的高压电网面简化成为仅用Z值来表达的绝对水平面来预测对方的反应，坦白说，近乎于作死。</p>
+<p>第三，它对刺激信号的反应并非瞬时的，而是残留式的。</p>
+<p>它并不像电压信号，你给10v，电场强度就到10v水平，给到20v，就立刻提高一倍，你再撤退到0，场强就归零。</p>
+<p>不，它的实际强度即使加以简化，也应该被视为瞬间强度对过去一段时间的积分——而且这个积分范围还是动态的。</p>
+<p>上上周你做的事，也会对当前的刺激水平有影响，只是时间越久，这残留的影响越小罢了。</p>
+<p>去年的事也有影响。</p>
+<p>这影响因子还受到事件本身的性质的影响，有的事，即使过去很久，对方也牢记于心，没有淡忘，至于这是增大了“底线网”的弹性还是降低了“底线网”的弹性，这就难说了。</p>
+<p>这整个图景还可以继续画下去——譬如这张网住大鱼的网可不是方形的，而是基于每个人的生理基础形状各自不同，这会导致大鱼们一开始面对的“生存空间”就形状各自不同——这种不同本身就会导致你网到的鱼不太一样，也会导致被网到的大鱼对不同的领域产生不同的适应行为。而这张网也会因为大鱼们的撞击而发生二次变形——譬如某些部位被某条大鱼拼命推挤过，它失去了弹性，但是也被挤得更宽松了。</p>
+<p><strong>即使这一比“蒸汽机模型”复杂了不知几十个维度的模型，仍然是对人的决策方式的一种近乎危险的高度简化。</strong></p>
+<p>所谓“九型人格”、“星座”、“血型”、奇门八卦，实际上都是在本能的依靠增加参数来试图和这个问题较一较劲。</p>
+<p>但是你们看看上面这个简易分析，想想看，它们有希望企及它们想摸到的金线吗？</p>
+<p>“底线”是一个神秘事物，不但目前，而且在可见的将来也没有有效的手段能测度它。</p>
+<p>可控核聚变一定会在这个问题可被企及之前被解决——因为它简单得多。</p>
+<p>啥时候可控核聚变实现了，再来检讨这个问题是否可能。</p>
+<p>你真正需要问自己的问题是——“如果我完全不用底线说来指导我与他人的相处，我的替代方案是什么？”</p>
+<p>（未完，待续）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%BA%95%E7%BA%BF/">底线</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-yao-fei-chu-si-xing-ni/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么要废除死刑呢？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/yi-jing-bei-yang-fei-de-hai-zi-huan-you-jiu-ma/">
+                        <span class="hidden-mobile">已经被养废的孩子，还有救吗？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

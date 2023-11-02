@@ -1,0 +1,1450 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="JH Notes Easy Reader">
+              
+                JH Notes Easy Reader
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-ping-jia-xiang-gang-yi-bo-shi-sheng-yin-sa-yan-sha-si-zhi-da-gua-niu-er-bei-jing-fang-dai-bu/">如何评价香港一博士生因撒盐杀死 3 只大蜗牛而被警方逮捕？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-ping-jia-xiang-gang-yi-bo-shi-sheng-yin-sa-yan-sha-si-zhi-da-gua-niu-er-bei-jing-fang-dai-bu/">
+          
+          
+            
+          
+          已有明确法条，要么不去，要么不犯，要么不怨。
+又要去，
+又要犯，
+又要怨，
+你这真是走自己的路，让别人无路可走啊你。
+从自己的角度觉得其他地方经过立法程序的法律奇葩，
+这既没有啥建设性，也显得过于傲慢。
+谁在谁眼里不奇葩？
+
+你觉得法律“充满漏洞”，你就去想办法推动改变啊。立法是这样，警察和法庭当然要依法执行。
+世界各国会令其他国家人惊诧莫名的法律法规多了去了。
+新加坡涂鸦要受鞭刑，
+阿联酋煽动人
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%B3%95/">法</a>
+            
+              <a href="/tags/%E5%A5%87%E8%91%A9/">奇葩</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/xiang-luo-ma-wan-shen-miao-zhe-yang-de-ding-bu-chang-kai-shi-jian-zhu-xia-yu-shi-zen-yao-ban/">像罗马万神庙这样的顶部敞开式建筑，下雨时怎么办？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/xiang-luo-ma-wan-shen-miao-zhe-yang-de-ding-bu-chang-kai-shi-jian-zhu-xia-yu-shi-zen-yao-ban/">
+          
+          
+            
+          
+          有一点要纠正一下——穹顶的孔洞是有意为之，而不是“因为没能力合拢所以没办法留个洞”。
+道理很简单——真不想留，减小穹顶跨度就是了。
+减小二十米，什么洞都合得上。
+事实上万神庙的思路恐怕是反的——先往大了造，然后尽量往中间一层层的施工。最初并不知道洞会有多大，只知道肯定要留洞。这个洞实际上可大可小，做到最后一层，再根据实际情况实际测试来决定确切尺寸。
+何以见得呢？
+因为是不是会预知留洞是可以从地基工
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Literal-Art/">Literal-Art</a>
+            
+              <a href="/categories/Literal-Art/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%B4%E9%A1%B6/">头顶</a>
+            
+              <a href="/tags/%E6%B4%9E/">洞</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-you-ren-dui-dai-tou-kui-na-yao-di-hong/">为什么有人对戴头盔那么抵触?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-you-ren-dui-dai-tou-kui-na-yao-di-hong/">
+          
+          
+            
+          
+          很多人不戴头盔，有一个比较重要的原因是头盔没地方放。回头拿在手上嫌重，挂在车上怕丢。
+这一点，我们的电动车生产厂商严重缺席。
+在这里给电动车厂商提个醒——给自己生产的车型配备能装两个头盔和两套雨衣的存储方案应该属于一种必备的官方责任——至少存储一个头盔加一件雨披的官方方案是必须的。
+所谓“存储方案”，意思都不见得是指尾箱，你好歹装个头盔锁呀，然后出一款配套的便宜的头盔呀。雨衣你就出个一次性版本，折
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Business/">Business</a>
+            
+              <a href="/categories/Business/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%B4%E7%9B%94/">头盔</a>
+            
+              <a href="/tags/%E9%94%81/">锁</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-te-zhong-bu-dui-hen-shao-dai-tou-kui/">为什么特种部队很少戴头盔？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-te-zhong-bu-dui-hen-shao-dai-tou-kui/">
+          
+          
+            
+          
+          特种部队就像运载火箭，带在身上的每一克都贵到要死。
+他们的任务很少是和敌人短兵相接直接开战，而是要在敌占区长期隐蔽潜伏，成为一双山脊上、树丛里的眼睛。
+换句话说，特种部队的主要保护是隐蔽性、灵活性和自持力。
+隐蔽性一靠伪装技巧，二靠各种远程侦察设备——望远镜、成像仪、无人机。距离够远、感知能力强，自然比较安全。
+灵活性主要靠超出一般军人的越野能力。你能上下垂直岩壁、能泅渡急流、能对付特殊地形，追你
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/None/">None</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%B4%E7%9B%94/">头盔</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/sui-ti-zhi-nei-mei-tian-du-xiang-sheng-huo-zai-zhen-kong-li-yan-li-zao-yi-mei-le-guang-wo-bu-xiang-zai-dai-xia-qu-le-xiang-kao-yan-zhong-xin-kai-shi-h/">30岁体制内，每天都像生活在真空里，眼里早已没了光，我不想再待下去了，想考研重新开始，还有可能吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/sui-ti-zhi-nei-mei-tian-du-xiang-sheng-huo-zai-zhen-kong-li-yan-li-zao-yi-mei-le-guang-wo-bu-xiang-zai-dai-xia-qu-le-xiang-kao-yan-zhong-xin-kai-shi-h/">
+          
+          
+            
+          
+          其实题主说的别的都没啥问题，也没啥对错可言。
+问题唯在于最后一句，“即使失败至少不会后悔”。
+绝大部分人都只有成功了才不会后悔，失败了还是会后悔的。
+做什么决定都无所谓，只是不要建立在自欺欺人的基础上。
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E6%82%94/">后悔</a>
+            
+              <a href="/tags/%E5%A4%B1%E8%B4%A5/">失败</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhong-guo-xian-zai-da-gui-mo-sheng-ji-jun-bei-ru-guo-wei-lai-bu-jin-xing-zhan-zheng-de-hua-hui-bu-hui-hen-ke-xi/">中国现在大规模升级军备，如果未来不进行战争的话会不会很可惜？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhong-guo-xian-zai-da-gui-mo-sheng-ji-jun-bei-ru-guo-wei-lai-bu-jin-xing-zhan-zheng-de-hua-hui-bu-hui-hen-ke-xi/">
+          
+          
+            
+          
+          哈哈哈哈。
+不进行战争——那一定是不战而胜了——我们可以更新换代，把旧装备卖给别的国家啊。
+你还怕将来歼20，055，山东舰没人买？
+信不信，现在这些装备过些年卖出去的二手价格还比出厂采购价高？
+其实我们用的是将来巴基斯坦沙特朝鲜俄罗斯委内瑞拉阿根廷缅甸阿富汗伊朗卢旺达莫桑比克的装备。
+所谓头啖汤是也。
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/None/">None</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%B4/">头</a>
+            
+              <a href="/tags/%E5%95%96/">啖</a>
+            
+              <a href="/tags/%E6%B1%A4/">汤</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/shi-er-fu-de-neng-he-cong-qian-yi-yang-ma/">失而复得能和从前一样吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/shi-er-fu-de-neng-he-cong-qian-yi-yang-ma/">
+          
+          
+            
+          
+          一支军队，经过了大败之后重新恢复了战斗力，这份战斗力和从未经历失败之前一样吗？
+当然不是，是变得更强更可靠了。
+一家企业，经历了重大危机后重新恢复了市场份额，它的市场地位不如之前那么牢固了吗？
+当然不是，是变得更牢固了。
+感情失而复得，当然和以前不一样了。
+因为它比以前更坚固更好了。
+如果你不是这么觉得，那么你这个根本不叫“失而复得”，只不过是个假象。
+让我把话说的明白一点，透一点——
+这不是一个
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+              <a href="/categories/Clan/Feminism/">Feminism</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%B1%E8%80%8C%E5%A4%8D%E5%BE%97/">失而复得</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/guan-yu-shi-wang/">关于失望</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/guan-yu-shi-wang/">
+          
+          
+            
+          
+          这东西是这样的——“坚持“这回事，说穿了就是懂得如何处理失望。
+如果逻辑上敌人只需要做什么事就可以令你“失望”，岂有心慈手软不做之理？那意味着你根本没有机会做成什么事。
+丢了个你自己期待已久的单子，好失望，不玩了；
+考砸了一次很关键的考试，很失望，不学了；
+打输了一场觉得很重要的仗，很失望，放弃了。
+blar blar blar……
+只要是这样的思考方式，你放心，这一单、一考、一战，不但迟早会来，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%B1%E6%9C%9B/">失望</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/yi-qing-shi-kong-lun/">疫情失控论</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/yi-qing-shi-kong-lun/">
+          
+          
+            
+          
+          谈一谈这个失控问题。
+是否判定失控，到底看什么？是看情况是否有一个可以预见的恶化期吗？
+拿一个现实的例子实际说明——
+你在工地受了伤，钢筋贯穿左肺，X光透视之后决定要做手术。
+在你推进手术之前的这个瞬间，作为伤者你的局面如下:
+1）你已经流了很多血，身体机能受到了破坏，
+2）你即将推进手术室，还要在原有的伤口上额外再扩大伤口，甚至可能要切断一两根肋骨扩大作业面。你已经神志不清，现在还要进一步的被麻
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%B1%E6%8E%A7/">失控</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/e-luo-si-yi-jing-shu-le-ma/">俄罗斯已经输了吗?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/e-luo-si-yi-jing-shu-le-ma/">
+          
+          
+            
+          
+          别的部分不讨论，说一说“俄罗斯失去远东和中亚”的“损失论”。
+其实很多人忘了最基本的历史教训，那就是四十多年前，中国改革开放之初，一样有大量的国人痛呼“国门失守”、“江山变色”，“先烈的血白流了”。
+不是吗？自己防了一辈子的资本主义大毒草如潮水般涌入，国营企业纷纷倒闭，各种“资产阶级生活方式”肆意横流。
+不知多少人觉得改革开放本身就是革命失败的标志。
+再往前，洋务运动就已经有遗老遗少哀叹胡风炽烈了
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BF%9C%E4%B8%9C/">远东</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ou-meng-cheng-jiang-bu-xi-yi-qie-dai-jia-zhong-jian-tai-yang-neng-zhi-zao-ye-qi-zhong-huan-you-na-xie-xin-xi-zhi-de-guan-zhu/">欧盟称「将不惜一切代价重建太阳能制造业」，其中还有哪些信息值得关注？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ou-meng-cheng-jiang-bu-xi-yi-qie-dai-jia-zhong-jian-tai-yang-neng-zhi-zao-ye-qi-zhong-huan-you-na-xie-xin-xi-zhi-de-guan-zhu/">
+          
+          
+            
+          
+          为人之道，要常盼人得好，不要唱衰。
+其实，我们也想摆脱对俄罗斯的能源依赖。
+何止俄罗斯，我们甚至想要摆脱对全世界的能源依赖。
+全世界都想摆脱对全世界的能源依赖。
+所以我们应该十分乐于看到欧洲不惜一切代价趟出来的这条路到底是什么。
+这样我们好省下一切不必要的代价做个更大的。然后进军全球市场，帮全人类修个遍。
+可以由别人出的代价，都是不必要的代价。
+别的不说，
+虽然我们的月亮arguably不如它们的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%AA%E9%98%B3%E8%83%BD/">太阳能</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/shi-ye-lv-chuang-xin-gao-nian-qing-ren-bai-lan-wei-she-hui-qiao-xiang-jing-zhong-ni-zen-yao-kan-dai-bai-lan-xing-wei/">失业率 18.2% 创新高，年轻人「摆烂」为社会敲响警钟，你怎么看待摆烂行为？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/shi-ye-lv-chuang-xin-gao-nian-qing-ren-bai-lan-wei-she-hui-qiao-xiang-jing-zhong-ni-zen-yao-kan-dai-bai-lan-xing-wei/">
+          
+          
+            
+          
+          失业率其实和“年轻人“没有多大关系。
+东亚社会里对劳动意愿的担忧基本上是多余的，因为除了拥有存量财富的人之外，基本上在东亚社会里一个人的人格尊严是和劳动价值绑定的。
+很遗憾，东亚社会没有什么“尊重”的政治正确，它是赤裸裸的“不尊重”没有劳动价值的人的。
+实际上，西方世界也一样，只是ta们善于用“how can I help ya”的美好词汇包装起来，然后用“credit card or check
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%B1%E4%B8%9A%E7%8E%87/">失业率</a>
+            
+              <a href="/tags/%E9%AB%98/">高</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-guo-zhong-guo-yu-hang-yuan-zai-kong-jian-zhan-xi-sheng-le-zen-yao-ban/">如果中国宇航员在空间站牺牲了怎么办？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-guo-zhong-guo-yu-hang-yuan-zai-kong-jian-zhan-xi-sheng-le-zen-yao-ban/">
+          
+          
+            
+          
+          当然是用完善的保护手段保存起来，等待货运飞船转运回地面。
+这不仅仅是礼仪、伦理上的要求，还要注意在空间站发生的死亡都有重大的研究意义。这类案例对航天器设计、人员选拔、条令制定上的价值是难以估量的。尤其因其罕见，其意义要比空难遗体重大得多，对太空医学的发展有不可取代的意义。
+可想而知，航天员签没签这些捐赠条款是选拔条件的重要考量。
+所以，类似“太空葬礼”，这一百年应该是条件绝对不允许时的罕见现象。
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%AA%E7%A9%BA/">太空</a>
+            
+              <a href="/tags/%E8%91%AC/">葬</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/jian-chi-mei-you-tian-fu-de-meng-xiang-shi-lang-fei-shi-jian-ma/">坚持没有天赋的梦想是浪费时间吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/jian-chi-mei-you-tian-fu-de-meng-xiang-shi-lang-fei-shi-jian-ma/">
+          
+          
+            
+          
+          天赋的核心是举一反三、触类旁通吗？
+天赋的核心是坚持。
+确切地说——是“无限地找到下一个坚持的理由”的能力。
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%A9%E8%B5%8B/">天赋</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-tian-fu-zhe-ying-you-te-quan-zhe-zhong-lun-ti/">如何看待“天赋者应有特权”这种论题？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-tian-fu-zhe-ying-you-te-quan-zhe-zhong-lun-ti/">
+          
+          
+            
+          
+          不用谈“应有”——天赋者的确被安排了特权，实际就有的、无法剥夺的特权。
+比如你料事如神，攻则动于九天之上，守则藏于九地之下，有神鬼莫测之机。那你当然可以做很多别人做不了的事，这本身就是power，是privilege——这跟你的能力已经绑在一起了，别人根本剥夺不了。
+但也有“特责”——对应的，与你为敌的、或者误以为你与ta为敌的、甚至只是认为你可能站在ta的敌人那一边的人，就总是会想要“先发制人”
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%89%B9%E6%9D%83/">特权</a>
+            
+              <a href="/tags/%E5%A4%A9%E8%B5%8B/">天赋</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/huai-ren-shi-tian-sheng-de-ma/">坏人是天生的吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/huai-ren-shi-tian-sheng-de-ma/">
+          
+          
+            
+          
+          天生的。
+主要是，世界上并不存在好人这种事物。只存在尚未为恶、或者暂未为恶、或者终未为恶的幸运儿。
+凡自觉无罪的，只是自我宽免得足够廉价的结果——都是“这事是人都得这么办，所以这事不能算有罪”这种逻辑的结果。
+人何时诚恳的明白这一点，人就何时成为“稍好的罪人”，若是还能做到明知无法改正还尽力去改，那么罪人还是罪人，但已经是会被原谅的罪人了——恶虽不能尽除，但已经稳定阴性了。
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%A9%E7%94%9F/">天生</a>
+            
+              <a href="/tags/%E5%9D%8F%E4%BA%BA/">坏人</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhen-de-hui-you-ren-you-mou-zhong-tian-fu-que-bei-mai-mei-yi-sheng-ma/">真的会有人有某种天赋却被埋没一生吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhen-de-hui-you-ren-you-mou-zhong-tian-fu-que-bei-mai-mei-yi-sheng-ma/">
+          
+          
+            
+          
+          老实说，人类是一种普遍有天赋的种族。
+你现在看到的所谓“知识精英”们令人称羡的专业技能，对大多数人来说都不存在智力上的天堑。找到一个恰当的老师，投入恰当的资源，在几个心理关口上遇到恰当的引导，没有半途而废，坚持改进个五年左右，投身市场成为强势服务供应者是一个大概率事件。借由跨界和合作，使优势的服务成为有统治力的创新服务，也是一个大概率事件。
+注意前面这个基数——这对大多数人都没有先天性的、生理条件
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%A9%E8%B5%8B/">天赋</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhen-de-hui-you-ren-you-mou-zhong-tian-fu-que-bei-mai-mei-yi-sheng-ma/">真的会有人有某种天赋却被埋没一生吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhen-de-hui-you-ren-you-mou-zhong-tian-fu-que-bei-mai-mei-yi-sheng-ma/">
+          
+          
+            
+          
+          老实说，人类是一种普遍有天赋的种族。
+你现在看到的所谓“知识精英”们令人称羡的专业技能，对大多数人来说都不存在智力上的天堑。
+找到一个恰当的老师，投入恰当的资源，在几个心理关口上遇到恰当的引导，没有半途而废，坚持改进个五年左右，投身市场成为强势服务供应者是一个大概率事件。
+借由跨界和合作，使优势的服务成为有统治力的创新服务，也是一个大概率事件。
+注意前面这个基数——这对大多数人都没有先天性的、生理
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%A9%E8%B5%8B/">天赋</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-xi-fang-ren-hui-zi-si-dao-bu-neng-li-jie-you-guo-cai-you-jia/">为什么西方人会自私到不能理解“有国才有家”？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-xi-fang-ren-hui-zi-si-dao-bu-neng-li-jie-you-guo-cai-you-jia/">
+          
+          
+            
+          
+          西方文明几乎是建立在希腊文明的基本范式上的。这个从底层决定了西方文明几乎一切的社会观念。
+这是一个什么样的结构呢？
+这要从希腊本身的地理条件说起。
+简单来说，希腊半岛是一个火山造成的伸入地中海的岛。
+这种地貌和我们中国的人口中心的构造完全不同。
+我们的人口中心类似两河流域，是冲积平原构造，简单来说，是一块高差很小的、西高东低的平地。这种地区水草丰茂，有大量稍微开垦整理就可以利用的农业用地，所以整个
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%A9%E5%91%BD/">天命</a>
+            
+              <a href="/tags/%E6%98%AD%E6%98%AD/">昭昭</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-fan-bo-jun-xun-you-yong-lun/">如何反驳军训有用论？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-fan-bo-jun-xun-you-yong-lun/">
+          
+          
+            
+          
+          这个世界上存在的最大规模的愚蠢，就是苦也经了、亏也吃了、事也做了，一秒钟都没跑掉，一分懒没偷着，但除了满腹怨气，什么都没落下。
+自己消极抵抗，把一段生命搞得没有任何收获，用来“证明”xxxx“毫无意义”。然后用这种“证据确凿”的所谓“毫无意义”，想去“控诉”、“报复”那些将这些经历“强加”于自己身上的人。自以为这叫“反抗精神”，甚至“革命精神”。
+这只不过是一种纯粹的愚蠢。
+参加完军训，结论是“军
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%A9%E5%9C%B0/">天地</a>
+            
+              <a href="/tags/%E6%97%A0%E7%94%A8/">无用</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/76/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/75/#board">75</a><a class="page-number" href="/page/76/#board">76</a><span class="page-number current">77</span><a class="page-number" href="/page/78/#board">78</a><a class="page-number" href="/page/79/#board">79</a><span class="space">&hellip;</span><a class="page-number" href="/page/117/#board">117</a><a class="extend next" rel="next" href="/page/78/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

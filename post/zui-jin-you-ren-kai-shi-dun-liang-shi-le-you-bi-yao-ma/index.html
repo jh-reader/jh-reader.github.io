@@ -1,0 +1,569 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>最近有人开始囤粮食了，有必要吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="最近有人开始囤粮食了，有必要吗？">
+              
+                最近有人开始囤粮食了，有必要吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      19
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">最近有人开始囤粮食了，有必要吗？</h1>
+            
+            <div class="markdown-body">
+              <p>怎么你们还没有建立基本储备吗？</p>
+<p>不管你在世界的什么地方，<strong>也不管有没有疫情</strong>，都应该有自己的备灾物资储备。</p>
+<p>它要遵循以下几个原则：</p>
+<p>1）它应该能坚持必要的时间。</p>
+<p>这个时间主要看你对所在地政府解决问题的能力的信心。出了某种大的意外，尤其是罕见的、史无前例的、缺少预案应对经验的意外，一般会导致当地政府<strong>在最开始一段时间手足无措</strong>，摸不着头绪。这也是真正可能发生秩序风险的时段。</p>
+<p>而这一段风险的最主要体现形式，就是因为缺少基本保障而不能不离开你的掩蔽所——通常是你自己的坚固住宅——前往不受你控制的陌生环境去跟一大群同样恐慌的人群里争夺仅剩的物资。</p>
+<p><strong>这种情况非常危险，最好不要凑热闹。否则你本来好好的排着队准备进超市，前头一声喊“东西快没了”，瞬间就可能秩序大乱发生踩踏、斗殴和劫掠。</strong></p>
+<p>只要你有足够的物资能保证你不需要在这个最危险时段里出门冒险，你的安全就会得到很大的保障。而仅仅是因为有这个自信，都可以保证你的心理平稳和心态健康，大大的降低你的新陈代谢水平，从而进一步的降低你的消耗，坚持更长时间。</p>
+<p>而没有这份物资保障，你很容易恐慌而反应过度，给自己招来危险。</p>
+<p>挺过这段无序期，一般来说秩序都会重新建立，尤其是物资供应会自然的缓解。</p>
+<p>你预估这段时间有多长、就按照这个长度来准备份额。</p>
+<p>2）它应该足够便携。</p>
+<p>从体积上、重量上，这批物资应该可以由你和你的家人随身携带，基本上这个上限是<strong>人均一个双肩包和一个随身旅行箱所能携带的总量</strong>。</p>
+<p>注意，是<strong>人均</strong>，每人一份。</p>
+<p>因为你可能因为某种原因不得不更换庇护所——比如自己的房屋损毁、政府指令转移或者投亲靠友。这些物资你可以随身携带，对你会有强大的安慰作用。如果不能，则不得不被迫转移的风险也会导致你的焦虑难以管控。</p>
+<p>因为这个原因——不要存储能量密度低的口粮。而应该存储压缩饼干、巧克力、肉干、脱水蔬菜一类的口粮。不要存储酱料，而应该存储调味粉、食盐这类少量即可完成调味的调味品。药品不能以盒装，要拆开装进密封药瓶，否则太占体积（平时可以不处理，转移时再说）。</p>
+<p>不要直接存饮用水，而应该存净水消毒片、净水吸管这类可以将污水变得能喝的东西。</p>
+<p>不要存丙烷气，而要存更耐烧的煤油以及可靠的引火器材（例如镁棒）。</p>
+<p>你必须清醒的意识到，负重和体积是最宝贵的指标，<strong>不能携带的往往不能被信赖</strong>。要充分利用好每一立方厘米的体积，来保证这份储备的有效性。</p>
+<p>而从另一方面，正是因为你的精打细算，你才可以用一个小箱子就装下一个人的全部储备，几乎不影响你平时的生活，可以避免偶尔来访的亲友为你介绍心理医生的冲动。</p>
+<p>3）它应该是耐长期存储的。</p>
+<p>不要存储任何短期会过期失效的物件。每一件东西都至少需要有24个月以上的存储期，而且对储存条件不能要求太苛刻。否则可能到了要用的时候你会发现它们变质或损坏，或者稍微沾水碰撞就失效。</p>
+<p>4）平时不应经常动用。</p>
+<p>这份基本储备不是拿来用的。事实上，即使是灾情开始了，你其实也是优先去团购、网购你能搞到的物资，先去消耗你当时能弄到手的东西，而不是就开始消耗这份存底。如果灾情不大，很可能你直到最后也没有动用这份存底。</p>
+<p>这份物资对你最大的保障，其实是帮助你有效的管理你自己和家人的情绪。避免你们焦虑和恐慌发作，做出错误决策——例如在排队抢购物资的时候和别人争斗。有保底在手，你更能保持克制和忍让，从而避免很多意外伤害。</p>
+<p>所以，这份物资其实是一个护身符、定心丸，不是拿来用的。</p>
+<p>这意味着，<strong>这些食物、装备不该是很合乎你胃口和喜好的</strong>，应该是你平时肯定不会惦记着去品尝一下的。</p>
+<p><strong>不要存储美味——这是一般人最常犯的错误——而要存储你自己平时肯定不会想吃的东西。它只是不要难吃到令人恶心或难以下咽而已。</strong></p>
+<p>这样才能不诱惑你提前消耗它。人在灾难时是很脆弱的，有得现成的储备往往会先吃这些储备。结果在早期就过早的把它们消耗了，反而到了要紧时没得用。所以这一点要切记。</p>
+<p>上面这些构成你的基本储备。列一个基本清单：</p>
+<p>以下几类物资你都应该准备好：</p>
+<p>1）基本通信。（太阳能充电器、支持手摇发电照明的带照明收音机）</p>
+<p>2）基本安全。（自卫武器、瑞士军刀类的基本随身工具、火种）</p>
+<p>3）基本健康。（消毒、包扎、止血、消炎、缝合、止痛/麻醉，以及自身慢性病必备药物（降压、胰岛素等）、牙刷）</p>
+<p>4）保暖类（随身衣物（内衣层、保温层和防风层）、换洗内衣袜子（速干）、徒步鞋）</p>
+<p>5）基本饮食（高热量干粮、基础调味品（盐、味精、胡椒粉）、净水片）</p>
+<p>6）应急预案手册。</p>
+<p>制定家人离散重聚的基本预案，例如发现失散后的默认处理方式、第二集合地点、第三集合地点、长期有效的联络协定，书面印刷，保证人手一份。</p>
+<p>准备基本的求生指导手册，袖珍版或电子版亦可，保证人手一份。</p>
+<p>在此基础上，你可以再建立一个二级准备。</p>
+<p>1）再存储一批你平时就爱吃的耐储食品。</p>
+<p>例如各类肉类罐头（午餐肉、金枪鱼）、风干或腌制肉类（腊肉香肠腌鱼）、脱水食品（如干制海产品、干菌菇蔬菜）、腌制食品（腐乳、咸菜、豆豉）等。</p>
+<p><strong>保持你的日常食谱里有这类内容，会自然的建立一个基本储备，常换常新。</strong></p>
+<p>事实上，这类食品之所以会出现，就是因为中国人常年的备灾习俗导致的，它们是天然的备灾物资。你平时就吃它，你的厨房或者储藏间、阳台就自然会有一些。</p>
+<p>2）米面油水，这些你平时就应该长期保持有多一包、多一壶、多一箱，而不是吃到见底才去买。这也是自然储备的一部分。</p>
+<p>上面这两个习惯你养成了，其实你自然而然的就有储备，无需特别额外的储存了。</p>
+<hr>
+<p>补充一条——</p>
+<p>最好的火种，其实是一面巴掌大的菲涅尔镜。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%BA%94%E6%80%A5/">应急</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%82%A8%E5%A4%87/">储备</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-ti-sheng-zi-ji-de-you-mo-gan/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何提升自己的幽默感？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/pu-tong-ren-de-yi-sheng-ying-gai-shi-zen-yang-de/">
+                        <span class="hidden-mobile">普通人的一生应该是怎样的？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

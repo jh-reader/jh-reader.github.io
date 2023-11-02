@@ -1,0 +1,570 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>chatGPT 会带来失业潮吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="chatGPT 会带来失业潮吗？">
+              
+                chatGPT 会带来失业潮吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      17
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">chatGPT 会带来失业潮吗？</h1>
+            
+            <div class="markdown-body">
+              <p>恰恰相反，它可能带来更多的就业。</p>
+<p>AIGC技术带来的最大的改变，其实是通过“内容生产的民主化”，给了本小力薄的小企业以较低预算接近头部企业内容表现的机会。</p>
+<p>以前一个稍微精美的原创游戏，如果要做到能见人的程度，仅在美术和文案方面的成本就超过了一般小型企业的能力范围。你再有创意，也有那么个没有任何花巧的雕刻、拓扑、UV拆解、贴图绘制、骨骼对位、蒙皮、表情、动画、粒子特效、物理演算……的硬工作量摆在那里，最多用外包团队分担一下赶一下时间节点，但终究成本和总工时是不可能省略的。</p>
+<p>这样问题来了——要以行业平均水平提供产品，从一开始就有一个大约1亿的资本门槛。</p>
+<p>一亿门槛给出一亿水平的作品，而这些作品又给了大众一亿的基本期待，从而反过来导致不到一亿门槛的团队的作品基本都会被认为品质太差而难以被接受，从而又维持住了一亿门槛。</p>
+<p>一亿门槛一旦被确定，就注定了开发游戏一定会成为超高风险的投资，意味着投资商一定会极大的倾向于垄断发行渠道的团队。</p>
+<p>于是可以参加竞争的就只有那么几个资本巨头了。</p>
+<p>资本巨头们将会很自然的发现一个问题——我们一共就这么几家，有何必要做出那么多的作品来分散自己的投资、左右互搏？</p>
+<p>于是每家搞上几个“工作室”，一队百十来人，总共这么十来家。</p>
+<p>市场就此达到了均衡。工艺要求给了资本规模合理性，资本规模给了“团队少但规模大”的产业结构和理性，而这个产业结构又通过超高水平的平均表现给了资本规模合理性。</p>
+<p>环环相护，造成了一个“国内玩家6.6亿，却只有八个厂，两三万一线从业人员”这么个畸形的格局。</p>
+<p>如此悬殊的客户/供应商比例，导致尽管业内工资丰厚，但绝大多数利润仍然都被资本方拿走了。</p>
+<p>现在多了一个因素——如果要达到现有水平80%的水准，只需要三分之一甚至四分之一规模的团队，以及十分之一的资本呢？</p>
+<p>注意，这只是以游戏举例，事实上这还包括了漫画、剧本、电影等等内容工业。</p>
+<p>那几乎必然意味着团队要开始小型化，作品开始出现多样化。</p>
+<p>并且会逼得“大路货”们另寻出路。</p>
+<p>换言之，产业格局很可能从“八大厂x一两千人”，变成“五百个小厂x三十人”+“八大厂x四五百人”。</p>
+<p>即使市场规模维持不变，也会使得行业利润重新分配——而且是更多的分配到创作、制作段。</p>
+<p>其实这些几十人的小厂有个几万日活的流量已经可以存活了。</p>
+<p>尤其是，如此大量的活跃小团队，更加有利于个人寻找机会，积累资历。</p>
+<p>简单的用数学表达一下这个差异：</p>
+<p>假设市场规模是一年2700亿销售收入，保持不变。</p>
+<p>现有模式，是资本拿走80%收入。剩下的20%由行业从业人员瓜分（分红类收入不算，这算资本利得，计入80%中），人均薪资按照20万算。（注意这不仅包含美术策划这类创意人员，还包括所有营销、发行、运维人员）——</p>
+<p>2700亿 x 0.2 / 20万 = 27万。</p>
+<p>AIGC模式下，资本（因为它的重要性大幅下降）拿走20%，剩下80%由从业人员瓜分，按照人均薪资12万计算（群狼争肉，缺少垄断性收入）——</p>
+<p>2700亿 x 0.8 / 12万 = 180万。</p>
+<p>这是非常粗略的估计，但已经说明了问题。</p>
+<p>另一方面，AIGC自身的特性也意味着会出现大量的基础服务。</p>
+<p>这是一个这样的生态：</p>
+<p>典型的画师不再为任何团队服务，而开始专注于创建世界观，长期致力于提供同一协调风格下的人物设计、动物、植物、地貌、场景，以及对应的关键词和模型。这些成熟的主角性格鲜活且有大量的动作数据供ai再次发挥。</p>
+<p>这个世界观和这些元素可以供任何团队作为服务购买，成为一种“内容基础设施”。</p>
+<p>有的人则专注于训练画风。</p>
+<p>有的人则专注训练某种聚合工具，将不同图层交由不同的专业模型生成——例如订阅A模型的人物躯体服务，但是服装交给B模型处理，背景交给C处理，三种宠物分别交给DEF处理，最后的画风则交给G处理。</p>
+<p>｜layer1: 人prompts@A, </p>
+<p>｜layer2: 场景prompt@B</p>
+<p>｜……</p>
+<p>｜layerx：prompt@X</p>
+<p>—style prompt @Z</p>
+<p>将迅速成为新的工作流标准。</p>
+<p>未来提供聚合服务会成为资本真正争夺的战略高地——向优秀创作者定制专属ai以寻求高度和谐表现的封闭ai聚合生态 和 “提供标准聚合服务，任由创作团队自己组合不同ai服务试错”这两种生态，会是未来AIGC的真正资本游戏。</p>
+<p>在这个生态下，作品的概念被重新定义了——不再是具体的一张画、一段视频，而是你自己所专注的主题、风格和叙事。</p>
+<p>这个市场容量是无限的，不烦不会导致“大规模失业”，反而会极大的解放人类，创造出大量的新的、不被“解雇”、“裁员”、“行业不景气”威胁的职位。</p>
+<p>Creativity As Service &amp; Enhancement 的全新视觉内容生态即将到来。</p>
+<p>在这个生态里，ai的工具属性仍然毫无动摇。</p>
+<p>你的问题是。你要<strong>真正的学习艺术</strong>。</p>
+<p>人类的最终职业只有艺术家一种，这是ai工具无法取代的。</p>
+<p>值得注意的是——如果传统企业不在有限的窗口期为这个新的生态做好准备，只是打算“裁掉一些多余的画手”，那么等待ta们的将是来自新模式的毁灭性打击。</p>
+<p>传统企业应该如何对此做出战略调整，这是另一个课题。</p>
+<p>忙得很，留到下一篇再说。</p>
+<p>不想错过的话，自己特别关注这个账号。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Business/">Business</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/CAS/">CAS</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ji-jiang-jiao-fu-de-shou-jia-c-da-fei-ji-shou-fei-shi-yan-cheng-gong-huan-you-na-xie-xin-xi-zhi-de-guan-zhu/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">即将交付的首架 C919 大飞机首飞试验成功，还有哪些信息值得关注？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/hei-ren-you-mei-you-ke-neng-zi-ji-jian-yi-ge-zhou/">
+                        <span class="hidden-mobile">黑人有没有可能自己建一个州？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

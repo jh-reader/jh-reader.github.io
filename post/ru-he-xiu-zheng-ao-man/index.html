@@ -1,0 +1,574 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何修正傲慢？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何修正傲慢？">
+              
+                如何修正傲慢？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何修正傲慢？</h1>
+            
+            <div class="markdown-body">
+              <p>什么叫做傲慢？</p>
+<p>傲慢就是对<strong>有可证伪性的问题</strong>只有<strong>三分证据</strong>，却有<strong>十分把握</strong>。</p>
+<p>有一分证据，对自己下一分结论；有十分证据，对自己下十分结论，这就<strong>不算傲慢</strong>。有五分证据，下四分结论，这个可称为<strong>谨慎</strong>。有十分证据，下一分结论，这可称为<strong>稳健</strong>。</p>
+<p>但是你要<strong>看清楚，这是对你自己而言。</strong>你自己知道自己有几分证据，下了几分结论即可。<strong>你不需要把你的证据全部告诉别人，去向别人证明你不傲慢。</strong></p>
+<p>很多人真正的问题根本不是傲慢不傲慢，是<strong>生怕别人觉得ta傲慢。</strong>ta其实甚至都不关心自己是不是真傲慢，而是心心念念在关心<strong>“如何不让别人觉得自己傲慢”。</strong></p>
+<p>ta几乎不会考虑自己有几分证据、又下了几分结论——因为从无这个习惯，ta甚至对这些“刻度”根本没有觉察能力，怎么考虑？</p>
+<p>人没有这个觉察能力时，ta其实一直都处在“有了一套自己看不出问题的证据/论证/结论”的状态。这个状态已经足够令人下某种决心，但这个决心是松垮的，是忐忑的，于是人反而特别在意别人说自己傲慢。因为“有人说我傲慢”对忐忑中的自己真的是一个很大的不祥之兆。</p>
+<p>不弄个水落石出，怎么睡得着觉？</p>
+<p>于是一定要学会“不显得傲慢”的技术，避免让自己心惊肉跳；万一没避掉，真撞上了，要么词谦意卑，求得一个“你态度还可以”的高抬贵手；要么狗斗不休，必要对方弃械投降，跪地称错。</p>
+<p>不然怎么睡得着？</p>
+<p>这跟傲慢不傲慢没有一分钱关系，只是<strong>不能承受自己的自由和独立</strong>的怯懦者无聊的自欺仪式。</p>
+<hr>
+<p><strong>这跟老鸟的状态是不同的。</strong></p>
+<p><strong>老鸟“狮子搏兔”——</strong>同样的生意投资，老鸟准备了十倍冗余的资源；同样的预估，老鸟会把效果对折又对折；同样的结论，老鸟做了三条截然不同路线的论证，都殊途同归，然后才开口说结论。</p>
+<p>这些结论常常在菜鸟们看来惊世骇俗，但<strong>却其实是极端保守的</strong>。因此菜鸟们的惊讶、质疑、甚至用“你怎么这么傲慢”的罪名安抚自己的惊恐、倾泻被惊扰而生出的不满，都不会动摇老鸟的判断。</p>
+<p>那只是<strong>显得傲慢</strong>而已，并没有什么真的傲慢。</p>
+<p>这跟偏执和讳疾忌医是有区别的，区别就在于这样做出的结论并不会因为被指责傲慢而动摇。</p>
+<p>因为那冗余几倍的估计并没有动摇，那能从几条互相独立的路线同时验证结论的论证没有动摇，人类几千年的历史没有动摇，自然规律没有动摇，数学没有动摇，逻辑没有动摇，结论就不会动摇。</p>
+<p>尤其是宣判你傲慢的人没有拿出真正能动摇结论的数据、逻辑和论证，只是一遍又一遍的哭诉你不听ta的结论，这就更不足虑。更不用指责你傲慢的人没有表现出逻辑通顺的叙述能力、论述能力以及必要的数据掌握，那么ta的指控就更加的无法认真对待。</p>
+<p>是的，的确有可能最后开了宝，是对方说中了结果而是你做了极大保守估计、做了多路论证的结论错了，但你之前的立场和态度只要满足一个条件，就仍然不能被称为傲慢——那就是你清楚的知道即使你有如此大的把握，你仍然只是在<strong>赌</strong>这是正确的。</p>
+<p>从始至终，你都知道一切来自你自己的一切结论都只是<strong>最有胜率的赌注</strong>，而不是最终真理，那么无论你的结论是什么、你的态度如何坚定、如何“不听人劝”，你都在绝对逻辑意义上<strong>无法是傲慢</strong>的。</p>
+<p>对你只存在是否人让人觉得傲慢的问题，而不存在实质意义上的傲慢问题。</p>
+<p>也就是说，<strong>本质上人只有一种傲慢</strong>，就是误以为自己所相信的某种结论是天经地义的客观事实，而不仅仅是自己基于绝对有限（无论自己觉得有多大把握）的片面证据、依靠自己绝对不足（无论自己有多么强的相对优势）的智力能力而下的输了最无话可说的<strong>信仰的赌注</strong>。</p>
+<p>这本质上是对客观世界的傲慢。</p>
+<p>只要你不是对客观世界傲慢，你就<strong>从根上没有傲慢的问题</strong>。</p>
+<p>你只能做到你目前做到的这种质量的判断，它再错，只要你没有看到足够能动摇你论证的新鲜证据、新鲜论证、明确错误，你<strong>只能坚持。</strong>你不能仅仅因为一个没有提出新证据、没有给出新论证，没有错误可指出的人大声疾呼你“傲慢”而改变结论和立场。</p>
+<p>因为你不能围绕着<strong>别人的情绪</strong>安排你的决定，这<strong>根本行不通——就算你愿意都不行。</strong>你可以为了对方的痛苦改变语气，改变实施计划，改变优先级，但是你<strong>不能因此改变观点和立场，这根本不可行。</strong></p>
+<p><strong>而且从道德上你不可以这么做。</strong></p>
+<p>因为这是在与人合谋实施一场被刻意纵容的绑架。你在任由自己成为受害者，而悄悄把绑架的罪放在了对方头上。这是一种极其邪恶的阴谋，因为这样做的“温柔的人”，在将来不顺意的时候几乎肯定向对方追讨这无法归还的欠债。</p>
+<p>犹如一个保安，看到了一个穷人在偷东西，以“仁慈和同情”为名任由对方得手，以便日后拿出录像带来让对方就范一样——<strong>“当初就是因为你不依不饶，所以我才妥协，你把我本来该有的命运还给我！”</strong></p>
+<p><strong>这里也要额外提醒没有把这事想明白的小朋友们——指责对方傲慢而只接受对方的屈服为结果，是唯有以性命相托的爱人才有的特权。</strong></p>
+<p><strong>只有绝对要为子女的一切后果买单的父母、为对方的一切后果不惜以死相救的爱人有资格这么做。</strong></p>
+<p><strong>因为只有他们才当得起这样的埋怨。</strong></p>
+<p>你若要以傲慢责备人，你最好想清楚对方真的因此“放弃傲慢”的后果——如果你是给出了新证据新论证，而对方采纳了、改变了计划，那么责任在对方自己的判断；<strong>如果对方仅仅是因为你指责傲慢而改变决策，那么由此而亏的本你必要承担、受的罪你必要赔偿。</strong></p>
+<p>你若是不打算承担、赔偿，实实在在告诉你，引发的那份痛恨，只要对方够得着你，绝不会轻易善了。</p>
+<p>因此，有证据、有论证，你就应该只摆论据和论证，不要多说什么傲慢。没有论据和论证，只是批评对方傲慢，你只想着对方不肯迎合你的看法，<strong>你想过对方迎合的后果吗？</strong></p>
+<p>你要想清楚你是不是性命相托的爱着对方，对方将来的一切不幸后果，你一力承担，有死而已。</p>
+<p>如果你不是，你如同在<strong>作死，</strong></p>
+<h2 id="愚不可及。"><a href="#愚不可及。" class="headerlink" title="愚不可及。"></a><strong>愚不可及。</strong></h2><p>有事说事，有错说错，无凭无据说人傲慢，</p>
+<p>人听了你的，栽了，你养啊？？</p>
+<p>为什么要面对没有论据、没有论证的傲慢批判保持无视？</p>
+<p>因为<strong>我不要让你担上让我人生不幸的罪</strong>。</p>
+<p>所以老纸白衣飘飘，<strong>一意孤行</strong>。</p>
+<p>因为我没听你的，这样你就不会有罪，我将来也就不会怪你。</p>
+<p>你会因此说我傲慢，我理解，</p>
+<p>我原谅你。</p>
+<hr>
+<p>如果你够仔细，你应该看到前面那个定义里留了一个口子——“<strong>可证伪</strong>”。</p>
+<p>只有对可证伪的事物，才存在被定性为傲慢的可能。</p>
+<p>对于<strong>不具备可证伪性的命题采取坚定立场，除非影响到客观的可持续性，否则是绝对免于人的判断的——而是不是确实有碍可持续性，这判断不是靠你的数学推断，而是靠上帝对人命运的实际揭示。</strong></p>
+<p><strong>这是神裁的管辖范围，非人类所能置喙。</strong></p>
+<p>人坚持认定一个不具备可证伪性的命题为真或者为伪，去面对命运的裁判，这是一种天然的自由。</p>
+<p>既然都<strong>不具备可证伪性</strong>，你当然永远没有足够依据去证明对方错了。</p>
+<p><strong>“在自己也明确承认没有任何逻辑上可行的证伪通路的前提下去断言别人是错的”，这本身是一种无可质疑的傲慢。</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Business/">Business</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%82%B2%E6%85%A2/">傲慢</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/xian-lie-bu-bing-shi-dai-wei-shi-yao-bu-gei-di-yi-pai-ju-dun-pai/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">线列步兵时代为什么不给第一排举盾牌?</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/yu-bie-ren-tao-lun-shi-ru-he-fa-xian-dui-fang-zai-tou-huan-gai-nian/">
+                        <span class="hidden-mobile">与别人讨论时，如何发现对方在偷换概念？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

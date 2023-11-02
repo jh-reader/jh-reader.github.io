@@ -1,0 +1,577 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>我们可以讽刺无神论者和有神论者吗? - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="我们可以讽刺无神论者和有神论者吗?">
+              
+                我们可以讽刺无神论者和有神论者吗?
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      18
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">我们可以讽刺无神论者和有神论者吗?</h1>
+            
+            <div class="markdown-body">
+              <p>讽刺是一种最低级的智慧。</p>
+<p><img src="https://pica.zhimg.com/50/v2-4f75270bd2f56fb4524fc6b204d08fc2_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>或者说，是对智慧最不体面的使用。</p>
+<p>大好的金漆，拿来刷了马桶；上等的金丝楠木，拿来做了赌筹。可以吗？物理上当然可以，法律上也没后果。但是，<strong>凭什么要这么做？</strong></p>
+<p>因为别人错，于是就可以讽刺么？为什么？把你的论证大声说出来听听？</p>
+<p>因为别人傻，于是就可以讽刺么？为什么？把你的论证大声说出来听听？</p>
+<p>因为别人坏，于是就可以讽刺么？为什么？把你的论证大声说出来听听？</p>
+<p>因为你们都恨ta，于是就可以讽刺么？为什么？把你的论证大声说出来听听？</p>
+<p>到底基于什么理由，讽刺可以是正当的？你说一个来听听？把你的论证大声说出来听听？</p>
+<p>还是因为讽刺作为一种进攻性武器如此犀利、如此容易争取赞助者、喝彩者，如此有传播性，是一件如此好用的兵器，所以难以放弃？</p>
+<p>有句大智慧的话送给你多想想——<strong>佳兵不祥。又曰，“身怀利器，杀心自起”。又曰，“放下屠刀，立地成佛”。</strong></p>
+<p><strong>永远不要再问“我们可以不可以讽刺xxx”，因为如果你真的想要穷尽你一生最大的可能性，答案永远是“否”。</strong></p>
+<p>你可以耍宝，可以自嘲，聊以此暂解智慧的痒。但只能是这样了。不要去追寻讽刺的快感——这是有毒的。</p>
+<p>讽刺的真正威力源泉在哪？</p>
+<p>你其实是在<strong>欺凌</strong>，只是你给了看客们足额的快感做贿赂，于是看客们饱足了瘾头，大声的喝彩。你误以为那喝彩是对你正义的认证，于是拳法愈加虎虎生风了。</p>
+<p>你以为你是正义天诛，<strong>实则和小学校里那些给跟班撒糖的恶霸没有任何本质区别</strong>——那些恶霸也以为自己是正义天诛。</p>
+<p>有什么可得意的？</p>
+<p>你悟得通，你会知道这种得意是一种值得羞耻的事。</p>
+<p>人所难免又如何？人之常情又如何？那就正当了吗？</p>
+<p>有人要说“讽刺是与邪恶斗争的有力武器”吧？</p>
+<p>就算是为了某种正义吧，讽刺就真的是为正义战斗的好武器吗？</p>
+<p>你不喜欢、不赞成什么事，那就去做一些事去反对它，正面的去对抗它、侧面的去牵制它、去击垮它的前提条件、去削弱它的辅助条件、去磨、去缠、去啃、去顶，而<strong>不要去讽刺它</strong>。</p>
+<p><strong>因为那会让你误以为你真的做了点什么有效的工作。</strong></p>
+<p>你能讽刺，这讽刺能得到喝彩，对“证明这事不正当”没有任何实际意义。</p>
+<p><strong>如果“可以编出有人喝彩的讽刺”就可以在任何意义上作为“不正当的证明”，那么世界上还有任何正当可言吗？</strong></p>
+<p><strong>任是何等至圣先师、大智大贤、仁人志士，人要想讽刺，会找不到下嘴处吗？</strong></p>
+<p>哪有一件事情能躲得过刻薄之人的讽刺？无论何等正义、何等公平，何等正当的事，存心讽刺都能轻而易举的找到一百万种花样。</p>
+<p>讽刺到底能证明什么？</p>
+<p>只能证明你有多缺快感来源、以至于连这么没营养的东西也无法割舍而已。</p>
+<p>姑娘们要切记——小男生们里面有极多分不出讽刺和幽默的分界线、或者分得清却根本不在乎的混蛋——是的，<strong>混蛋。</strong></p>
+<p><strong>你们要切记离得他们远远的。</strong></p>
+<p><strong>因为这种行为几乎肯定的暗示着将来的家暴。</strong></p>
+<p><strong>因为他们为自己的讽刺权的辩护几乎必定是“你要不要这么敏感”。</strong></p>
+<p>他们理所当然的认定自己有牺牲他人的“过度敏感”换他们自己精彩体验的正当权利。</p>
+<p><strong>他们的这条“公理”，将来能把你的幸福、甚至人格尊严、甚至人身安全当成香肠，一片一片的切来吃了</strong>。</p>
+<p>记住——幽默没有受害人，自嘲的受害人是自己。除此之外，只能宽容一时不察，不能接受明知故犯。</p>
+<p><strong>明知故犯者，敬而远之。</strong></p>
+<hr>
+<p>“讽刺”这个行为在近现代的中国被高度评价，其实有一个很大的原因——因为在公共宣传中被允许的讽刺，几乎都是站在“我们”的立场上在“讽刺”敌人。</p>
+<p>比如那些在各种场合播出的讽刺相声和小品。那其实是以笑声为子弹对公众的敌人做的公开处刑。长期一直如此，讽刺不知不觉被染上了一种它自身并不具备的感情上的正义性。</p>
+<p>就像悟空的金箍棒。尽管它是一把武器，但是台上它打的总是妖怪。于是金箍棒就成了正义神兵，使用金箍棒就成了不容置疑的正义行为，任何质疑金箍棒的，就成了正义之敌。</p>
+<p>这样想的人，我建议去听一下以中国为敌的脱口秀节目——这在现在的世界上不难找到。</p>
+<p>在那边，遵循着同样的逻辑，一样是在己方的拥趸面前拿讽刺作为武器当众精神处决自己的敌人。只是角色互换了。</p>
+<p>你先听个十个八个。十个八个如果还不够，你就再听十个八个。英文听不懂，没关系，有国语的。</p>
+<p>以受讽刺对象的身份来审视这些东西会是一个很有启示性的体验。</p>
+<p>体验之后，你再跳出这个身份，占到中立立场上、飞到20000英尺的高空往下俯视这整个讽刺的问题。去想想讽刺到底净效果是什么？</p>
+<p>对敌人的净效果是什么？对自己的净效果是什么？对听众的净效果是什么？</p>
+<p>这是不是一种最后会提高己方获胜概率的策略？还是一种会降低己方获胜概率、抬高己方获胜成本的策略？</p>
+<p>那时候你大概就明白为什么要弃讽刺而不用了。</p>
+<p>做敌人也分品级。</p>
+<p>即使决定要和与对方为敌，也要做一个高贵的敌人。</p>
+<p>要反对就反对，不要讽刺。</p>
+<hr>
+<blockquote>
+<p>《道德经 · 卅一》<br>夫佳兵者，不祥之器。物或恶之，故有道者不处。<br>君子居则贵左，用兵则贵右。<strong>兵者不祥之器</strong>，非君子之器，<strong>不得已而用之</strong>，恬淡为上。<br><strong>胜而不美，而美之者，是乐杀人</strong>。夫乐杀人者，则不可得志于天下矣。<br>吉事尚左，凶事尚右。偏将军居左，上将军居右，言以丧礼处之。<br>杀人之众，以悲哀泣之，<strong>战胜以丧礼处之</strong>。</p>
+</blockquote>
+<p>补一段道德经，你们自己体会一下。</p>
+<p>真是我“标新立异”，“过于极端”么？</p>
+<p>其实两千多年前这话已经说出来了，你们没听见而已。</p>
+<p>讽刺当然是件好兵器，但到底有几个人真是“不得已”才用它？</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AE%BD%E5%88%BA/">讽刺</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/te-bie-bu-xi-huan-fan-gan-bie-ren-dui-zi-ji-ping-tou-lun-zu-shi-wo-de-wen-ti-ma-huan-shi-bie-ren/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">特别不喜欢（反感）别人对自己评头论足，是我的问题吗？还是别人？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ben-ci-yi-qing-hou-shang-hai-de-biao-xian-dui-shang-hai-yi-ji-dui-zhong-guo-hou-xu-hui-chan-sheng-zen-yao-yang-de-ying-xiang/">
+                        <span class="hidden-mobile">本次疫情后，上海的表现对上海以及对中国后续会产生怎么样的影响?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

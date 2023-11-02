@@ -1,0 +1,570 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何真正做到接受现实？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何真正做到接受现实？">
+              
+                如何真正做到接受现实？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      18
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何真正做到接受现实？</h1>
+            
+            <div class="markdown-body">
+              <p>人不接受现实，是因为抱着“接受了现实就不能改变现实”的妄念。</p>
+<p>谁说“不接受现实”才是“改变现实”的开始？</p>
+<p><strong>改变是从接受现实开始的，而不是从不接受现实开始的。</strong></p>
+<p>先把不接受现实和没认清现实区分开，这是两回事。</p>
+<p>比如你觉得天是蓝的，ta觉得天是绿的。只要ta真心觉得天是绿的，你并不能仅仅因为你确信天是蓝的就认定ta是不接受现实。即使在假定你掌握的就是真理的前提下，ta的问题也不是不接受现实，而是没有认清现实而已。</p>
+<p>说到没有认清现实，谁认清了现实？谁能确保自己“认清“的那个就是现实？谁又凭什么认定自己认定的现实一定高于对方的现实？</p>
+<p>那么为什么你时常还是会有两个人各持一端，你站在中间默默观看，你会发现其中一个人的事实更强有力，更能影响你？</p>
+<p>如果你不是因为那人的立场与你自己更接近、更有利于你的自身主张，而是因为其中一人的事实更为自洽——即ta所主张的这一点，和ta所主张的其他所有点之间更少矛盾，那么你成功的获得了……更好的真相吗？</p>
+<p>不，是更大的傲慢。<strong>自洽并不能作为真理的证明。因为自洽并不可贵。完全可以有好几个完全自洽的、而且解释力不相上下的体系互相并行。</strong></p>
+<p>不过，这是题外话，不影响到我们的讨论。</p>
+<p>不接受现实的前提，一定是人自己心知肚明知道什么是现实。正是因为ta知道，ta的拒绝才被称为不接受。</p>
+<p>人为什么不接受现实呢？</p>
+<p>因为有这么一句老话——“接受现实，就不能改变现实了”。</p>
+<p>这意思是——只要你对现实有任何不满，只要你还想改变现实，你就一定不能接受现实，这与你改变现实的资格有关系。</p>
+<p>你千万不能投降，你一投降，你就得做一个现实的奴隶了，再也不能对它呛声，不能反抗了，因为你接受了。</p>
+<p>你接受了，就说明你满意了。你满意了，你还哪里有动力去改变呢？</p>
+<p>对吧？人满意了，人不就肯定会躺着了吗？</p>
+<p>对吗？</p>
+<p><strong>对你个大气球啊对！</strong></p>
+<p>谁说接受现实一定意味着对现实满意？谁说满意了就不能再努力？为什么非要把一切努力改变现实的人，一概想象为ta们必须与现实有仇？</p>
+<p>这套理论的根基的是什么？</p>
+<p><strong>是对仇恨的迷信。</strong></p>
+<p><strong>说这话的人，迷信仇恨——准确的说，是仇恨驱动的暴力——是唯一能有效驱动人努力的力量。</strong></p>
+<p>因为仇恨驱动不了智慧、驱动不了耐心、驱动不了需要客观、冷静才能做的任何事，它只能驱动暴力。</p>
+<p>只要你们团结起来不接受你们不想接受的现实，那么现实的既得利益者们就会胆战心惊，就会计划用某种好处赎买你们和分化你们，这样你们即使无需做任何努力，仅仅只是表示不满，表示不接受，你们都会获得某种利益。</p>
+<p>合力表示不接受，现实会向你们低头。</p>
+<p>“不接受，展示你/你们的仇恨和不满，本身就是有意义的努力，本身就可以代替很多艰苦的苦工直接胜利。”</p>
+<p>仇恨可以替代苦工，这就是这背后的真正理论根据。这听起来是很有道理的，因为这就是现代示威理论的基础，甚至可以说肉眼可见的有若干历史成功案例。</p>
+<p>但是，这种靠着展示不满本身谋求获得重大胜利的策略的成功，到底是因为有内在逻辑，还是因为时代的偶然？</p>
+<p>如果是前者，那么你客观上就可以拿它作为一个有效的策略使用。</p>
+<p><strong>如果是后者呢？</strong></p>
+<p><strong>你有考虑过吗，如果是后者呢？</strong></p>
+<p><strong>如果这些纯靠表达不满的抗议而取得的胜利，只不过是人类时代巨变期的一种短暂的现象，本身不过是个没有普遍性和长期有效性的误会呢？</strong></p>
+<p>是前者还是后者，关键在于那些“现实的既得利益者”是不是真的有你想象的那么脆弱，对你的认可有如此的渴望，会肯仅仅因为你的抗议而对你给予足够的安抚从而给你足够的利益。</p>
+<p><strong>这种打算是否真的会有效，其实关键在于这里所谈到的现实到底是一种真实的现实，还是一种希望被维持的假象而已。</strong></p>
+<p>如果它仅仅是一种假象，一种需要所有人的合谋才能装得下去的糊涂，那么你的不接受才会有随时可能撕破皇帝的新衣的威胁，也只有这样才有安抚你的必要。但是你也要注意——这种安抚只会是暂时的。因为ta们必然知道一次又一次的向这样的要挟屈服，终究不是长久之计。靠着以不接受故事的姿态威胁，说白了其实是一种“真相恐怖主义”。</p>
+<p>即使是以真相相要挟，终究也是要挟。要挟总是为敌，你什么时候看到过持续敲诈的人有过好下场？</p>
+<p>抢劫都可以忍，持续敲诈必定不共戴天。</p>
+<p>你第一次得手时得到的那些利益，真的换对方对你起这样的<strong>杀心</strong>吗？</p>
+<p>而这还是最好的情况。</p>
+<p>更坏的情况是你踢到了铁板。你所不接受的东西，不是一件一撕就破的皇帝新衣，而是真真正正、不言自明的事实。</p>
+<p>在通过渲染自己的不接受、拉帮结派佯装不认的你才是那个想要编织属于你自己的皇帝新衣的人。</p>
+<p>在这种条件下，你会面临一个极其悲惨的前景——真正的现实将直接成为你们的囚徒困境，<strong>谁先背叛谁受益更大。</strong></p>
+<p>当一艘船必定会沉，或者被相信必定要沉，水手们会从原本的精心爱护、修补漏洞转而变成尽量多尽量快的拆下自己可以得到的部分逃走。</p>
+<p>最后留在船上的与船同沉。</p>
+<p>如果你知道一件事是事实，那么它就是事实。如果你不承认它是事实，那么你就要一直承担“幻想税”，并且一直制定不出基于事实的计划，计划且脱离现实，还谈何计划的结果？</p>
+<p>更不必提你还要面对现实的主张者的警惕与敌视，以及同船水手们在囚徒困境的扼杀下的可能的——事实上是必然的——背叛。</p>
+<p>改变事实本来就够难的了，还要额外背着敌意和背叛、用不基于事实的计划去谋求。</p>
+<p><strong>这不愚蠢吗？</strong></p>
+<p>（未完，待续）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%8E%A5%E5%8F%97/">接受</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%8E%B0%E5%AE%9E/">现实</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-ping-jia-zhu-ming-zhi-hu-nv-quan-da-v-zhan-dou-li-wang-sheng-de-bo-jue-de-nv-quan-yan-lun-he-kong-ping-xing-wei/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何评价著名知乎女权大v战斗力旺盛的伯爵的女权言论和控评行为？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ri-ben-zheng-shi-qi-dong-he-wu-ran-shui-pai-hai-wo-guo-yi-zu-zhi-kai-zhan-hai-yang-fu-she-huan-jing-jian-ce-hai-xian-huan-neng-chi-ma-ru-he-bao-zheng-/">
+                        <span class="hidden-mobile">日本正式启动核污染水排海，我国已组织开展海洋辐射环境监测，海鲜还能吃吗？如何保证涉日食品安全？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

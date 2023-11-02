@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>说脏话跟教养有关吗? - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="说脏话跟教养有关吗?">
+              
+                说脏话跟教养有关吗?
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      19
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">说脏话跟教养有关吗?</h1>
+            
+            <div class="markdown-body">
+              <p>以下是教养逐级提升的。</p>
+<p>Lv1 把脏话指向具体的人——比如“张xx是个傻x”，“王xx是个王八蛋”，“李x是个狐狸精”。</p>
+<p>这是无可置疑的没教养的行为，意味着一个人如果某些事情上触怒了ta，就会被ta非人化——这常常在其拥有了暴力优势的时候导致迫害行为。</p>
+<p><strong>非人化是种族屠杀的精神准备。</strong></p>
+<p>本质上这恐怕都超出“教养问题”的范围了。</p>
+<p>Lv2 把脏话指向某种行为——比如“随处大小便是一种傻x行为”。</p>
+<p>这要好很多，已经在及格线以上——因为这已经有了对事不对人的意识，意味着这人虽然有一定缺点，但是不至于一有问题就打算靠消灭某人来解决。</p>
+<p>缺点在哪里呢？</p>
+<p>在于还不够能管理自己的情绪，对于细节不够敬畏。这些一时痛快的不拘小节其实会造成很大的潜在损失——比如上司、客户、下属对你的情况到底有多被动往往多少心里有数或者至少有一个自己的评估，而这个时候你如果忍受不住要用脏话发泄情绪，这固然会得到体谅，但也会导致ta们在心里给你做个记号——这个等级的压力就会导致ta失去礼仪自觉。</p>
+<p>而若能做到在压力之下仍然保持教养，对方至少会做出结论——这个压力水平仍然不会突破你的自控能力到出现情绪发泄的程度。</p>
+<p>有些人从这种发泄中受益——因为出现这种情绪崩溃的迹象，就会导致对方不自知的降低期待标准，因为你都已经开始情绪崩溃了，尽管仍然可以期待情况有改善，但想必也不能期待得太大了，这可以说隐性的调节了ta人的期待值，改善了自己的处境。</p>
+<p>某种意义上说，这是在无意识的发出一种让其它关系人预备迎接失望、调整预期的隐性信号，一种“投降输一半”的精神白旗。</p>
+<p>而且它<strong>确实有这个功效</strong>，可以相当有效的、魔法般的缓解对结果失望的其他关系人对当事人的愤怒情绪。</p>
+<p>如果你一直保持着优美教养、优雅从容，结果你交出来的东西却不尽如人意——你想想看，是不是反而还不如一路摔桌子打板凳、骂骂咧咧<strong>但又没有怪这个怪那个</strong>来得容易得宽免？</p>
+<p>某种程度上，这是一种无意识的生存智慧，一种典型的对抗责任压力的<strong>弱者的适应态</strong>。</p>
+<p>而确实，如果一个人不是有充分的自觉，只是无条件的认为“完成任务”不如“保持教养”重要——这往往是自恃有某种特殊地位或者退路，不会受到这失败的伤害（比如家底丰厚）——那么尽管ta在这个极限压力下保持着“彬彬有礼”，ta得到的教养评价反而会低于骂骂咧咧的这群人。</p>
+<p>而且这个评价并不算错。</p>
+<p>因为尽管这人的言行文质彬彬，但ta犯了一个<strong>最大的没教养</strong>——践踏ta人的信任和委托。</p>
+<p>这也是教养问题最令人迷惑的地方——在这里有一个文质彬彬反而评价更低的洼地。</p>
+<p>Lv3 自觉的保持钢铁般的教养。</p>
+<p>这跟上面那个会导致低评价的行为看似完全一样，但却会神秘的获得完全不同的评价，其要害在哪里？</p>
+<p>首先，在于这人会在保持教养的前提下让你感觉到ta对局势的严峻性的感同身受。</p>
+<p>ta不需要通过骂骂咧咧，也可以——或者不如说将会——通过字句的选择、语气的变化、适用流程的切换、反应速度的提升、日程的调整……等等迹象让你感受到ta并不是对此无动于衷、置身事外。</p>
+<p>有时候，你也会感受到ta是将某些到了嘴边的重话强行停住、吞了回去。</p>
+<p>你可以看到情绪管理的迹象。</p>
+<p>最重要的是，保持着教养的这位，没有任何用各种合乎或者不合乎情理的手段转移责任、逃脱后果的迹象、也没有给人任何“这结果对ta微不足道”的印象。</p>
+<p>这将极大的将这种保持教养的行为和上述那个反而会扣分的所谓“教养”区分开来，使得前者成为一种“泰山崩于前而色不变”，“子路死、不免冠”的<strong>英雄主义行为</strong>。</p>
+<p>这将毫无疑问的成为整个团队的情绪定海神针之一，这人会自然而然的获得很大的话语权和影响力——无论ta的职务头衔如何。</p>
+<p>ta还没有失去教养，会像矿井里的金丝雀还在歌唱一样，能让矿工们凭着微光无视黑暗。</p>
+<p>值得提醒注意的一点是——流露这种迹象，对于一些城府极深的领袖来说，本身也有可能是一种有计划、有控制的释放信号的行为。</p>
+<p>实情很可能是ta其实没有这么焦虑，但通过一些无形的表达让你意识到压力的实在性和你正在被关注的事实，被用作了一种调整你的优先级意识和计划焦点的有效手段。</p>
+<p>不过这种级别的上级，你是无法判断ta的这个行为是不是一种表演的。那种不动声色、仅仅通过换了一个词表达出来的“领导层焦虑”所造成的巨大精神压力会让你也没有这个心情去辨别真假。</p>
+<p>换句话来说，这其实是一种强大的管理工具。</p>
+<p>上述这些因素会极大的消除掉“ta只是无所谓”的毒性理解，于是毫无疑问的会将这种保持教养的状态转化为纯粹的“强大的自我管理能力”的证据。</p>
+<p>于是这会发生一种神秘的化学反应——这会强力的引导人转向“<strong>如果控制力强到这样的人尽力而为也只能有这个结果，那么我对结果的不满就不能归结为我得到了次品，而只能归结为我自己对结果有不切实际的设想。</strong>”</p>
+<p><strong>这会大概率的使事情走向良性方向，而且这结果比lv2那个“算了，也不好意思追究了”更强。</strong></p>
+<p>可以说“教养”这个概念，本身就是被这种系统收益无意识的滋养出来的。</p>
+<p>简单来说——放弃甚至贬斥教养，卖弄粗俗，本质上只是一个lv2级别的下意识生存适应。</p>
+<p>它可以在你别无其它选择时帮助你保命——你往往不会在最优先开除的名单上，所以它没有像lv1一样被自然选择强力的排挤——lv1可是真的既不易就职，也不易求偶、交友。</p>
+<p>但是，<strong>你并不是没有其他选择</strong>。</p>
+<p>你要去听信那些吹嘘粗俗多么“真性情”、教养如何显得“虚伪”的段子，舍不得这个“我什么也不需要改”的福利，那你将来不要抱怨没人拿你当回事。</p>
+<p>因为这是你自己选的。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AF%B4/">说</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%84%8F%E8%AF%9D/">脏话</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/shuo-fu-ta-ren-de-neng-li-tai-qiang-zen-yao-ban/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">说服他人的能力太强怎么办？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/you-ren-shuo-lao-peng-you-shi-yong-lai-shuo-fei-hua-de-ni-ren-tong-ma-you-zhe-yang-de-fei-hua-zhi-you-ma/">
+                        <span class="hidden-mobile">有人说「老朋友是用来说废话的」，你认同吗，有这样的「废话挚友」吗？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

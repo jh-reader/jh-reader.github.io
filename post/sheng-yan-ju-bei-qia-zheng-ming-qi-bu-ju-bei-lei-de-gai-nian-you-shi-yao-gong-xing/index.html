@@ -1,0 +1,590 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>“声言具备恰证明其不具备”类的概念有什么共性？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="“声言具备恰证明其不具备”类的概念有什么共性？">
+              
+                “声言具备恰证明其不具备”类的概念有什么共性？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">“声言具备恰证明其不具备”类的概念有什么共性？</h1>
+            
+            <div class="markdown-body">
+              <p>其实你的题设里面已经呈现出来了。只是你标题说得有点绕，我来翻译一下：</p>
+<p>一个人声言自己不诚实，反而比坚定的认为自己够诚实的人给旁人的体会上往往更诚实一些。</p>
+<p>一个人声言自己不客观，反而比坚定的认为自己肯定够客观的人给旁人的体会上往往更客观一些。</p>
+<p>诚实、客观（求是）、公正、真实、精确（严谨）、勇敢（坚强）、豁达（洒脱）、聪明（明智）、理智（清醒）、谦虚（虔诚）、自信（骄傲）、审慎（慎重）、深刻、开放、好（善良）、品味、道德……等等等等概念都有这个“自悖效应”。</p>
+<p>你想问有这类“自悖效应”的概念有何共性。</p>
+<p>其实答案已经一目了然了——它们的共性就是皆属<strong>美德</strong>。</p>
+<p>凡属无可置疑的美德，皆有“自悖效应”。</p>
+<p><strong>这是因为“人作为有限的存在永无充分立场宣布自己拥有无可置疑的美德”是一个逻辑上的客观事实。</strong></p>
+<p>重复一遍，人<strong>永无立场</strong>宣称自己拥有<strong>无可置疑的美德</strong>。</p>
+<p>而且这是一个<strong>逻辑上的客观事实</strong>。</p>
+<p>你仔细考虑，你会发现根本不存在一条逻辑路线能证明一个人的任何行为组合和某项美德有<strong>无可置疑的对应关系</strong>。</p>
+<p>周公恐惧流言日，王莽礼贤下士时。</p>
+<p>人类仿佛世界第一神偷，深陷“第一神偷悖论”之中无法自拔——第一神偷设计不出自己能打开而又足够安全的锁。</p>
+<p>人类也设计不出既足够有效而自己不能绕过的道德判定手段。无论人类设计何种判定某种道德的鉴定标准，人类自己都能发现——外人因为不能觉察人心，必定无法判定这个行为是不是为了获取这种荣耀而伪装出来的还是是某种极其特殊的巧合造成的误会；而依靠当事人自己自查，又无法知道ta自己不是自欺欺人或者干脆是有意欺骗。</p>
+<p>尤其绝妙的是——“自知”本身也是有自悖效应的“无可置疑的美德”之一。人若宣称自知，则ta一定没有足够知道自己不自知的自知。</p>
+<p>这种困境是客观的，是和人的绝对有限性在逻辑上绑死的，没得反抗的。</p>
+<p>除非人不成其为人，成为一个无限者。</p>
+<p>只有一个绝对自知者，才有能力做这个自我保证人。也只有一个无限他知者，才能有效的背书这个自我保证。</p>
+<p>事实上，也只有一个无限能动者才能真正名副其实的承受无限苛刻的美德鉴定标准。</p>
+<p>逻辑上的客观事实的强度，甚至要高于自然规律。因为对自然规律的认知还有可能因为发现新的现象而改变，而由基本逻辑所保证的结论是“无法崩溃”的——因为那意味着逻辑律动摇，那将整个的消灭理性本身的有效性，人类将全体疯狂。</p>
+<p>换句话来说，逻辑上的客观事实，已经是人类（或者说一切依靠逻辑律支撑理性的存在）所绝无可能撼动的<strong>绝对有效事实（注意，绝对有效不等于绝对客观）。</strong></p>
+<p>显然“我有能认知逻辑事实的理性”和“我不承认逻辑上的事实”这两者之间存在着绝对的矛盾。</p>
+<p>如果你不承认逻辑上的事实，你就不具有有效的理性。你不具有有效的理性，你的一切自我声称尽皆因此失去了可靠性的基础。</p>
+<p>通俗点说——</p>
+<p>一个宣称自己肯定足够公平的人，肯定没有足够的理性能力认识到这根本不是人类所能做的声言。</p>
+<p>一个不具有这种级别的理性能力的人，显然比具有这种理性能力的人更缺少接近“公平”（事实上无限高）的标准的能力。</p>
+<p>“宣称自己无可置疑地拥有某项美德”——包括“够用的美德”——这一行为，已经证明了此人绝对的缺少真的接近这项美德的能力——基本的逻辑判断力。</p>
+<p>如果你看明白了这些话，你就明白谦卑是什么意思了——谦卑就是认识到了自身的绝对有限性，从此再也不会说我有某项无可置疑的美德，或宣称自己拥有某项美德而拒绝质疑。</p>
+<p>这一丁点都不是心里明明如此认为，只是因为怕这样说了遭人嫉恨、被人攻击憋着不说，脸上假装不是不是、没有没有。</p>
+<p>而是因为<strong>这些话的确逻辑上就不成立。</strong></p>
+<p>而且，如果你确实想要尽可能拥有美德的话，你就要记住——自我宣称即实际抛弃追求。</p>
+<hr>
+<p>评论区有个问题问得很好：“那别人夸我这些，我接受呢？还是推辞我不是我没有？”</p>
+<p>回答如下：</p>
+<p>夸你“学习成绩好”，如果你分数确实很高，那么没问题。</p>
+<p>夸你“比较聪明”，你在同龄人中排名靠前，也没问题。</p>
+<p>说你“聪明”，拒绝。</p>
+<p>仔细想一想，限制在哪。</p>
+<p>不加限定词的美德表述，不是人所能当得起的。</p>
+<hr>
+<p>题主修正了自己的题设，把与美德对立的虚伪、主观、偏见、粗疏、大意、莽撞、冲动、怯懦、脆弱、嫉妒、小气、拘谨、笨拙、愚昧、傲慢、骄傲、亵渎、浅薄、封闭、低俗、邪恶、劣迹这些概念加了进去。</p>
+<p>那么按照题设的公式套一下：</p>
+<p>一个人承认自己虚伪，这使得他不虚伪。</p>
+<p>一个人承认自己怯懦，这使得他不怯懦。</p>
+<p>等等等等。</p>
+<p>这看起来似乎对我上面对美德的分析构成了一种挑战，但其实并非如此。</p>
+<p>因为<strong>一个人承认虚伪，并没有使得此人（绝对的被证明）不虚伪</strong>。</p>
+<p><strong>一个人承认自己怯懦，并没有使得这个人（绝对的被证明）不怯懦。</strong></p>
+<p>仔细咀嚼这两句话的区别，你就会发现这种不对称性：</p>
+<p>一个人自称公正，这个行为可以绝对的证明此人不公正。</p>
+<p>但是一个人自称不公正，这个行为<strong>并不能</strong>绝对的证明此人公正，而只是让听到这话的人对这个人的公正<strong>有了更正面的期待</strong>。</p>
+<p>“更正面的期待”几乎是没有重量的。</p>
+<p>当“美德的对立面”被放入这个命题时，这个命题并没有同样的成立。</p>
+<p>非美德并没有真的享受到美德所享受的“自悖效应认证”。</p>
+<hr>
+<p>在这里我要指出一个很容易被常人忽略的问题——实际上，很多我们常认为互相对称对立的德性，其实它们的关系只是对比关系，并不是反义关系。</p>
+<p>我举个典型的例子——<strong>勇敢和怯懦，其实并不是反义关系。</strong></p>
+<p>勇敢，不就是不怯懦吗？怯懦不就是不勇敢吗？</p>
+<p><strong>并不是。</strong></p>
+<p>实际上，<strong>真正的勇敢，是对“不勇敢”的怯懦</strong>。</p>
+<p>真正的拥有百折不回的大无畏勇气的勇敢、能对着枪林弹雨、刀山火海、千难万阻，虽千万人而吾往矣的勇敢，是因为人实实在在的、真真切切的看见了、摸到了甚至尝到了选择“不勇敢”的惨痛和折磨。</p>
+<p>对这不勇敢的折磨有多憎恨和厌恶，有多想避免，才构成了这种宁可面对风险和代价也不退半步的勇气。</p>
+<p>而这是什么呢？</p>
+<p>不是我勇敢，而恰恰是我怯懦。只是我的怯懦你们并不了解，所以你们才觉得我勇敢。</p>
+<p>比如那些在一片反对声中投入极大赌注去做深刻变革的企业家，他们是勇敢吗？</p>
+<p>他们是提前预见到了不这么做的那个思之不寒而栗的后果。</p>
+<p>“如果我们什么都不做，华为六个月内就会倒闭。”</p>
+<p>如果你仔细想想，你会发现那些并非出于对不勇敢的后果的怯懦而进行的挑战风险的行为，我们并不称其为勇敢，我们称其为<strong>鲁莽</strong>。</p>
+<p>甚至愚蠢。</p>
+<p>看到了吗？</p>
+<p><strong>勇敢即怯懦</strong>。</p>
+<p>伦理问题是高度复杂的，由此可见一斑。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%BE%8E%E5%BE%B7/">美德</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/sui-hua-yi-gong-cheng-shi-zai-mei-guo-zao-qiang-bi-ji-ben-dian-nao-zhui-ji-dai-tu-bei-tuo-xing-hou-shen-wang-wei-shi-yao-hui-fa-sheng-ci-lei-shi-jian-/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">34 岁华裔工程师在美国遭抢笔记本电脑，追击歹徒被拖行后身亡，为什么会发生此类事件？是个案吗？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/e-wu-chong-tu-shi-mei-guo-de-ji-hua-huan-shi-chao-chu-le-mei-guo-de-yi-liao-ni/">
+                        <span class="hidden-mobile">俄乌冲突是美国的计划，还是超出了美国的意料呢？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

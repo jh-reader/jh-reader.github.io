@@ -1,0 +1,581 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>为什么少有设计院能够实现真正的BIM设计，还是死守着CAD这样的二维生产工具？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="为什么少有设计院能够实现真正的BIM设计，还是死守着CAD这样的二维生产工具？">
+              
+                为什么少有设计院能够实现真正的BIM设计，还是死守着CAD这样的二维生产工具？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      18
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">为什么少有设计院能够实现真正的BIM设计，还是死守着CAD这样的二维生产工具？</h1>
+            
+            <div class="markdown-body">
+              <p>老郭一句开场白道破关节——</p>
+<p>没有君子，不养艺人。</p>
+<p>最先需要学明白BIM的，其实不是乙方，而是甲方，是业主，是评审委员会。</p>
+<p>就像高考，最先要学会英语的，其实是阅卷组、出题组，而不是学生和一线教师。</p>
+<p>首先是考官的水平决定了考生的水平，而不是教师在决定考生的水平。</p>
+<p>比如高考作文，得考官高到古文观止的水平，才会有教师教学生写洛神赋，否则如果考官只看得懂红拂夜奔，老师学生苦读“关关雎鸠”上了考场会深感郁闷。</p>
+<p>不过万事开头难——BIM既然不是业主先提出来，而是行业主管部门提出来，这就意味着在最开始肯定是考生跑得比考官快。</p>
+<p>考生是直接动手做题，在战争中学习战争，日以继夜焚膏继晷的敲快捷键、切视图、写代码、做模拟。</p>
+<p>而考官却是看看报表、大概齐的看看教程。</p>
+<p>这就出现一个诡异的倒挂——考官实际上没有能力独立的验算考生的计算结果。</p>
+<p>审查委员会如果不是从第一天就参与设计项目，全程跟踪基本的设计思路、基础的参数取值、基本的算法设计……</p>
+<p>要ta们直接看这个错综复杂由千万零件交织成的成品，</p>
+<p>这么说吧——作为这东西的作者，考生们自己觉得换了是自己，能看懂吗？</p>
+<p>当然，这东西已经极尽可能的规范命名了。分层分组分件，都有严格的规范。不然这东西根本就搭不起来，设计团队自己都有八条梁塞不进去。</p>
+<p>问题是，你让没有接触过这东西的人来看，ta还要先通读一遍设计团队自己的设计规范。</p>
+<p>光吃透这个规范要多久？你们自己估摸，个把月够吗？</p>
+<p>吃透了，ta还要审计两个重大的问题——你这设计规范是否对真正的现场有超出可接受范围的错误表达？你的计算有没有错误？</p>
+<p><strong>你的错误可能是自洽的，即你自己的设计在你自己的模拟里是不会抛出错误的。</strong></p>
+<p><strong>但是它却可能是与实际矛盾。</strong></p>
+<p>你的错误可能出现在做了错误的预设，而不是从预设到结果的构建和模拟过程。</p>
+<p>而你抛给考官们的设计说明，却可能没有记录这一点。</p>
+<p>即使记录了，考官们也没有把握能捕捉到这些问题。</p>
+<p><strong>更不必说这一代考官们的实践经验还要弱于考生。</strong></p>
+<p>于是，考官们客观上必然要寻求第二手段检验设计的有效性。</p>
+<p>比如，自己把冗余打得大大的——只看主结构，直接假设那些烂七八糟的结构全是净载荷，完全忽略它们自身的结构贡献，并且直接给你上最大的风险余量——如果计算结果对你不利，算你倒霉。</p>
+<p>难道指望我批准我看不懂的东西？</p>
+<p>审批责任是终身的，我可不想七十来岁去坐牢，五十来岁天天准备去坐牢。</p>
+<p>要么你就做盒子楼，外面可以允许你挂铝板——这铝板随你怎么造型，但是楼体本身麻烦你标准框架，免得大家为难。</p>
+<p>问题是，业主们现在不喜欢换皮的赫鲁晓夫楼，也看不上新加坡组屋风了，包豪斯也蒙不住了。</p>
+<p>业主们想要扎哈了。</p>
+<p>不扎哈，不快乐。</p>
+<p><img src="https://picx.zhimg.com/50/v2-627a202727e2dc3e20b6b78c1fef8195_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>你说这个不会垮，你给我点时间给祖师爷上几柱香，心理建设一下我也就忍了，就当为了专业献身。</p>
+<p><img src="https://pic1.zhimg.com/50/v2-66c7e4abfea08223fe2492b7001225b9_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>你说这个也不会倒，我怎么就那么不爱听呢？</p>
+<p>你别叫我拿你的模型算，你的模型算出来当然没问题。</p>
+<p>问题是，你的图算不出问题就没问题？</p>
+<p>除非我亲自建模算一遍，否则我怎么可能替你背锅？</p>
+<p>问题是，我凭什么亲自建模给你算一遍？你给我多少评审费？多长评审期？</p>
+<p>我劝你还是上点道——老老实实给我改斜拉索。</p>
+<p>最多我可以同意你在栏杆上雕点花，或者在主柱之间挂个观光走廊什么的。</p>
+<p>你不为难我，我不为难你，大家少加点班、少担点心，一起多活几年不好吗？</p>
+<p>我知道业主需要视觉冲击力，但是视觉冲击力也可以通过把传统结构做大点来达成嘛。</p>
+<hr>
+<p>在这一代专家组退出舞台之前，BIM不可避免的会处在“试车阶段”。</p>
+<p>尽管使用了BIM，因为整个决策流程的缺环，仍然无法发挥BIM在新构型上的计算优势，看上去“完全是个摆设”，“纯属官僚主义累赘”。</p>
+<p>这是时代局限、发展的必要阶段，<strong>人要有历史的眼光，对这一点要提前心里有数。</strong></p>
+<p><strong>提前心里有数，就能正确的、恰当的使用BIM，懂得即使有了BIM，也多做老专家们看得懂、睡得着的设计，把创新部分做在安全、简明处，让老师傅能签字、敢签字。</strong></p>
+<p>而不是今天捡到金箍棒，明天老孙闹天宫，看我证明中国也有扎哈。</p>
+<p>“我告诉你简单的很，别看着形状复杂，其实参数一拉就行，五行代码就能做出这种结构。”</p>
+<p>这属于初中二年级级别的愚蠢，对事情的发展规律视若无物。</p>
+<p><strong>错的不是世界，而是你。</strong></p>
+<p>这样胡作非为，被现实教训了，又要哭天喊地，回来就诅咒“民族性”、“腐朽的制度”，然后“失望”“绝望”，转行、“劝退”。</p>
+<p>这属于<strong>错上加错</strong>。</p>
+<p>坦率的告诫建筑师们——<strong>中国建筑界的黄金时代不但没有过去，恰恰相反，是还没有到来。</strong></p>
+<p>将来因为这种胡作非为而绝望转行、劝退的小朋友们，大概会在五到十年内看到一大帮当年被自己骂得狗血淋头的小助理成为未来东南亚、非洲、拉美的张哈、李哈、赵哈哈。</p>
+<p>仰光、万象、新开罗、内罗毕……将会遍布这些人的作品。</p>
+<p>而ta们既没有比你聪明，也没有比你有才华——其实哪来什么“传奇才华”，归根到底都是项目一个个喂出来的。</p>
+<p><strong>ta们只是在这第一波充满挫折的浪潮里侥幸没有放弃，混到后来成了跟中国天下无敌的施工团队配合最多的设计师而已。</strong></p>
+<p>选ta们，中建的报价打九五折。另外ta们也能出扎哈，打五折，买二还送一。</p>
+<p>别的咱不保，修起来不会倒。</p>
+<p>看准历史的节拍，春天谈恋爱，夏天下崽，秋天养膘，冬天钻洞。</p>
+<p>不要冬天谈恋爱，年三十跳海。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Literal-Art/">Literal-Art</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Literal-Art/Science/">Science</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%B5%B5/">赵</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/zhong-guo-wei-lai-hui-bu-hui-chao-yue-mei-guo-cheng-wei-shi-jie-di-yi-qiang-guo/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">中国未来会不会超越美国，成为世界第一强国？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-fan-ji-ying-ma-le-de-hua-zhu/">
+                        <span class="hidden-mobile">如何反击赢麻了的话术？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

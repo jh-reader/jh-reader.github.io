@@ -1,0 +1,579 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>工厂现在为什么招不到工人？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="工厂现在为什么招不到工人？">
+              
+                工厂现在为什么招不到工人？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">工厂现在为什么招不到工人？</h1>
+            
+            <div class="markdown-body">
+              <p>这里有很多答案，大致上的主体意思是工厂招不到工人是因为工厂待遇太差了。</p>
+<p>有往前推一步的——“工厂待遇太差是因为制造业不赚钱”。</p>
+<p>“不赚钱，所以待遇差，所以招不到人”——这逻辑看似很顺畅，其实却并不对。</p>
+<p>因为这是把问题看反了。</p>
+<p>中国的制造业——在这个语境下包括一切在中国经营的制造业企业，也就是包括外资、港资、台资企业—— 一直在赚钱，甚至可以说是很赚钱。</p>
+<p><strong>恰恰是因为钱太好赚了，好赚到不需要特别提高工人的待遇也不妨碍赚钱，所以“招不到工人”。</strong></p>
+<p>ta们赚不赚钱，跟ta们是否会把赚到的钱投在提高招工吸引力上，并没有直接的关系。</p>
+<p>ta们赚不赚钱，跟ta们是否会提高劳动力饱和度，也没有直接关系。</p>
+<p><strong>对无需重度培训的人力资源而言，“忍受旺季的人手不足”，是享受“淡季的低人力成本”的自然代价，仅仅如此而已。</strong></p>
+<p>“平时不养人”，对于这些季节性、低劳动技能要求的劳动密集型企业来说，远比“忙时不缺人”重要。</p>
+<p>就这么简单。</p>
+<p>赚到再多钱，也没有必要改变这个完全合理的经营策略。而且越是这样赚到了钱，越说明这样赚钱很对，不是吗？为什么要改变经过数十年检验的赚钱经验？这难道不荒谬吗？</p>
+<p>为什么说中国的制造业强？</p>
+<p>首先，说中国制造业强，不是在说这种来料加工的电子组装厂产量大。</p>
+<p>而是在说中国的装备制造、重型机械、化工机械等等核心部门门类齐全、技术高超。</p>
+<p>那是靠造船舶、工程机械、高铁、汽车这类重工业部门，靠大量高产能和高质量的化工企业等等硬邦邦的中高端制造业撑起来的国家品牌，不是指服装箱包、组装手机这类——尽管前者吸纳的劳动力人数远低于后者。</p>
+<p>第二，这类相对简单的制造部门也强，但不是强在生产技术上，而是强在人员的<strong>基础教育和文化素质</strong>上。</p>
+<p>强在中国劳动者对劳动纪律根植于文化里的兼容性上，强在中国的平均教育水平和社会发展水平上。</p>
+<p>这两个因素为这类厂家提供了大量只需要培训一下基本操作就能合格操作，讲解一下基本规矩就能遵守规矩的优质劳动力，取之不尽、用之不竭，招之即来、挥之即去。这给基于这一关键优质资源而设计的生产架构赋予了极大的经营优势。</p>
+<p>这整个被搬迁到中国的生产体系本身就是建立在这个独一无二的前提上的。选择的战场、预定的任务，就是算准了要用临时雇佣军来完成，以便减轻“精锐常备军”所固有的沉重的运营压力的。所以为什么要改掉自己本来就计算好的“临时募兵”模式，去改成用重度培训、长期福利维持的“精锐常备军”模式？</p>
+<p>没活的时候，机器又不需要发工资，厂房都在大郊区开发区，不是地价便宜就是干脆享受政策优惠，甚至就是自己本来就种不出啥的地皮。运营成本近乎于0，这是<strong>已经立于不败之地</strong>。</p>
+<p>厂里的设备，如果势头不好，可以盘给下家或者别家——它们甚至往往本身就是二手盘来的。开一个厂真正的硬成本其实只是一笔押金，在你退出时会扣掉折旧归还给你。</p>
+<p><strong>真正发生大成本的时候，也一定是接到大订单的时候。</strong></p>
+<p>另一方面，平时就养着一大批人等活干，光是被客户看到都会被恶意压价——没我这订单，你这些人怎么养？是你求我给单多些，还是我求你做活多些？</p>
+<p>情况现在反过来——你来看了吧，我的厂子设备完全能满足你需要，主要骨干都是我亲戚。我现在“极度缺人”，其实要么就是我就是不开工也根本不愁生存，要么就是我现在本身就业务很饱，只有缺人、没有缺活这一说。所以，你想我多做你的单，是你需要拿出足够价钱来说服我去招到足够的人来给你做，而不是我要求着你来给我续命。</p>
+<p>你价钱不够，我宁可空着厂子每天打牌，我没成本我急什么急？</p>
+<p>你价钱到位了，钱到账了，我当然要愁一下“不好招人”了。</p>
+<p>但是这个“甜蜜的负担”，不是吗？</p>
+<p><strong>“招不到人”，是一种选择，不是一种“意外的苦恼”。</strong></p>
+<hr>
+<p>解释一下“利润率低”，为什么“赚钱”。</p>
+<p>评论区直接有这么个典型的例子：</p>
+<blockquote>
+<p>真实事例、去年工厂接到上海那边一个外贸公司疫情物资订单、要求3个月出1800W货、一切从0开始、连产线都是临时搭建 用工七八百人全是劳务派遣、设立奖励机制一天完成多少量奖励多少钱，两班倒工作。订单完成每个管理都有奖金（小到质检员） ，有趣的是BOSS隔了几个礼拜提了台卡宴。</p>
+</blockquote>
+<p>这1800万的货，成本是多少？拉拉杂杂1500-1600万大半是有的。为了好算点，就算1600万吧（其实低点也不影响实际分析）。</p>
+<p>200/1600万，利润率多少？12.5%。</p>
+<p>问题是，<strong>老板3个月赚了200万</strong>啊。就算他这1600万成本全是贷款。年息按一年15%顶格利息，直接平摊到三个月算3.6%的贷款成本。</p>
+<p>老板本人【实际上】的成本是啥？</p>
+<p><strong>其实是那三个月的贷款利息</strong>，就是那3.6%。</p>
+<p><strong>这位老板的实际利润率</strong>是多少？是 (12.5-3.6)/3.6 = <strong>247%</strong></p>
+<p><strong>看懂了吗？</strong></p>
+<p>他们跟你吃饭时候算账，算的就是200万/1600万再减去3.6%贷款成本。</p>
+<p>“投了一千六百万，哎呀只赚了百分之几，剩下九个月还“揭不开锅”，“完全没活干”。”</p>
+<p>实际上呢？</p>
+<p>实际上就算他们去借年利24%的非法借贷，只要能按期准时结款，ta们也一样会有（12.5-6）/6 = 108%的实际利润。</p>
+<p>甚至就是借<strong>32%年利的高利贷</strong>，他们都仍然有56%的利润。</p>
+<p>只不过这时候他们所冒的风险很大，如果客户玩出什么大花样（打死不做陌生印度客户），或者自己生产上出了什么大纰漏——比如出了事故被强行整改、或者失了个火、或者关键设备坏掉了还找不到兄弟的厂子顶包救命，结果搞违约了，那ta们就倒霉了。</p>
+<p>那是真的有点倒霉。</p>
+<p>但是看清楚，这时候还有56%的实际利润在这顶着，要到不赚钱得要这个娄子捅得一百万都摆不平的程度。</p>
+<p>民间制造行业，往往各种宗族、乡谊、联姻亲上加亲，背后有不知多少叔多少哥多少姨可以连环救命——前提是你没坑过人，你家在村里住了三五代，跑得了和尚跑不了庙。</p>
+<p>1800万单子捅一个100多万成本、找完全部人脉资源都兜不住的大洞，几率是不高的。</p>
+<p>这种洞一般是厂主染上了黄赌毒、无心生产，家里闹离婚鸡飞狗跳、子女胡搞要愁着捞人戒毒，恍恍惚惚发精神病才真的会捅破天的，而且还要名声败坏，没人愿意救你，厂真的要倒常是这么倒的。</p>
+<p>那些喊着多么多么不赚钱，厂子眼瞅着养不住人了，所以忍痛关厂的，其实多半是老油条子女出国、北漂沪漂生了根不想回，自己有序撤退居多。</p>
+<p>机器又不是白菜，放着自己就烂了。真的技术落后了，只要功能完好，还可以看看那些去越南、孟加拉、老挝、缅甸开厂的同乡要不要。有专门收这些东西的职业贩子的。</p>
+<p>说实在的，家风严谨，知道好歹，信用良好、智力正常、正经干活的，没有不知天高地厚乱搞的，一般过得都并不差。</p>
+<p>世界第一制造业大国，真有那么惨，大家难道智商欠费上赶着抱团找死？</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Business/">Business</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%8B%9B/">招</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%B7%A5%E4%BA%BA/">工人</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/e-wu-shuang-fang-du-wei-rao-he-er-song-di-qu-zhan-kai-ji-ji-zhan-chang-zhun-bei-he-er-song-zhi-zhan-you-duo-zhong-yao-ru-he-yu-ce-qi-zou-shi/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">俄乌双方都围绕赫尔松地区展开积极战场准备，赫尔松之战有多重要？如何预测其走势？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-guan-jiao-xie-zuo-ye-tuo-la-de-hai-zi/">
+                        <span class="hidden-mobile">如何管教写作业拖拉的孩子？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

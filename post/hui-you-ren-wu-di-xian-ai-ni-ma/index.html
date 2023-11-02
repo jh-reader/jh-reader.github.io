@@ -1,0 +1,583 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>会有人无底线爱你吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="会有人无底线爱你吗？">
+              
+                会有人无底线爱你吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      21
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">会有人无底线爱你吗？</h1>
+            
+            <div class="markdown-body">
+              <p>爱是自带底线的。</p>
+<p>爱的<strong>绝对可持续性</strong>是它的本质特征——如果一段关系不可持续，必然是因为它已经越过了爱的原则边界，已经不能再被称为爱的关系。只要它仍在这个边界内，它的可持续性就是确定的。</p>
+<p>在爱的关系中，你可以自由的选择结束当前的关系状态，但那是因为你觉得有更好的选择，存在不愿承担的机会成本，而不会是因为这关系自身没有可持续性，无法维持。</p>
+<p>就像父母不为了让子女陪伴就阻止子女去谋求有前途的工作岗位，或者阻止子女谈恋爱，以至于子女离巢，并不意味着父母和子女的爱的关系就断了，但很显然这并不是因为父母和子女在一起的生活本身无法继续，必须断绝关系了。</p>
+<p>爱其实无所谓结束——尽管你选择了离开，甚至都没了实际的联系，但是这并非实质意义上的断绝关系，而更像是“同学毕业各奔前程”，渐渐联系变少，但这不妨碍你们将来机缘偶遇，甚至再次合作。它只是从一种紧密的实践形式转入了一种不甚紧密、甚至是休眠的实践形式，关系并没有断。</p>
+<p>你根本找不到理由去断掉甚至拒绝基于爱的关系——除非它在某种意义上偏离了爱的原则。</p>
+<p><strong>爱是永无止息。</strong></p>
+<p><strong>确定了这一点，就可以逻辑完备的倒退——在逻辑上就有内在不可持续性的关系，就一定不是爱。</strong></p>
+<p><strong>确定了这个基本原则，就知道爱本身是有绝对不容挑战的的规则的。</strong></p>
+<p><strong>这些规则就决定了爱你的人有很多事不会为你做。</strong></p>
+<hr>
+<p><strong>比如，任何ta认为对你不利的事，ta都可以——甚至必须——不帮助你。</strong></p>
+<p><strong>注意，</strong>不论你自己是否赞成ta这个看法的合理性，只要ta自己觉得这事对你不利，ta就可以不帮助而不必在任何意义上觉得自己辜负了爱的义务——自己当然<strong>总会</strong>觉得ta的这种判断是错的。</p>
+<p>ta爱你，你爱ta，但ta仍然无权越过权利边界去阻止你做你自己想做的事——除非存在某种先在的社会契约（譬如法律）规定ta有阻止你的职责（譬如ta是医生、警察、你的监护人）。</p>
+<p><strong>但ta绝对有权、有自由、有充分的立场不提供帮助，不因ta爱你或你爱ta而受分毫的折损。</strong></p>
+<p>一个典型的例子就是戒毒。</p>
+<p>你是瘾君子，你强烈的主张你需要毒品，甚至把话讲到“我不吸就去死”的地步，痛心疾首，声嘶力竭的指责对方不帮你就是不爱你。</p>
+<p>对方仍然可以在不帮助、不出钱、不跑腿、甚至打电话举报你的毒贩子的基础上，毫不犹豫的主张自己对你的爱没有分毫的折损。</p>
+<p>ta不能把你捆起来，ta不能用麻醉剂使你昏迷，ta不能夺取你的财产，ta不能泄露你的隐私……</p>
+<p>这些东西，到这个地步，ta仍然不能做。</p>
+<p>但是不提供任何这方面的帮助（包括可以被你转而利用做ta不赞成的用途的一切帮助），这是ta的自由，这些自由并不因为ta爱你而受分毫的剥夺和侵犯。</p>
+<p>你没有因为ta宣布爱你而获得任何一分剥夺这自由的特权——哪怕ta本人说你有这种特权都没用。</p>
+<p><strong>因为这东西是由内嵌在人的本质中的底层机制守护的，一旦受到侵犯，这些底层机制会直接覆盖掉ta本人的显意识，发动自我保护机制，让对方在大脑一片空白的状态下发动一切必要的防御手段。</strong></p>
+<p><strong>这东西是否发动，连当事人自己都说了不算。</strong></p>
+<p>而且它写死在人类的意识地基里，是人类意识的奠基石的一部分，别说拆除它，就是谁要强行移动它、甚至只是打个洞开个槽，都会导致人严重丧失逻辑自洽性、理性行为能力，根本性的破坏人的社会性。</p>
+<p>简单来说，会导致人退化成某种碳基机械——甚至还是台有故障的机械。</p>
+<p>你对这点不要有任何的侥幸——<strong>爱不是你可以自己去定义的东西，它的规则是提前写好的。</strong></p>
+<p>你不服没有用，跟你不服“凭什么圆周率就是3.14”一样。你可以自定义“圆周率”是4，但你的轮子转不动。</p>
+<p>这个<strong>客观法则</strong>赋予的爱人的自由是完全的，绝不因为爱你而允许你做一丝一毫的侵犯。哪怕对方自己承诺放弃、自己签字画押赌咒发誓说你可以侵犯都没有用。</p>
+<p>你真侵犯了，ta一样会“出尔反尔”的仇恨你、疏远你，甚至伤害你、报复你。</p>
+<p>你们签一千一万个合同，斩鸡头也罢、切手指也罢、发毒誓也罢，改不了这个<strong>客观的规则</strong>。你无法关闭人意识底层的守护机制。</p>
+<p>直到人类毁灭，这规律也无可动摇。</p>
+<p>人类对此只能认识、研究、了解、接受、利用，但没有不接受的任何余地。</p>
+<p>换言之，任何人对任何人做超出这个限度的承诺——例如什么“我永远听你的”、“我永远支持你的一切决定”、“我不会做任何你不喜欢的事”……——是一种经典的<strong>贿赂</strong>。</p>
+<p><strong>那是为了获得亲密关系、贪图现实利益而不择的手段。</strong></p>
+<p>因为这个底层守护机制的存在，这些“承诺”是根本不可能被可持续的实践的——这跟承诺“我答应你废除万有引力”一样没有实际意义。</p>
+<p>绝不会因为用这种招数的妄人数量够多，受骗上当的受害者够多，“万有引力”就真的可以凭空消失，这些没有任何实践可行性的承诺就突然变得可行和有实际价值。</p>
+<p>不是爱你的这个人“残酷”、“冷漠”，而是如果你要自定义爱的概念，并且把这个定义为“残酷”、“冷漠”、无爱、非爱，你必定会得出人皆无爱的结论。</p>
+<p>因为这个底层机制根本没给人“不残酷”的可能性。ta本人承诺你什么东西，这个底层机制不同意，ta就办不到。</p>
+<p>“明明说爱我，却可以随心所欲的以对我不利为名不帮助我”，这就是爱的残酷吗？</p>
+<p>不哦，还有更“残酷”的——<strong>任何ta觉得对ta自己有损的事，ta也都有充分的权利不帮助你。</strong></p>
+<p><strong>你并没有因为对方承诺了爱而自动拥有任何要求（demand）对方自我牺牲的特权。</strong></p>
+<p>道理和前一条相同。</p>
+<p>你可以祈求（pray），但你不能<strong>要求</strong>。一丝一毫都不行。</p>
+<p>这意味着对方如果拒绝，你并没有任何立场抱怨，也没有立场指责对方对你无爱。</p>
+<p>这就是爱残酷的极限吗？</p>
+<p>不。</p>
+<p>你的祈求是否构成对ta利益的损害，其判断权也绝对的归于对方自己，不容你置喙。</p>
+<p>你经常会觉得“从任何意义上都无法理解这怎么就损害了你的利益”，但对方的判断没有让你满意的义务。</p>
+<p>这就是爱的“残酷”的极限吗？</p>
+<p>不。</p>
+<p>对方不光是没有解释到你满意的义务，甚至连解释的义务都没有。</p>
+<p>而这些，都是爱自身的法则所规定的<strong>边界</strong>。</p>
+<p>已经是爱的<strong>底线</strong>。</p>
+<p>是人的底线。</p>
+<p>是具有<strong>最低限度</strong>的<strong>绝对可持续性</strong>的人与人的关系的客观逻辑底线。</p>
+<p>如果你对此感到惊讶、感到难以接受。</p>
+<p>那么，</p>
+<p>问自己两个问题——</p>
+<p><strong>1）你自己能实践你自己自定义的“比这更好的爱”吗？</strong></p>
+<p><strong>2）你对对方的爱在哪？</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/Feminism/">Feminism</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%88%B1/">爱</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%BA%95%E7%BA%BF/">底线</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ai-yi-ge-ren-you-na-xie-hao-chu/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">爱一个人有哪些好处?</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/lian-ai-chang-pao-wu-guo-zhen-de-shi-nv-sheng-yu-ma/">
+                        <span class="hidden-mobile">恋爱长跑无果真的是女生亏吗？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

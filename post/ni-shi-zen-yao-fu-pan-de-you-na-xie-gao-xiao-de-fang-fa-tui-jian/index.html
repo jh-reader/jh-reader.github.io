@@ -1,0 +1,654 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>你是怎么复盘的，有哪些高效的方法推荐？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="你是怎么复盘的，有哪些高效的方法推荐？">
+              
+                你是怎么复盘的，有哪些高效的方法推荐？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      5.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      54
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">你是怎么复盘的，有哪些高效的方法推荐？</h1>
+            
+            <div class="markdown-body">
+              <h2 id="Step-1-提出问题（Name-the-Issue）"><a href="#Step-1-提出问题（Name-the-Issue）" class="headerlink" title="Step 1 提出问题（Name the Issue）"></a><strong>Step 1</strong> 提出问题（Name the Issue）</h2><p><strong>1）给定问题的唯一编号，以便系统记录</strong></p>
+<p><strong>2）给予问题一个临时的单句描述。</strong>这个描述必须使用issue句式。句子结构必须包含出现问题的对象主体、出现问题的现象描述。标准句式为：</p>
+<p>问题主体 + [问题发生的疑似条件]+ 问题呈现的具体现象</p>
+<p>（带“[]”的可以从缺）</p>
+<p>如：</p>
+<p>鸡蛋羹有气泡 / 鸡蛋羹颜色偏白 / 鸡蛋羹缺少足够组织强度 / 鸡蛋羹在高海拔地区恰当加热时间不稳定 / 服务器在无人值守期间频繁自动重启</p>
+<p>之所以称之为“临时表述“、是因为在完成整个过程之前，你很可能并不能正确认识问题的真实性质，从而对issue的实质有错误认知。</p>
+<p>其中，<strong>问题主体不允许为具体个人</strong>。</p>
+<p>例如：</p>
+<p>张三在总账清结时频繁出现计算错误（错）</p>
+<p>项目财务助理在总账清结时频繁出现计算错误（对）</p>
+<p>因此，才有一个绝对的必要给issue一个不表意的编号，以便在issue的描述有所修正时候仍然精确的指向该讨论主题。</p>
+<p>以下描述没有实际意义，应尽量避免：</p>
+<p>xxx质量不佳 / xxx感觉不对 / xxx表现不好</p>
+<p><strong>3）列出问题表现的标本性材料，形成标准样本。</strong></p>
+<p><strong>这</strong>包括但不限于：</p>
+<p>图片 / 视频 / 录音 / 投诉书 / 采访记录 / 财务记录 / 问题截屏、录屏 等</p>
+<p><strong>一切使人觉察到该issue的资料和信号都包括在内。</strong></p>
+<p>这个过程本身就是一个再认识问题的过程。你很可能在观看了这些数据之后发现几种典型的问题——如对问题的描述本身有偏差；该问题实际上是两个问题的复合体。</p>
+<p>在发现这些问题之后，就需要重新定义问题描述，并基于新的问题描述重新采集问题资料。</p>
+<p>在进行这一步的时候，要保持这种认识——<strong>事实上这个原始标本才是issue的实体，而issue描述只是issue的名字，不要本末倒置。</strong></p>
+<p>原有的资料和原有的描述要存档并做出日志追踪。</p>
+<p>以上步骤要反复重复，直到issue识别的完整性、彻底性已经令人满意、相关issue的表述与对应资料均已令人满意的稳定化为止。</p>
+<p>这里已经着重强调了以“令人满意”为边界条件，这是为了防止人出于傲慢而追求“彻底、全面、绝对正确”。</p>
+<p>你要认识到这些理想境界是人类所不能觊觎的，一定要勉强，只会导致继续进展的效率很低，进度不可见。</p>
+<p><strong>从实践的角度来说，事实上所谓的“令人满意”，是指分配给issue naming的时间资源耗尽时你所达到的水平，只要是尽力而为的，就一律在实践上可以被认定为“令人满意”的。</strong></p>
+<h2 id="Step-2-案情重建-（Case-Building）"><a href="#Step-2-案情重建-（Case-Building）" class="headerlink" title="Step 2 案情重建 （Case Building）"></a><strong>Step 2 案情重建 （Case Building）</strong></h2><p>一旦issue被初步确定，就要按照与该issue的相关关系，建立该issue从发端到发作的完整时间线。</p>
+<p>例如，该issue是客户对某交付物的延迟不满。</p>
+<p>那么该交付物的整个生产过程中的所有流程记录都应该被调取出来，按照时间线排列起来。</p>
+<p>所有的相关流程负责人、参与者、审核者，都在采集证词的范围之内。</p>
+<p>所有的相关要素，都要从进入事件到退出事件最完整的描述。</p>
+<p>着非常像刑事侦查中的案情重建步骤。</p>
+<p>在这个步骤里，不要去急于考虑到底谁是凶手，也不要去急于考虑什么案情真相。而要专心的以有序的整理罗列全部事实为要。以免对某种假说的过度倾向（over investment）造成证据搜索只为证实该假说而进行，这极易导致错误结论。</p>
+<p>这其中很可能出现互相矛盾的资料和陈述，使得可能的叙事线分叉成几个不同的版本。那么首先根据物理定律之类的绝对限制排除掉不可能的可能性，同时也要追查造成这些叙事分歧的机制。</p>
+<p>很多情况下，这些产生叙事分歧的机制本身就是问题所在。</p>
+<p>在案件调查完成后，很可能会发现问题的表述本身存在偏差，存在再度修正的必要，那么就要及时完成再次修正，并根据修正再次调整问题样本和case building，使得三者互相协调一致。</p>
+<p>这种对问题本身的反复修正、反复重建，是一个问题的到正确提出的复杂性所在，也是导致绝大多数人在提出问题阶段失败的主要原因。</p>
+<p>一般人总是一拍脑袋就在样本残缺、案情不全、逻辑不协调的情形下，基于情绪的驱使，按照自己的心理焦虑的迫切需要来定义问题。</p>
+<p>从这第一步就已经踏入逻辑地狱，从此只会造成极端不公的结论和破坏性的后果——其实就是在冤枉人，还把对方不愿受冤枉的表现视为“抵赖”。</p>
+<p>那注定是没有好结果的。</p>
+<h2 id="Step-3-方案探讨-（Solution-Forging）"><a href="#Step-3-方案探讨-（Solution-Forging）" class="headerlink" title="Step 3 方案探讨 （Solution Forging）"></a>Step 3 方案探讨 （Solution Forging）</h2><p>方案探讨包含几个标准程序——</p>
+<p>首先，要对该问题进行估价。</p>
+<p>如果是有生命周期的问题——例如仅仅会在当前项目中出现、而当前项目是一个非经常性项目——那么按照它发生的概率、造成的损失、可能出现的时间和场合区域，为它预估一个总价。</p>
+<p>这个总价定义了为了解决它而可以投入的资源上限。</p>
+<p>要注意，为了识别和整理问题而付出的成本，已经在从这个上限中支出，你事实上只能用剩下的余额作为解决问题的本钱，而一般来说你还需要在其中留出合理的利润空间。</p>
+<p>剩下的钱可能都不够你召集相关人开会用的——开会是非常贵的。</p>
+<p>不错，<strong>这里一样有盈利要求</strong>。</p>
+<p>这一考量意味着一个明显的原则——<strong>不是所有问题都需要或者值得解决，有一些问题你可以直接接受。</strong></p>
+<p>而面对这个状况，你也可以选择重新提炼问题，将问题的定性泛化，从而使得它成为一个在永续经营中会高频出现的问题。</p>
+<p>比如——“鸡蛋羹的组织强度不稳定”这个问题，如果你只打算吃一次鸡蛋羹而已，就没有必要投入资源解决。</p>
+<p>但是它可以通过表述为“食物口感控制的系统方法在热成型布丁类应用中不可靠”而成为一个适用于一切热成型布丁类场景下都适用的问题，从而一下把支出科目从“项目备用金”科目转移到“战略研究基金”科目下。前者不过是十几二十万而已、其价值主张要在项目收入中表现，而后者却可以到千万、亿级别，其价值在公司股价中表现。</p>
+<p>你的预算会充足得多。</p>
+<p>看明白了吗？</p>
+<p>这是“提出问题的艺术”的一个典型的范例。</p>
+<p>再确定问题预算之后，有以下几种经典的任务小组（task force）的组建方案：</p>
+<p>a）仅纳入（involve）绝对必要的专家和决策层进行闭门讨论。</p>
+<p>这个方案效率最高、也是最推荐、最常见的处理方式。</p>
+<p>b）以彻底解决问题为导向，纳入全部必要的专家和决策层进行闭门讨论。</p>
+<p>这个方案成本较高，不仅仅是单位时间消耗的成本增加，因为人数更多，讨论秩序更难维持，事实上还会花费更多时间。它比方案A的成本往往大8-10倍。</p>
+<p>采用这个方式讨论的问题，一般是会导致经营战略被修正的重大问题。</p>
+<p>c）以根绝问题为导向，纳入全部必要专家和决策层进行<strong>公开</strong>讨论。</p>
+<p>因为围观人员的时间并不需要现场同步，可以通过邮件组、内部论坛或者直播录像等方法异步的关注，所以这个方案的直接成本与方案B在同一数量级。</p>
+<p>但这种讨论方式会造成巨大的组织影响，其决议有不可置疑的权威性和执行力度。</p>
+<p>采用这个级别的手段应对的问题，往往会涉及到到企业伦理、企业文化、企业基本规章制度的修正。</p>
+<p>在上述的各个方案中，都可以考虑加入一两名见习性质的后备人员参与，以作为人才梯队培养的制度安排。</p>
+<p><strong>现场观察ta们提出问题、发现相关性、探索问题内涵与外延、提出创造性方案、平衡成本、效率与风险的思维能力以及面对质疑、表达意见、和提出建议、说服不同意见等等态度和技术的表现，是决定其升黜的核心根据之一。</strong></p>
+<p>在确定任务小组的构成与讨论方式后，举行会议对问题进行讨论。</p>
+<p>如果不是紧急的问题，这个讨论可以通过留言讨论方式异步的进行，以节约成本。</p>
+<p>如果是紧急的问题，则适合采用线上线下会议的形式。</p>
+<p>在这里，有必要明确解决方案的定义。</p>
+<p><strong>所谓的解决方案，指且仅指组织规则的更新。</strong></p>
+<p>这包括但不限于以下典型的文件：</p>
+<p>企业章程（含股东构成表）、企业奖惩条例、工艺流程、工艺规范、培训手册、招聘标准、选拔流程、选拔标准、术语定义、愿景、战略规划、年度计划、月度计划、组织架构、岗位职责定义……等等。</p>
+<p>简单来说，<strong>所谓的解决方案，就是“我们的哪一份文件的哪一部分需要修改/增补成什么样子”的答案。</strong></p>
+<p>它应该被表述为这个形式，也应该围绕这个中心被讨论。它的要害在于字斟句酌，会有大量的“这么说好还是那么说好”和“要不要增加一段额外说明”这样以文本为中心的时间投入，而不是在围绕“我们要怎么办”这样一个事实上没有严格共识的虚幻目标浪费时间。</p>
+<p>组织的本质，不是组织的行为、也不是组织的人员组合，也不是组织的财产和地点，这些都只是组织的外皮、表象。</p>
+<p>组织的本质，是组织的规则。</p>
+<p>规则就是组织真正的实体，是它的本体，是它的肉体本身。</p>
+<p>在规则条文的背后所集中体现出来的那个总的原则、目的和纲领，则是它的灵魂。</p>
+<p>一个组织，其实是可以一个办公场地都没有、一文钱也没有，甚至一个成员也没有的，甚至可以没有称呼。</p>
+<p>这就好像你在银行数据库里创建了一个银行账户，它已经存在，但它的持有人一栏是空的、交易记录是空的、余额也是空的、名称也是空的、甚至序列号也是空的，但那些都是这个账户的身外之物，不是这个账户的本质。</p>
+<p>这个账户的本质，是这个账户所适用的一切数据库规则的总和。你是创造了一个可以执行一切这些规则的entity，只是它还没有名字、没有各种待填充的值，那些并不真正影响它的实在性。</p>
+<p>换句话来说，增强一个组织，就是推动它的规则<strong>自洽化</strong>、<strong>与其目的的一致化</strong>和<strong>与环境的兼容化</strong>、<strong>与挑战的适应化</strong>。</p>
+<p>所谓的组织强化，就是指这个<strong>组织规则的四化建设。</strong></p>
+<p><strong>时刻如此，永远如此。</strong></p>
+<p><strong>换句话说，任何一种事件，无论其是具体的带来利润还损失利润，如果没有导致组织的规则文本的增加或者修改，对于组织成员而言或者意义重大，但对于“组织”这一实体自身而言，毫无意义。</strong></p>
+<p>组织成员只是那个流水的兵，组织是那个“铁打的营盘”。</p>
+<p>站在组织的角度，经验和教训只有在形成一些文本的意义上才是存在的。如果你们开了两周会议，没有形成任何文本（包含其解释的文本），那么不管你们自觉得多么心情舒畅、信心十足，在最终意义上都是没有意义的。</p>
+<p>因为将来你们不会记得，这个组织的后续成员不会继承，最终它会像没有发生过一样。</p>
+<p>所以，再强调一遍——<strong>一切的改进方案，都必须以“如何修订我们的规则文档”为中心和唯一形式来进行。</strong></p>
+<p>否则你是在浪费所有人的时间。</p>
+<p><strong>更重要的是，你在浪费苦难本身。</strong></p>
+<hr>
+<p>在确立了以修改规则为中心的探讨原则之后，很自然的会导致一个自然而然的结论——<strong>关于复盘的讨论，不涉及个人的奖惩判决。</strong></p>
+<p>这个奖惩判定工作，是<strong>另一个专责小组的事务。</strong></p>
+<p>这个负责执法的小组，需要执行的是一种合法的、程度有效的司法实践。它的工作只是按照修正前与复盘小组的主要关系，在于它只在复盘完毕后进行自己的工作，并会根据各当事人在复盘中的坦诚程度在其权限之内进行自由裁量。</p>
+<p>简单点说——如果当事人积极参与复盘，并形成了良好的规则沉淀，那么ta的责任会被酌情减免。</p>
+<p>组织将此视为得到进步的必要代价，而不是一种纯然的的过失，<strong>除非所犯的错误纯属不遵守明文规章，没有什么可以导致规则改进的教育意义。</strong></p>
+<hr>
+<p>讨论方案，建议按照以下的规范步骤来进行：</p>
+<p>1）在明确案情、了解方案需求的前提下，所有的提案者依次提出自己的改进方案，并对全体进行讲解，每个讲解都设有答疑环节。</p>
+<p>2）所有的评论者对所有方案依次给出自己的点评反馈，阐述长处、缺点和方案可能的改进方向。</p>
+<p>3）各提案人得到全部反馈后各自对自己的方案进行修正。</p>
+<p>4）提案人进行第二次提案，流程与第一次相同。</p>
+<p>视时间预算而定，上述四步可以反复循环，直到主持人认为可以进入下一阶段。</p>
+<p>5）主持人宣布进行超额投票，采集意见倾向。</p>
+<p>超额投票是指参与者每人有两票以上的选票。可以投给自己的方案，但不可以投给同一个人、不可以弃权。</p>
+<p>投票结果可以作为下一步的决策参考，视情况而定，结果可以不公开。</p>
+<p>6）主持人提交所有方案、发言摘要及投票结果供决策机构参考，由决策机构作出决策。</p>
+<p>7）决策机构可对现有方案作出挑选，决定可以进入下一轮讨论的候选方案。</p>
+<p>8）对入选的候选方案批准更多预算，增加人手和资源进行进一步完善。然后重复整个过程。</p>
+<p>9）决策机构作出最终决定。</p>
+<p>整个讨论遵循几个关键原则：</p>
+<p>1）<strong>严格禁止不经批准直接发言。</strong></p>
+<p>不经过主持人批准的任何发言都是违规行为。典型的情况是两个人不经批准直接互相对话，这必须受到严厉处罚。</p>
+<p>这典型的发生在Q&amp;A环节，甲提问，乙回应，如果甲要再次追加提问，必须向主持人请求“我是否可以再问一个问题”。</p>
+<p>主持人的正确操作检查有无剩余时间，以及是否没有其他人要提问（此时其他人的提问权优先）。如果都符合条件，才可以批准这一请求。</p>
+<p>如果乙在回应之后又想补充回应，同样需要向主持人请求。</p>
+<p>不向主持人请求而直接互相对话的行为，被视为<strong>窃取公司资产，必须作出严厉警告，并视情况而定作出相应的财务赔偿。</strong></p>
+<p><strong>因为在会议上不经同意而占用的时间是全体与会者的时间，这些时间都是由公司支付全额成本购置的公司资产。只有受到信托的主持人有权分配这项资源，其他人未经允许擅自占用这些时间，会立刻造成公司的重大亏损。</strong></p>
+<p><strong>事实上，放纵这种重大的盗窃行为，是一个企业——尤其是小微企业——会亏损的主要原因之一。</strong></p>
+<p>主持人的首要职责就是保护会议的时间效率，任何被记录在案而没有被及时制止的发言，都应该视为主持人的失职，同样要承担赔偿责任。</p>
+<p>2）禁止使用针对人的褒贬词汇。</p>
+<p>主持人要有高度的原则性，对此类人身评价的行为当即予以警告和要求纠正措辞。要注意的是，不但要制止贬低，同样要制止褒扬。</p>
+<p>讨论方案<strong>不是一种社交行为</strong>，不应涉及任何对人的评价，而仅仅应该只对方案本身发表意见。而方案只有合理与否、可行与否、可靠与否、成本高低、风险大小、效果有无、性价比高低之分，没有聪明和愚蠢、忠诚和险恶、高级与低级之别。</p>
+<p>被警告者应<strong>立即无条件向全体讨论者（注意，不是被评价对象）道歉，</strong>再继续自己的发言。<strong>这一点不允许异议</strong>。不能遵循这项礼仪者，原则上应当即或随后取消参与资格，并以不履行工作职责事由上报，计入其职业记录保留，作为人事安排参考。</p>
+<p>主持人对此职责玩忽职守，极易导致组织内部因公事而起私怨。一切记录在案的个人化争执，如没有主持人及时干预的记录，主持人都有不可推卸的责任。</p>
+<p>3）原则上不作任何允许两人自由对话的议程安排，更不允许所谓“自由发言”的议程存在。因为这类议程会系统性的增加讨论失败——即超出资源上限、讨论缺少成果、破坏组织内部和睦关系——的风险。</p>
+<p>4）除由组织章程规定需要投票表决的事务之外，<strong>严格禁止用投票表决来作为决策机制</strong>。</p>
+<p>投票结果仅能作为参考数据之一供有决策权的层级作为决策参考，而不能被视作“最终结果”。<strong>讨论的使命都是“集中智力资源形成更完善和健壮的参考信息，以便决策获得最强的信息支持”，而非作出决策。</strong></p>
+<p><strong>决策是后果承担者的特权，只能由后果承担者或其授权的受托人作出。</strong>讨论小组被授权直接作出决策，是一种需要明确授权才能成立的特殊情况。如没有这明确的授权，则讨论默认为仅进行到“完成意见采集”为止，如在执行中超越了这一界限——或令参与者有任何此类误解——构成主持人的严重失职。</p>
+<p>很显然，主持人在讨论推进中有重大关键作用。（一般宜在制度上将会议成本与主持人报酬挂钩以平衡责任与收益）</p>
+<p>因为负有管理会议成本的特殊责任，主持人享有特权，可以不经申请就直接发言、提前打断他人发言、延长他人发言时间、重新表述议题、代为总结、临时调整议程。</p>
+<p>主持人的职责是在维护讨论伦理的基础上尽可能高效、尽可能节省的使用会议资源。</p>
+<p>这是一项技能要求和原则性要求极高的技能，因此会议主持人应该受过专业会议训练。这一训练至少应该包括对会议框架、标准干预手段倒背如流的熟知，对组织伦理、讨论伦理的基本常识的深刻掌握以及必要的由小至大的会议操作实践。</p>
+<p>（未完，待续）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%A4%8D%E7%9B%98/">复盘</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/dan-dong-fu-nv-huang-ma-kan-bing-bei-lan-hou-xi-jing-jing-fang-tong-bao-nv-zi-bei-ju-shi-ri-qi-fu-bei-cai-qu-qiang-zhi-cuo-shi-ru-he-kan-dai-zhe-yi-sh/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">丹东父女黄码看病被拦后袭警，警方通报「女子被拘十日，其父被采取强制措施」，如何看待这一事件？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/d-da-yin-ji-zhu-zui-da-de-yong-chu-shi-shi-yao/">
+                        <span class="hidden-mobile">3D打印技术最大的用处是什么？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

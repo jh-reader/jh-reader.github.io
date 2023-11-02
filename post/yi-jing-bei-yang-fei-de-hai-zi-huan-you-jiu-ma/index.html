@@ -1,0 +1,578 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>已经被养废的孩子，还有救吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="已经被养废的孩子，还有救吗？">
+              
+                已经被养废的孩子，还有救吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      29
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">已经被养废的孩子，还有救吗？</h1>
+            
+            <div class="markdown-body">
+              <p>首先，这个问题，学生们就不要回答了好吗？你们只是在代入角色后告诉别人你们自己想要得到的待遇，对提问者没有任何特别参考意义。就算你们真的得到你们想要的待遇，又有什么确实的依据说明结局一定是花开富贵的大团圆呢？更不用说客观条件压根就未必够满足你们想要的待遇——这个等你们自己自立自足，乃至于为人父母之后才会明白。除非你是豪富之家，否则养育他人的资源对一般人真不是小事，不要自己不觉得父母有多累就真的以为“我觉得没什么”。</p>
+<p>在教育所需要的那个清单面前，绝大多数普通人的能力和资源都是苍白无力的。</p>
+<p>说句坦白话，教出来的孩子不反社会、没有犯罪倾向，身体基本健康，有基本科学知识和社会常识，就算教育及格了。把期望设定得高于这个水平，都是很有勇气的做法，可以令人钦佩和同情的了。</p>
+<p>唉。</p>
+<p>然后，我们说点有实际意义的。</p>
+<p><strong>首先这个问题就问错了——废与不废，非人所能言。</strong></p>
+<p>不管是身为父母也罢，身为教育者也罢，身为旁观者也罢，永远要认清一个事实——<strong>你最多有权说“这种情况我不知道如何扭转”，这是且的确是你有立场下的判断。</strong></p>
+<p><strong>但“我不知道如何扭转”，完全不能等于“这人没有希望”或者“这人废了”。</strong></p>
+<p>你一步从“我觉得这人的情况糟糕，而且我完全看不出有什么办法扭转”跳到“这人废了”，就等于首先<strong>自命为主宰天地的神了。</strong></p>
+<p>你觉得没希望，于是这人就没有希望了？你没有办法，于是这人就废了？你是世界之巅吗？你是命运的主宰吗？</p>
+<p>你这样喃喃自语，乃至于向人声言，本质上只是下意识的想要获得他人的“免予起诉”判决——“我不是不想尽责，只是我的努力没有用，没有意义，所以我才避免了无谓损失。所以我没做的努力，你们都不能怪我。你们想要怪我，就先要自己指出有用的方法。但凡你们自己说不出有用的方法，你们就没资格说我。”</p>
+<p><strong>每一个口称“废了”的人，有一个算一个，没有一个能逃脱这责备。</strong></p>
+<p>如果你是有信仰的人，那么从这里你就要知道，<strong>仅仅你这个自封为神的行为本身，已经诅咒了你可能做过的一切努力，将这些努力的结果指向恶的方向。</strong></p>
+<p>如果你指望你的努力真的得到上天祝福，那么你能做的最基本的改变，就是<strong>停止因为你自己束手无策就去断言“废了”、停止“为了逃脱世人对你的责备而宁肯犯这种自封为神的罪”的蠢行。</strong></p>
+<p>仅仅只是停止这样做，就能首先获得最基本的祝福，就能改变你所做的努力对对方的影响的基调。</p>
+<p>你的实际行为可能完全没有什么变化，但是这行为所造成的影响就会发生变化。不信你自己去试。</p>
+<p>你首先要改变的，就是“一定要有有效的期望，我才有动力去做些事情”的基本行为逻辑。</p>
+<p>什么狗屁有希望没希望？我们人类算是什么牌面的东西？我们没有能力控制明天发生什么事，哪有资格谈一个东西到底有希望没希望？你自己觉得有希望，那是假的，明天天知道发生什么你根本控制不了的事一下让你的希望变成笑话；你觉得没希望也是假的，谁知道明天发生什么事就会一下旧貌换新颜？</p>
+<p><strong>你要做这件事，是因为某种原因天降了这个责任和义务在你身上。你不要问什么后果，不要问什么希望，你就量力而行的尽量去做，就是这样。</strong>你不要想着不见兔子不撒鹰，不要想着“有什么好处”。你只要想着这些，第一你会发现客观上你其实啥也没省掉——该出的你还是要出，别人要责备你还是要责备——本来可以有的效果却被这个态度毁掉了。</p>
+<p>世界上的事情就是这么奇妙，不信你可以再花半辈子去试，试到你自己服气为止。</p>
+<p>换句话说——少想对方“废”或者“不废”，你觉得你可以做点什么可能会有帮助的事，你就去做。然后你量力而为，不要付出你付出不起的，免得自己后来又横生怨念——生了怨念，得的就反而是负分了，还不如一开始就不要打扰对方，也不要去贪图这份“功德”。是的，这里最大的危险其实是你的动机是想贪这份“好人”的功德。</p>
+<p>你能站稳这个敬畏、谦抑的立场，那么你做什么都可以。做什么都会最终会有好的果效。区别只是这个效果会在什么时候、在什么事情上发挥出来而已。</p>
+<p>先站稳了这个“无害有益”的立场，你所做的一切才有了最基本的“帮助”的性质，然后再谈帮助的效率问题、大小问题。这一点你都站不住，那么你的努力首先都还不好说到底是帮助还是伤害，劝你还是先坐稳了想清楚再说。</p>
+<p>以上这一点，适用于一切想要做点教育、甚至想要对任何人施予任何帮助的情形，只要你是一个人类，这条基本法则就适用。</p>
+<p>然后再谈到底具体应该做什么。</p>
+<p>这取决于你自己所受的训练和你自己所拥有的资源。</p>
+<p>但我可以给你一个永远不错的总原则——立足于增进他人的选择空间。</p>
+<p>无论你做什么，如果最后的根本性质是你增加了对方的选择空间，这种行为都可以定性为帮助。</p>
+<p>“如果你想上大学，我可以帮你解决部分学费”——这种就是增加了选择空间。</p>
+<p>“我给你学费，你要给我努力去上大学，不然对不起我”——这却是剥夺了对方的选择空间。</p>
+<p>如果你不知道应该怎么办，你就多想想这个问题——我的所作所为，是增加了对方的选择空间，还是剥夺了对方的选择空间？</p>
+<p>这里存在两种情况：第一种是纯增加的，那么这种你就不必有什么大顾虑了，只管去做。这大概是一些不附加任何条件的帮助。</p>
+<p>第二种是存在机会成本的。比如我可以教你绘画，但是这就要挤占你的学习时间。我可以带你去旅游，但你去了东就无法在西。这一种，如果你足够幸运，不是对方的监护人，你就可以依赖于对方的自由意志来解决问题——机会成本让对方（或对方的监护人）自由选择要不要付出。你不要去强迫就自然在红线之内。</p>
+<p>只要你守住这个原则，就不必过于顾虑到底做得对与不对。</p>
+<p>原理很简单——你也这样做、其他人也这样做，则你所想要帮助的对象就会多出大量的选择余地。任何人只要有了更大的选择余地——尤其是出现自己没有想到还存在的选择余地——无论ta是否真的做了这样的选择，ta对生活的信心一定会增强。</p>
+<p>对生活的信心增强，强到一定的阈值以上，就能根本的改变人的行为方向。</p>
+<p>绝大部分青少年（乃至于人类）的问题，都是出于绝望——因为他们对生丧失信心，他们就会转而去寻求<strong>享乐的死</strong>。</p>
+<p>他们需要的不是“帮助”，他们需要的是<strong>生命。</strong></p>
+<p><strong>你首先要传递给他们的，是生命。</strong></p>
+<p>何为生命？</p>
+<p><strong>生命的本质，是可能性的总和。</strong></p>
+<p>站稳了这第二条，你就必然已经给了对方最根本的帮助。如果你这样的人足够多，那么你们所帮助的对象就有可能<strong>弃死向生</strong>。</p>
+<p>一旦弃死向生，求生的决心就能点燃人内在的引擎，启动人与世界的良性的互动循环。只有在这个循环之中，一切外部提供的资源才不会被拿去变卖换取快感的毒品。这些资源才有可能造成善果，而不是給得越多，毒害越深。</p>
+<p>在这第二层再往上，你也得了你的自由——从这里开始，你做什么都是对的，从心所欲，而不逾矩。</p>
+<p>且必得赏赐。</p>
+<blockquote>
+<p>以下这一段是专们说给基督徒看——  </p>
+<p>神爱世人，神对世人的爱就是爱独一无二的绝对示范。  </p>
+<p>而神对人的爱最可确认的一点，就是神赐予人生命。  </p>
+<p><strong>生命的本质就是可能性的总和。</strong>  </p>
+<p><strong>因此，增加他人的可能性，必然与神的爱同心同向，因而也同质。</strong>  </p>
+<p><strong>从神学上说，这是最有希望可称为爱的行为法则。也是你希望任何人真的得到益处时，你可做的最安全的选择。</strong>  </p>
+<p><strong>而爱首先并不是你所打算去做的那些“工作量”，它首先是你对对方的安全所抱有的这深深的忧虑和考量。有此顾念，你所做的才被加持为爱，其后果才会得到祝福。是靠着这种祝福，你身为人类所必然有的种种愚蠢、傲慢和不自知的邪恶才被上帝仁慈的安排无声的挽救，你的行为才有可能化为对对方多少有用的真正益处，你也才有可能能承受你行为所必然导致的对方的痛苦和损失。</strong>  </p>
+<p><strong>对方最终所得到的益处，其实根本不是来自于你的“工作量”，而是来自于上帝对你以行为为祭礼而行的祈祷的回应。你所贡献的东西，于对方真正做得的结果而言是微不足道的，就好像你请求了工程师，而这工程师便帮人盖了一座桥。这桥的成本显然绝不是你拜托工程师时送上的酒水和红包。这荣耀当然要归于工程师，而不是你。</strong>  </p>
+<p><strong>对于基督徒而言，这才是人间一切善行的基本原理。从这个意义上说，基督徒并无所为的善行。你施舍也罢，行医也罢，办教育也罢……这些事情的本质都只是以“工作量”为祭礼的祈祷。它们的一切结果，都是来自上帝对你祈祷的回应。</strong>  </p>
+<p><strong>因此一个基督徒是没有任何资格自称施主的。任何自称施主、自居“有功”的行为，都是从本质上背叛了信仰本身。</strong></p>
+</blockquote>
+<p><a href="https://link.zhihu.com/?target=https://johnhexa.gitbook.io/jh-notes/dao-gao">祈祷</a>祝各位圣诞快乐。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%BA%9F/">废</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%B2%A1/">没</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-shi-tan-chu-ta-ren-de-di-xian/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何试探出他人的底线？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-bei-jing-ren-she-ju-fu-chu-chang-ti-yan-song-wai-mai-de-yi-tian-bing-biao-shi-tai-wei-qu-le-zhe-ge-qian-tai-bu-hao-zheng-le/">
+                        <span class="hidden-mobile">如何看待北京人社局副处长体验送外卖的一天，并表示「太委屈了，这个钱太不好挣了」?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

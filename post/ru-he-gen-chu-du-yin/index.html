@@ -1,0 +1,613 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何根除赌瘾？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何根除赌瘾？">
+              
+                如何根除赌瘾？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      33
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何根除赌瘾？</h1>
+            
+            <div class="markdown-body">
+              <p>最近有包钢的事，据说是“投资失败”，借这个问题，来讲一下戒赌问题。</p>
+<p>家长们对赌博问题的纠结之处在于，ta们常常暗地里抱着“不能放弃投机暴富的一切可能”的不甘，不是去教育子女必须坚守“不劳不获”原则，而是去以<strong>“不要冒自己不能承受的风险”和“不要做和自己能力不能匹配的事情”</strong>这样的教诲来抑制赌博的可能。</p>
+<p>在他们心里，其实生怕子女变成“老黄牛”，“一辈子赚死工资”，在潜意识里暗暗相信“人无横财不富，马无夜草不肥”，认同“撑死胆大的、饿死胆小的”，所以才会用这种看似“即可恰当保护积极性，而不至于过度放松警惕”的告诫来规范子女——以及自己——的投机行为。</p>
+<p>但这恰恰是为赌瘾埋下了祸根。</p>
+<p>因为“不要冒自己不能承受的风险”和“不要做与自己能力不匹配的事情”<strong>没有提供判断“不能承受”和“与能力不匹配”的方法论</strong>，<strong>而是诉诸当事人自己的良好判断。</strong></p>
+<p>魔鬼在这里冷笑。</p>
+<p>“不能承受的风险”？不能承受的标准是什么？</p>
+<p>小A认为自己能承受一百万的风险。</p>
+<p>然后ta“奋力一搏”，失败了。</p>
+<p>接着ta发现自己大大的高估了自己承受一百万亏损的能力，被悔恨和恐惧牢牢抓住。</p>
+<p>我们先跳过ta所能采取的种种补救和掩盖措施直接快进到ta终于没有隐瞒得住，不得不面对事情败露，父母配偶崩溃，社会关系天崩地裂。</p>
+<p>结局A，ta自杀了，全剧终。这个我们先不多谈。</p>
+<p>结局B，父母配偶决定给机会，咬牙卖房卖车卖信用，一起扛了。</p>
+<p>小A又羞又愧，无地自容。</p>
+<p>但是，小明会发现，原来ta最初那个“能承受一百万亏损”的判断，<strong>的确是对的</strong>。</p>
+<p>ta没有死，<strong>ta的确承受住了</strong>，不是吗？这是硬邦邦的事实。</p>
+<p>ta并没有违背“不冒自己承受不住的风险”的训诫。<strong>不但如此，ta还会意识到自己的承受能力比自己想象的强</strong>。</p>
+<p><strong>或迟或早，新的“我承受得了这个风险”的信心会再次发育出来，开始第二轮“拼搏”。</strong></p>
+<p>这个戒赌法更深的失败之处，在于它甚至不能接受这故事的另一种结局——小A从此对自己承受风险的能力完全的不自信，无论自己觉得自己能承受什么样的风险，都因为想起这刻骨铭心的惨败而自我否定。</p>
+<p>现在问题来了——难道这样一个被精神阉割了的小A就真的能让父母、配偶，包括ta自己接受吗？</p>
+<p>而“能力不匹配”法呢？放心，ta没吃过足够惨烈的教训，永远会觉得“谁说我能力不匹配”。这根本阻止不了ta犯下第一次大错。</p>
+<p>问题还是一样的——难道要ta因为这次大败，从此永久的认定“不能相信一切能力匹配的判断”吗？如果不是，又拿什么去遏止ta不再次错误的认为自己“能力足够”呢？</p>
+<p>用“相信风险可以承担”来补吗？</p>
+<p>所以，这两种最流行的抑制投机的策略其实是无效的。这也正是受这样的教育的人们难以避免、也难以戒除毒瘾的原因所在。</p>
+<p>那要怎么办呢？</p>
+<hr>
+<p>记住这个原则：</p>
+<p><strong>永不期待超出自己时薪的收益。</strong></p>
+<p>这在具体执行上有几个要点：</p>
+<p>1）无工作经验时，不要期待0以上的报酬。</p>
+<p>2）实际收益反复稳定超出你原有的时薪期待时，你才可以调高自己的时薪期待，按照新的时薪水准执行前两条。相应地，实际收益反复稳定低于你原有的时薪期待时，你需要根据实际情况调低你的时薪期待。</p>
+<p>3）超出估计的部分<strong>视为需要“消毒”的意外刺激，</strong>执行“消毒”操作——匿名捐出至少十分之一给完全无利害关系的人。</p>
+<p>4）任何与付出劳动量无关的长期资本性收入，都要视为不可用于个人消费的“社会信托资产”来处理。也就是这些钱是不可以拿来吃喝穿用的，而只能视为为某种公共事业临时保管。</p>
+<p>这四条执行法则合起来，才是对上面这条法则的完整实践。</p>
+<p>要坚决的、机械的，在一切收益上执行。要把这立为个人信条，并且要作为家族原则传承下去。</p>
+<p><strong>这会从根本上根除你自己以及你的家族因为任何投机行为而毁灭的可能性。</strong></p>
+<p><strong>因为它根除了“投机”本身。</strong></p>
+<p>它其实就是“<strong>不劳不获</strong>”四个字。</p>
+<hr>
+<p>不劳不获的原则为什么这么重要？</p>
+<p>因为它的尺度有大得多的客观性——衡量“合理期望”的时侯，它不是使用“自我估量”，而是使用客观得多的历史数据。</p>
+<p>尽管它通过不断取样修正而赋予了自己灵活的空间，也通过承认“意外收入”容纳了“超额赐予”，但是它提供的参考仍然是<strong>客观</strong>的，来自不可更改的、易于确认的基本事实。</p>
+<p><strong>不可更改、易于确认的基本事实，是具有神性的事物，它事实上就是一种神的低语。</strong></p>
+<p>你必须将<strong>不可更改、易于确认的事实</strong>作为高于一切的<strong>确定性之锚</strong>来使用，用同样由不得自己篡改的逻辑完备的数学方法将自己的一切估计与这沉锚刚性的绑定起来，以从根上避免自己内生的傲慢与贪婪与外界的波澜合谋将自己掳走。</p>
+<p>“不可更改”，则根源于<strong>历史</strong>的无可更改性。</p>
+<p>“易于确认”，是“<strong>唯物</strong>原则”的最保守也是最基要的实践。</p>
+<p>而这个一经确定就不再存在模糊空间的严谨的数学算法，则是联结自我与唯物历史的理性工具，它的另一个名字，就是<strong>科学。</strong></p>
+<p>信从这样的三位一体可以给予自己安全与发展的最大平衡，这是一种<strong>主义</strong>。</p>
+<p>这答案的本质上，其实就是<strong>科学 历史 唯物 主义。</strong></p>
+<p>而它在另一语境中，也就是人对对神的话语的服从。</p>
+<p>实践上方法一致，</p>
+<p>效果上预期相等，</p>
+<p>精神本质上一体两面。</p>
+<p>无论你是何种信仰，答案都是一样。</p>
+<p>同一实践，不同表述。</p>
+<hr>
+<p>那么，这意味着将自己的一切交给某种数学算法来判断吗？意味着将人的自由交给一个公式来管辖吗？</p>
+<p>自由呢？自由在何处安放？</p>
+<p>你的自由并没有被真正的剥夺。它还栖息在最重要的两处——</p>
+<p>第一，技术性的，它存在于算法的参数决定上。</p>
+<p>算法好像一台相机，什么样的参数会出什么样的结果，完全不由你来干预，而是由光学原理、机械传动、信号回路这些硬件与自然规律合作确定的，但这显然并不意味着你没有决定最终成像的自由——你可以决定将相机在什么时候以什么姿态对准什么，决定用什么样的感光度、什么样的焦距、什么样的光圈，什么样的快门。这之中有多么宽广的自由，全世界所有的照片的总和可以给你一个参考。</p>
+<p>第二，在更高的层面，你可以选择和设计算法。</p>
+<p>是的，在你明白了这个原则之后，你可以自由的选择将历史事实转译为合理预期的具体算法。只是要注意以下几点：</p>
+<p>1）这方法必须在数学上是严谨的，结果本身不受人的主观判断干扰。算法里输入的每一项数值，其提取的机制都必须是显而易见、难以被情绪左右的——例如工资单上明晃晃的数字、考卷上的积分、仓库磅秤上的读数、流水线上的视觉传感器上的计数。</p>
+<p>2）这方法必须是足够简单的。</p>
+<p>你要警惕自己故意设计出你之外没有任何人能理解的复杂算法——无论它是因为理解成本超出了一切ta人的关切意愿，还是它在难度上超出了一切ta人的智力水平，达到的效果都是一样的——通过故意引入复杂性，你实际上拒绝了任何其他人能给你有效检验的可能性。</p>
+<p>如果你的算法足够简单，那么知道你的基本事实而对你足够关心的人就能轻松的给你足够有效的第二观点。你不必顾虑ta人同时知道了你的“基本事实”和你的算法，会实际获得对你过于强大的影响力，因为你可以通过“我有一个朋友”法，和“hypothetically”来剥离隐私性，也可以通过向陌生人请求代为验算来避免利害关系的干扰。</p>
+<p>这种无利害关系的、基于纯逻辑运算的第二、第三观点对你有极大的抑制罪性本能的实践意义。而正是因为如此，一些<strong>“聪明”的蠢人</strong>才会巧妙的利用自己的“学术能力”去把自己的算法堆积到无法检验，以便用自己的意志绑架结果。</p>
+<p>这甚至还不如赤裸裸的狂妄和贪婪，这只是怯懦化而后猥琐化了的狂妄和贪婪。</p>
+<p><strong>君子疾夫舍曰欲之而必为之辞。</strong></p>
+<p>第二，越是简单，越是不易自欺。一旦你无限的允许自己调整参数和重新建模，你在事实上就已经背弃了用历史来主导自己的预期这一基本的原则。</p>
+<p>姿势做得再像的假药，也一样是假药。</p>
+<p>治不了病，甜有什么意义？</p>
+<hr>
+<p>这个“收入预期”并不仅仅是一个数字，而是有一系列连带的实践。</p>
+<p>1）<strong>不计划超预期部分的收入的用途。</strong></p>
+<p><strong>这笔钱不存在。</strong></p>
+<p>2）不计较超预期部分收入的落空。</p>
+<p><strong>这笔钱本来就不存在。</strong></p>
+<p>3）不为保证这笔收入承担风险。</p>
+<p>这笔钱本里就不存在。</p>
+<p>实际上，人们之所以承担过大的风险根本原因，正是因为在假设自己可以在这一次尝试中获得远超过历史数据所显示的预期收入。人们在用自己没有获得过的想象收入，抵偿自己承受的现实风险，支付由此而来的一切保险措施的成本。</p>
+<p>从一开始，就埋下了失控的祸根。</p>
+<p><strong>记住，这笔钱不存在</strong>。</p>
+<p>始终按照“这笔钱不存在”来规划、决策和管理自己的情绪，是避免被这种wishful thinking卷入地狱的定锚所在。</p>
+<p>终你一生，会有无数的声音嘲笑你“过于保守”、“不聪明”、“缺少远见”，向你炫耀ta们所获得的辉煌成就，告诉你“爱拼才会赢”、“有赌未为输”。</p>
+<p>不要为其所动。</p>
+<p>迟早有一天，你——或者你的继承人——会看到ta们的尸体从上游漂来。</p>
+<p>因为ta们总会在最后一次不但输光所有本金和一切信用，还会陷入巨额债务。</p>
+<p>ta们往往不会因这打击而悔改，而是为翻本铤而走险，走过世俗所不能容的界限之外，而ta们靠着这黑色的手段榨取出来的本钱，连一个微不足道的气泡也不会泛起就会再次无声沉没。</p>
+<p>如果ta们在这里知道悔改，ta们就知道你当初有多么正确，而痛悔自己枉误了多少年——从此之后，ta们也会走你这条路——直到某一代不肖后人又觉得自己“远比客观数据显示的强大”为止。</p>
+<p>无论ta们现在有多少你羡慕得要死的明晃晃的真金白银、怒马香车、醇酒美人在你面前，那个逻辑的诅咒在造成最后的结局之前是不会停止工作的。</p>
+<p>那些“成功”只会进一步的强化ta们对自己“凡冒险必成功”的自信，而在ta们已经明确遭遇挫折时在耳边低语“这只是过程，只要再投入一点、再借一点、再撑一下就会好，胜利属于坚持的人”。</p>
+<p>最后将ta们细嚼慢咽、吮吸干净——连同所有敢于信任ta们的人，一起拖进地狱。</p>
+<p>（未完，待续）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%88%B6%E8%B5%8C/">制赌</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-bai-gong-xin-wen-mi-shu-yang-yan-ruo-zhong-guo-bu-zun-shou-dui-e-zhi-cai-mei-guo-you-ban-fa-cai-qu-cuo-shi-qi-zhong-tou-lu-chu-na-xie-xi/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何看待白宫新闻秘书扬言「若中国不遵守对俄制裁，美国“有办法采取措施” 」 ，其中透露出哪些信息？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-mou-mei-ti-fa-wen-hao-zhao-nian-qing-ren-dao-zhi-zao-ye-qu-qu-gong-chang-shi-fou-hui-fa-zhan-cheng-wei-lai-jiu-ye-de-qu-shi/">
+                        <span class="hidden-mobile">如何看待某媒体发文号召年轻人到制造业去，去工厂是否会发展成未来就业的趋势？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

@@ -1,0 +1,579 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>死亡的意义是什么？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="死亡的意义是什么？">
+              
+                死亡的意义是什么？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      24
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">死亡的意义是什么？</h1>
+            
+            <div class="markdown-body">
+              <p>死亡这件事，一言难尽。</p>
+<p>有件事你们可能没有注意到。</p>
+<p>其实人类普遍相信“人皆有一死”是一件非常非常晚的事情——这不是一种事实，<strong>而是一种信仰</strong>。</p>
+<p>死亡，是一种信仰。</p>
+<p>不信吗？</p>
+<p>那我问问你——<strong>你有什么证据证明历史上出生早于两百年前的人类都死了啊……</strong></p>
+<p>嗯？</p>
+<p>啥时候普查的？</p>
+<p>挨家挨户敲门问——“借问，你大爷死了没？”这样吗？</p>
+<p>哦，你问完一遍了，能证明“所有出生早于两百年以前的人都死了”吗？</p>
+<p><strong>你能设计一个什么可行的手段来确确实实的【证明】现在绝对没有一个两百岁以上的人类正混在我们中间活着？</strong></p>
+<p>如何证明绝对没有一个实际活了一千多年的老太爷三百年前刚死？</p>
+<p>你以为用DNA、用端粒效应这些就可以替代实际的验证吗？</p>
+<p>这不叫evidence，这叫speculation with great confidence。你只是在基于一种你信心十足的、你没找到反例的理论在进行<strong>推测</strong>。</p>
+<p>被实际证据推翻的信心十足的理论推测多了去了——整部科学史里的每一个案例几乎都是。</p>
+<p>忘了比萨斜塔的铁球了？忘了火车上的光速了？</p>
+<p>你看出问题了吗？</p>
+<p><strong>“人皆有一死”这么大的一件事，没有——事实上也不可能有——【足够充分】的事实证据。</strong></p>
+<p>你是个现代人，你都想不出办法来验证这件事，你觉得古代人——我都不说多古代，就解放前好了——真的认为人一定会死吗？</p>
+<p>（很多人逻辑不行，所以额外补一句——证明“人会死”和证明“人必然会死”是两回事，停止在评论区尝试拿<strong>“人会死”的证据</strong>证明人<strong>必然</strong>会死。）</p>
+<p>看到了吗？</p>
+<p>“普遍死亡”并不是一件已经被（或者在任何时代曾经被）确凿无疑的、有充分解释力的实验证实过的科学事实。而且恐怕在可见的将来也没有可能做到这一点。</p>
+<p>你想要相信有些人不会死，谁也没法用什么证据来驳倒你，因为他们真的除了举一堆例子、一堆间接证据，手里真没什么硬货。没人能说相信人不一定会死的人真的就一定是错的。</p>
+<p>在这里，就有耐人寻味的细节了——那么，我们为什么现在会如此普遍的、坚定的、彻底的相信人一定会死呢？</p>
+<p>这里一定有什么重大的价值，在奖励着拥死派、打击着否死派，以至于拥死派在意识形态的斗争中占据了绝对绝对的上风，近乎于令否死派绝迹了。</p>
+<p>你们要知道，在大约五六千年前，<strong>人们普遍的不认为人一定会死啊</strong>。</p>
+<p><strong>普遍</strong>。普遍到你随便敲开一家门，人家都会跟你说“我不认为人一定会死”——甚至有人会和你说我们村王大爷就活了四百来年，他见过孙悟空。</p>
+<p>也就是说，死亡之中蕴含着一种价值，足以压倒人通过相信长生而得到的一切福利。<strong>而且不是局部的、一时的压倒，而是在这几千年文明史里，一天比一天更多的在更大的范围内压倒。它不但从无到有的孕育了“拥死派意识形态”，而且节节胜利、足足让拥死派从0%增长到了100%！</strong></p>
+<p>只凭这一点，你就可以确信死亡这种信仰一定存在至关重要的、至为强大的价值。</p>
+<p>因为事实的证据实在太宏大了——整个人类文明史完全可以看作相信死亡的文化实体不断从精神和肉体上灭亡对手的过程。</p>
+<p>问题是——这巨大的价值到底是是什么呢？</p>
+<hr>
+<p><strong>也许说起来让你难以置信，但“人终有一死”是人类最大的宽慰。</strong></p>
+<p>作为年轻人，难免觉得前程似锦，天下无事不可为，尤其是现代人类社会虽有动荡，但总体上总算平安喜乐。人均寿命已经到了七十、八十岁。所谓的古来稀，已经变成了平常事。</p>
+<p>所以现代人——尤其是尚且老去的婴儿潮（注意每个国家的婴儿潮的起始期不同）——眼下总觉得人生是一场可以延续七十几年的盛宴。</p>
+<p>但对古人、对老人、对常在病痛、挫折、衰老、灾难困扰中的人们看来，“人终有一死”是最大的安慰。</p>
+<p>无论多么痛苦的日子，毕竟总有一个尽头可言；无论怎样的逼迫，总有结束的一天。</p>
+<p>你不需要在“干脆自杀”和“继续煎熬”之间无穷尽的选择，这是一个多么令人宽慰的事实啊。</p>
+<p>如果你不相信你会自然死亡，那么你就需要按照“可以争取无限活下去”的样式活着。那到底是一个什么样的体验？</p>
+<p>比如，某本经书说“唯有童子身能成仙，长生不老”。那可是<strong>长生不老</strong>啊，你难道不要长生不老？你想要长生不老是吗？那么你想要长生不老的每一秒钟，你都要顶住“破坏童子身”的一切诱惑。</p>
+<p>某个传说说用处女的血洗澡可以返老还童，杀处女当然是罪大恶极，但那可是“返老还童”啊。在“返老还童”面前，有什么所谓“罪大恶极”？</p>
+<p>永生如果不是绝望的，人类的整个伦理计算都会令普通的现代人瞠目结舌。</p>
+<p>这甚至不是一个理论上的传说，而是现在就活生生的仍然在运行着——印度人大面积的相信“此生受苦、来生福报”的轮回式永生观，这毫无疑问地对种姓制度给予了显著的逻辑支撑。而这显然地阻碍了现代社会的普遍逻辑——即自由的劳动力和资源流动——在印度的实现。</p>
+<p>因为现世永生的意义是如此根本和巨大，一旦被纳入基本议题，它就会深刻的影响社会的运行逻辑，使得一个社会极其的难以面对牺牲和危险。</p>
+<p>举个最简单的例子——一个普遍相信靠巧妙的保养可以永远活下去的社会，要什么样的代价才能吸引到足够的成员参军？</p>
+<p>仅仅这一条，就必然要求一切关于现世永生的理论做出修正，去解释为什么有一部分人——甚至是很大的部分人——先天的注定不可能追求长生不老。</p>
+<p>这个限制必须是先天的，而不能是后天的——比如你不能说足够有钱就行，因为这只会引发全民大抢劫。这必须是某种你先天就不具备、也不可能在后天弥补的条件。</p>
+<p>例如生辰八字不对、或者“没有慧根”、“没有仙缘”。</p>
+<p>不把这补丁打足，一个社群就很容易被另一个社群打垮。</p>
+<p>这自然而然的驱动了一个“长生不老理论补丁大赛”。</p>
+<p>只要交通技术发展起来，人类社会互相接界、技术所能支撑的帝国规模上限提高，这种补丁大赛就会开始起效，驱动“人固有一死”的理论逐渐占据上风。</p>
+<p>因为不客气的说，这种关系到统治还是被统治的竞争，就是“敢死之士”的竞争。</p>
+<p>实际上是客观历史自己通过技术竞争，逐渐的消灭了人类关于长生不老的执念。</p>
+<p>换言之，死亡对你个人有何意义，其实是次要的，它首先是对社会的幸存和稳固有不可替代的意义，所以由此成为了你不容选择、只能接受的“意识形态预设”。</p>
+<p>而这又反过来给了你一个接纳死亡的必然性的显然的意义——人类社会的存在实际上和个人的长生不老理想是不兼容的，这会导致人类社会的整个规则设计、运行逻辑会不由自主的、无休止的的惩罚持有这个观念的人，让ta们“莫名其妙”的处处碰壁、不断的遭遇惨重的挫折并且一日比一日孤独，一天比一天逼近有罪之身，从客观上让这些人生不如死。</p>
+<p>这很类似你相信巫术，于是你被隔壁邻居的各种“疑似巫术”“妨”得心神不宁彻夜难眠，你去告他骚扰，法庭不会受理。你为此去砸烂对方的大门，警察会把你逮捕。你为此伤害对方的子女，你会坐牢。无论你怎么提告，法院都无法支持你“都是他作法诅咒我，我只是正当防卫”的主张。然而你所遭受的心理折磨、生理损失却是真实的、无休止的。</p>
+<p>反过来，你如果接受“人固有一死”的理念，你就能免于这种代价。</p>
+<p>能免于这代价，本身对你就是现实利益，已经是实打实的、真金白银的价值和意义了。</p>
+<p>（未完，待续）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Science/">Science</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%AD%BB%E4%BA%A1/">死亡</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/mei-guo-shi-lian-shen-hai-qian-shui-qi-fa-sheng-zai-nan-xing-nei-bao-ming-cheng-yuan-si-wang-nei-bao-shi-ru-he-fa-sheng-de-ci-ci-shi-gu-jiang-chan-she/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">美国失联深海潜水器发生「灾难性内爆」，5 名乘员死亡，「内爆」是如何发生的？此次事故将产生哪些影响？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-yue-ri-jie-fang-jun-jia-zhan-ji-jin-ru-tai-xi-nan-ji-xi-bei-kong-yu/">
+                        <span class="hidden-mobile">如何看待 9 月 19 日，解放军 19 架战机进入台西南及西北空域？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

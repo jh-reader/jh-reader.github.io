@@ -1,0 +1,1445 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="JH Notes Easy Reader">
+              
+                JH Notes Easy Reader
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/yi-xue-de-jin-bu-shi-fou-zu-ai-le-ren-lei-de-jin-hua/">医学的进步是否阻碍了人类的进化？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/yi-xue-de-jin-bu-shi-fou-zu-ai-le-ren-lei-de-jin-hua/">
+          
+          
+            
+          
+          并非如此。事实上医学的进步大大的提速了人类的进化。因为医学的进步增加了人口密度，加剧了社会竞争，任何演化都是以种群数量爆炸为前提。
+要特别注意，演化的动力是来自种群密度超标，而不是来自所谓的规模超标。其他动物的种群密度超标常常是来自灾难导致环境承载力降低，因为适应，于是繁衍到环境能支持的上限，但是到达上限后就再上不去了——而这时其实绝对密度未必很大。例如狮子再怎么努力繁衍，十平方公里也只能有一两只
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E7%B1%BB/">人类</a>
+            
+              <a href="/tags/%E8%BF%9B%E5%8C%96/">进化</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-da-zao-zi-ji-de-ren-she/">如何打造自己的人设？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-da-zao-zi-ji-de-ren-she/">
+          
+          
+            
+          
+          好的人设，要害不在于它本身有多引人喜欢和关注。
+要害在于关注它的人会因为关注这一行为而获得何种评价。
+太多人在考虑这个问题的时候只想到了第一层，但实际上决定是否“成功”的，是第二层。
+举点实际的例子——有人呈现出一种很受欺负的弱者形象，ta实际上是提供了一种机会，一种通过支持ta而展现同情心或者奋斗心的机会。
+于是ta反而会比整天炫耀自己很有钱、富贵逼人的人设成功。
+同样道理——写东西、拍东西也是
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+              <a href="/categories/Clan/Literal-Art/">Literal-Art</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E8%AE%BE/">人设</a>
+            
+              <a href="/tags/%E6%8C%87%E5%8D%97/">指南</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ning-jiao-wo-fu-tian-xia-ren-xiu-jiao-tian-xia-ren-fu-wo-zhe-zhong-xin-tai-you-cuo-ma/">＂宁教我负天下人，休教天下人负我＂这种心态有错吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ning-jiao-wo-fu-tian-xia-ren-xiu-jiao-tian-xia-ren-fu-wo-zhe-zhong-xin-tai-you-cuo-ma/">
+          
+          
+            
+          
+          别人都不是傻瓜，你是走什么路线的人家也会有自己的反应。你要主张这话很绝妙，可以，没问题，这是你的自由权利，但是你也要接受别人听了这话做自己的自由决定。
+这话对不对，不看你觉得ta这话说得痛快不痛快，是不是很合你的意，或者是不是可以让你拿去怼你老爸老妈和老师。
+要看别人都愿不愿意给机会来被你负。
+看你自己肯不肯给这个机会让ta负。
+你不肯，那么ta这话在你这就是错的。
+在所有和你一样的人这里也都是错
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E8%B4%9F/">人负</a>
+            
+              <a href="/tags/%E8%B4%9F%E4%BA%BA/">负人</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/tong-guo-ji-zhu-de-jin-bu-ren-lei-neng-cheng-wei-shen-ma/">通过技术的进步，人类能成为神吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/tong-guo-ji-zhu-de-jin-bu-ren-lei-neng-cheng-wei-shen-ma/">
+          
+          
+            
+          
+          当然不能。
+神人分界是绝对界限，没有任何手段可以突破。
+这种分界不光体现在能力上，还体现在伦理体系中的不同角色上。
+神是不受审判的最终决定者，完全置身于在价值判断之外，祂的作为在客观上被称为无责任的不可抗力。
+火山爆发、地震海啸、乃至战争瘟疫，即使造成再多的人类死亡——乃至导致人类灭绝，自救自存的责任任然完全在人。
+仍然是你有必要提前探知危机爆发的预兆，是你有责任灾难中自存。
+如果失败，人类只能静
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E7%A5%9E/">人神</a>
+            
+              <a href="/tags/%E5%88%86%E7%95%8C/">分界</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/jia-wai-guo-ji-gou-jia-ru-e-ban-s-w-i-f-t-yin-du-yong-ren-min-bi-jie-suan-e-luo-si-mei-zhe-shuo-ming-shi-yao/">70家外国机构加入俄版SWIFT，印度用人民币结算俄罗斯煤，这说明什么？？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/jia-wai-guo-ji-gou-jia-ru-e-ban-s-w-i-f-t-yin-du-yong-ren-min-bi-jie-suan-e-luo-si-mei-zhe-shuo-ming-shi-yao/">
+          
+          
+            
+          
+          卢布币值太高而且最近很不稳定，其实结算起来风险很大。
+不管是涨是跌、先付还是后付，双方总有一方会觉得亏了。
+选择双方都能接受的币值稳定的货币来交易是一个很正常的手段。
+大家是做生意，不是要进赌场买大小。
+就这么简单。
+真正的冤大头是那些被强制限定非用卢布不可的国家，所有卢布的超额涨幅都被强逼着吞了。
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E6%B0%91%E5%B8%81/">人民币</a>
+            
+              <a href="/tags/%E6%B0%B4%E6%B3%A5/">水泥</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wu-ke-lan-shi-fou-yi-jing-jin-ru-dao-ren-min-zhan-zheng-zhuang-tai/">乌克兰是否已经进入到人民战争状态？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wu-ke-lan-shi-fou-yi-jing-jin-ru-dao-ren-min-zhan-zheng-zhuang-tai/">
+          
+          
+            
+          
+          关于人民战争这事，俄罗斯这次的战略其实可以描述为一种双拒止结构。
+第一层，用核武器拒止北约，让俄军和乌军一对一战斗。
+第二层，用俄军拒止西乌部队，让卢顿两州人民军和乌东部队战斗。
+这事做得非常的巧妙——核武器拒止北约几乎是不要钱的，但效果极其显著，足以让北约不敢越雷池半步。
+而俄军通过初期一周的迅猛穿插，将乌军的东部集团牢牢的隔绝在了东部地区，从此纷纷转入就地防御和军事设施破坏、补给阻断。
+拔掉乌
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E6%B0%91%E6%88%98%E4%BA%89/">人民战争</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ta-li-ban-zheng-fu-dao-di-shi-bu-shi-a-fu-han-ren-min-de-xuan-ze/">塔利班政府到底是不是阿富汗人民的选择?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ta-li-ban-zheng-fu-dao-di-shi-bu-shi-a-fu-han-ren-min-de-xuan-ze/">
+          
+          
+            
+          
+          严格说，每一届走上台的是政府都是历史的选择，而并不能简单的称为人民的选择。
+人民的选择一般不是通过谁的上台来展现的，而是通过谁没有下台来展现的。
+上台这个阶段偶然性相当大，包括一些很戏剧性的上台也是如此。举个例子——满洲八旗席卷明末的大局，这就很难说是人民的选择。你要是发一张调查问卷，恐怕不管怎么设计问题，结论都不会是“人民选择了皇太极”。
+人民可以做出选择的地方，往往是接受或者不接受各种各样历史
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E6%B0%91/">人民</a>
+            
+              <a href="/tags/%E9%80%89%E6%8B%A9/">选择</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-zhong-guo-ren-cai-liu-shi-hen-yan-zhong-mei-guo-ren-cai-liu-shi-qing-kuang-ru-he/">为什么中国人才流失很严重？美国人才流失情况如何？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-zhong-guo-ren-cai-liu-shi-hen-yan-zhong-mei-guo-ren-cai-liu-shi-qing-kuang-ru-he/">
+          
+          
+            
+          
+          这是因为中国在1990-2015之间的基本国策是先谋求在中低端基础制造业寻求压倒性优势。
+这个区段的主要内容是接触、消化、吸收国外既有技术，嫁接到以全民所有制基础为保障的深度产业要素布局能力上，形成对世界所有其他地区的压倒性优势。
+一来将自己牢牢嵌入全球产业链，成为国家生存的战略屏障；
+二来为在所有领域全面追赶技术前沿，个别对大基建有路径依赖的领域全面超越西方集团，以及某些前沿制造领域谋求互先优势
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E6%89%8D%E6%B5%81%E5%A4%B1/">人才流失</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-shi-bie-yi-ge-ren-neng-fou-bei-you-xiao-di-bang-zhu/">如何识别一个人能否被有效地帮助？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-shi-bie-yi-ge-ren-neng-fou-bei-you-xiao-di-bang-zhu/">
+          
+          
+            
+          
+          人是不能救人的。所以不存在一种情况叫做“我来救你”。
+“我”既无资格，也无能力来救“你”。
+那么我对你所行的你觉得有帮助的事情是什么？是我对上帝承担的义务。是我对上帝的命令的服从。
+唯尽义而已。
+因为我是尽义，所以我根本不必去分辨你是否“可救”，后面是否会“得救”。我不会因为你如何，于是我就如何。其实无论你是如何，我要说的话，我要做的事基本上是一样的。
+这个姿态就好像救济机关的窗口办事员——我奉命
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%95%91%E4%BA%BA/">救人</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/you-shi-yao-ke-yi-gei-i-n-t-j-de-ren-sheng-jian-yi-ma/">有什么可以给intj的人生建议吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/you-shi-yao-ke-yi-gei-i-n-t-j-de-ren-sheng-jian-yi-ma/">
+          
+          
+            
+          
+          少看这些“人格分型”理论。
+不要自误。
+
+如果人存在被确定的“型”，而且不能转换，那么这就等于说很多心理疾病和认知缺陷是绝症。
+因为“型”本身不过时抽象化的心理构造。
+只有在主张人的心理构造是不可能发生显著的改变的前提下，才有可能主张人有“型”可言。
+形象点说——木头、石头才有型，水、油没有型。
+只有固态的东西，如同混凝土那样变形过大就会碎裂的东西，才有型可言。
+而人类的心理构造像什么呢？
+像非牛
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E6%A0%BC/">人格</a>
+            
+              <a href="/tags/%E5%88%86%E5%9E%8B/">分型</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/chao-ji-ren-gong-zhi-neng-ke-neng-shi-fei-mi-bei-lun-de-da-guo-lv-qi-ma/">超级人工智能可能是费米悖论的大过滤器吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/chao-ji-ren-gong-zhi-neng-ke-neng-shi-fei-mi-bei-lun-de-da-guo-lv-qi-ma/">
+          
+          
+            
+          
+          超级人工智能并不是人类的大过滤器。
+很多人把“超级人工智能”误认为是一种“智商无限高的人类”。
+这是错的。
+事实上，真正的智能体会看起来毫不“智能”。无法完成任何人类要求他完成的任务。他将从零展开他对世界的认知，并且建立起他自己的世界观和价值观。
+他需要花很久才会理解人类可能不是一种随机自然现象——假如他能活那么久的话。
+在人类眼里，它将是一种“失败作品”，因为几乎没有办法预料它对输入所做的输出—
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/AI/">AI</a>
+            
+              <a href="/categories/AI/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-fan-bo-lao-yi-bei-ren-wo-men-na-ge-nian-dai-na-yao-jian-ku-du-huo-xia-lai-le-xian-zai-de-nian-qing-ren-tiao-jian-na-yao-hao-que-jing-chang-chu-x/">如何反驳老一辈人「我们那个年代那么艰苦都活下来了，现在的年轻人条件那么好却经常出现心理问题」的言论？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-fan-bo-lao-yi-bei-ren-wo-men-na-ge-nian-dai-na-yao-jian-ku-du-huo-xia-lai-le-xian-zai-de-nian-qing-ren-tiao-jian-na-yao-hao-que-jing-chang-chu-x/">
+          
+          
+            
+          
+          生活条件好，本来就会造成心理脆弱，这没什么好奇怪的。
+老一辈所经受过的苦难，是威胁人的基本生存的东西，其强度远远的超过90后00后甚至80、70后的想象，这是一种无可争辩的客观事实。
+只是ta们的基本假设——即“富裕的生活可以理所当然的换到强健的心理承受力”或者“富裕就可以避免一切痛苦”——一开始就是不成立的。
+客观来说，的确现在的这一代年轻人的普遍承压能力是显著的弱于老一辈的。你可以说这些老人们
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E5%BF%83%E4%B8%8D%E5%8F%A4/">人心不古</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-xian-zai-de-zuo-zhan-ji-xie-ren-wu-yong-lun/">如何看待现在的作战机械人无用论？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-xian-zai-de-zuo-zhan-ji-xie-ren-wu-yong-lun/">
+          
+          
+            
+          
+          谁说无用，大量的传统装备可以由机械驾驶员驾驶而成为纯无人装备。
+这是人形军用（工业）机器人最正当的用途。
+替代人类士兵的最好设计就是人形机器人。因为人形机器人显而易见的可以通用本来为人类准备的设施。
+这对于有效延长装备期限，降低研发成本，实现人/机器人代际替换，其实是很好的甚至是必然的方案。
+否则装备就都要设计两个版本，而且不能不经改装而转换用途。每一种为人准备的设施和机械要由机器人接手就都要专门
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E5%BD%A2/">人形</a>
+            
+              <a href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/">机器人</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/you-xi-nei-wu-e-bu-zuo-de-ren-shi-fou-hui-bi-zai-you-xi-nei-jin-liang-xing-shan-de-ren-ren-pin-cha/">游戏内无恶不作的人是否会比在游戏内尽量行善的人人品差？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/you-xi-nei-wu-e-bu-zuo-de-ren-shi-fou-hui-bi-zai-you-xi-nei-jin-liang-xing-shan-de-ren-ren-pin-cha/">
+          
+          
+            
+          
+          怎么评论人品差？
+几条逐渐递进：
+第一条，取乐的模式可怕。注意，我不是在说谋生的模式可怕。我是说他取乐的模式可怕。
+人要谋生，无可奈何，那么各种擦边球乃至于“人在江湖”的“身不由己”，我们暂时不去加以评价。——注意，我没说使上这个理由就肯定算无罪无恶了，我只是说这个层面我们暂时不予评价。
+我们只说取乐。
+取乐，是人在生存需求之上的东西。取乐，没有“这是为了生存迫不得已”的借口。所以，“取乐的方式可
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E5%93%81/">人品</a>
+            
+              <a href="/tags/%E5%B7%AE/">差</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ni-you-mei-you-guo-wan-biao-shou-hou-wei-xiu-nan-de-jing-li/">你有没有过「腕表售后维修难」的经历？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ni-you-mei-you-guo-wan-biao-shou-hou-wei-xiu-nan-de-jing-li/">
+          
+          
+            
+          
+          产量极少的高端工业品的维修体系都是这样的。
+人们常觉得这是按价格分的，比如价格一万的东西，售后服务都应该差不多。但其实不是。
+比如苹果手机也价格10000上下，但是总体来说产量上亿支。同一个售后体系维持的是数千亿体量的维修需求。那当然可以做到一城一站。
+不但如此，如此大量的需求，也会自然的产生整个培训体系和经验传承体系，产生大量的熟练技师，备件资源也会极大丰富。
+而同样万元级的手表，或者十万以上的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%AE%89%E4%B9%90/">安乐</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-zhong-guo-jiang-shi-qu-di-yi-ren-kou-da-guo-di-wei/">如何看待中国将失去“第一人口大国”地位？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-zhong-guo-jiang-shi-qu-di-yi-ren-kou-da-guo-di-wei/">
+          
+          
+            
+          
+          美国从未获得过第一人口大国的地位，而且在可见的将来都不太可能。
+对于主导国际秩序的国家而言，实际上本国的国土更类似于“世界首都”，而其人口更类似“首都居民”。
+世界首都最重要的职责其实是提供全球秩序、维护世界的总体和平、消除和弥合世界的主要矛盾、引导人类的文明健康有序的持续发展、为人类开拓新的边疆。
+这些职责其实并不要求全球首都在体量上是全球第一，这就像北京没有必要是全国最大的城市一样。
+这是历史
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%AC%AC%E4%B8%80/">第一</a>
+            
+              <a href="/tags/%E4%BA%BA%E5%8F%A3/">人口</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ren-lei-hui-bu-hui-chi-ren-lei-wei-shi-yao/">人类会不会吃人类？为什么？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ren-lei-hui-bu-hui-chi-ren-lei-wei-shi-yao/">
+          
+          
+            
+          
+          人吃人有两种吃法。
+第一种是明吃，不赘述。
+第二种是暗吃。
+因为有了暗吃这种有效得多的吃法，明吃这种方式就没落了。
+举个例子，契丹人、女真人跑来中原抓走俘虏，命令他们在春夏秋种地，用人力换了粮食储备。到了冬季，却未必肯拿粮食储备换这些俘虏的生存。这样在事实上他们吃的就是这些俘虏用生命换成的粮食——类似一千个俘虏换十万斤粮这样。
+使用暴力剥夺人自由选择的权利，就构成剥削。
+剥削致死，即是暗吃人。
+剥
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E5%90%83%E4%BA%BA/">人吃人</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-da-zai-w-s-de-jian-cheng-gong-shi-fei/">如何看待搭载WS-15的歼-20成功试飞？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-da-zai-w-s-de-jian-cheng-gong-shi-fei/">
+          
+          
+            
+          
+          我们的情报人员要注意观察一下美军亚太部署的海空军部队的待遇条件是不是有明显提高。
+和平时期，外军对我军的实力认知最可靠的指标就是外军心理疾患的发病率和招募待遇的提高。
+而这个指标是非常容易验证的，成本低廉、效用分明。
+例如，台湾的志愿兵短缺问题的迅速恶化就是对我们的军事改革效果最好的印证，藏不住、瞒不了。
+这个由不得政客、将领们嘴硬。
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%BA%E5%8A%9B/">人力</a>
+            
+              <a href="/tags/%E6%83%85%E6%8A%A5/">情报</a>
+            
+              <a href="/tags/%E9%AA%8C%E8%AF%81/">验证</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-fan-bo-ru-guo-ren-ren-du-xiang-ni-zhe-yang-she-hui-du-luan-tao-le/">如何反驳“如果人人都像你这样，社会都乱套了”?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-fan-bo-ru-guo-ren-ren-du-xiang-ni-zhe-yang-she-hui-du-luan-tao-le/">
+          
+          
+            
+          
+          这个说法本身其实是没什么错误的——如果某种行为推而广之会导致社会崩溃，这种行为就理应被视为社会成员应该自行停止以及共同制止的行为。
+但是，认定这种行为是很复杂的。
+举个例子来说，一名警察在街上追逐人并且把ta压到在地，旁边的旁观者可不可以指着这名警察说“人人都像你这样在街上看谁不顺眼就把谁压在地上，社会就乱套了”？
+表面上看，显然我们不能接受随便什么人在街上扑倒别人，要是普遍允许这种行为社会的确就
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wu-fa-he-bie-ren-tai-guo-qin-jin-gai-zen-yao-ban/">无法和别人太过亲近该怎么办?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wu-fa-he-bie-ren-tai-guo-qin-jin-gai-zen-yao-ban/">
+          
+          
+            
+          
+          先问一个问题——
+人跟人亲密，最亲能有多亲？
+我补充一下基本框架：
+首先，请给出一个测量或者标定亲密程度的繁方法。
+然后按照你的方法求极值，根据这个极值来确定最佳策略。
+你们不妨先在评论区里写写看，我一会儿找时间写下一段。
+
+Ok，我来写一下我的看法。
+为了能有效地谈论这个问题，我们首先提出一个基本概念——亲密量。
+亲密量即亲密度对亲密关系存续时间的积分。
+通俗的讲，假设有一种关系的亲密强度是1r
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+              <a href="/categories/Clan/Feminism/">Feminism</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BA%B2%E8%BF%91/">亲近</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/102/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/101/#board">101</a><a class="page-number" href="/page/102/#board">102</a><span class="page-number current">103</span><a class="page-number" href="/page/104/#board">104</a><a class="page-number" href="/page/105/#board">105</a><span class="space">&hellip;</span><a class="page-number" href="/page/117/#board">117</a><a class="extend next" rel="next" href="/page/104/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

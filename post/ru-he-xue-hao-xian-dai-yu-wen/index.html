@@ -1,0 +1,614 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何学好现代语文？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何学好现代语文？">
+              
+                如何学好现代语文？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      31
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何学好现代语文？</h1>
+            
+            <div class="markdown-body">
+              <p>首先，什么叫做“学好”？</p>
+<p>在这篇里有提过——<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/303482683/answer/1320422809">人在年轻的时候，最核心的能力是什么？</a></p>
+<p><strong>语文不是用来作诗的，不是用来写散文的，而是首先用来说事的，用来说明问题、阐述理由、表达方案的。</strong></p>
+<p>它首要的功能是正确、完整而简洁的表达你要表达的意思，避免歧义和误解，为有效率、少冲突的协作打下沟通的基础。</p>
+<p>语文能力就是一切能力的基础，是能力之上的能力，是绝对不能绕过、不能回避，不能抱有任何侥幸以为不必勇猛精进的能力。</p>
+<p>身体健康而语文不好的人，没有资格抱怨不被理解和不被原谅。因为是ta自己通过抛弃语言上的努力、通过任由其他所有人的沟通成本高企，先抛弃了一切其他人。</p>
+<p>在别人努力再三、实在无法负担得起沟通成本而离开你之前，你早已把对方抛弃了。</p>
+<p>学好语文的第一个要害，就是认清楚这一点。</p>
+<p><strong>身为人类，是没有权利自甘“我笨嘴拙舌，不善表达”的。</strong>因为语言是人类的根本属性，是人区别于动物的要害所在，说这话等于在说“我是一个半兽人，但是我要完整的人的待遇”。</p>
+<p>抱歉，no can do。这不是谁要故意歧视你，而是确实身为半兽人无法领取全人的待遇。</p>
+<p>你无法体会刻骨铭心的爱，</p>
+<p>你无法拥有同志的信任，</p>
+<p>你无法享有法律的完整保护……</p>
+<p>生而为人的权利、生而为人的享受、甚至一切人有别于兽的能力，对你全都依照语言能力来打折的。</p>
+<p>你只有50%，你就只领得到50%。</p>
+<p>给你全世界所有的金钱，也多换不到半分，就如它无法给阉人变出子女来一样不可能。</p>
+<p>别的能力，决定你可以有什么职业、什么兴趣；<strong>语文能力，决定你的主要成分表里有多少是人。</strong></p>
+<p>这是你要学好语文的第一课——<strong>断绝可以不学好它的任何妄想</strong>。</p>
+<p><strong>否则你就坐等别人不把你当人看。</strong></p>
+<p><strong>zzzq在这里只能帮你募捐学费，对给没有语言能力的你争取更好的实际权利、实际礼遇，没有任何意义。</strong></p>
+<hr>
+<p>学好语文的第二课——</p>
+<p>开始承担自己的表达责任。</p>
+<p><strong>别人没听懂，别人听错了，别人听不进去，就是你失败了，就是你说得不明白、说得不准确、是你表达方式仍需改进。</strong></p>
+<p>看清楚，这里没有说你具体的要不要去改进，这要看具体这件事值不值得投入这个成本。但是，在<strong>技术上</strong>这个结论<strong>无条件的成立。</strong></p>
+<p>你必须先建立起这个基本原则。只有建立起这个原则，你才回去关心问题出在哪里，而不是永远把沟通无效的责任全都放在对方理解能力不够上。</p>
+<p>你要去复盘、去考虑怎么修正、怎么改进。</p>
+<p>你不见得要把这些思考结果用在当时没听懂的那个人身上，但是你仍然应该获得这些思考结果。</p>
+<p>拥有更强的表达能力，你才能有最大的听众基础，而这样才能有足够的案例让你客观评价你的表达能力的水平。</p>
+<p>然后才能有底气去判定表达的分寸，开始往回收——开始进行在保持语义清晰基础上的效率追求。</p>
+<p>效率追求，是以可得、必要的接收者可以正确的接收为前提的。对大众表达就需要浅显、需要篇幅长，对精英表达就可以简练，就可以篇幅短。</p>
+<p>这种简练，就是效率，是利润。</p>
+<p>但这个简练和篇幅短，是靠更高的“无误压缩算法”来完成的，而不是靠无视错误和歧义来做到的。要想做到，你必须先有那个对大众准确表达的能力。更不用说那些精英接收者本身也是从那大众里筛选出来的。</p>
+<p>简单来说，这份表达能力，也就是语文能力，关系到你的这条命到底最后价值几何，有多少份量。</p>
+<p>如果你只听得懂功利的语言，那么我再说直白点——直接决定你一生赚取利润的上限。</p>
+<p>这不妨碍你中彩票，但中彩票不算赚取，谢谢。</p>
+<hr>
+<p>下面说一点技术问题：</p>
+<p>首先，提供一个“客观标准”。</p>
+<p>这里直接给出一个标准检验手段来衡量你表达的浅显、准确、可靠程度，你可以将其称为“<strong>表达刚度检验</strong>”。</p>
+<p>将一段中文文本放入谷歌翻译之中，先中译英，然后再英译中，这称为一轮刚度检验。</p>
+<p>一段文本的表达刚度即一段文本在刚度检验中保持自身不变的性能。</p>
+<p>如果你的句子经过一轮变换后已经不可理解，甚至时态、人称混乱，则其表达刚度为不合格。</p>
+<p>如果能保持文法正确，语义可以基本正确的用猜测补足，则可以称为表达刚度良好。</p>
+<p>如果能保持文法正确，语义无需猜测补足就与原文等效，则可称为表达刚度优秀。</p>
+<p>如果你的句子经过一轮变换后恰好还原成了原文，那么可以称为表达刚度完美（注意这同时意味着对应的英文文本也拥有完美表达刚度）。</p>
+<p>这项检验可以有一种合法的修正，即你自己创造的专有术语可以替换成专用缩写。例如你可以将“表达刚度”记作“ ES”（Expression Stiffness）。</p>
+<p>把上面这条拿来测一测，看看能得多少分？</p>
+<p>不要管什么高考语文，唐诗宋词，你就直白的把你的语文学习的目标直接设定为“<strong>能近乎本能的写出刚度良好以上的句子</strong>”就<strong>足够</strong>了。</p>
+<p>我坦白的告诉你——</p>
+<p>放眼知乎3.5亿用户，能第一稿就做到刚度良好的，百中无一。</p>
+<p>能以正常打字速度第一次成稿，就做到这一点的千中无一。</p>
+<p>能倚马可待，一挥而就，径直就做到完美刚度的，万中无一。</p>
+<p>第三层是绝对的精英，无可置疑、实至名归的万人之上。</p>
+<p>这份语言能力如果是在三十岁前就拥有，从商可望巨擘、用学可望泰斗、从艺可望宗师。</p>
+<p>没有任何夸张。</p>
+<p>而如果没有把话说清楚的能力，这么说吧——你基本上可以和真正的权力和地位说再见了。</p>
+<p>说不清楚话，解释不清概念，你就是生下来就是太子，龙椅上坐着的也实际上不是你，而是那个能说得清的人——你只是个读稿器、盖章机加替罪羊而已。</p>
+<hr>
+<p>要掌握健康的语法结构，学会写高健康度的句子。</p>
+<p><strong>所谓的健康，就是指有很强的抗歧义、抗干扰的性能。</strong></p>
+<p>这有几种常见的基本要点：</p>
+<p>1）不随便省略句子成分，降低对上下文的依赖程度。</p>
+<p>设计讲究“高内聚、低耦合”，这意思是一个东西的功能要尽可能的不要依赖于不属于它自己的部分。</p>
+<p>举个简单的例子：“吃了吗？” vs “您吃了吗？” vs “您吃了早饭吗？”</p>
+<p>“吃了吗？”里的主语就严重的依赖于这句话所处的上下文。</p>
+<p>最后这句就比前两句更抗歧义、抗误解。</p>
+<p>它的缺点是比前两句更长，更费。但是长和费暂时不是致命问题，歧义和误解是致命问题。</p>
+<p>这里要格外注意一个问题——要警惕和有意避免使用网络流行语。</p>
+<p>因为这些网络流行语为了给人留下深刻印象，普遍采用特殊句式或者干脆是故意构造的异常句式和造词法。</p>
+<p>除非你已经功力深厚，八风不动，否则不要用这些东西，更加不要大量的用。</p>
+<p>那只是体现出一种可悲的求认同的软弱，以及对这种软弱不自知的迟钝。</p>
+<p>要填补你心里的那个洞，你需要的是<strong>被人严肃地对待</strong>，而不是被人“喜欢”。</p>
+<p>2）让整个句子、段落保持鲜明一致的调性。</p>
+<p>举个例子，如果是要表达尊敬的句子，从头到尾都要敬语化。</p>
+<p>如果是表达过去时的句子，从头到尾都要鲜明的过去时化。</p>
+<p>这一点英文有鲜明的体现——一个第三人称单数的人称，还需要匹配第三人称单数的动词，而特定的动词也要配合特定的介词。在这样的语法规则下，一个英语句子实际上在用多处句子成分的反复呼应来复合性的强调着时态、身份、单复数……等等信息。</p>
+<p>这就形成了一种反误解、反歧义的系统策略。</p>
+<p>如果时态略有变化，则句子（甚至包括段落）往往并不是只有一个字、一个后缀的轻微变化而已，而是会因此有一些列部位的、互相匹配的联动的变化。这种变化于是必然是显著的、清晰的、不易错过的。</p>
+<p>即使听者走神漏过了一个词，靠着其他多重保险的补救也往往能在很大程度上维持句子的愿意。</p>
+<p>日语里使用敬语也有类似的设计，也不是仅仅指改变一个动词而已，主语、宾语、状语等等一列成分甚至句子的构造方式都要联动发生变化。</p>
+<p>你要学会写分明的句子，把你的意图从句子的每一个成分上都呼应着表示出来，这是一种良好的习惯。</p>
+<p>3）正确使用标点符号。</p>
+<p>逗号、句号、感叹号、问号、省略号这些表示情绪的符号，问题不大。</p>
+<p>问题是<strong>冒号、引号、顿号、分号、括号、破折号这些表达逻辑关联的符号</strong>，要加倍的在意。</p>
+<p>一篇文字——尤其是要说明艰深关系的文字——极少有能只用前一类符号就交差的。</p>
+<p>不能准确、熟练的使用第二类符号，你将很难准确、简洁的表达比较复杂的概念。而你没有养成使用这些符号的能力，多半是因为你很少涉猎比较复杂的文献阅读。看多了文献，自然而然会受到足够的熏陶，也自然而然会有很强的使用这类标点的需求和习惯。</p>
+<p>你要质疑古代中国没有这些符号为什么也行？</p>
+<p>那只是用之乎者也矣焉哉和骈四俪六这些更复杂严苛的手段来实现了这个功能而已。</p>
+<p>4）叙述论证要有章法和基本规划。</p>
+<p>比如写封电子邮件，称呼、导言、罗列事务、然后结语、落款。而罗列事物时的单一事务结构为简述、定义问题，解释问题，提出决策的关键点，提出方案，提出方案的优势、成本与风险，然后指出下一步建议采取的后续动作。</p>
+<p>写封情书，不要光顾着画红心、写那三个字，要附上解释，解释清楚那几个字是什么意思——不然谁知道你说的那三个字的意思是不是“吃你几个烂西瓜还要给钱“的意思？</p>
+<p>写个通知，写个请柬，写个合同，写个请假条……都有它的内在逻辑的，甚至有大量现成的框架可套。没事自己多看看，多琢磨一下人家为什么这么写。</p>
+<p>但是这些东西写得辞能达意、没有自相矛盾、没有丢三落四的人之少，堪称我国语文教育之耻辱。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%AD%A6%E5%A5%BD/">学好</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AF%AD%E6%96%87/">语文</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/xue-li-gong-ke-zhen-de-hui-ying-xiang-wen-bi-biao-da-ma-zen-yao-yang-ke-yi-jian-gu/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">学理工科真的会影响文笔表达吗？怎么样可以兼顾？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wo-xiang-zi-xue-ba-gua-zhang-zi-xue-neng-lian-chu-zhen-gong-fu-ma/">
+                        <span class="hidden-mobile">我想自学八卦掌，自学能练出真功夫吗?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

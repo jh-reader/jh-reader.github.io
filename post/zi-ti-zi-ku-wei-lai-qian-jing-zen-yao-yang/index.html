@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>字体字库未来前景怎么样？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="字体字库未来前景怎么样？">
+              
+                字体字库未来前景怎么样？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      17
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">字体字库未来前景怎么样？</h1>
+            
+            <div class="markdown-body">
+              <p>中国应该由政府牵头投入预算对文化遗产级别的字体资源予以提取和高质量标准化，并作为永久的人类公共文化财富豁免一切版权费用。</p>
+<p>这些字体包括但不限于——</p>
+<p>颜真卿、王羲之、柳公权、欧阳询、瘦金体、魏碑、小篆、隶书、楷书、行楷、仿宋、黑体、等线、幼圆、康熙字典体等。</p>
+<p><strong>这些字体应该设为法定必备字体，强制要求在中国销售的所有电子产品的系统平台必须预置安装并提供完全支持。不符合要求的，应禁止在中国市场销售。</strong></p>
+<p>中文的国际地位和文化市场份额、中文媒体的设计水准必定会因此获益良多，远远超过完成这项工作的成本。</p>
+<p>这是民族文化遗产，这点投资和推广是理所当然的。它们应该<strong>直接融入汉字文化圈的日常生活</strong>，应该放眼望去，所在皆是。不给它们最大的机会直接出现在汉字使用的直接生活体验中，这是一个很大的损失——这本身就是一种文化教育。</p>
+<p>你们都知道颜体、柳体，知道真草隶篆，但你们身边有多少文字是这些字体的？有几块招牌？有几张纸？</p>
+<p>这些东西里面有大量难以言传而可以直接经由生活经验嵌入潜意识的汉语文化的细节，因为统统使用仿宋体和黑体而流失了。</p>
+<p>长期把它们隔绝在中国人的日常生活之外，这对文化传承是存在伤害的——<strong>时间久了甚至是不可逆的</strong>。</p>
+<p>更不用说因为缺少正统中国字体的存在，中国人的汉字审美甚至文化审美严重的日本化、香港化甚至欧美化了。</p>
+<p>你们日常所觉得“酷炫”的效果，极大的来自日本源头的影响，配合着片假名平假名是很漂亮的，拿来全汉字使用却有严重的画面不平衡和结构密度问题。结果设计师们在干嘛呢？</p>
+<p>抠出日语设计里的纯汉字部分抄。</p>
+<p>这将<strong>永远是残缺的、落后一等的。</strong></p>
+<p>但他们自己根本就没有从小受到过足够的正统汉字书法的<strong>浸润——</strong>注意，不是教育，而是<strong>浸润。</strong></p>
+<p>汉字的结构和气韵不在ta们的灵魂里面，那里只有一组笔画和笔顺，是几乎没有图像对应的。ta们一提笔就是在不自知的走捷径——<strong>抄日本和欧美用过的手法形式，只是把汉字笔顺塞进去而已。</strong></p>
+<p><strong>但再说一遍——那是为了让日文和英文服帖的架构，不是为你汉字准备的！</strong></p>
+<p>要纠正这个问题，单有“书法教育”是不够的，必须要有<strong>浸润。</strong></p>
+<p><strong>而且是从受众端开始建立这种不假思索的认知基线。要让公众看惯颜体、隶篆、瘦金体，潜意识里就锁定“这才是汉字正常的样子”。从而迫使一切设计方不能不以此为出发点、为基准点、为中心点去思考如何在此之上解决美感问题。</strong></p>
+<p><strong>这样，才能真正的建立中国自己的审美体系，而不是永远想着去抄日本人的半截书和套用西文文本的设计和排版体系。</strong></p>
+<p>很多初级设计师可能不服气，那是因为你们不知道你们所模仿的“大师”们自己受了多大影响而已。</p>
+<p>中国是特殊国家，是汉语言文明永远的核心，没有任何一个尸——哪怕它镶金嵌玉——足够还这个魂。</p>
+<p>这个灵魂太大了，想要装进任何别的容器里，都必然是一种阉割。</p>
+<p><strong>这件事情，到目前都没有被重视，堪称是我们这个汉字源头民族的一项重大失误。</strong></p>
+<p>汉字因为其特殊性，其基准字形资源是一个不可以交付给单独商家来通过所谓“市场竞争”来自由博弈决定的公共事业。</p>
+<p>它事实上只能由中央政府来创设、维护与发布。这是事关文化正统地位，甚至事关国本、正朔的重大文化事业。</p>
+<p>所有人都在以你的字形为基准，你就是绝对正统，对方只要使用汉字，在市场规律的约束下就不能不以你所决定的字形为中心跳舞。<strong>这就是文化意义上的统一和治理。</strong></p>
+<p>如此公器，岂能成为某个商家的“专利权”？</p>
+<p>尤其是这本来就是中华民族全民所有的财富，让全民财富得到最大限度的利用，是中国政府理所当然的职责。汉字字形如此重要而关键，每天、每时、每刻都在与每一个中国人发生如此亲密关系的事，没有理由不被提高到高优先等级处理。</p>
+<hr>
+<p>有一种顾虑，说汉字传统字形的基准化有很高的技术成本。</p>
+<p>1）字体清晰度问题。</p>
+<p>这问题在视网膜屏上和将来的micro LED屏上都不是问题。字体渲染技术也已经有了长足进步，这些问题实际上已经不是问题了。</p>
+<p>如果说以前还有这种技术限制——说实话，对中国这种需求，根本就不该等待别人的技术成熟，应该自己开发技术强制准入接受——现在也已经不再成为问题。</p>
+<p>2）webfont技术应用中文字体使用必须强迫每一个用户付出极大的流量代价和响应时间成本，极度影响使用体验，这直接阉割了汉字字形在网络空间的存在。</p>
+<p>这个问题将随着基准字体的直接强制预置得到很大的改善。我们会看到丰富的得多的汉字应用表现。</p>
+<p>3）汉字字体存储占据的空间天然百倍千倍于英文字体，在当初单位存储空间成本低廉的时候一样是一个沉重负担。但是现在手机存储器的基本空间就是64G起步，这早已不再是瓶颈所在。</p>
+<p>现在这些显示精度限制、带宽限制、流量限制、存储空间限制已经大幅的下降了，甚至早已不是问题。强制推行基准字形的技术基础早已成熟。再不动作，说不过去。</p>
+<p>中国为此已经承受了不自知的重大损失，这不应该继续下去。</p>
+<p>最后，<strong>技术是被不可妥协的市场需求催生出来的。</strong></p>
+<p><strong>先有不可妥协的市场需求，不必担心没有足够可用的技术。</strong></p>
+<p><img src="https://picx.zhimg.com/50/v2-d4402a1f0d11b8f835cf099628b3eea5_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://picx.zhimg.com/50/v2-bc84584258e4145b28e964a8469ff22e_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%9F%BA%E5%87%86/">基准</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%AD%97%E4%BD%93/">字体</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%B1%89%E5%AD%97/">汉字</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-zhen-zheng-zuo-dao-jun-zi-he-er-bu-tong-qiu-tong-cun-yi/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何真正做到「君子和而不同」「求同存异」？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-rang-bie-ren-xin-gan-qing-yuan-di-ba-ta-suo-xue-de-jiao-gei-wo/">
+                        <span class="hidden-mobile">如何让别人心甘情愿地把他所学的教给我？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

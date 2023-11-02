@@ -1,0 +1,587 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>自己做饭吃，怎样从极耗时的买菜、择菜、洗菜、切菜、配菜中解脱出来？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="自己做饭吃，怎样从极耗时的买菜、择菜、洗菜、切菜、配菜中解脱出来？">
+              
+                自己做饭吃，怎样从极耗时的买菜、择菜、洗菜、切菜、配菜中解脱出来？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">自己做饭吃，怎样从极耗时的买菜、择菜、洗菜、切菜、配菜中解脱出来？</h1>
+            
+            <div class="markdown-body">
+              <p>做一下时间审计，就知道自己做饭最花时间精力的是什么。</p>
+<p>1）准备配料。切葱花、切蒜末、切姜丝姜末</p>
+<p>2）清洗主料，擦干主料（很多人不擦干，做菜永远油温不足，而油烟又过大，做出来的东西也蔫巴糊涂）</p>
+<p>3）切片切块形状加工。</p>
+<p>4）焯水、腌制、挂糊、发酵等等预处理。</p>
+<p>5）两遍炸、小火慢炖、水蒸、慢烤等等慢速加工。</p>
+<p>6）烹饪调味</p>
+<p>7）吃完了收拾碗筷，清洗整理。</p>
+<p>每一环节都花时间，每一环节也都都可以挤时间。</p>
+<p>1）切葱花、切蒜末、切姜丝姜末等等</p>
+<p>葱、姜、蒜你都是可以买脱水碎粒的。</p>
+<p><img src="https://pic1.zhimg.com/50/v2-e61f32dabb7d9b7ffa8f30e1eb06aaa9_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://pica.zhimg.com/50/v2-0ca5781b33bf872c4ca5e52fff3d061c_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://pic1.zhimg.com/50/v2-6b3fdca487dc4b6939098d18c341634a_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>也有汁液的版本：</p>
+<p><img src="https://picx.zhimg.com/50/v2-75b2ed9b94d2563fc077feba507e69e3_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>对于大多数家庭来说，在味道上已经足够替代。只不过要注意不能再用油“爆香”，除了葱油之外都宜主料下锅后再加。干葱只能最后加。</p>
+<p>2）清洗主料，擦干主料。</p>
+<p>首先——接买超市净菜没什么大不了。你的问题是要选对超市——要选净菜出货量够大的超市，没得剩菜可卖的超市。</p>
+<p>不要一天到晚纠结怕人家拿剩菜做净菜，成规模的进剩菜本来就不现实，你肯买，上游也没兴趣帮你挑和留，剩菜的来源只能是你店里自己没及时卖完的菜。那么问题来了，</p>
+<p>第一，换了是你，你天天都没卖完，你还天天进那么多吗？不错，总是会多进一点保证充足供应，有时会有剩余，但是那剩余量<strong>不会成规模。而过于小的规模往往不值得再投入人工成本去搞挽救性加工。</strong></p>
+<p>挽救性加工很少发生在日常蔬菜这类低值商品上，只有在高级水果、海鲜这类品类上才有意义。师傅也是要工钱的好伐。</p>
+<p>所以，如果一家店开了一货架的净菜区，其规模可以和其他生鲜成相当比例，而且种类为日常蔬菜，譬如辣椒丝、土豆丝、蚕豆瓣这种，而不是一看就是寥寥几包，你就不用纠结那么多。</p>
+<p>另外，因为腐烂往往是有规律的，这种挽救性加工往往会比较一致的缺少特定部位，你看看加工出来的东西是不是什么部位都全，是不是全部缺尖尖或者全部缺某个本该有的可食用部位———比如橙子削成了五边形，你自然会看得出来这加工是挽救性的还是只是加工性的。</p>
+<p>第二，这些剩菜的是作为新鲜菜进来的，进价并不比新鲜菜低，真的总是有系统性的大规模剩菜问题，商家不是白痴，每次都进多那么多，然后坐等它剩下，再请个人去搞挽救性加工。这远不不如降低冗余量，然后把那剩余的5%直接丢掉。</p>
+<p>第三，有些净菜，尤其是豆类、豆制品类，没有任何顾虑的必要，原理性的干净，拿回去直接下锅好了。</p>
+<p>其次，多买表面简单连续，采摘运输不易导致污损的好洗好做的菜，例如西红柿、蒜苗、西兰花、球白菜、青椒、苦瓜、胡萝卜，少买不好洗不好干的菜，比如小白菜、菠菜这些带泥多的叶子菜。</p>
+<p>我们的餐饮文化里对“新鲜”的执着是有很强的偏执倾向的，常把“新鲜”说得差两个小时就会吃死人一样。</p>
+<p>新鲜不是不好，直接田头采摘的确实味道好得多，但是论营养成分，它和晚了几个小时甚至一两天的版本并没有多少至关重要的差异。</p>
+<p>单从健康角度这根本没有多大的必要，你只需要保证<strong>卫生，</strong>对“新鲜度”顺其自然就好<strong>。</strong></p>
+<p><strong>要知道，浪费的时间直接就是生命本身。</strong></p>
+<p><strong>第二，脱水食材有些很不错，可以考虑：</strong></p>
+<p><img src="https://pic1.zhimg.com/50/v2-38c44b97c65d4f5b4c53fb09ce2c544e_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://picx.zhimg.com/50/v2-2c0ad51e8fe228c7e580ca787b5e57be_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://picx.zhimg.com/50/v2-bd64bb08a342bbde2374866e2afae1d6_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://picx.zhimg.com/50/v2-6becad9bbeb272832f785fc777f1c6d7_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://picx.zhimg.com/50/v2-17f5d6776e52dcd070dcc2efd1362ea4_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>这都不见得是为了方便，而整个的是另一种食材味道。自己掌握下这些要怎么处理。</p>
+<p>3）切片切块等形状加工。</p>
+<p>这个一方面净菜给解决了，<strong>另一方面自己总要练点功夫。</strong></p>
+<p>身为一个中国人，写不好毛笔字，拿不住菜刀，这是一种<strong>至为傲慢的浪费。</strong>文化财富摆在你面前，你有胜过全世界所有人的条件，一弯腰就能捡起来，你不捡，你回头喊困窘、喊抑郁，这是不打折的“抱着饭碗要饭”。</p>
+<p><strong>眼前的金子你捡了、用了，还是不够，你再喊穷。你眼前就有金子你不捡，你就喊穷，活该穷死你。</strong></p>
+<p>这是万事通理。</p>
+<p>在我看来，一个现代中国人喊“我活不下去了”的前提，是<strong>ta至少学会了做饭做菜、写毛笔字、说中国话这些最基本的技能</strong>之后才能说的话。你先提笔写几个字我看，做个青椒炒肉丝来看看。</p>
+<p>你如果这个都没学好，你至少也该把这个学了、用了，还是活不下去，你再来喊活不下去。</p>
+<p>否则你<strong>显而易见的没有穷尽作为一个中国人最基本的努力的空间，你没资格喊“活不下去”。</strong></p>
+<p>你之前不懂人为什么对你“冷漠无情”，你现在就懂了——至少还有这一种可能性。</p>
+<p>你至少要先排除了这种可能性，再去嫌别人“无情”<strong>——切不好青椒丝之前，不要再喊救命。</strong></p>
+<p>4）焯水、腌制、挂糊、发酵等等预处理。</p>
+<p>这些都是做大菜的事。你如果有兴趣，可以研究，但老实说着实没什么必要每天吃大菜。很多预处理其实本身不怎么花时间，只是要等待一些时间，这个你最好提前处理了，别等吃饭的时候现整。</p>
+<p>说个小诀窍——料酒这类液态腌料腌制鱼、排骨这类整块的东西，可以用食品级塑料袋来做容器，倒入腌料后，紧紧包裹你要腌制的东西再扎紧袋口，隔着袋子揉捏，这可以大大的减少料酒等腌制料的用量，而且提高均匀性——因为塑料袋紧贴食材，很少的料酒你也可以有很高的水位——更不用说还省得洗碗、省得洗手和把食材暴露在空气中氧化。很多人用大盆大碗腌，半瓶酒倒下去水位才三厘米，只能腌食材的下半段，浪费东西。又或者为了把料酒留在食材表面加很多淀粉挂糊，如果不是打算油炸干吃，回头有过水的环节一烧一煮都会脱落变成淀粉块，既难看、又影响口感。</p>
+<p>5）两遍炸、小火慢炖、水蒸、慢烤等等慢速加工。</p>
+<p>第一，如果你时间不够，你就最好不要折腾这些需要耐心的手段，多做凉拌菜、炒菜。</p>
+<p>第二，现在智能家电已经可以预定时和远程启动，你可以设定程序让它们提前启动加热。</p>
+<p>6）烹饪调味</p>
+<p>本来烹饪调味不花时间。但是很多人是在下锅前、菜都在锅里了想起来要搞姜末、要切小米椒、要调芡汁。做事要有计划性，先切好放小碟子里。要下锅的时候瞬间搞定，不然耽误时间也罢了，锅里火候极易失误——还在手忙脚乱找开盖器，锅里已经把底子烧糊了。</p>
+<p>一些本来要花时间熬一下的东西，比如糖色，有现成的卖。卤汁，有现成的卖。多多利用这些现成的成品，对加快速度大有好处。</p>
+<p>顺便，卤鸡蛋是不需要一直加热的。鸡蛋煮到定型，剥了壳直接丢进卤汁里<strong>冷泡</strong>，第二天再吃已经是卤蛋了，加热只是为了获得一个无菌的基底，不要认为非要加热才能入味，卤豆腐也一样。头天冷泡，第二天吃，约等于卤制没花时间——你也不用担心水会烧干。</p>
+<p>当然你不能用冷卤卤猪蹄，你毕竟不是樊哙。</p>
+<p>7）吃完了收拾碗筷，清洗整理</p>
+<p>以下图片有什么共性？它们的碗好洗吗？</p>
+<p><img src="https://pic1.zhimg.com/50/v2-2392feacca7bcdb57fd4da6b37514815_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://picx.zhimg.com/50/v2-a6c225a6a742d50268a6e29e3eb816cc_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://picx.zhimg.com/50/v2-db8a877afb7eb31db93c8f2c3f2f2e4f_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p><img src="https://pic1.zhimg.com/50/v2-c82a71b55f069d3286215624ea78ba68_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>有预成型的卖：</p>
+<p><img src="https://pic1.zhimg.com/50/v2-91d7a50d633d75662c46b9f68dacecef_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload>  </p>
+<p>最后，有一些食物是不花时间的——</p>
+<p>蔬菜沙拉没有烹饪时间，</p>
+<p>卤菜熟食没有烹饪时间，</p>
+<p>豆腐乳这类，不需要时间。</p>
+<p>重新设计自己的食谱，一餐里面一个凉菜、一个外购卤菜，你就只需要再做一个菜了。</p>
+<p>你要是熟练，怕是比方便面还快。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%8A%82%E7%9C%81%E6%97%B6%E9%97%B4/">节省时间</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-jin-lai-nian-jie-yue-yong-shui-hu-sheng-bu-xiang-yi-qian-na-yao-gao-le/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么近来年节约用水呼声不像以前那么高了？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/mei-ti-bao-dao-cheng-fen-lan-jiang-yu-yue-ri-jue-ding-shen-qing-jia-ru-bei-yue-zhe-yi-wei-zhao-shi-yao/">
+                        <span class="hidden-mobile">媒体报道称「芬兰将于 5 月 12 日决定申请加入北约」，这意味着什么？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

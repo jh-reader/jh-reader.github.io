@@ -1,0 +1,553 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>人感动的本质是什么？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="人感动的本质是什么？">
+              
+                人感动的本质是什么？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      16
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">人感动的本质是什么？</h1>
+            
+            <div class="markdown-body">
+              <p>感动机制的本质是一种人类的心理反射系统。这些心理反射是先天写在人的动物本能里面的。例如看到头身比大的毛茸茸的幼兽会有保护欲和亲近欲；看到有脸有四肢的动物遭遇撕裂伤会有恐惧感；看到昆虫的尖爪和刚毛会有焦虑感；看到自己的心理同类有良好回报会有喜悦感；遇到攻击就会愤怒；遇到友善会感到亲近，等等等等。</p>
+<p>这些东西是为了让大脑发育不健全的个体有最基本的社会功能，即使没有受过教育，根本不识字，不了解任何文化传统，也能大体有效的趋利避害。</p>
+<p>这种本能非常的强烈，而且是有激素、基因等物质性生理基础的，因此往往跨越文化的高度一致，以至于人类虽然对各自所处的地理气候环境有了复杂的社会化适应，但基本上只是万变不离其宗的围绕着这些本能稍作修饰而已。</p>
+<p>一个社会如果自己约定与这些本能差距过大的习俗规范，会产生很大的额外成本，如果这个成本不能因为对所处环境的特殊适应带来足以抵消成本的收益，这种社会最后是会失败破产的——这些底层机制就是如此的强大。</p>
+<p>现在要说“但是”了——但是，这些东西留下了一个极其重大的隐患——<strong>它们同时也是操纵人类的程序后门。</strong></p>
+<p>巧妙的触动人类的这些扳机按钮，你可以在很大程度上像操纵机械一样控制人的情绪，并通过这些情绪控制人的决策、行为，<strong>像役使牲畜一样操纵人类。</strong></p>
+<p>生而为人，如果你真的如你所声称的那样在意你的自由——也就是你的生命——如果你真的想要拥有实际的人格，想要确保人除了尊重你的意愿和利益别无从你身上获取合作的妄念，你就要记住——<strong>你必须管理住自己的感动</strong>。</p>
+<p>这首先就要从意识到感动你的企图、管理“感动术士黑名单”开始，从建立将“意图感动”视为极端危险的恶意侵犯的本能开始。</p>
+<p>想要改变我的决策，只有一个合法途径，就是逻辑说服。谁放着逻辑说服的路线不走，要利用我的动物本能，尤其是有明确主观意图、作为一种主动选择的策略的这么做，这人就是我的敌人。无论名义上的亲疏远近，凡过此线，即为在我面前自弃为友的资格。</p>
+<p>自己不懂的、出于社会恶习的裹挟熏陶的，可以谅解宽容，不予计较，但一概视为没有自我觉醒凡半人，可以得到照顾和忍耐，但这样的人无法依靠，无法做过高的授信。</p>
+<p><strong>蓄意感动人是一种道德败坏，只是这样的窃贼太多，互相掩护，不以为耻，凡以为能了。但你们记住，你自己能栖身的地方，必须是将这种行为视为极大的不道德的群体。</strong></p>
+<p>不要以为秉持这种原则的人不懂如何感动人，恰恰相反，能坚守这些原则的前提恰恰必须是要能洞若观火的看到谁在诉诸感动。这其实是社会性发展到一定程度的一个必然产物。是你自己摆脱“感动巫术”，获得自我决定权的入门门槛。</p>
+<p>换句话来说，明白这条规则是什么，能有效持守的人，个顶个的擅长操纵人的情绪。<strong>只是不愿做这种事而已。</strong></p>
+<p><strong>你要做某事，绝不该是被我感动的结果。如果是，在我这你只会得到痛切的批评，绝不会是“欣慰”，“喜悦”，“赞赏”。你要做某事，必须是你自己最大限度坚持理性判断的结果。</strong></p>
+<p><strong>感动可以作为一个有一定重量的砝码，但是天平本身必须是理性思辨，冷静计算。</strong></p>
+<p>这些话说了，会有无数人来说什么“连感动一下都不行吗”、“那不成机器人了吗”之类的话，要为“感动”辩护，要来批评这些话太“苛刻”。</p>
+<p>“被感动的感觉”就是这么美好，是吗？</p>
+<p>只希望有一天你能明白，这些“感动”的“收费”是什么。</p>
+<p>它的<strong>收费</strong>是什么？</p>
+<p>一感动，决定了。</p>
+<p>一感动，就ta了。</p>
+<p>一感动，要做这。</p>
+<p>一感动，要去那。</p>
+<p><strong>想一想，感动的“费用”是什么？</strong></p>
+<p>尤其是女孩子们，我建议你们脑子清醒点想清楚。</p>
+<p>这意味着什么？意味着看一切东西，都要先把褒义词贬义词还原成中性词。意味着本能的憎恶诉诸情感的手法和计谋。意味着道德厌憎对使用这些手段毫不避讳甚至引而自得的人。</p>
+<p>谁搞那些这些来博你好感，应该会被极端敏感的抓个正着，而且应该毫无悬念的博到一个勃然大怒，迎头痛击，而绝不该是“热泪盈眶、感念无已”。</p>
+<p>如果你们不是这样，会为自己的人生埋下不可测的祸端。这个世界上热衷玩弄这些卑鄙伎俩以为能事的人不可胜数，不以之为患、为恶，反以之为善、为义，你必定会沦为这些人的食粮和货物。<strong>幸免概率低于万分之一。唯一的悬念只是你到什么时候醒悟和悔恨，而这个时候你还有没有勇气醒悟和悔恨。</strong></p>
+<p>学会欣赏那些明知如何可以感动你，却如避雷池绝不利用的人，这是人对人真正的尊重。</p>
+<p>可以感动你，但却坚持只跟你讲冰冷的道理；可以讨你的好，却要说煞风景的话，打破你的情绪；已经可以成交，还在坚持揭示风险——这是放弃了近在眼前的诱惑，要把你当成一个人来尊重和交往，懂不懂？</p>
+<p>断不了感动的瘾，不要下山。</p>
+<p>爹妈没有把这道理给子女说透，不对子女坚持这个原则，是一种基本的失职——将来子女所托非人，不要自称无辜。</p>
+<p>这是好言相劝，不能听，只能祝你好运了。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/Feminism/">Feminism</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%84%9F%E5%8A%A8/">感动</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-ren-men-de-tong-qing-xin-he-gan-dong-hen-bu-chi-jiu-dui-yu-ying-xiong-shi-ji-wei-shi-yao-ren-men-de-gan-dong-ye-zhi-shi-yi-shi-guo-le-jiu-/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么人们的同情心和感动很不持久，对于英雄事迹，为什么人们的感动也只是一时，过了就没当时那么感动了呢？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/yao-zun-zhong-ta-ren-de-zong-jiao-xin-yang-ma-wei-shi-yao/">
+                        <span class="hidden-mobile">要尊重他人的宗教信仰吗？为什么？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

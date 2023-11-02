@@ -1,0 +1,555 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>面对新型冠状病毒肺炎疫情，科技公司能够做些什么？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="面对新型冠状病毒肺炎疫情，科技公司能够做些什么？">
+              
+                面对新型冠状病毒肺炎疫情，科技公司能够做些什么？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      17
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">面对新型冠状病毒肺炎疫情，科技公司能够做些什么？</h1>
+            
+            <div class="markdown-body">
+              <p>人类目前的社会形态是存在一个潜在的毁灭危机的，那就是一次“完美传染病”。</p>
+<p>一种病毒，潜伏期症状几乎不可察觉或混同一般常见病，潜伏期即具有高传染性，发病后死亡率中等，预后不良，且变异速度快，且以多种常见动物（尤其是肉用牲畜和宠物）为中间宿主——足以击溃目前人类社会最大的文明成就——超级城市。</p>
+<p>人类目前的文明成就，最大的产物和最大的支柱，其实恰恰是超级城市这种社会形态。依赖高铁、重载铁路、万吨级集装箱海运、年流量过亿人次的国际机场、日流量达千万的地下铁/公交、远距离高压/特高压输电网络、高速光纤网等等手段，我们在极小的地域上集中浓缩了来自数百万平方公里的人、才、物、信息。集中度如此之高，物理上的空间距离这个最大的交易成本因素才被压缩到了极点，这是目前的经济繁荣的最大秘密。</p>
+<p>但是，这种出现不超过两百年的生存形态在本质上却只是一种九龙城寨式的“违章建筑”——它喧闹的伫立在那里，无知无觉的等待着一次漏电造成的火灾或者一次瘟疫来告诉它“你这样不行”。</p>
+<p>无论你现在如何繁荣昌盛，如果你没有系统的解决传染病问题，目前的人口密度和超级城市形态就都是等待着爆炸的未爆弹。一次爆炸就足以重创你，让原本被人满心向往的超级都市变成人人争先恐后逃离的炼狱。</p>
+<p>那么何谓“系统的解决传染病”问题？</p>
+<p>这只有两个可见的方案。</p>
+<p>第一个当然是医学的进步。这个我们不多提。因为医学想要发展到能无惧任何传染病无疑还有很长的路要走。</p>
+<p>第二个就是社会管理的方案——实现对物资和社会成员行为的绝对感知和掌控，以至于可以在任何时候了解任何人、物的状态，并能加以及时、精确而有效的干预。</p>
+<p>拥有这样的感知力、判断力和行动力，这样的社会形态才可以安然的享有高密度聚居所带来的红利而基本无惧传染病的潜在威胁。</p>
+<p>事实上，这一次的武汉封城事件在某种意义上正是在展现这种能力。它表明——当真正需要的时候，中国可以、敢于做出这样的决定，并且能够将其现实有效的执行。</p>
+<p>无论达成这个能力背后的伦理如何、机制如何，能够做到这一点，才是真正过了“超级城市”这一关。</p>
+<p>你们可以想一想——同样的动作能不能在孟买做到，或者达卡，或者河内，曼谷，马尼拉，或者里约热内卢，或者墨西哥，或者甚至新奥尔良、纽约、巴黎、台北。</p>
+<p>能不能做到这么快、这么彻底？</p>
+<p>即使能，能做多少次？能做多久？</p>
+<p>能够做到、而且是多次做到、而且是总有把握将疫区关闭隔离足够久，就是社会体制的“现代性大考”。考得过，才有保持超级城市形态的“体制许可证”。</p>
+<p>这个才是这次武汉封城真正的意向所指——为了从根上消除世界对于中国经济繁荣的“医学脆弱性”的焦虑。</p>
+<p>封城实际上的意义并不仅限于应对这一次的传染病，同时也是在向世界展示中国对控制传染病传播问题的绝对能力和绝对信心。</p>
+<p>这种能力和信心，中国有，其他国家、其他经济体可不见得有。而没有任何国家、任何经济体是真正能免于疫情本身的发生的。</p>
+<p>人类真正的问题，只会是经济问题。而一切的经济问题，归根到底都是对未来的信心问题。一切的社会问题都可以最终被理解为某种对经济繁荣预期的信心问题。谁能在世界上造就和维持这种信心，谁就会成为全球资源与资金的目的地，从而获得最大的发展动力。</p>
+<p>封城客观上是一种投资，对于争夺“全球经济最安全、最强大的增长引擎”宝座的投资。而且是一项好投资。</p>
+<p>然后我们来看一下科技公司在这里可以有哪几个专注点：</p>
+<p>第一个当然是快速廉价的检测技术，主要是各类试纸和生物芯片之类。</p>
+<p>第二，便捷的消毒手段。各种喷雾、擦巾、便携或便于加装的臭氧消毒、紫外光消毒、高温消毒设备。</p>
+<p>第三个，实际上也是最大的近在眼前的风口，就是时尚化的个人防护装备。</p>
+<p>在未来，个人防护有常态化的机会。长期佩戴口罩、头罩、手套、防护镜可能成为一种新的生活常态——它至少可以合法的成为部分人可以选择的生活方式。</p>
+<p>那么，这些新增加的随身物品余地。还会产生足够大的时尚需求。有人会长期习惯性的佩戴口罩，那么口罩也就将成为新的领结或墨镜（墨镜本身就是防护用品出身）。</p>
+<p>防护面具也可以成为新的时尚媒体，衣物也可以有更时尚的罩衫设计——出门穿戴进屋即类脱洗的基本防护手段。</p>
+<p>个人防护类产品有机会成为一个新的大众消费品类而常态化，那么面料科技在透气性、抗菌性、亲肤性、可降解性、立体剪裁、先进织造、先进印染等等方面都可以有更大的市场空间来支撑更多的研发。</p>
+<p>coser们终于可以名正言顺的玩scifi风的cos了，赛博朋克就在眼前。</p>
+<p>第四个，是属于远程办公和在线协作的软硬件厂商和咨询机构的机会。</p>
+<p>传染病真正困扰的不是看电影和买菜，而是大通间小格子里办公的社畜们，午间涌向食堂的产业工人们。真正聚集大量人口的危险场景在这里。因此如果能够实现生产无人化或者远程化，在新传染病成为常规威胁的时代会是一个可观的影响股价估值的因素。</p>
+<p>于是它没有理由不成为一个发展增长点。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Business/">Business</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%AE%8C%E7%BE%8E/">完美</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%BC%A0%E6%9F%93%E7%97%85/">传染病</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/zi-ji-tai-guo-qing-gao-bu-shi-ren-jian-yan-huo-er-you-zi-bei-zen-yao-ban/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">自己太过清高，不食人间烟火而又自卑怎么办？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-you-xie-ren-bu-xi-huan-hong-da-xu-shi/">
+                        <span class="hidden-mobile">为什么有些人不喜欢宏大叙事？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

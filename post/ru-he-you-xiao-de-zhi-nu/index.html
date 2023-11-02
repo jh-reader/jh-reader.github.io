@@ -1,0 +1,560 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何有效的制怒？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何有效的制怒？">
+              
+                如何有效的制怒？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      16
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何有效的制怒？</h1>
+            
+            <div class="markdown-body">
+              <p>生活在爱你的人中间，这样你发怒的后果常会被自然消解。</p>
+<p>不要向对你无爱的人发怒，这不仅仅是无用和有害的问题。最重要的是无爱的人不配得。</p>
+<p>第二，不要把发怒看成是一种正义的表现。不要觉得自己都被激怒了，就一定是自己在正义的一方——这是无数小孩敢把怒发出来的根本原因。</p>
+<p>人们总以为自己肯定是正义的，不发怒是因为够宽容，发怒是对方罪有应得。其实事实绝大多数情况下都不如ta们所料，只不过ta们听不进去。</p>
+<p>爱不受挑衅，不轻易发怒。</p>
+<p>可惜的是现在流行的是一种“我喜欢的、对我有利的我才爱”的观念，而人们其实喜欢的只有自己，所谓的“喜欢别人”，本质上也大多是喜欢别人喜欢自己而已。而这根本不是爱。</p>
+<p>没有爱，就没有制怒的根本必要。只不过是觉得有时候愤怒不是很方便所以想要合理管理。而另一面，在更根本的深处，又觉得发怒好处甚多。例如觉得老虎不发威，会被别人当病猫。所以这种是叶公好龙式的撒娇式的“制怒需求”，根本不足以支撑真正的制怒所需要的那种剜心剖腹般决绝。</p>
+<p>不以爱为念，不以爱人为<strong>人必须尽的义</strong>，谈“制怒”只是徒然而已。那只是在学对谁不可怒的看风色的技巧和如何假装无怒的伪装术罢了。</p>
+<hr>
+<p>有人问“为什么是徒然”。</p>
+<p>是这样的——对于受怒的人来说，没有随时随地识别出谁可能在发怒的观察能力，那可是致命的。而对“制怒”的一方来说，却没觉得自己的愤怒不小心流露出去会如何严重——甚至本人还暗戳戳的希望对方不等自己彻底掀桌时就自己识趣。</p>
+<p>所以，那些喊着要“制怒”的人三心二意练的刀术，怎么可能那么容易胜过那些知道“练不好就会死”的受怒者们拿命别在裤腰带里练的盾术？</p>
+<p>你想想，赢得过吗？</p>
+<p>所以，“制怒”派自以为瞒得很好的怒气，对一生都在研究受怒、识怒的生存狂们而言，根本就是赤裸裸写在脸上的。识怒狂魔在你自己都还没意识到自己在发怒之前就知道你在怄气。</p>
+<p>——“你瞎说，我哪有！？”</p>
+<p>别扯了，<strong>你当然有——</strong>真的没有的人，会回答“我可能有些不自知的、不该有的情绪，抱歉”。</p>
+<p>竭力否认的人，大部分是想要对方“知错能改”，自己还免掉一次“发火”“施压”“强迫人”的罪名。</p>
+<p>年轻人不讲武德，这好吗？这不好。</p>
+<hr>
+<p>想要真正的制怒，也就是从根上斩断怒的源头，要的是一种剜心剖腹般的决绝。</p>
+<p>易怒是人之常态，你若真要制怒，你就要接受非常态。“接受变得与绝大多数人不同”，这本身就已经令绝大部分人胆战心惊、望而却步了。</p>
+<p>引人生怒的事，往往客观上有待定的“罪责”存在。</p>
+<p><strong>制怒的根本之道，不是将罪定在别人身上，然后想办法自我制止不去“行刑”，而是【以身相代】。</strong></p>
+<p>罪加于人，制怒就不过是自欺欺人。这份怒气已经被签下，想要阻拦它的一切表现，犹如山之阻水，盘旋曲折，千回万转，毕竟终将东流而去。要根本的不对人发怒，只有一种真正有效的手段，就是<strong>将罪归于自己</strong>，<strong>自己以身相代</strong>。而且不能是出于骄傲、出于成圣的渴望，必须是视为<strong>毫无功劳的本分</strong>，<strong>理所应当的义务</strong>。</p>
+<p>这不怪你，这怪我，我凭什么向你发怒？</p>
+<p><strong>这单靠人自己是做不到的。</strong></p>
+<p><strong>任何令人沮丧的事情，常常有无数的环节其实非人之罪，而是取决于人力无法改变的天意。而天意无可罪。</strong></p>
+<p>去除了天意，剩下的才是人的责任。而人的责任之中，“ta人的责任”依附于你对ta人的选择。是的，是ta有错，但是你选了ta，你不能强求人做到一切“不应该做错”的事。</p>
+<p>每一件事都是小事，都简单，都应该做得到。但是把全部应该做到的事情同时都做到，是一种非人类所能企及的要求。这是在强求人成为神。因为人不是神而憎恨人类，责怪人类，其错在谁？</p>
+<p>在<strong>我</strong>。</p>
+<p>承诺而没有做到的事情，按照契约该追偿就追偿，但作为自己签订契约、界定了自己满意的违约责任的一方，“我”有立场去责怪对方没能履约吗？如果没有以违约补偿为对价接受违约可能的心理准备，约定违约补偿是何用意？</p>
+<p>深挖下去，只要你想，一切的罪责——亦即发怒的立场——要么可以归于天，要么可以归于你自己。</p>
+<p>天无可罪，是以万方有罪，罪在朕躬。</p>
+<p>而向自己发怒，是责怪自己不如完美的神吗？人不如神，不是理所当然吗？</p>
+<p>到这里，一切的怒的立场都消解了。</p>
+<p>无怒可生，自然无怒待制。这是真正制怒唯一的出路。</p>
+<p>问题是，割肉喂鹰、以身饲虎，心甘情愿以身替罪而不居功，你愿意做吗？</p>
+<p>只要你不想，世界为你准备了一千一万条理由告诉你不做是正义的，是合理的，是积极的，是“正常”的，对方绝对是罪有应得。你不会有压力、不会有纠结、很容易得到千万人的赞同和“支持”。</p>
+<p>只有你出于某种令人难以理解、难以想象的“不合逻辑”的原因，一定要这样做，你才做得到。</p>
+<p>顺着那“逻辑”，人类会被一切“理直气壮的报复”毫无悬念的毁灭。</p>
+<p>爱不符合那个逻辑。</p>
+<p>幸亏如此。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%88%B6%E6%80%92/">制怒</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-guo-wo-guo-yue-lai-yue-fa-da-zhi-zao-ye-shi-bu-shi-ye-hui-kong-xin-hua/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如果我国越来越发达，制造业是不是也会空心化？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-bai-gong-xin-wen-mi-shu-yang-yan-ruo-zhong-guo-bu-zun-shou-dui-e-zhi-cai-mei-guo-you-ban-fa-cai-qu-cuo-shi-qi-zhong-tou-lu-chu-na-xie-xi/">
+                        <span class="hidden-mobile">如何看待白宫新闻秘书扬言「若中国不遵守对俄制裁，美国“有办法采取措施” 」 ，其中透露出哪些信息？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

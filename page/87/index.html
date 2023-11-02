@@ -1,0 +1,1461 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="JH Notes Easy Reader">
+              
+                JH Notes Easy Reader
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-ma-sheng-zhuan-tiao-xi-chu-duan-e-yun-zhuan-zhao-ku-ming-ren/">为什么“麻绳专挑细处断，厄运专找苦命人”?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-ma-sheng-zhuan-tiao-xi-chu-duan-e-yun-zhuan-zhao-ku-ming-ren/">
+          
+          
+            
+          
+          并没有所谓的“专挑”这回事，所以也不存在什么“为什么”。
+这个原则早就说明过——对于无法证实也无法证伪的命题，你就有选择权。你的选择标准应该是哪一种立场有助于你获得更大的自由，而不是哪一种“更真实”。
+“不具有可证伪性”已经决定了“更真实”这条船已经离港了，已经不是放在桌子上的选项了，继续挖掘“真实性”，或者质疑别人对这“真实性“的怀疑，已经是无意义的行为。
+唯一的问题就是站在哪一边有利于你获得更
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E9%A9%B3/">反驳</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/nv-sheng-ru-he-fan-ji-zao-zi-ji-huang-yao-de-ren/">女生如何反击造自己黄谣的人?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/nv-sheng-ru-he-fan-ji-zao-zi-ji-huang-yao-de-ren/">
+          
+          
+            
+          
+          这事有一个通用的流程。
+首先，要固定证据。
+该录音录音，该录像录像，该截图截图。
+因为第三方介入不能以你的个人感觉和个人记忆为准，而只能以证据为准。你要先取得足够的、难以否认的证据。
+不光是要让这些人无法否认，还要让想和稀泥的老师、学校、家长也难以否认。
+一个对你非常有利的要害是——这些人是很嚣张的，因为没有看到确切的恶果还会越来越嚣张，并且ta们远比ta们自己想象的愚蠢，根本不像ta们自己所相信
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+              <a href="/categories/Clan/Feminism/">Feminism</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D/">反</a>
+            
+              <a href="/tags/%E8%B0%A3%E8%A8%80/">谣言</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-fan-bo-dao-de-xu-wu-zhu-yi-zhe/">如何反驳道德虚无主义者？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-fan-bo-dao-de-xu-wu-zhu-yi-zhe/">
+          
+          
+            
+          
+          道德虚无主义者不能用“反驳”这种方式去对待。
+他们的逻辑是自洽的。凡是逻辑自洽的意识形态体系，用外部的“反驳”都是没有用的。对方自然有无穷的预备答案来回答。而且这些答案千锤百炼，肯定在运算逻辑上不存在问题。
+你也要敬畏对方自己的智力。他们自己肯定也验算过千百遍了，确信了这是一个安全的外壳，才选择作为最后一个栖身之所。
+这个循环，只有对方自己想突破而自己力所不能及的时候，向你发出求救的信号。然后才能
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D/">反</a>
+            
+              <a href="/tags/%E8%99%9A%E6%97%A0/">虚无</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/guo-jia-an-quan-bu-fa-wen-fan-jian-fang-die-xu-yao-quan-she-hui-dong-yuan-you-na-xie-xin-xi-zhi-de-guan-zhu/">国家安全部发文《反间防谍需要全社会动员》，有哪些信息值得关注？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/guo-jia-an-quan-bu-fa-wen-fan-jian-fang-die-xu-yao-quan-she-hui-dong-yuan-you-na-xie-xin-xi-zhi-de-guan-zhu/">
+          
+          
+            
+          
+          中文和英文是两码事。英文的spy，仅仅只是中文的“谍”而已，这是刺探情报的那部分。
+别忘了还有个“间”。就是那些潜伏在对方境内，搞造谣、煽动、离间、陷害、刺杀的潜藏行动人员。
+防谍，主要只是涉密单位和人员的工作。“反间”才是真正必须社会动员、全民参与的课题。
+这包括但不限于：
+在中国境内制造民族对立、宗教对立、性别对立、地域对立、劳资对立、亲子对立、官民对立等一切行为。
+一切试图在中国人民之间制造
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E9%97%B4/">反间</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-li-jie-fan-she-hui-ren-ge/">如何理解反社会人格？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-li-jie-fan-she-hui-ren-ge/">
+          
+          
+            
+          
+          什么是社会性？
+一加一大于二，这个大于二的超额部分就是社会性。
+什么是反社会性？
+一加一小于二，这个小于二的缺额就是反社会性。
+反社会性的本质，就是要达成有效合作的成本太高，以至于超过了合作所能造成的收益。
+显而易见，这样的人如果太多，人群将因为入不敷出，无法自我维持而不能成功构建任何社会结构。
+所以这才叫做反社会性。
+反社会性非常的常见，绝不是什么杀猫虐狗、连环杀手才有。
+过度多疑、强迫性补弱、
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D/">反</a>
+            
+              <a href="/tags/%E4%BA%BA%E6%A0%BC/">人格</a>
+            
+              <a href="/tags/%E7%A4%BE%E4%BC%9A/">社会</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/na-cui-wei-shi-yao-na-yao-chou-hen-you-tai-ren/">纳粹为什么那么仇恨犹太人？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/na-cui-wei-shi-yao-na-yao-chou-hen-you-tai-ren/">
+          
+          
+            
+          
+          我发现这个问题在中国是一个被最广泛误解的问题，几乎没有靠谱的答案。因为这个问题对中国有特殊的时代意义，在这里特别回答一下。
+反犹的思想根源这问题的根本要害，在于对待“约”（the Covenant）的态度的不同。
+我们先来看看这个约的片段：
+
+出埃及记20章2-17节：我是耶和华，你的神，曾将你从埃及地为奴之家领了出来（2节）。第一诫 除了我以外，你不可有别的神。（3节）第二诫 不可为自己雕刻偶像
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E7%8A%B9/">反犹</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/mian-dui-pen-zi-ni-de-xin-li-gan-shou-shi-zen-yang-de-you-na-xie-tuo-shan-de-ying-dui-fang-shi/">面对喷子，你的心理感受是怎样的？有哪些妥善的应对方式？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/mian-dui-pen-zi-ni-de-xin-li-gan-shou-shi-zen-yang-de-you-na-xie-tuo-shan-de-ying-dui-fang-shi/">
+          
+          
+            
+          
+          首先，我并不同意把对方叫“喷子”。这个要先说清楚。
+这样称呼对方，本身就是一种“喷”，这未免太魔幻了。
+
+如果有逻辑断层，就想办法明确的表达出来指出来。不必想对方是不是故意的，也不要多想“恶心”什么的。
+就事论事，直到对方真的展现出不诚实、或者并不在乎对错，只是要赢。
+对人可以有的最大的惩罚，其实是先成为最好的对话者，然后剥夺对方和你对话的机会。
+其实这才是最深刻的惩罚——他将失去和有这个级别的知
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E6%B5%AA%E8%BE%A9/">反浪辩</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/xi-nao-yu-jiao-yu-de-qu-bie-shi-shi-yao/">洗脑与教育的区别是什么？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/xi-nao-yu-jiao-yu-de-qu-bie-shi-shi-yao/">
+          
+          
+            
+          
+          洗脑和教育的区别不是在形式上的。
+形式上两者可以完全对称。你控制教科书，它也要控制教科书——只是用了另一种手法；你控制舆论，它也要控制舆论——只是用了另一种手法；你管控新闻，它也要控制新闻——只是用了另一种手法。
+说张三是洗脑而李四不是，如果仅仅只用手法上的差异，其实到最后都难免变成某种实质上的双重标准。
+其实大家都在讲和维护一套从自己的视角看去逻辑通顺、能解释事实（总会在某些方面有些勉强）、与客
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D/">反</a>
+            
+              <a href="/tags/%E6%B4%97%E8%84%91/">洗脑</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/mei-zui-xin-yi-pi-jun-yuan-yi-di-wu-bian-jing-wu-jun-jiang-xue-xi-shi-yong-m-huo-pao-ci-pi-jun-yuan-jiang-dui-wu-ke-lan-ju-shi-dai-lai-na-xie-bang-zhu/">美最新一批军援已抵乌边境，乌军将学习使用 M777 火炮，此批军援将对乌克兰局势带来哪些帮助？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/mei-zui-xin-yi-pi-jun-yuan-yi-di-wu-bian-jing-wu-jun-jiang-xue-xi-shi-yong-m-huo-pao-ci-pi-jun-yuan-jiang-dui-wu-ke-lan-ju-shi-dai-lai-na-xie-bang-zhu/">
+          
+          
+            
+          
+          有一个概念要纠正一下。
+很多人在说俄罗斯的反炮兵雷达的侦测范围是15公里。于是自信“射程超过15公里的火炮无法被这些炮兵雷达侦测到位置”。
+这个逻辑是错的哦。
+那个15公里半径的意思是——在这15公里半径的半球内，只要有炮弹飞过，都能被侦测到该炮弹的飞行轨迹，从而反向解算出该炮弹的发射阵地。
+注意，不需要炮弹落点在这个半球内，只需要一段轨迹经过这个半球就算。
+这跟发射阵地离雷达的距离无关。
+只要炮
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D/">反</a>
+            
+              <a href="/tags/%E7%82%AE%E5%85%B5/">炮兵</a>
+            
+              <a href="/tags/%E9%9B%B7%E8%BE%BE/">雷达</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-zhan-zai-shang-di-shi-jiao-ping-jia-qing-chu-fan-qing-fu-ming-zhe-ta-men-shi-ke-jing-de-huan-shi-ke-xiao-de/">如何站在上帝视角评价清初“反清复明”者？他们是可敬的还是可笑的？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-zhan-zai-shang-di-shi-jiao-ping-jia-qing-chu-fan-qing-fu-ming-zhe-ta-men-shi-ke-jing-de-huan-shi-ke-xiao-de/">
+          
+          
+            
+          
+          任何为了自己的理想而行动，而且敢于面对艰苦、危险乃至牺牲的人，都是可敬的。
+这跟这个理想本身在行动者当时而言是否“现实”、在评判者自己的当下是否符合政治正确没有关系。
+因为在行动者的当时，一切都事在人为，谁知道什么现实、什么不现实？
+现代的政治正确是否真的是现实正确、是否是“未来正确”，又有谁知道？
+后人所站的视角也并不是“上帝视角”，而只是一个知道后续部分剧情的观众罢了，这远远谈不上上帝视角——
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E6%B8%85%E5%A4%8D%E6%98%8E/">反清复明</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/bei-you-zu-zhi-jiu-chan-bei-yi-qun-ren-gen-zong-zi-rao-ding-shao-jian-shi-zen-yao-cai-neng-bai-tuo-ta-men-a/">被有组织纠缠，被一群人跟踪滋扰，盯梢监视。怎么才能摆脱他们啊？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/bei-you-zu-zhi-jiu-chan-bei-yi-qun-ren-gen-zong-zi-rao-ding-shao-jian-shi-zen-yao-cai-neng-bai-tuo-ta-men-a/">
+          
+          
+            
+          
+          被跟踪监视，不要傻呆呆坐在家里。
+这不是给对方制造监控你的方便吗？
+任何事情都是经济账，让监控的人破产就行了。
+1）多出入难以监控的场合，充分制造跟踪成本。
+周末多出去玩，地点临时决定，今天挖土豆、下周摘草莓。没事多坐地下铁，临近关门再上下车。一时兴起去漂流，心血来潮奔海南，复兴高铁和谐号，半路下车到湖南。
+跟踪小队跑断腿，想想都要笑哈哈。
+干脆再找个要经常出差的工作，你是公费出行，ta们是私人出
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D/">反</a>
+            
+              <a href="/tags/%E6%95%8C%E6%84%8F/">敌意</a>
+            
+              <a href="/tags/%E7%9B%91%E6%8E%A7/">监控</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-pei-yang-zi-ji-de-kang-zheng-jing-shen/">如何培养自己的抗争精神？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-pei-yang-zi-ji-de-kang-zheng-jing-shen/">
+          
+          
+            
+          
+          别的不多说了。
+警惕教你们把服从视为懦弱、把管理视为压迫的人。
+“服从即懦弱”是一种典型的反社会人格，真正执行起来就是一切都可以扯出理由来不合作，而且罪还在你。
+这种人根本无法信任和托付。
+ta只不过永远有理由把ta不爽且看出你不爽的事帮你论证为不正义、不正当。
+其实ta们的论证不堪一击，甚至都没什么资格得到“一击”——你要ta实践，ta那个天花乱坠的理论自己就垮了。
+别的不说，问问这些革命导师—
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D/">反</a>
+            
+              <a href="/tags/%E6%9C%8D%E4%BB%8E%E6%80%A7/">服从性</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/dang-hai-zi-shou-dao-qi-ling-shi-shi-fou-xuan-ze-fan-kang/">当孩子受到欺凌时，是否选择反抗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/dang-hai-zi-shou-dao-qi-ling-shi-shi-fou-xuan-ze-fan-kang/">
+          
+          
+            
+          
+          说一下欺凌问题。
+孩子受了欺凌，父母应该如何教导？
+我看到有很多人主张教孩子“打回去”。
+这个绝对是错的。
+错误点有以下几个——
+1）如果造成确实的人身伤害，你将造成非常严重的麻烦。现代法治社会对于可检出的人身伤害处置极其严重。手持武器威胁他人，哪怕并未致伤，仅仅是经过警告不放弃威胁姿态都有可能被击毙，何况真正打伤他人呢？认为小孩人小力弱不会造成什么实质伤害的人，想过一个幼儿完全有能力将另一个幼儿
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D/">反</a>
+            
+              <a href="/tags/%E6%AC%BA%E5%87%8C/">欺凌</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-he-xian-zai-zai-hen-duo-wang-you-yan-zhong-fan-zhan-fan-qin-lve-zhe-zhong-ji-ben-de-dao-de-bian-cheng-le-sheng-mu/">为何现在在很多网友眼中，反战反侵略这种基本的道德变成了圣母？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-he-xian-zai-zai-hen-duo-wang-you-yan-zhong-fan-zhan-fan-qin-lve-zhe-zhong-ji-ben-de-dao-de-bian-cheng-le-sheng-mu/">
+          
+          
+            
+          
+          岂有反战反侵略的人不支持反抗的道理？
+支持反抗，就是支持反侵略和反战；
+反对反抗，就是支持侵略。
+一些人根本不是在反战、反侵略，而是反对别人武力反抗非武力的侵害，就像在帮掌握了一切剥削手段的人主张你应该安静的饿死、穷死而不该暴力反抗。
+ta们是在帮助压迫的一方反对武力反抗，而不是在反战。
+你看，ta们可没对乌克兰反战——这说明“反战不含反反抗”的道理ta们是懂的。
+ta们只是认为这个道理一部分人类
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E6%88%98/">反战</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-he-xian-zai-zai-hen-duo-wang-you-yan-zhong-fan-zhan-fan-qin-lve-zhe-zhong-ji-ben-de-dao-de-bian-cheng-le-sheng-mu/">为何现在在很多网友眼中，反战反侵略这种基本的道德变成了圣母？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-he-xian-zai-zai-hen-duo-wang-you-yan-zhong-fan-zhan-fan-qin-lve-zhe-zhong-ji-ben-de-dao-de-bian-cheng-le-sheng-mu/">
+          
+          
+            
+          
+          岂有反战反侵略的人不支持反抗的道理？
+支持反抗，就是支持反侵略和反战；
+反对反抗，就是支持侵略。
+一些人根本不是在反战、反侵略，而是反对别人武力反抗非武力的侵害，就像在帮掌握了一切剥削手段的人主张你应该安静的饿死、穷死而不该暴力反抗。
+ta们是在帮助压迫的一方反对武力反抗，而不是在反战。
+你看，ta们可没对乌克兰反战——这说明“反战不含反反抗”的道理ta们是懂的。
+ta们只是认为这个道理一部分人类
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E6%88%98/">反战</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/shi-yao-yang-de-fan-zhan-jiao-yu-cai-shi-zheng-que-de/">什么样的反战教育才是正确的？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/shi-yao-yang-de-fan-zhan-jiao-yu-cai-shi-zheng-que-de/">
+          
+          
+            
+          
+          反战到底反的是什么？
+是反对人挥拳、开枪、发射火箭吗？
+“战”的定义是这样一个概念——杀伤值到59就不是战，到59.5也不是战，到60就是战，就要开始反，这样吗？
+这个是国标还是军标？还是行业标准？
+就像幼儿园小朋友一样，辱骂、诅咒、吐口水、造谣、诬陷、欺骗……都可以允许，但是不能动手，反战者专门反对动手的，是吗？
+其实，只要有付诸行动的敌意，已经是战了。
+任何意在破坏对方可持续性、意图使人的自由
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E6%88%98/">反战</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wo-wei-shi-yao-hen-fan-gan-bie-ren-chui-niu/">我为什么很反感别人吹牛?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wo-wei-shi-yao-hen-fan-gan-bie-ren-chui-niu/">
+          
+          
+            
+          
+          题主，你关注了我，而且我看到你赞成了我三个答案。并且我看到这个邀请的时候，一个答案都没有，这个问题似乎是专门提出了专门邀请我的。
+那么我先大胆假设你应该是不讨厌我的——当然如果我猜错了你可以纠正我。
+我不知道你看过我多少回答，关注我有多久。但是如果你看过一些，你会发现我也经常说很多很大的词，讲一些“远非一般人该说的很宏大的话”，而从另一面来说，知乎上专门写帖子说我各种“无知”和“不懂装懂”“装逼”
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E6%84%9F/">反感</a>
+            
+              <a href="/tags/%E5%90%B9%E7%89%9B/">吹牛</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhi-hu-shang-da-liang-de-suo-wei-yi-fan-nv-quan-shi-mo-hei-nv-quan-xing-wei-shi-fou-de-dang/">知乎上大量的所谓以反“女拳师”抹黑女权行为是否得当？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhi-hu-shang-da-liang-de-suo-wei-yi-fan-nv-quan-shi-mo-hei-nv-quan-xing-wei-shi-fou-de-dang/">
+          
+          
+            
+          
+          “女拳”的手段很简单，就是舆论恐怖主义。
+恐怖分子砍伤炸伤了路人。
+路人又惊又怕，只要一时三刻，这种“完全可能是我”的恐惧就会转为群情激愤。
+路人开始集结部队，派出无人机猛烈轰炸恐怖分子的街区。
+误伤了谁，哪有“正义复仇”重要？
+“难道对待恐怖分子还不应该坚决轰炸？”
+然后下一步的剧情是“恐怖分子被消灭了”吗？
+是吗？
+是被炸的人排队加入恐怖组织，恐怖分子拿到大量的捐款。
+恐怖分子最希望你轰炸，搞
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E6%81%90/">反恐</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-ping-jia-sai-lei-hua-jin-fa-bu-shi-pin-jie-lu-bu-rang-zhong-guo-ren-chi-hai-xian-shi-jian-bei-hou-de-fan-hua-zu-zhi-li-yi-lian/">如何评价赛雷话金发布视频揭露「不让中国人吃海鲜」事件背后的反华组织利益链？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-ping-jia-sai-lei-hua-jin-fa-bu-shi-pin-jie-lu-bu-rang-zhong-guo-ren-chi-hai-xian-shi-jian-bei-hou-de-fan-hua-zu-zhi-li-yi-lian/">
+          
+          
+            
+          
+          面对“可能出于敌意的目的的、逻辑不成立的、证据不真实的观点”，一个国家、一个社会，能采取的最好的处理手段是什么？
+所谓最好，当然是指成本最低、收益最高、风险最小。
+如果你真的关心所在组织的利益，作为组织的成员，从综合收益的角度出发考虑如何发挥你对组织规则的影响力，来最大化的保证组织的繁荣前景，这才是你对组织内一切问题进行价值判断，政策建议和行动决定的基本方法。
+基于这个立场，我建议人们不要把重心放
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E5%BC%B9/">反弹</a>
+            
+              <a href="/tags/%E7%90%B5%E7%90%B6/">琵琶</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/mei-ti-bao-dao-cheng-e-wu-zui-da-jun-shi-chong-tu-kong-jiang-dao-lai-shuang-fang-bu-dui-zai-wu-dong-bu-ji-jie-you-na-xie-zhi-de-guan-zhu-de-xin-xi/">媒体报道称「俄乌最大军事冲突恐将到来」，双方部队在乌东部集结，有哪些值得关注的信息？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/mei-ti-bao-dao-cheng-e-wu-zui-da-jun-shi-chong-tu-kong-jiang-dao-lai-shuang-fang-bu-dui-zai-wu-dong-bu-ji-jie-you-na-xie-zhi-de-guan-zhu-de-xin-xi/">
+          
+          
+            
+          
+          是这样——如果乌军靠便携导弹和少量八九十年代的坦克、牵引火炮，在没有空军、没有火箭军、没有海军、没有战区防空火力、没有油库、弹药库的前提下，依靠动员兵，主动出击，打败了拥有大量坦克、自行火炮、无人机、战斗轰炸机、巡航导弹、弹道导弹、防空导弹的俄军……
+我们会很高兴的研究ta们是怎么打的。
+不是吹，
+肩扛导弹，我们也能造，而且世界最快。
+动员兵，我们也有，而且世界最多。
+如果只需要这两个条件就能抹平
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Changes/">Changes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%8D%E5%90%91/">反向</a>
+            
+              <a href="/tags/%E5%8F%82%E8%80%83/">参考</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/86/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/85/#board">85</a><a class="page-number" href="/page/86/#board">86</a><span class="page-number current">87</span><a class="page-number" href="/page/88/#board">88</a><a class="page-number" href="/page/89/#board">89</a><span class="space">&hellip;</span><a class="page-number" href="/page/117/#board">117</a><a class="extend next" rel="next" href="/page/88/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

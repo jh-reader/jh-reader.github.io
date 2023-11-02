@@ -1,0 +1,1438 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="JH Notes Easy Reader">
+              
+                JH Notes Easy Reader
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/shen-ai-de-dao-di-shi-quan-ren-lei-huan-shi-ta-suo-jian-xuan-de-ren/">神爱的到底是全人类还是他所拣选的人？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/shen-ai-de-dao-di-shi-quan-ren-lei-huan-shi-ta-suo-jian-xuan-de-ren/">
+          
+          
+            
+          
+          这关系是这样的——
+世界会通过一些非常微妙的机制筛选出一群人来，给这些人特殊的天赋、特别的资源以及特殊的心理机制，让这些人以服务其他人为乐。
+就是纯以服务其他人为乐——这包括但不限于为其他人受苦、为其他人还债、为其他人分担重负……。
+什么叫纯以此为乐？
+打个不恰当的比方——就是像“受虐狂”一样，这样做得越多、自然的就是越快乐。
+不需要再靠出名、赚钱、子孙满堂、健康长寿……这些东西来补偿为做这些而“
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%8B%A3%E9%80%89/">拣选</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/bei-hao-peng-you-bei-pan-zen-me-ban/">被好朋友背叛怎麼辦？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/bei-hao-peng-you-bei-pan-zen-me-ban/">
+          
+          
+            
+          
+          有合同就照合同办，有法律就按照法律办。
+对待所有人不都是这样吗？
+如果对方对你造成的伤害既没有合同也没法律可以救济，就意味着你做了很多错事。
+朋友不是那种借钱不需要打欠条、不必提供抵押、参与秘密不需要签署保密协议、合作不需要签署合作协议的人。
+是朋友，这些手续也都是要正常执行的。
+如果不是朋友，肯签协议、肯给抵押，也得不到借款。
+如果不是朋友，肯签保密协议， 也听不到关键信息。
+如果不是朋友，肯签
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%83%8C%E5%8F%9B/">背叛</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wo-guo-de-ren-cai-lang-fei-you-duo-yan-zhong/">我国的人才浪费有多严重?</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wo-guo-de-ren-cai-lang-fei-you-duo-yan-zhong/">
+          
+          
+            
+          
+          争取不被浪费，对人才自己而言，到底是国家社会的责任，还是自己的责任？
+对“人才”而言，将这个责任放在国家身上的实际意义是什么？
+是只要认定自己是人才，接下来的戏码应该是刘备三顾茅庐，恭候先生草堂春睡足，是吗？
+争取自己才能得到发挥的责任在自己身上。
+别管那些loser怎么想，ta们没有希望的。
+到了国外ta们又会抱怨“印度人会抱团”，“白人会吹牛”，“华人天花板”。
+让别人充分意识到你的才能，相信
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%B5%AA%E8%B4%B9/">浪费</a>
+            
+              <a href="/tags/%E4%BA%BA%E6%89%8D/">人才</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/bei-ren-tao-yan-le-zen-yao-ban/">被人讨厌了怎么办？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/bei-ren-tao-yan-le-zen-yao-ban/">
+          
+          
+            
+          
+          最重要的是尊重别人讨厌的权利。
+1）只要不是公共场合——比如在别人自己家里、或者别人私下聚会的场合——都允许别人吐槽。
+2）有中间人要传这类私下埋怨乃至言语攻击给你听，不要听，而且要中间人不要传。好意心领，但这样会触发太多本能的怨恨，难以消化，而这些怨恨对于真正重要的事很碍事。
+3）如果遇到公报私仇或者不法侵扰这类犯罪行为，那么该武力防卫就武力防卫，该举报举报，该报案报案。但正当防卫不要过当，始终
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%AE%A8%E5%8E%8C/">讨厌</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wo-wei-shi-yao-hen-fan-bei-bie-ren-guan-fan-tou-shen-zhi-xiang-tao-pao/">我为什么很烦被别人管，烦透甚至想逃跑？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wo-wei-shi-yao-hen-fan-bei-bie-ren-guan-fan-tou-shen-zhi-xiang-tao-pao/">
+          
+          
+            
+          
+          如果你是一个成年人，那么没有经过你自己主动授权的人妨碍你的合法自由是一种违法行为，严重的构成刑事罪行。
+都进刑法了，烦当然算是一种意料之中的反应。
+但注意这里面的限定条件——成年人、未经你授权。
+如果你是未成年人，那么这件事就取决于你的监护人，你监护人授权的人，也会拥有经你监护人所许可的干涉你的合法职权。
+真正的苦恼在哪呢？
+在于中国的父母们往往没有帮助子女建立一个从“无知而被动接受管理”到“主动
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/wei-shi-yao-you-wang-you-shuo-huo-la-la-tiao-chuang-nv-sheng-shi-bei-hai-wang-xiang-zheng-nv-xing-zai-mian-dui-qian-zai-wei-xian-shi-ying-gai-ru-he-yi/">为什么有网友说货拉拉跳窗女生是被害妄想症？女性在面对潜在危险时应该如何应对？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/wei-shi-yao-you-wang-you-shuo-huo-la-la-tiao-chuang-nv-sheng-shi-bei-hai-wang-xiang-zheng-nv-xing-zai-mian-dui-qian-zai-wei-xian-shi-ying-gai-ru-he-yi/">
+          
+          
+            
+          
+          “被害妄想”的基准界限，在于你所推想威胁的行为本身是否真实存在。
+举个例子，有人当你面举起铁锤（哪怕他其实是想钉个钉子），你心里闪过担心——“他是不是会拿铁锤打我”，这也不叫做被害妄想。
+这人站在你面前，双手空空，你尖叫一声“ta拿铁锤打我”，这个叫被害妄想。
+基于现实存在的行为或者事物，推理或者设想出对自己可能的威胁，这不叫做被害妄想，只能叫防御性过强。
+臆想出根本不存在的行为和事物——尤其是出
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Feminism/">Feminism</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A2%AB%E5%AE%B3/">被害</a>
+            
+              <a href="/tags/%E5%A6%84%E6%83%B3/">妄想</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/sui-jie-jie-ju-yang-sui-di-di-bei-fu-mu-gao-shang-fa-ting-fa-ting-pan-jue-ta-bi-xu-yang-da-jia-zen-yao-kan-you-na-xie-fa-lv-yi-ju/">22 岁姐姐拒养 2 岁弟弟，被父母告上法庭，法庭判决她必须养，大家怎么看？有哪些法律依据？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/sui-jie-jie-ju-yang-sui-di-di-bei-fu-mu-gao-shang-fa-ting-fa-ting-pan-jue-ta-bi-xu-yang-da-jia-zen-yao-kan-you-na-xie-fa-lv-yi-ju/">
+          
+          
+            
+          
+          这姐姐是觉得受拖累了。
+这答案下同情姐姐的人大概也是设身处地觉得“我没参与决定，所以你们的决定不可以拖累我”。
+这个原则本身当然是对的，但是，这是以无爱关系为前提的。
+（注意，我并不认为父母子女之间存在理所当然的爱的义务，所以我并不认为人们可以理所当然的谴责这里的姐姐背叛了什么义理——除非她自主自愿的有爱的承诺）
+爱，其实就是一种“拖累许可”。
+“不接受拖累”的爱，没有实际意义，只是一种助兴用的迷
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%8B%96%E7%B4%AF/">拖累</a>
+            
+              <a href="/tags/%E5%A7%90%E5%A7%90/">姐姐</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/yuan-chong-huan-sha-mao-wen-long-shi-bu-shi-he-qin-kuai-sha-yue-fei-shi-yi-ge-dao-li/">袁崇焕杀毛文龙，是不是和秦桧杀岳飞是一个道理？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/yuan-chong-huan-sha-mao-wen-long-shi-bu-shi-he-qin-kuai-sha-yue-fei-shi-yi-ge-dao-li/">
+          
+          
+            
+          
+          秦桧杀岳飞是走合法程序的。
+袁崇焕杀毛文龙是非法的。
+没有任何“一样道理”可言。
+袁崇焕杀毛文龙算是撕毁了官僚集团自己的最大契约，从此忠诚无意义了。
+这种损失，不是任何暂时的军事胜利可以挽回——因为从此开始胜利本身就是“此为成功经验”的证明。
+越“胜利”，组织崩溃越快。
+这就像某人偷了公司一笔钱，结果谈了个大单。
+这必须被定义为失败。
+如果反过来认定这是一种成功，一种果敢，还开起表彰大会，你觉得这
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A2%81%E5%B4%87%E7%84%95/">袁崇焕</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/yuan-shi-kai-xia-ye-zhi-hou-jiu-jing-tong-guo-shi-yao-kong-zhi-bei-yang-jun-de/">袁世凯下野之后究竟通过什么控制北洋军的？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/yuan-shi-kai-xia-ye-zhi-hou-jiu-jing-tong-guo-shi-yao-kong-zhi-bei-yang-jun-de/">
+          
+          
+            
+          
+          有一个基本常识你要建立起来——在最终秩序这个层级上，“控制”其实一直都是个伪命题。
+什么叫“最终秩序”？
+每一种秩序，往往有一个其“底层秩序的有效性不容置疑”的前提。举个例子，公司的管理层得以控制员工的工作行为，这是因为法院、公安机关所维持的秩序作为公司秩序的底层，其有效性不容置疑。借着这个底层秩序的授权和干预，你不遵守，你会付出代价。
+什么叫最终秩序？就是这一层秩序没有再下一层的无法抗拒的力量来
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A2%81%E4%B8%96%E5%87%AF/">袁世凯</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/ru-he-kan-dai-yu-zhi-cai-jin-ru-xiao-yuan/">如何看待预制菜进入校园？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/ru-he-kan-dai-yu-zhi-cai-jin-ru-xiao-yuan/">
+          
+          
+            
+          
+          只说一条：
+有没有人考虑过做“有害成分快速检测试纸”的生意？
+必然大卖。
+这个话你们记住，对人生有重大好处——
+从个人而言，遇到自己不钟意的社会趋势，最有效的应对手段是找一门合理合法又赚钱的“给这个趋势打补丁”的生意做。
+注意，这个说的不是“给这个趋势唱反调”的生意，而是“打补丁“的生意——也就是如果这趋势之中存在什么恐慌，你的生意可以安抚这个恐慌，有什么不好的可能性，你的生意可以降低这个可能性，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A1%A5%E5%A4%A9%E5%A3%AB/">补天士</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/lin-chuang-zhong-zhen-de-you-bi-yao-shou-zhu-jie-da-de-fei-kuai-ma/">临床中真的有必要手术结打得飞快吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/lin-chuang-zhong-zhen-de-you-bi-yao-shou-zhu-jie-da-de-fei-kuai-ma/">
+          
+          
+            
+          
+          学会打得飞快是绝对必要的，很多时候（尤其是急救条件下）你没有条件去慢条斯理的毫无心理压力的来操作。
+你知道你能打得快，你才能放松下来。
+你知道自己打不快，那么这类情形一旦让你紧张，你连平时的速度也保持不了。
+所以，即使你仅以稳定可靠地保持一般速度为诉求，你也要去拥有打得飞快的能力。
+但是一定要记住打得飞快的前提是基本功扎实的前提下的一板一眼。
+切忌不要为了打得飞快而用“草草完成”这种人类下意识会用
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+              <a href="/categories/Clan/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A1%8C%E4%BA%91%E6%B5%81%E6%B0%B4/">行云流水</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/xiang-zhi-dao-na-xie-bian-cheng-da-lao-shi-bu-shi-dai-ma-du-neng-ji-zhu-ran-hou-bu-yong-cha-bai-du-jiu-neng-pa-pa-pa-da-chu-lai-ni/">想知道那些编程大佬是不是代码都能记住，然后不用查百度就能啪啪啪打出来呢？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/xiang-zhi-dao-na-xie-bian-cheng-da-lao-shi-bu-shi-dai-ma-du-neng-ji-zhu-ran-hou-bu-yong-cha-bai-du-jiu-neng-pa-pa-pa-da-chu-lai-ni/">
+          
+          
+            
+          
+          以现在ide的智能程度，“记住代码”真的会影响你写代码的速度吗？
+真正的问题是战略性的迷茫，写着写着不知道自己在干嘛了。
+自己根本没有从意图到结果建立完整的可行思路，并且不去用加强调研解决问题，却用盲目的“一头扎进去开始写、写到哪算哪不行再说”的荒谬路线来赌手气。
+写到后来被多种似是而非的思路纠缠拉扯，在键盘上胡说八道，整天梦想存在一个神奇的函数突然解决你现在要解决的问题。
+于是在这个时候到处翻开
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A1%8C%E4%BA%91%E6%B5%81%E6%B0%B4/">行云流水</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/nan-peng-you-hen-se-wo-gai-zen-yao-ban/">男朋友很色我该怎么办？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/nan-peng-you-hen-se-wo-gai-zen-yao-ban/">
+          
+          
+            
+          
+          你面对的问题，根本不是“男朋友有很强的性欲望”，而是“男朋友追求满足欲望的方法论令人失望”。
+这个就像小孩子喜欢雪糕，于是唯一信奉的手法就是反复向父母索取。
+喜欢玩具枪，于是第一意识就是躺在商场地面上打滚，不给买就不起来。
+喜欢好鞋子，每天去问老板能不能送给我。
+记住一个常识——实际上令人失望和反感的从来就不是人的欲望，而是人追求欲望的方式。
+你如果要分手，不是因为他有强烈的性欲望。而是即使是如此
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A1%8C%E5%92%8C%E6%88%90/">行和成</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/lin-chuang-zhong-zhen-de-you-bi-yao-shou-zhu-jie-da-de-fei-kuai-ma/">临床中真的有必要手术结打得飞快吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/lin-chuang-zhong-zhen-de-you-bi-yao-shou-zhu-jie-da-de-fei-kuai-ma/">
+          
+          
+            
+          
+          学会打得飞快是绝对必要的，很多时候（尤其是急救条件下）你没有条件去慢条斯理的毫无心理压力的来操作。
+你知道你能打得快，你才能放松下来。
+你知道自己打不快，那么这类情形一旦让你紧张，你连平时的速度也保持不了。
+所以，即使你仅以稳定可靠地保持一般速度为诉求，你也要去拥有打得飞快的能力。
+但是一定要记住打得飞快的前提是基本功扎实的前提下的一板一眼。
+切忌不要为了打得飞快而用“草草完成”这种人类下意识会用
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+              <a href="/categories/Clan/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A1%8C%E4%BA%91%E6%B5%81%E6%B0%B4/">行云流水</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/jiang-xi-tong-bao-gao-xiao-ya-bo-shi-jian-chu-li-qing-kuang-yi-wu-wei-lao-shu-lei-nie-chi-dong-wu-de-tou-bu-ru-he-kan-dai-ci-shi/">江西通报高校鸭脖事件处理情况，异物为老鼠类啮齿动物的头部，如何看待此事？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/jiang-xi-tong-bao-gao-xiao-ya-bo-shi-jian-chu-li-qing-kuang-yi-wu-wei-lao-shu-lei-nie-chi-dong-wu-de-tou-bu-ru-he-kan-dai-ci-shi/">
+          
+          
+            
+          
+          其实这个估计是食堂养的猫或者校园里的野猫捕食的结果。食堂的问题是熟食没有封闭保存或者说冷库、食材仓库缺乏硬件建设加管理不严，看见校园团宠在储藏间溜达可能还觉得“胖猫猫真萌”呢。
+本来食材柜的设计在很大程度上可以自然的大量减少这类污染问题的概率，但估计头头觉得专业设备“没有必要”、“白多花钱”。
+食材管理也有严格规矩的，但估计管理人员也觉得“繁琐、多余、没有意义”。
+这回好，玩脱了——等出了事再喊后
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A1%80%E6%B3%AA/">血泪</a>
+            
+              <a href="/tags/%E5%8F%B2%E5%AD%A6/">史学</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/tong-xue-ji-hua-wan-cheng-yi-ge-bi-she-zhan-shang-hui-huai-zai-chang-suo-you-bi-she-de-xing-wei-yi-zhu-shi-fou-ying-gai-quan-shuo-ta-fang-qi/">同学计划完成一个毕设展上毁坏在场所有毕设的行为艺术，是否应该劝说他放弃？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/tong-xue-ji-hua-wan-cheng-yi-ge-bi-she-zhan-shang-hui-huai-zai-chang-suo-you-bi-she-de-xing-wei-yi-zhu-shi-fou-ying-gai-quan-shuo-ta-fang-qi/">
+          
+          
+            
+          
+          你可以联合其他同学一起完成一个追着打的行为艺术——
+可以叫：
+《群像 • 破坏着破坏着的破坏者的破坏者》
+又或者，在每个作品前都装上摄像头，录下破坏的慢动作：
+《被凝视的毁灭者》
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Literal-Art/">Literal-Art</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%A1%8C%E4%B8%BA%E8%89%BA%E6%9C%AF/">行为艺术</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/xian-zai-du-liu-xing-chao-xiao-zuo-ti-jia-si-wei-shi-bu-shi-he-mei-guo-ren-chao-xiao-n-e-r-d-shu-dai-zi-shi-yi-ge-yi-si/">现在都流行嘲笑做题家思维，是不是和美国人嘲笑nerd书呆子是一个意思？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/xian-zai-du-liu-xing-chao-xiao-zuo-ti-jia-si-wei-shi-bu-shi-he-mei-guo-ren-chao-xiao-n-e-r-d-shu-dai-zi-shi-yi-ge-yi-si/">
+          
+          
+            
+          
+          说实在的，只是回答这个问题，都是在助长一种恶劣的思维风气。
+类似五毛、美分、精日、皇汉、绿蛙、小粉红、南拳、Easy girl、单身狗……这类非自嘲性的，由A对B使用的贬义标签，是人类对语言最大的恶用之一。
+这是一种稀释了剂量的人格谋杀，一种微型诛心之术。
+我是不会帮人确定这些血滴子到底是为什么头型准备、使用时应该怎样瞄准的。
+
+这些杀人于无形的暗器，对于有这个动机而又必须逃脱责任的人来说，的确是
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%AD%90/">子</a>
+            
+              <a href="/tags/%E8%A1%80%E6%BB%B4/">血滴</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/zhong-qing-yi-sheng-ri-yan-bian-dan-gao-da-zhan-k-t-v-bao-fang-yi-pian-lang-jie-ru-he-ping-jia-zhe-zhong-xing-wei-wei-shi-yao-you-de-ren-dui-lang-fei-/">重庆一生日宴变「蛋糕大战」，KTV 包房一片狼藉，如何评价这种行为？为什么有的人对浪费食物不以为意？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/zhong-qing-yi-sheng-ri-yan-bian-dan-gao-da-zhan-k-t-v-bao-fang-yi-pian-lang-jie-ru-he-ping-jia-zhe-zhong-xing-wei-wei-shi-yao-you-de-ren-dui-lang-fei-/">
+          
+          
+            
+          
+          财富这东西，是给你持有的，不是交给你随便享用的。你持有了你会有支配它的职权，但你也有善用它的义务。
+这个义务不是什么人类社会立法来规定的、也不能由人类立法来规定——因为那与在法律上否定私有财产的合法性和否定人的自由没有区别。
+它是由自然法规定的。
+那意思是如果你采用某些自然法不认同的方式处理你持有的财富，就会遭遇自然法驱动出来的自然机制的反制。这种驱动是无视人类法律的规定的——即使全世界的现有法律
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Society/">Society</a>
+            
+              <a href="/categories/Society/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%A7%E6%88%98/">大战</a>
+            
+              <a href="/tags/%E8%9B%8B%E7%B3%95/">蛋糕</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/you-na-xie-kan-si-cong-ming-shi-ze-hen-sha-de-xing-wei/">有哪些看似聪明，实则很傻的行为？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/you-na-xie-kan-si-cong-ming-shi-ze-hen-sha-de-xing-wei/">
+          
+          
+            
+          
+          把智力资源投入在怎么从别人的话里找到漏洞，而不是找到其合理可用之处，就是所谓的小聪明，大愚蠢。
+为什么呢？
+任何人的表达都是有成本的。
+完备、精确和简洁存在一个综合的极限。要完备、要精确，就难以简洁。而在实践中人们往往最优先考虑简洁而牺牲完备和精确。
+简洁所节省的时间成本是直接收益，而造成的不完备、不精确问题，可以通过筛选接收人弥补。
+越是善于准确的帮助他人正面补完模糊空间的人，对于他人就越是宝贵
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Clan/">Clan</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%81%AA%E6%98%8E/">聪明</a>
+            
+              <a href="/tags/%E8%A0%A2/">蠢</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/post/fei-ji-shang-na-yao-duo-ling-jian-mei-yi-ge-song-dong-du-hui-dao-zhi-yan-zhong-hou-guo-na-yao-mei-ci-qi-fei-zhi-qian-shi-xu-yao-quan-bu-jian-cha-yi-bi/">飞机上那么多零件，每一个松动都会导致严重后果，那么每次起飞之前是需要全部检查一遍吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/post/fei-ji-shang-na-yao-duo-ling-jian-mei-yi-ge-song-dong-du-hui-dao-zhi-yan-zhong-hou-guo-na-yao-mei-ci-qi-fei-zhi-qian-shi-xu-yao-quan-bu-jian-cha-yi-bi/">
+          
+          
+            
+          
+          这里面有很多误解，也对系统化设计思想欠缺了解。
+首先，最初的假设是错误的——“每一个松动都会造成严重后果”。
+实际上现代航空器的设计是非常坚韧的。别说有一个两个“松动”，就是中了几发甚至十几发航炮或者导弹碎片，被打掉一截机翼、失去一组舵面、甚至失去一侧发动机，也有相当强韧的生存力。
+否则它不是因为拿不到适航证根本不准飞，就是因为维护成本太高、勤务性太差而没有订单。
+先进当然意味着精密，但精密绝不意
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-02 19:58" pubdate>
+              2023-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Science/">Science</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%9E%BA%E6%A0%93/">螺栓</a>
+            
+              <a href="/tags/%E6%9D%BE/">松</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/15/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/#board">14</a><a class="page-number" href="/page/15/#board">15</a><span class="page-number current">16</span><a class="page-number" href="/page/17/#board">17</a><a class="page-number" href="/page/18/#board">18</a><span class="space">&hellip;</span><a class="page-number" href="/page/117/#board">117</a><a class="extend next" rel="next" href="/page/17/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

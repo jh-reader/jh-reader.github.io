@@ -1,0 +1,571 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何理解中国文化？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何理解中国文化？">
+              
+                如何理解中国文化？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      16
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何理解中国文化？</h1>
+            
+            <div class="markdown-body">
+              <p>借这个问题，好好地说一下文化到底是什么。</p>
+<p><strong>文化本质上就是一群人对于决策机制的群体共识。</strong></p>
+<p>这个才是文化。</p>
+<p>既不是什么特色音乐、也不是什么春联、京戏、祭祖仪式。也不是什么书法啊、篆刻啊、诗词啊……这些都不是文化，而是文化的符号，是文化的产品。</p>
+<p>打个比方，群体像一座工厂，这些杂七杂八的东西只是这座工厂运转时发出的声音，输送出去的罐头。</p>
+<p>外面的人没有办法拆开这座厂、也没有办法搬走它，和它接触只有两个途径——听它传出的声音，吃它生产的罐头。</p>
+<p>但这厂里的工人对这个厂的理解是完全不一样的。他们眼里是各种各种各样习惯成自然的惯例和厂规。各种厂内的花边新闻，车间趣事，各种往事、各种内部笑话。</p>
+<p>没有任何一个工人——包括厂长在内——知道厂里到底有多少种惯例和悄无声息的传统。某些工艺在某些老师傅的手上，有些干脆是以前某个不知名的事件导致的无厘头的习惯。这里面甚至有很多是自相矛盾的。</p>
+<p>但不管怎么说，这个厂还是跌跌撞撞的在发出声音，输出罐头。而你想知道这个厂到底是如何的，几乎只有在里面当工人干上几年一条路。</p>
+<p>有一天这个厂换了个业务，不做这种罐头了，改作另一种罐头了。于是很多声音不同了，产品味道也不同了。</p>
+<p>在外人看来，声音变了嘛、产品也变了嘛，啥都不一样了。</p>
+<p>其实呢——工艺没变、决策机制、部门结构这些东西变化甚微。</p>
+<p><strong>而对这些“工艺、决策机制、部门结构”的共同认知，才是文化。</strong></p>
+<p>明白了吗？</p>
+<p>真正研究文化的人，紧盯着的就是这个文化将如何理解事物、如何做出决策。而不是这些视觉听觉之类的感官符号。</p>
+<p>所谓的中国文化，是指中国人认识事物的一种特殊共性、中国人做决策的一种特殊共性。这些共性会导致一群中国人自然而然的形成一种与别的文化成员不同的互动机制和组织关系。会导致一个相同的挑战被一个不同的方案去应对，并且应对的结果也被一种特殊的评分制度去评分。</p>
+<p>完全不是什么祭祖、民乐之类的东西。也跟这一套合作机制、评价机制是用什么样的语言体系来表达关系甚微。你把牛顿公式不用F、A、M、V表达，用甲乙丙丁来表达，对牛顿公式本身根本没那么大的影响。</p>
+<p>举个例子，一个华人移民，在国外已经很久，可能中国话都说不顺溜了。但是遇到了事情——比如莫名的批评，如果他第一下意识是“我是不是得罪了他？被他穿了小鞋？”接下去他的解决方案是“我应该送点小礼物给他”而不是“我应该去找工会律师发起投诉”，他这样的决策模式就非常中国。</p>
+<p>哪怕ta这些想法是用英文想的，全程没有闪过任何“中国”的念头，这其实也是个中国念头。</p>
+<p>起作用的就是中国的文化。深入骨髓、深入灵魂已经化为思维底层逻辑的中国文化。</p>
+<p>看明白了吗？</p>
+<p>很多人在喊什么中国文化沦丧了呀，什么中国文化已经断根了啊……这都是根本不知道自己到底在说什么。</p>
+<p>事实上中国文化几乎没有任何显著的改变。</p>
+<p>举个例子，勤俭原则就是中国文化的一部分，绝大多数的中国人仍然唾弃不勤不俭的人。</p>
+<p>举个例子，中国人仍然首选受教育来作为改变人生命运的首要手段。</p>
+<p>举个例子，中国人仍然倾向于避免冒险而稳扎稳打。</p>
+<p>这些不言自明的处事本能才是中国文化的本体。这些东西呈现鲜明的独特性和共性，文化就没有变化。</p>
+<p>穿不穿马褂，剪不剪辫子，根本算个屁大的事。</p>
+<p>富贵不能淫、贫贱不能移、威武不能屈，这才是中国文化；</p>
+<p>天将降大任于斯人也，blarblarblar，这才是中国文化；</p>
+<p>鱼我所欲也、熊掌亦我所欲也，blarblarblar，这才是中国文化；</p>
+<p>己所不欲，blarblar；</p>
+<p>有朋自远方来找你blar，你于是blarbalr；</p>
+<p>天下兴亡，匹夫blar；</p>
+<p>学而时习之，不亦blarblar乎；</p>
+<p>君子之行，如日月之blar，blarblarblar，</p>
+<p>三杯吐然诺、五岳倒为轻，十步杀一blar，blarblarblar，</p>
+<p>道可blar，非常blar，</p>
+<p>先下手blar，无毒不blar，</p>
+<p>敬鬼神而blar，</p>
+<p>blarblarblarblar……</p>
+<p>虽九死其犹未悔兮，吾将上下而blar……</p>
+<p>这些千千万万的句子，交织出了中国人的共性。</p>
+<p>你是中国人，我会预期你知道这些，你懂这些；我也会预期你知道我知道这些，你懂我懂这些。这就导致中国人和中国人在一起会有一种特殊的交流前提，无形中会深刻的影响这群人的集体行动的走向和可选策略的范围。</p>
+<p>中国人觉得不可接受的事，和美国人、日本人、英国人是不同的。中国人觉得显然应该首选的方案，也与美国人、日本人、英国人、俄国人是截然不同的。</p>
+<p>这才是文化的本体、它的要害。</p>
+<p>其他那些只不过是文化的影子、气味、边角余料而已。</p>
+<p>中国的文化，甚至可以说是不依赖于中国人存在的，而是依赖于中国这块土地的。假设一万年前是一群印度人穿越了喜马拉雅山定居繁衍在这块土地上把文明进程走到现在，那么这群印度人将与现在的中国人有极其近似的行为方式。这跟人种没有关系。</p>
+<hr>
+<p>关于文化符号与文化的关系，可以看看这个例子：</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/22638720/answer/689886274">中国有哪些逆天的文物？</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%96%87%E5%8C%96/">文化</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/jiu-zhuo-shang-gei-ren-dao-jiu-dui-fang-yong-shou-gai-zhu-bei-kou-shuo-wo-mei-zi-ge-gei-ta-dao-jiu-wo-gai-ru-he-qiao-miao-de-hua-jie/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">酒桌上给人倒酒，对方用手盖住杯口，说我没资格给他倒酒，我该如何巧妙的化解？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/shi-yao-shi-wen-zi-de-zhang-li/">
+                        <span class="hidden-mobile">什么是文字的张力？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

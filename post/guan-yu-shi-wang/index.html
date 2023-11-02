@@ -1,0 +1,632 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>关于失望 - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="关于失望">
+              
+                关于失望
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      31
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">关于失望</h1>
+            
+            <div class="markdown-body">
+              <p>这东西是这样的——“坚持“这回事，说穿了就是懂得如何处理失望。</p>
+<p>如果逻辑上敌人只需要做什么事就可以令你“失望”，岂有心慈手软不做之理？那意味着你根本没有机会做成什么事。</p>
+<p>丢了个你自己期待已久的单子，好失望，不玩了；</p>
+<p>考砸了一次很关键的考试，很失望，不学了；</p>
+<p>打输了一场觉得很重要的仗，很失望，放弃了。</p>
+<p>blar blar blar……</p>
+<p><strong>只要是这样的思考方式，你放心，这一单、一考、一战，不但迟早会来，而且会早于你的预期、接二连三而来。</strong></p>
+<p>你必定放弃。</p>
+<p>因为你<strong>根本就不知道什么叫坚持</strong>。</p>
+<p><strong>你所有所谓的“坚持”，不过是一帆风顺造成的幻觉。</strong></p>
+<p>人要学会认准的事就不失望，直接从逻辑上就消灭失望的一切触发条件——提前就想好，考砸了我也不失望，丢单了我也不失望，打输了我也不失望。</p>
+<p>砍了我的手我也不会失望，</p>
+<p>挖了我的眼，我也不失望。</p>
+<p>斩了我的头，</p>
+<p>断了我的香火，</p>
+<p>诛了我的九族，</p>
+<p>我也不会失望。</p>
+<p>出来混，早预着了。</p>
+<p>不死不休，</p>
+<p>死亦不休。</p>
+<p>我熟读历史，博古通今，对事情发展的一切曲折性没有任何侥幸，绝不会预期有什么可以伤害我的事我的敌人不会做，也绝不会笃定有什么可以造成打击的灾难不会发生。</p>
+<p><strong>那又如何？</strong></p>
+<p>谁说“不利”就要放弃？</p>
+<p>利不利，只影响做事的策略和节奏，<strong>只有该不该、想不想才能被允许影响你做不做。</strong></p>
+<p>若没有这样的觉悟，你一开始就不该走上任何一条已知可能会发生这些的道路。</p>
+<p>只有完成“失望无效化”，你才能顶得住敌意和威胁，才有可能有所成就。</p>
+<p>无关男女，这才是一条真正的汉子，顶天立地大丈夫。</p>
+<p>而现在很多人的mindset是什么呢？</p>
+<p>寄望于顺利，寄望于坏事不发生，或者不发生到超过自己的预期。同时这个预期还天真到烂漫的地步。</p>
+<p>一点顺利，兴高采烈，一点挫折，如丧考妣。一点精力，全都在这些喜怒哀乐的神经冲击和情绪修复里了。</p>
+<p>“希望”“失望”十二回，转眼已经五十八。你一辈子有多长？你能做多少事？</p>
+<p>哪怕只是出于想象、假设，发现这些东西对打算走的道路有什么影响，都要警惕和想好。</p>
+<p>成败利钝在所不计，生死荣辱置之度外。</p>
+<p>一条路，走到它亮。</p>
+<p>记住——事情永远是由无侥幸的人来决定结局，而不是那些看风向紧就跑、看势头旺就来的人。</p>
+<p>只有这些人，是竖旗、立寨、开山的人，是提供港湾和归宿的人。</p>
+<p>那些一天到晚提心吊胆考虑有利不利，run向何方的的人，是流浪的、敲门的、乞讨的——注定一生悬命，无枝可依。</p>
+<p>逻辑上你根本不可能跟随这种永恒投机者，因为ta明天在哪里，不取决于ta自己，取决于佩洛西，甚至更微不足道的风吹草动。</p>
+<p>ta们答应你什么根本没有什么价值，因为ta们是否会坚持守约同样不取决于ta们，而取决于不知什么奇怪的偶然变数。</p>
+<p>其实这些事——不论是香港、乌克兰、还是台湾——每一件都是试金石，可以让你默默观察身边的人谁是磐石而谁是蒲草，你要成为谁，要靠拢谁。</p>
+<p>这些要巨大动荡才能揭露的真相是平时太太平平你看不到的，而且是无价之宝，你都没处买。</p>
+<p>什么“赢麻了输麻了”之类的没出息的话，那是脆弱成性不以为耻，反以为叫“智慧”的投机者才在乎的东西。</p>
+<p>学会脱离这种可怜的话术和情绪，不然那类人很难视你为同类，对你的尊重只不过是出于对自身的高要求和同情。</p>
+<p>尊敬是基本没可能的。</p>
+<p>而尊重只不过是免费供应的基本品，尊敬才有实际的分量。</p>
+<p>相信我，基本所有的财富、权力的秘密都在这些人手上。</p>
+<p>只要这些人感到你是同类，很多门都会向你打开，你亏不了。</p>
+<p>最后，还是那句话，我对中国充满信心不会因为佩洛西这些戏码减少一分（坦率讲，未来的这一小段时间是接手一些软弱者资产的好机会。）</p>
+<p>我对中国有信心，和中国现在的势头是向上还是向下无关，仅仅因为“我有信心”本身。</p>
+<p>是否应该看好中国，要看真正能决定结局的人。</p>
+<p>也就是取决于我<strong>和你们</strong>，</p>
+<p>不取决于“佩洛西”们。</p>
+<hr>
+<p>关于失望还有第二个比较严肃的问题，那就是“失望”本身是不是一个好的工具。</p>
+<p>很多人的失望模型是这样的——</p>
+<p>首先你引起我的期望，接着我的期望落空，于是我说我很失望。</p>
+<p>这个是一个经典的三段论。</p>
+<p>它的逻辑基础也很直白——这算是一种对“欺骗”的“惩罚”，以便威慑未来尝试不负责任的引起我的期望的人。</p>
+<p>这看上去天经地义，难道还能有什么问题？</p>
+<p>确实有问题。</p>
+<p>那就是你要知道——<strong>愿意承担你的期望的人是稀缺的</strong>。</p>
+<p>通过这样“公平的惩罚”，你实际上在教导他人谨慎注意不要引起你的期待。</p>
+<p>一旦引起了你的期待，那么你的期待若是落实了自然太平无事，但是一旦落空，ta就将招致惩罚和打击。</p>
+<p>如果引起你的期待本身不能直接带来重大的、足以抵消后来的打击风险的利益，对方必然会选择从此以后什么承诺都不给你，甚至连问你想要什么都不问。</p>
+<p>因为从很多人的伦理认知里，问我想要什么，已经是要我期待了。</p>
+<p>这份生意亏面极大——说得世俗一点，对方“引起你的期待”的过程很可能根本是被动，无知的。对方自己未必和你签订了什么严肃的合同、明文的契约，你已经可能产生强烈的“契约成立”的意识。而这个违约责任非常严重的契约，对对方却往往没有任何实质的好处。</p>
+<p>举个常见的例子——知乎KOL经常收到“你变了、太令我失望了”的留言、然后发现对方散播一连串极其“尖锐”的言论。</p>
+<p>问题是，让ta“充满期待”的过程在绝大多数情况下其实完全是默默的、无声的、没有产生任何可见收入或者良好感受的。</p>
+<p>这个期待的现实收益完全在产生期待一方，在“引发期待“的这一侧，除了理论上的“被万众瞩目的快感“的<strong>数十万分之一</strong>之外，其实什么也没有。</p>
+<p>但是一旦发生了“失望”，要承担的却是<strong>十足十的报复</strong>。某些报复还会直接涉及人身安全和刑事构陷。</p>
+<p>说这个不是要去批判这个客观的社会现象——这个就属于残酷的人类社会客观规律，人只能学会平静接受、技术处理和愿赌服输。</p>
+<p>说这个是要说另一个方向——人都不是傻瓜，就算是，经过了“期望者”们的“教育”，也会“聪明”起来。</p>
+<p>ta们可以接受不引起你的期望，<strong>但是你自己难道打算生活在一个所有人都谨慎小心、避如蛇蝎、绝不能意外引起你任何期望的世界里吗？</strong></p>
+<p>你的世界里实际上真正存在的人其实平均只有七个而已。其他的不过是匆匆过客。</p>
+<p>如果这七个人都被你的“有百害而无一利”的期望教育到“清醒”了，你将生活在一个零摄氏度的单人牢房里——对方来探视你都要隔着有机防弹玻璃。</p>
+<p>这个时候，你觉得“让我期望落空我就有权失望”足以提升这房里的温度吗？</p>
+<p>这份失望权到底公不公平、合不合理，到底看什么？是看形式逻辑上的“简洁美感”，还是看咬定它“显然公平合理”的人到底是趋向繁荣幸福还是孤苦早夭？</p>
+<p>如果你的答案是后者，那么你要学会一个看似“疯狂”的新逻辑。</p>
+<p><strong>只期望，期望落空，不失望。</strong></p>
+<p>如果这层境界不能发自内心的做到，那么退而求其次，学会<strong>期望落空，【不说】失望。</strong></p>
+<p><strong>这话你看得懂，努力做，你的分手、离婚、亲子反目的概率至少下降一个数量级。</strong></p>
+<p>因为有九成以上的反目，是从对方没能兑付你的期望、遭遇了严厉的惩罚，然后不得不老老实实按你声泪俱下立下的“以后不能保证办到的事情就不要跟我说”规矩照办的结果。</p>
+<p>嗯，好的，我心疼你，我也不想再犯这错误。</p>
+<p>以后这类事我不会说了。</p>
+<p>那么，什么是“保证能办到”呢？</p>
+<p>我是一个人类，我控制不了任何我控制不了的因素。</p>
+<p><strong>我没有保证能办到的事情。</strong></p>
+<p><strong>亲爱的，我没有可说的话了。</strong></p>
+<hr>
+<p>所以，那话才没有说“实现了的就盼望，失落的就揍ta，就不再盼望了”</p>
+<p>它说的是——凡事包容，<strong>凡事相信</strong>，<strong>凡事盼望</strong>，凡事忍耐。</p>
+<p>爱是永不止息——永不止息的盼望和期望，而<strong>弃绝失望</strong>。</p>
+<hr>
+<p>这里有人在问，如果我弃绝失望，要是人家无限的令我落空、伤害我，难道我都无限接受？我的出口在哪里呢？</p>
+<p>这里你犯了一个错误——你根本不需要失望、就可以结束或者改变关系。</p>
+<p>人们如此依赖“失望”这个工具，其实不过是希望借着它获得自由离开而不必被指责的免罪牌。</p>
+<p>但事实是——从一开始，你离开、转变就是自由的，你根本不需要对对方做任何“是你令我失望我才另做选择”的解释，更根本不需要对方的批准。</p>
+<p>“我离开是因为没赚钱”已经很够了，或者纯粹的“我觉得不working”已经足够了。</p>
+<p>你不需要靠“失望牌”来“免罪”，你只是要承受你自由本身就有的重量。</p>
+<p>就是因为我不想了，所以我要另做选择，就是这样而已。</p>
+<p>我另做选择，不是出于“令我期望落空而行的报复”——因为我一开始就知道肯背负我的期望本身就是一项极大的贡献，无论你事后有没有成功。</p>
+<p>在我眼里这事是你只要背负了我的期望，我就要谢你一份，如果你没实现，那么这一份感谢仍然不会收回。</p>
+<p><strong>如果实现了，那么我要谢你双倍。</strong></p>
+<p>你不可能因为承担了我的期待而受到来自我的任何惩罚。</p>
+<p><strong>只有一份感谢和两份感谢的区别，绝无任何报复。</strong></p>
+<p>根本不存在因我的期待而带来伤害的逻辑可能。</p>
+<p>所以我的期待对你只构成得到一份或者两分感谢的机会，成为一种<strong>毋庸置疑的祝福，而非悬而未决的诅咒。</strong></p>
+<p><strong>事实上，哪有什么悬而未决？</strong></p>
+<p>遵循“公平惩罚逻辑”的人很容易发现“失望“是利润丰厚的，因为那不但可以省下谢礼的义务，还额外产生了索赔的权益。</p>
+<p>ta们<strong>下意识的就会失望</strong>。</p>
+<p><strong>失望成性</strong>。</p>
+<p>被ta们期待，是毫无悬念的诅咒。</p>
+<p>唯一的结局，只会是被得出失望的结论，而产生赔偿义务。</p>
+<p><strong>这真的公平吗？</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%A4%B1%E6%9C%9B/">失望</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/shi-er-fu-de-neng-he-cong-qian-yi-yang-ma/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">失而复得能和从前一样吗？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/yi-qing-shi-kong-lun/">
+                        <span class="hidden-mobile">疫情失控论</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

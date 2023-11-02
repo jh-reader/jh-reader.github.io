@@ -1,0 +1,596 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>怎样学会向别人寻求帮助？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="怎样学会向别人寻求帮助？">
+              
+                怎样学会向别人寻求帮助？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      20
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">怎样学会向别人寻求帮助？</h1>
+            
+            <div class="markdown-body">
+              <p>向别人求助的成功率取决于什么？</p>
+<p>取决于被请求者对帮助价值的评估——既你“值不值得帮助”。</p>
+<p>这实在朴素。</p>
+<p>你怎么能让别人觉得你值得帮助呢？</p>
+<p>一般人——尤其是小孩子们——拉开荷包看看，就觉得自己没戏了。</p>
+<p>因为ta们觉得自己没钱，同时又很不想背上一笔自己毫无信心偿还的债。</p>
+<p>工作都找不到啊，每个月都有亏空，怎么向别人证明自己能买得起单？</p>
+<p>要不是这么绝望，谁会这么想要求助呢。毕竟求助就要礼下于人，低声下气，接受别人的颐指气使，百般挑剔，要忍受屈辱。</p>
+<p>这就两头戗住了——因为视求助为奇耻大辱，所以不到山穷水尽绝不开口求助。而到了实在山穷水尽了，真的是熬不住了，到了要么求助要么就得一头撞死的地步了，这时又没有任何自信相信自己值得别人帮助了。</p>
+<p>这不就戗死了吗？</p>
+<p>甚至都不想别人帮了——因为别人帮了也未必能把自己从这么深的泥潭里拔出来。如果只是拔起来半尺就拔不动了，对方力尽一松手，自己还是要栽回泥潭里去，回到原位。</p>
+<p>哦不，不是原位而已，多摔了一跤，头上还多顶了一张账单。</p>
+<p>比原来还差。</p>
+<p>“唉，到底应该怎么求助呢？”</p>
+<p>这个“求助方法”的答案，其实是带着门槛的——它要解决的不是“获得帮助”，而且是要获得<strong>净帮助</strong>。</p>
+<p>“拔起来半尺就松手让你掉回原位，然后再送上一张账单”的这种帮助，就不是净帮助。借你一笔利息更高的高利贷帮你还高利贷的，也不是净帮助。</p>
+<p><strong>净帮助，是一种愿赌服输的投资。</strong></p>
+<p><strong>“帮你，就是投资注意力、时间、金钱、资源在你身上，将来要是证明我走眼了，没拿回来，那算我自己投资眼光不行，是我自己的责任。”——</strong>你要的是这种帮助。</p>
+<p>也只有这种才是真的帮助。</p>
+<p>换句话来说，<strong>真正的求助是一个“招商引资”问题</strong>。任何不能被归结为“招商引资”这一本质的求助指南，都是走错了方向。</p>
+<p><strong>你不是在求人可怜，而是在给人机会在低位买入股份，你做得到这一点，就不会没人帮助你。</strong></p>
+<p><strong>你看清楚，不是求助，而是在“给人机会低价买入股份”。</strong></p>
+<p><strong>重点在于你要有前途，要给人看到你的可能性。</strong></p>
+<p>你自己都想死了，都躺平等死了，你就想别人来给你帮助来给你点活下去的理由，你有个狗屁的前途。</p>
+<p>指望靠一点卑躬屈膝的“技巧”来求别人可怜你，给你施舍一点油水来继续混几天，这根本就不叫“求助”。</p>
+<p>这只不过是乞讨。</p>
+<p><strong>再说一遍，你需要的是吸引别人在你身上下愿赌服输的注。</strong></p>
+<p>你如果是朝这个方向去做，你根本不用求助，你只要放出“我遇到了某种困难”的信号，自然会有人会抓住机会来提供方案。</p>
+<p>因为这都是和你挂钩的良机，一本万利的捡漏好机会。</p>
+<p>这样的人太多，你还需要慎重考虑投资人的经验和心态是不是够成熟、实力够不够、德行够不够资格当你的股东好吗。</p>
+<p>而要做到这一点，是不是一定要你已经有现成的业绩？</p>
+<p>需要吗？</p>
+<p>其实不需要，需要的是给人看到业绩的可能性。</p>
+<p>注意，你并不需要展现什么“未来行业龙头”般的业绩可能，你仅仅需要展现“未来可以盈利”的可能就足够了。</p>
+<p>你盈利的预期规模不大并没有关系，马斯克预期盈利一万亿，ta的原始股没有一亿没资格投。</p>
+<p>你预期盈利十万而已，你的原始股可能要低到50块才有人会觉得值得冒险。</p>
+<p>这没关系，<strong>这50块的投资也一样是愿赌服输的投资，这一样是净帮助。</strong></p>
+<p>它完全可能微不足道到只是你楼下的超市老板给你赊了一个月方便面，你的房东给你免了个把月房租，看门大爷让你在墙根蹭了半年课……</p>
+<p>但是，这都是<strong>不求自来</strong>的<strong>净帮助。</strong></p>
+<p><strong>它不会对你颐指气使、评头论足。它也不会在没有得到承诺的回报时疾言厉色，上门追讨。</strong></p>
+<p>它们给你时，根本就没计划得到什么巨大的回报。纯属只是额度安全到了可以无惧任何风险的程度。</p>
+<p>这是一项风险极高的投资，但它的额度小到了投资人不在乎的程度。</p>
+<p>你没有能力让别人在你身上赌一百万一千万赌青春赌人生，但你有没有能力让别人<strong>主动</strong>在你身上赌十块钱，赌六包方便面？</p>
+<p>注意关键词——<strong>主动</strong>。</p>
+<p>不是因为你去要求，人家却不过面子所以给你这些，而是你不需要开口，只是让别人看到了你有这个需求，别人就会<strong>主动</strong>抓住机会下力所能及的注。</p>
+<p>衡量一个人的前途如何，不是看这人通过苦苦哀求或者威逼利诱能搞到多少资源——这是假的，根本不算数的：</p>
+<p>而是看在这人完全不开口的前提下，只是展现出需求，就预期会有多少人愿意主动抓住机会去及时满足ta的这个需求。</p>
+<p><strong>前一种期望就算高到一千万，其实也不及后者的一千块。</strong></p>
+<p>因为后者是<strong>无成本的融资能力。</strong></p>
+<p><strong>你要明白——无成本的融资能力如果足以支撑你的基本生活，你就有了绝对的生存保证。</strong></p>
+<p>换句话说，一个“一箪食、一豆羹，不改其乐”，而又拥有足够的无成本融资能力的人，处在“绝对安全状态”。</p>
+<p><strong>只要一个人能做到“凡了解ta的人都随时愿意主动帮ta一包方便面的忙”的状态，ta就已经实际上立于人生的不败之地。</strong></p>
+<p>只要ta泄露出可帮之机，不必开口，就会有人会抓住时机<strong>申请</strong>提供帮助，并且对不能获得回报也愿赌服输。</p>
+<p>这才是人获取帮助最有效率的方案。</p>
+<p>问题是，这是一种什么样的人？</p>
+<p>成为这样的人，门槛是不是很高？</p>
+<p>多看看各种历史传记，去找找这样的历史人物，看看ta们有什么共性。是什么使得ta们在寒微之时就得到了这些“愿赌服输的十块钱”？</p>
+<p>是因为ta们有个<strong>有出息的样子</strong>。</p>
+<p>ta们遇到事情不抱怨，想办法。</p>
+<p>不逃避责任。</p>
+<p>不虚张声势。</p>
+<p>不自欺欺人。</p>
+<p>不虚荣。</p>
+<p>不管多饿，不屑于坑蒙拐骗。</p>
+<p>遇到问题，不断的想办法，不轻言放弃，反而以与困难角斗为乐。</p>
+<p>ta们不浪费，不放纵。</p>
+<p>ta们恩怨分明，不忘恩负义。</p>
+<p>ta们宽宏大量，不计较人的恶。</p>
+<p>……</p>
+<p>你翻翻新约哥林多前书第十三章第十一节，从头到尾一对，就知道这是一个什么样的标准模型。</p>
+<p>这样的人，不用去“求”助，其它人自己会抓住一切机会去尽早投资占位。</p>
+<p>哪有谁会胆敢颐指气使、作践侮辱？</p>
+<p>谁蠢到这个地步，那就取消ta的帮助资格。</p>
+<p>人走向成功的关键，并不是所谓的“第一桶金”——挖到第一桶金后又倾家荡产一蹶不振的人多了去了，而是这无数个被主动付出的愿赌服输的十块钱。</p>
+<p>你能得到多少个这样的十块钱，定义了你的“求助力”。</p>
+<p>这才是真实力。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%B1%82%E5%8A%A9/">求助</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8A%9B/">力</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-rang-bie-ren-xin-gan-qing-yuan-di-ba-ta-suo-xue-de-jiao-gei-wo/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何让别人心甘情愿地把他所学的教给我？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-ji-nan-da-xue-nv-sheng-zi-sha-liu-xia-yi-shu-cheng-zi-sha-jin-jin-shi-yin-wei-wo-ba-ba-jia-ting-mao-dun-dao-zhi-de-xin-li-wen-ti-ying-ru/">
+                        <span class="hidden-mobile">如何看待济南大学女生自杀，留下遗书称「自杀仅仅是因为我爸爸」？家庭矛盾导致的心理问题应如何疏导？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

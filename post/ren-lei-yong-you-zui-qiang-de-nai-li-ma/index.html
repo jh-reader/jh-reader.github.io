@@ -1,0 +1,540 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>人类拥有最强的耐力吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="人类拥有最强的耐力吗？">
+              
+                人类拥有最强的耐力吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      24
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">人类拥有最强的耐力吗？</h1>
+            
+            <div class="markdown-body">
+              <p>上面的评论认为人类耐力最强无非是因为当年误以为人类在草原上可以“追死猎物”，而且看起来似乎这个战术“战无不胜”。</p>
+<p>这里面误解很多，而且忘记了很多前提。</p>
+<p>误解一，认为人类追逐的是健康动物。事实上，人类总是先用石块、骨棒、弓箭、手斧之类先打伤动物才开始“追逐”的。逻辑的看，人类几乎<strong>从不会</strong>追逐无伤无损的动物。<strong>如果人类可以赤手空拳的平白追逐无伤健康动物至死——哪怕是骚扰死，人类也不太可能拥有后来的工具文明了。</strong></p>
+<p>误解二，认为人类是在“追逐”动物。说到追逐，人们会很自然浮现一种好似狮子追逐羚羊那样你追我赶，奋勇争先的场面——最多是慢速播放的平和版。事实上呢？人类很少——或者干脆并不——进行竞速追逐，而仅仅是根据足迹、折断的枝叶，挂落的毛发，以及滴落的血迹去<strong>追踪。速度在此几乎毫无价值，甚至是不必要的浪费。</strong>动物有跑出视线（乃至于直觉安全距离）就马上休息节省体力的习惯。如果仅仅是为了打猎，人类完全没有必要“奔跑”。连“竞速走”都没有必要，只要你不慢到踪迹都自然消失乃至于追不到，你总能在路的尽头拾获筋疲力竭血流殆尽的猎物。事实上，现代狩猎——尤其是弓猎，常常是特别要在射中后等半个小时再出发的，否则可能反而白费力气，甚至受到反扑伤害。你不追逐，它跑出五百米然后原地流血死，你追它，轻则它要多跑很多公里（而且很可能跑到各种陡峭幽闭的地形里，而且经常在情急之下因为错估自己的运动能力滚落山崖、卷入流水让你白折腾），重则反过来拼死攻击你。在这两个方案面前不知道怎么选的人类估计已经蠢到灭绝了。</p>
+<p>误解三，认为人类有携带充足的补给，可以靠更方便的补给耗死猎物。然而事实上至少近现代的非洲布须曼人是没有携带水的器具的，他们依靠省水的身体和在野外识别和挖掘含水的植物块根等多种手段来解决水分代谢问题。实际上口袋、包袱皮，对这个阶段的原始人类来说都是难以企及的高科技。</p>
+<p>而另一方面，“制作干粮”这一科技成就远没有一般想象的那么古老。——那几乎已经是农耕文明发展之后的产物，距今不过几千年而已。目前观察到的原始部落狩猎到大型动物，一般都以就地饱餐一顿再割去能携带的最肥美的一块肉告终。多余的部分无法处理，往往是留在原地，作为“祭品”了。这种现象的普遍存在，本身就佐证了烟熏风干盐渍等保存手段并不是很常见的科技。</p>
+<p>与一般的想象不同，狩猎采集时代的人类生活其实一点也不艰苦。他们几乎一概生活在极其理想的地区——温暖（于是没有冬季食物短缺期），物产丰富，几乎不需要任何科技就能拾取或容易的猎获足够的食物。既不需要高级的房子，也不需要衣服，也不需要高级的兵器，就足以维持规模并不很大的家族式小部落——这一状况甚至一直延续到现代非洲。大家族，乃至于跨血缘的部落往往是恶劣环境导致的战争逼出来的，反而并不是物产丰饶的结果。因此采集狩猎时代技术上几乎停滞不前而且乏善可陈，因为这些技术只是对于因为人口压力被迫迁移到艰苦环境的亲戚们重要，对于黄金生存地带的人们并不要紧，因而缺少精益求精的客观动力。因此水具，干粮（包括肉干）都无法在石器时代的画面里出现。赤手空拳，赤身裸体，手拿石块或长矛或顶多弓箭，除此之外别无一物，才是当时的常态，自然也就根本谈不上“<strong>靠补给在耐力赛跑里胜过动物</strong>”这一说了。</p>
+<p>用“耐力狩猎”作为主要猎食手段还有一个重大的bug——入不敷出。</p>
+<p>首先，耐力狩猎的基本原理是尽快的逼迫动物体温过高或者脱水。两者合并需要人保持长时间的运动强度。这本身即是一个很大的能量投入。如果耐力狩猎成功率并非百分之百，一旦失手，这个人将会损失重大——跑出四十公里把猎物跑丢了，就得靠着更抓不到猎物的劣势体力走回家来。这期间显然是没有多少补给可言的，一不小心恐怕要变成途中猛兽的美餐——毕竟你刚跑了四十五公里甚至六十公里，离家甚远、饥饿、干渴、孤身一人并且恐怕天色已经渐晚。这意味着考虑到耐力狩猎的潜在危险，单独一个人进行是非常危险的。为确保安全，需要两人及以上结伴互相支援。那意味着一次狩猎就要投入双倍的人力。收益减半，更加入不敷出。</p>
+<p>在考虑最幸运的情况——就算是很高几率有收获。那么跑完九十公里追逐最终猎获了这几十斤重的动物，如何将猎物搬运回去呢？搬运回去的状态可不是轻装上阵，而是需要肩挑手扛一个极其不方便的异形柔性物体——沿途随风而散的血腥味还是“我是一份午餐”的活招牌。——注意，既然是耐力追逐，显然意味着这时候还没有切割器。否则投掷手斧的捕猎方式铁定会淘汰耐力捕猎方式。赤手空拳扼死羚羊不难，但要用什么把羚羊的身体分割成大小合适的肉块？全靠手撕牙咬吗？</p>
+<p>现在我们假设这些都不是问题，请考虑能有体力进行耐力狩猎的成年人类劳动力对聚居家族的珍稀性。原始人类夭折率高，意味着需要很多幼年人类，才能长成一名成年男子。显然这些成年男子还要担任防卫领地保护居住地的责任。平均一名成年男子对应1.5名成年女子（其中这个0.5名额应该还长期处于孕期）及四名幼童外加0.25名老年成员是可以预料的负担。即使那一名成年女子采集植物果实的效率看作与狩猎效率相等（实际上不可能，因为那样的话男子就回去做采集了）。这名男子天天出去跑180公里追羚羊也很难以想象能供养这3.4张吃饭的嘴。</p>
+<p>有人会反驳说人类追逐羚羊是跑一个大圆圈，换句话说，九十公里的尽头可能离家甚近。实际上这是不成立的。</p>
+<p>因为若是在一个全场九十公里的环形山谷里追逐，则因为谷地的崎岖对羚羊如履平地，羚羊将有无数的机会甩开人类喘息。只有越野能力挑战不强的平地人类的散热优势才得以发挥。而在平地上要靠追逐将猎物追成一个圆圈，人类必须以胜过猎物的速度跑掉比猎物更长的距离来把猎物活活累死——因为追逐者跑的是外圈。如果可以做到，为什么不直接跑直线快速结束战斗？因此这是不成立的构想。</p>
+<p>更尖锐的问题是——你们真的确信羚羊、角马就是这么软弱的善类，由的你们这些废柴随意追逐吗？</p>
+<p>不要搞错了，野生食草动物们并不是童话中的小鹿斑比，面对不自量力的攻击者，它们常常发动对抗甚至主动的攻击。</p>
+<p>赤手空拳或者仅仅手持简单的短棒石块正面交锋，人类其实打不过一头被激怒的羚羊，还不定是谁追着谁飞跑呢！</p>
+<p>结论：<strong>石器时代的人类并没有什么大不了的超常耐力。因为他们基本用不着。付出代价去保持一种没有用的能力意味着竞争劣势，意味着战略性失败，意味着灭绝。</strong></p>
+<p>人类在生理上应该无法胜过动物。——甚至不是不如杰出动物，而是连平庸动物都不如。人类只是借着伏击能力（尤其是投掷和远程射击能力）和足迹追踪能力胜过受了伤的普通动物。</p>
+<p><a target="_blank" rel="noopener" href="https://zhihu.com/collection/304168613">科学答集</a>这个很说明问题了，基本全中。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/85132908">21世纪了，真的还有非洲部落靠跑死动物狩猎吗？</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Science/">Science</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%9C%80%E5%BC%BA/">最强</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%80%90%E5%8A%9B/">耐力</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ren-zui-zhong-yao-de-neng-li-shi-shi-yao/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">人最重要的能力是什么？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wu-zong-tong-ze-lian-si-ji-cheng-yi-bu-zhi-wang-jia-ru-bei-yue-ke-li-mi-ya-he-wu-dong-wen-ti-ke-yi-yu-e-jin-xing-tao-lun-shi-fang-le-na-xie-xin-hao/">
+                        <span class="hidden-mobile">乌总统泽连斯基称，已不指望加入北约，克里米亚和乌东问题可以与俄进行讨论，释放了哪些信号？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

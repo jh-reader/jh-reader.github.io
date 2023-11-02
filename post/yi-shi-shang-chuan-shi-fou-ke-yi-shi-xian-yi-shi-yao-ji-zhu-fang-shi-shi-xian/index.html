@@ -1,0 +1,590 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>「意识上传」是否可以实现，以什么技术方式实现？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="「意识上传」是否可以实现，以什么技术方式实现？">
+              
+                「意识上传」是否可以实现，以什么技术方式实现？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      29
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">「意识上传」是否可以实现，以什么技术方式实现？</h1>
+            
+            <div class="markdown-body">
+              <p>不能。</p>
+<p>而且道理非常的简单。</p>
+<p>你能把一个球形烧瓶里的水，装进一个锥形烧瓶吗？</p>
+<p>——当然那可以啊。</p>
+<p>真的可以吗？</p>
+<p>水分子的关系还一致吗？</p>
+<p><strong>你的意识是那个形状、那个水分子的结构关系，不是那些氢氧原子。</strong></p>
+<p>我们举个非常现实的概念——假设一下你的手断了。</p>
+<p>日疼夜疼，痛不欲生。你总是想要伸手去拿饭碗，才发现拿一个空。穿一件衣服，也要求人。于是“我残废了”，这个念头从出事那天起就像一块石头压在面团上那样压在你的意识上，一天比一天嵌得深。半年以后，你变成了一个平静的手残缺者，别人都说你和以前一样，但是<strong>你知道，你完全变了一个人</strong>。</p>
+<p><strong>你的意识与你这个身体是绑定的，看懂了吗？</strong></p>
+<p>它就是装在你这个“容器”里的水，但要紧的不是它的重量、味道、化学成分，而是它的“形状”。这“形状”不是几何形状，而是一种逻辑的构造。但这个逻辑的构造是与它所在的容器完全绑定的。</p>
+<p>切掉一只手，它也会变，不是少掉一块脑它才会变。得了过敏，它也会变。一看见ta留下的东西就会心揪紧到喘不过气，它也会变。</p>
+<p>如果把这半年的适应过程取消，直接在一夜之间完成，你的意识就会因为巨大的惯性而自我“断裂”。</p>
+<p>你见过断了两条腿无法接受而自杀的人吧？</p>
+<p>见过失恋无法接受而自杀的人吧？</p>
+<p>而所谓的意识上传所造成的冲击远非断两条腿或者失个恋可以比。</p>
+<p>它更像是将一缕青烟从包围它的里“拿”出来，放进另一道风里去，而指望在这个过程中这缕烟不受损。</p>
+<p><strong>人的意识与大脑结构不是分离的、独立的存在。它不是“寄生在结构中的模式”，那不是个“寄生关系”。</strong></p>
+<p><strong>它是一个特定硬件的特定运行状态，那个运行状态只能在那个硬件上运行。</strong></p>
+<p>举个浅显的例子，一个三灯信号系统，现在AB亮C暗，你想要“上传”这个运行状态，能接受的的硬件载体必须有ABC三个灯。</p>
+<p>你弄个只有两个灯的线路，你无法移上去。</p>
+<p>你的线路只有三个灯，这三个灯连接方式不一样，你只是把“AB亮C暗”作为相同起始态一过去，一按运行键，你自己估计一下是什么结果。</p>
+<p>喷一挡风玻璃。</p>
+<p>给你们留一线希望：</p>
+<p>人要能制造出与你的大脑完全一模一样的大脑——所谓一模一样，不是指机箱里的零件型号一模一样，而是指是指从硬盘到内存、到每一个磁道、每一个逻辑门的状态都完全一致，这个时候，就像两辆平行并列飞驰的列车，打开门，你可以走过去。</p>
+<p>但这方法，实际上就是<strong>直接量子级复刻一个你。</strong></p>
+<p><strong>然后把原来的你抽冷子毙了</strong>。</p>
+<p>这是逻辑上<strong>唯一</strong>的<strong>等效</strong>实现“意识传送”的办法。</p>
+<p>其它的办法，装进去的那个与从你这里取出来的这个无关。</p>
+<p>“大郎，都弄好了，天黑请闭眼。”</p>
+<hr>
+<p>关于人的意识完好性与人的身体的绑定关系，我们再来点简单直接的关系——</p>
+<p>比如你小时候令你印象深刻的牙疼，你想起来就会觉得心有余悸。</p>
+<p>现在我们假设你能上传而且上传完毕了，现在对你而言“牙疼”是什么？“心有余悸”是什么？</p>
+<p>牙疼是怎么被数字化的？如何确定这是正确的数字化？把另一个人的牙疼采集数据输入你的意识，谁能确保这是两种相同的牙疼？如果不能，你如何保证上传前采集的这个“牙疼数据”在上传后被还原成了相同的牙疼？</p>
+<p>再来一条，对你最喜欢的音乐，采集数据的时候采集什么呢？采集它的乐谱，还是采集它的MP3格式音频？只要把这MP3文件放到相同的“文件夹”就可以了吗？是这样吗？</p>
+<p>它为什么是你最喜欢的音乐？哦你开始讲故事——因为当时你刚高考落榜准备去跳楼，在路上是这曲子救了你的命。那么高考落榜悲痛欲死的感受真的是可以从这曲子里剥离掉，只要放首MP3进去就可以了的吗？那揪紧的心脏、被指甲刺破的手心、翻江倒海的胃、踉跄无力的双腿，都是这信息的多余部分？而进一步的，重要的仅仅是那些感受信息，这些器官感受器本身并无意义？</p>
+<p>如果你没有牙，没有胃，没有腿，没有心，这些“感受”确信还在新的系统里可以起到和老的系统里的相同逻辑功能吗？</p>
+<p>如何确信？</p>
+<p><strong>人对客观存在是绝对无知的。人类根本不可能想了解自己设计的机器一样彻底的了解人类自身，这一点是由自指性在逻辑上绝对的锁死的。</strong></p>
+<p><strong>人类的文明没有可能进展到能【完全理解】人类文明自身的程度，这是逻辑的不可能。一个人自己也不可能进展到完全理解自己。</strong></p>
+<p><strong>你根本就没有任何足以说明“实验成功”的鉴定方法。而且这不是什么技术水平问题，是逻辑上原则性的不可能。</strong></p>
+<p><strong>一切关于“意识上传”的幻想都只能是幻想。</strong></p>
+<p><strong>“意识上传”就是一种毁灭加上一种以被毁灭的为原料的制造。</strong></p>
+<p><strong>其本质和把牛杀了做了一道红烧牛腩没这么区别。</strong></p>
+<hr>
+<p>让我把这事换一个角度表述一遍，你们可能会更清楚为什么“意识上传”是不可能的。</p>
+<p>当我对你说“棒棒糖”，你会接收到“棒棒糖”的音符和字形，对吧？然后你的大脑会经过一番处理，“理解”这些声音震动或视觉符号的具体指向——一个叫做“棒棒糖”的概念。</p>
+<p>现在的一个关键的问题是——我大脑里的“棒棒糖”这个概念的准确含义，是我所作为标准采样的一组棒棒糖的抽象属性的集合，你的则在原则上也没有本质的区别。</p>
+<p>问题是，我的棒棒糖标准数据库与你的基本不重合，里面装着的几百种被认定为棒棒糖的采样与你的根本就不一样。</p>
+<p>基于我对棒棒糖的认知维度与你的差异，我们的棒棒糖概念所附属的属性集本身就是不同的，你可能有颜色、硬度、味道、气味、造型；我可能还有酒精度、油脂度、溶解度、刚性、屈服点。</p>
+<p>如果我们把这个概念表达为一张表单，那么我们不但在相同的格子里填写的内容不同，我们的格子数量、格子类型也互相不重合——甚至如果你认识到每个格子的标签本身也是一个概念，而这个不重合效应是递归的，你就会意识到——事实上我们的这两张表单上没有任何部分在严格意义上是一致的。</p>
+<p>换句话来说，想要参考你的大脑的结构里关于棒棒糖的具体记录，来推定我的大脑里的类似结构就是“棒棒糖”，在原则上就是<strong>绝对无效</strong>的。</p>
+<p>并且，你也不可能通过调查全部的地球人类的“棒棒糖”概念的记录样式，来断言任何一个特定人的某个样式的构造是否代表“棒棒糖”。</p>
+<p><strong>因为你将无法发现任何有足够意义的共性。</strong></p>
+<p>所有人的意识都是基于<strong>完全私有的成长过程</strong>，循着<strong>完全私有的训练集</strong>，自发形成<strong>完全私有的存储协议</strong>，存储在<strong>完全独特发育的硬件基础</strong>上的。</p>
+<p>一个人的记忆、意识事实上处在<strong>无限复杂</strong>的加密算法的保护之中。因为你的大脑的概念/构造/功能的形成甚至与你所经历的事件的输入顺序有关。</p>
+<p>如果把一个人的“机器码”列出来，用另一个人的“编译器“去解读，<strong>将不会得到任何有意义的读取结果</strong>。</p>
+<p>注意，是<strong>任何的两个人之间</strong>都是如此。</p>
+<p>把你的“棒棒糖”的编码（姑且假设我们跳过这读取的困难做到了这个奇迹）直接写入到另一个“空白大脑”——说实话这不知道到底是个什么概念，一个终身昏睡状态发育出来的大脑？这大脑怕是连沟回都没有分化——得到的结果根本就不会是“棒棒糖”，甚至根本不会是任何有意义的信息，而是在极大的几率上得到完全没有任何有效意义的乱码。</p>
+<p><strong>你根本无法实现“读取”，你的“写入”根本没有意义。</strong></p>
+<p>所以，唯一可行的就是在无法破解加密的前提下进行“绝对复制”。把每一个突触、每一个受体、每一个细节都照样复制。</p>
+<p>你不能用硅基半导体加金属这种物质基础、以自认为“功能相同”的构造，去绝对复制另一个人的大脑，因为仅仅这个材质不同已经是不可接受的本质不同。这就像你用纯铜做一双AJ运动鞋，形状完全一模一样，精确到微米，你却根本不能指望前者和后者“一样”一样——你不会穿着它去打球。</p>
+<p>如果要打个比方，可以说一个人的意识和另一个人的意识的关系，非常类似一个文明和另一个文明的关系。</p>
+<p>彼此语言完全不同、价值观有巨大的差异、行为准则、行事逻辑、审美倾向、对特定概念的理解……其差异之大，很容易让人意识到它是不可能通过抽象的方式来达成一致的。</p>
+<p>说英语的人是不可能在没有英汉字典存在的前提下，靠阅读一个中国人的自传来“正确读取”一个中国人的一生的。</p>
+<p>更不用说这个中国人自己用自己的意识写下来的这本自传，根本就不是ta自己意识的全部内容。</p>
+<p>换句话来说，人的意识是<strong>绝对黑箱</strong>，“读取意识”这个操作根本就没有可行的技术路线可用。</p>
+<p>挡住它的是人类的认知方式本身的逻辑限制，这是无可超越的东西。</p>
+<p>更不用说如果实现了这种“读取”技术，仅仅这技术本身就足以使人类社会的组织结构、伦理法则都将失去可行性，作为集体的人类本身将不复存在。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Science/">Science</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%84%8F%E8%AF%86/">意识</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%B8%8A%E4%BC%A0/">上传</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/yu-gong-yi-shan-zhong-wei-shi-yao-yu-gong-jiu-ren-wei-ta-de-zi-sun-hui-an-zhao-ta-de-yi-zhi-yi-zhi-yi-shan/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">《愚公移山》中为什么愚公就认为他的子孙会按照他的意志一直移山？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/s-p-a-c-e-x-fa-bu-xin-de-ye-wu-fang-an-s-t-a-r-s-h-i-e-l-d-xing-dun-zhi-zai-mian-xiang-guo-jia-ti-gong-fu-wu-you-na-xie-zhi-de-zhu-yi-de-xin-xi/">
+                        <span class="hidden-mobile">spacex发布新的业务方案starshield（星盾）旨在面向国家提供服务，有哪些值得注意的信息？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

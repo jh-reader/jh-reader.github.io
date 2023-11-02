@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>你为什么不看睡前消息了？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="你为什么不看睡前消息了？">
+              
+                你为什么不看睡前消息了？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      17
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">你为什么不看睡前消息了？</h1>
+            
+            <div class="markdown-body">
+              <p>他的评论区气氛已经明显的毒化。现在追看ta的内容，有很高的致郁风险。</p>
+<p>这问题并不是因为他在谈论艰难的现实。毛经常在极端困难的现实中谈论极端困难的现实，但是毛的内容恰恰会让你在啃草根、嚼树皮、被重兵衔尾追击的绝境里，既不对绝境抱有任何忽视，又对信念充满勇气，乃至于敢于抱定“功成不必在我”的必死的觉悟。</p>
+<p>所以，不要用“我要揭露艰难的事实”来为自己的致郁性辩解。因为已经有人在困难得多的处境下做出过“可以不必如此”的示范，而且谁敢说自己没有看过，一无所知？</p>
+<p>恰恰相反，凡打算揭露艰难事实的媒体，天然的就要承担作为尽可能消除致郁性的第一责任人的义务。</p>
+<p>这不是法定义务，但这是<strong>道德义务</strong>。</p>
+<p>一个作者如果对这个义务无知，那么ta永远谈不上严肃的媒体。如果ta对这个义务不是无知，而是有意无视，那么这可以被视为对所在的社会抱有敌意。</p>
+<p>实际上这种“敌意感”已经被广大的民众感知到了，这也是为什么有这么多人开始对他感到愤怒。不管他是没有认识到也罢，或者个人不同意也罢，继续保持这个做法下去，“你可能是无知”的免责理由迟早会被磨穿。一旦磨穿，社会规律会自动无视一切辩解，径直执行。这是不以人的个人意志为转移的，“重新定义”毫无意义。</p>
+<p>另一方面，民众广泛而持续的敌意会形成一种有毒的环境，逐渐对团队本身的气氛产生严重而深刻的负面影响。它至少会刺激出团队不必要的防御性，而这个不自觉的防御性会急剧的加速双方的决裂。</p>
+<p>作为团队领袖，你不仅仅要对读者承担责任，还要对你的团队成员承担这个责任。</p>
+<p>这一关要么你自己主动意识到，即时扭转，要么就会用职业生涯的惨败教训来认知。</p>
+<p>这是第一条戒律——你若要警醒民众，你就要毫无侥幸的承担将致郁性最小化（而绝非最大化）的责任。</p>
+<p>注意，这没人要求你做到绝对避免，但是必须有可见的努力痕迹，这是不容讨价还价的。</p>
+<p><strong>第二条戒律，你必须在“为国为民忠言直谏”和“钻言论自由的空子，名忠实奸”之间，自己承担避免民众误判的责任，而不能把这种责任往民众身上一推了之。</strong></p>
+<p>民众既不可能，也无义务承担这种责任。民众并不欠你这种“公共服务”。如果你耗尽了民众的耐心和信任，也许历史将来会惩罚“误解忠臣”的民众，但是你要记住，<strong>用傲慢寻求殉道快感而陷民众于此不义的罪，历史同样不会宽容</strong>。这是一种经典的知识分子幼稚病，不打好疫苗，足以致命。</p>
+<p>读到这里的人，不要以为这是专门批评马前卒——这是在提醒所有自认为是在“犯颜直谏”，而实际上只是自欺欺人的人——到底是犯颜直谏，还是诈忠为奸，<strong>判别的责任不在民众一边。</strong></p>
+<p><strong>民众总有足够的前者可以依赖，不会因为少了故意在这条线上跳舞的部分人而真的有什么你们自认为不可挽回的损失。</strong></p>
+<p><strong>反过来，认定“犯颜直谏不可能避免丧失群众信任”——不要掩饰，你们就是在用这个来自我坚定——这本身就是对民众深刻蔑视。</strong></p>
+<p>这种人格侮辱，虽然隐藏在极幽深晦暗之处，以至于民众很难形诸于口。但ta们说不出来，心里知道。心里知道的东西，是不是只要说不出来，就一定是错的？民众为什么不自觉的要往“这是名忠实奸”的定性上想象？<strong>因为这是对这种难以言喻的蔑视的自发的、不自觉的报复</strong>。</p>
+<p>不要把这种报复往“下智必愚”上一推了之，因为最后第一个品尝恶果的只会是你自己。</p>
+<p>之所以写这个东西，其实要其实要告诫的不是马前卒——至少不只是他这一个团队而已——而是要告诫所有真正在自觉参与公共讨论，希望实实在在为中华民族更光明的未来真诚努力的团队和个人——<strong>不要滥用“忠言逆耳”的庇护效应</strong>。</p>
+<p>忠言固然有不可避免逆耳之处，不可避免有不能理解的人，但那应该是你已经极尽努力避免后不能不抱着遗憾和不甘去承受的事实，而不应该是你借着“不可避免”的理由，故意放开准绳甚至反过来认为这种努力毫无必要、理应完全由民众自己承担的结果。</p>
+<p><strong>你的“尽力避免”，要让人看见；你的“仍有遗憾”，要让人听见，这才是你自居高于众人、擅自高声教训人的原罪的免罪条件。</strong></p>
+<p>不错，虽然天生你的智识，给你不行动便不能忍受的良知痛苦，但这不意味着上天就免了你“自居足以教训人”的自高自大的原罪。</p>
+<p><strong>这种原罪，只有这“尽力的避免”和“仍有的遗憾”可以换得宽恕。</strong></p>
+<p>拥有天赋、有了良知的驱动，决定要出来教训人，必须还要自觉背负这两条，才能构成可以持续的作为。这天赋、良知和谦卑的自觉，是不可分割的三位一体。谁拆分，谁必遭反噬。</p>
+<p>你要相信，你要说的总有合适的方式可说，寻找这个方式是你必须尽力的义务。诚心善尽这个义务，再有疏漏，自然会获得出乎你意料的宽容和善待。</p>
+<p>反过来，不要把社会对形式、礼仪的必要要求视为“心胸狭窄，不能纳谏”。这实际上是对社会拒绝给予你言语霸权的下意识报复，而社会绝不会对这种报复置若罔闻、忍气吞声。</p>
+<p>请相信，这些话根本不是为了“让你们闭嘴”，而是愿你们得偿所愿，兼能平安，且终获应得的感激与祝福。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AD%A6%E4%B8%96/">警世</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%BA%8C%E6%88%92/">二戒</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/you-na-xie-kan-si-hen-sha-shi-ze-cong-ming-de-xing-wei/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">有哪些‘看似很傻、实则聪明’的行为？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/du-sheng-zi-nv-zheng-ce-shi-bu-shi-jiu-shi-ge-che-tou-che-wei-de-cuo-wu/">
+                        <span class="hidden-mobile">独生子女政策是不是就是个彻头彻尾的错误?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

@@ -1,0 +1,577 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>为什么我们会输掉认知战 - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="为什么我们会输掉认知战">
+              
+                为什么我们会输掉认知战
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      25
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">为什么我们会输掉认知战</h1>
+            
+            <div class="markdown-body">
+              <p>认知战是<strong>以扭曲目标人群对世界历史、现状和未来的认知、使其作出有利于进攻方的误判为目的的系统性的操纵行为</strong>。</p>
+<p>注意，在这个定义里，“信息作战成功”的标准，不是“使所有人都完全认同信息战指向的信息”，而是只要达到“<strong>使足够的人向目标信息方向发生足够的偏移，足够让为信息战投入的成本得到覆盖，出现高于成本的收益</strong>”的获利线即可。</p>
+<p>举个形象的例子，你是股票的庄家，你决定投入一笔成本来诱骗散户购买你的股票，你只要做到影响足够多人做出足够多的买入决定，超出你投入的宣传成本，你就取得了这场认知战的胜利。</p>
+<p>你不需要改变所有人的判断，只要人数超过成本线即可。</p>
+<p>你也不需要把受害者的判断改变到黑白颠倒的程度，只要把人均买入额提高到超出你的成本线即可。</p>
+<p>由此可知，认知战从基本性质上就是一种易攻难守的战争样式。</p>
+<p>认知作战的关键战略目标。</p>
+<p>1）占领全部或大部分目标人群的信道。</p>
+<p>举个现实的例子——</p>
+<p>比如在tw对大陆进行的俄乌冲突认知战下，这一基本的战略目标就是占领所有带有俄罗斯、乌克兰、冲突、普京、泽连斯基、基辅……的关键字的问题下的排名靠前的答案。</p>
+<p>也就是技术性的保证所有对此问题有所关心的人，从搜索入口进来，势必有大得多的概率看到有利于自身立场的答案，甚至追求在其失去耐心之前都无法看到不利的答案。</p>
+<p>你们应该注意到这样一个问题——<strong>要做到这一点，根本不需要攻击方提供多少逻辑无懈可击、论证质量极高的答案，而仅仅需要单纯的技术性霸榜即可。</strong></p>
+<p>要实现单纯的技术性占领，只需要培养一些隐性账号系统性的踩踏不利的答案，使其名次下沉到足够深就可以。</p>
+<p>甚至，保留在前排的答案最好质量不太高、不要有太明显的明星人物为好——因为这样的突出人物很容易自然成为对方的集中反击目标，过于迅速的被对方通过举报和集中踩踏而消灭，所以他们反而往往不是认知战会选择的战术方向。</p>
+<p>培养一个这样的头部资产成本过于高昂，但是ta一旦遭遇反击却很容易损失，这在费效比上是不理性的选择。</p>
+<p>所以，<strong>很客观的说，那些为认知战攻方的立场大声疾呼、奋不顾身的头部人物，往往确实是出自本心的主动参与</strong>。</p>
+<p><strong>将ta们认定为“网军”反而是一种错误的、甚至适得其反的作为。这只会起到将对方进一步推向敌方、进一步坚定其立场的副作用。</strong></p>
+<p>这甚至本身就是认知战的预设战术之一。</p>
+<p>真正在进行认知战的职业网军，很少发布长篇</p>
+<p>这意味着遭遇认知战处理的阵地会呈现这样一种现象——</p>
+<p>前排充斥着大量的低质量答案，偶尔随机有一些篇幅较长的头部作者的答案，外加一些到处转发的通稿。而总体上这些答案主要是诉诸情绪的以“风趣”“搞笑“为主要价值的短答案。</p>
+<p>而高质量的对立答案，往往被踩踏至排名到“水线”之下。</p>
+<p>所谓“水线”，是指刚刚发布的几乎没有有效阅读价值的空答案会出现的位置，这样可以确保这些答案将自然的无限下沉。</p>
+<p>而要实现这种踩踏，除了使用大量自己平时积蓄的僵尸号来集中攻击之外，还可以通过潜伏在主动站在己方的大V的评论区、粉丝群进行煽动和挑拨，利用他们发起附加攻击。</p>
+<p>这些大V有比僵尸小号大得多的反对权重，而且往往已经被大量的针对性反击固化了立场、激化了情绪，往往会自动的快速反应，自然而然的做出有利于网军意图的积极作为。而即使这些大V因此被平台销号，因为网军对此并没有投入成本，仍然是净获利的。</p>
+<p>何况这些大V也不容易简单的因为被销号就完全丧失战斗力，他们往往可以再次注册，依靠粉丝群再次迅速获得流量，甚至会更加积极的为网军的目的服务。</p>
+<p>2）消灭或至少抑制对立信源的影响力。</p>
+<p>这主要通过造谣、诽谤、抹黑、抹红、阴阳怪气、直接骚扰、集中举报、集中踩踏、挑唆己方大V进行公开攻击等手段。</p>
+<p>而非常有利于网军的天然条件是，这些对立观点——尤其是诉诸理性、进行严肃的、高成本的论证对抗性头部人物，往往客观上是毫无组织的、而且是非专业的。</p>
+<p>非专业，不是指缺少专业的认知战训练——至少不止如此——而是指他们完全会几乎不能从这些对抗中获得足够的收益来补偿成本。</p>
+<p>也就是客观上他们不能承受无限损失。而网军是领着工资在从事成本极低、性价比极高的攻击行为。</p>
+<p>以无源的高成本战术对抗有源的低成本战术，其结果在数学上是确定无疑的。</p>
+<p>而这些反抗者们往往还缺少从反认知战角度思考这一问题的清醒自觉，也缺少反认知战战术的思考和积累，常常把事情理解为“讲道理”、“辟谣”、或者“对喷”。</p>
+<p>而“讲道理”、“辟谣”你会发现自己辛辛苦苦写下的东西常常迅速的沉没到水线以下，如果无法把你击沉到水线下，那么你就会招来无穷无尽的近乎于零成本的辱骂和私信骚扰、甚至人格污蔑和诽谤。</p>
+<p>而“对喷”呢，第一它完全依赖反抗者的个人情绪资源作为燃料，自我增殖效率有限（即不容易造成链式反应召开同盟军），而以有限的热情对抗网军领着工资的专业攻击，数学结果仍然是确定的。</p>
+<p>很多人可能寄希望于“平台出手”“国家出手”来扭转这种“舆论战失利”，但这种期待是不现实甚至是不明智的。</p>
+<p>因为这种有强烈倾向性的公权力干预事实上效果有限。</p>
+<p>人类的语言有天生的反统治性。一旦某种表达方式被管制，立刻就会产生另一种不受管制的表达方式，难以获得实质的打击效果。</p>
+<p>而另一方面，这会严重磨损公信力，而且还会造成民间舆论的高度不稳定。缺少反面的消息，只会导致民众自己展开恐怖想象和私下传递信息。这种不稳定本身是有高昂成本的。</p>
+<p>效果有限而成本高昂，所以这并不是对抗认知作战的有效手段。</p>
+<p>所以，综合而言，因为认知战的成功门槛极低，而成本极其低廉、效率相对可靠，所以认知作战几乎总是系统的有利于进攻方而非防守方。</p>
+<p><strong>输掉认知战的主要原因，不是因为对抗的宣传手段不足，或者对于信息管制的力度不足，而根本的在于现有舆论主体本身的不成熟。</strong></p>
+<p>现在中国活跃网民的主要年龄构成非常年轻，而即使是年龄较大的社群，也大面积的缺乏相称的认知战经验和反认知战的素养。是这个最基本的国情（或者不如说是世情——全世界普遍如此）保证了认知作战的天然的“主场优势”。</p>
+<p>不错，认知战的主场与否，不取决于媒体平台是否为网军自己所开，而仅仅取决于网军天生的宿主——缺少经验和批判性认知能力、志向坚韧、免疫于恐惧和贪婪想象的情绪绑架的心理欠发育者（此处毫无贬义）是否有足够比例。</p>
+<p>只有这个比例足够高，那么这平台无论是谁家开设，都是网军的认知战主场，它都享有充分的主场优势。</p>
+<p>而反认知战必定会在这个主场趋向失败。</p>
+<p>这就是为什么我们会输掉认知作战。</p>
+<p><strong>所以，我们大概率会输掉认知战，这一点，所有参战的反抗者都必须首先不报任何侥幸，首先承认和接受这一客观事实，把它作为你参加反抗的起点、基础。</strong></p>
+<p><strong>只有首先清醒的认识和接受这一点，你才反而会获得“虽千万人吾往矣”的绝对坚韧，而不是一旦受到攻击和压制就垂头丧气，觉得徒劳无功而要自我放弃。</strong></p>
+<p>只有认清这一点，你才会真正的看到结束并赢得认知战的有效战略是什么、以及有效的战术是什么。</p>
+<p>没有“这样我们必败”的清醒认知，你将只会在全然被对方料到而提前设计的本能反应中耗尽精力，而不会思考“不这样“的策略。</p>
+<p>希望只可能在非认知战手段上。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/484754163">为什么我们会战胜认知战</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%BE%93%E6%8E%89/">输掉</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AE%A4%E7%9F%A5/">认知</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%88%98/">战</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/nan-peng-you-shuo-zheng-qian-shi-wei-le-wo-wo-ting-le-hen-nan-shou-ru-he-fan-bo-ta/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">男朋友说挣钱是为了我，我听了很难受，如何反驳他?</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-ze-lian-si-ji-biao-shi-wo-bu-xiang-zuo-ying-xiong-dan-ye-yi-zhun-bei-hao-wei-guo-juan-qu-tou-lu-chu-na-xie-xin-xi/">
+                        <span class="hidden-mobile">如何看待泽连斯基表示「我不想做英雄，但也已准备好为国捐躯」，透露出哪些信息？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

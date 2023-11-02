@@ -1,0 +1,561 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>什么样的人会被欺负？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="什么样的人会被欺负？">
+              
+                什么样的人会被欺负？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">什么样的人会被欺负？</h1>
+            
+            <div class="markdown-body">
+              <p>首先明确一点，“被欺负”是受者对问题的认知，而施者眼里，自己所做的往往不叫“欺负”。</p>
+<p>几乎没有什么施者在实施那些行为的时候脑子里想的是“我要欺负这个人”、“我正在欺负这个人”。ta们往往在想的是“我要教训这个人”、“我要惩罚这个人”、“我要报复这个人”、“我要威吓这个人”、“我要制服这个人”。</p>
+<p>甚至，ta们常常认为自己是在“反击这个人”。</p>
+<p>这是什么意思？这意思是——你要避免的不是“被欺负”，而是避免“<strong>让人觉得需要教训 / 惩罚 / 报复 / 威吓 / 制服 / 反击，并认为这些手段是值得实施的</strong>”。</p>
+<p>很多人在这个问题上盘算的都是“我要练到三花聚顶，瞪谁谁死，让人就算有想法都不敢妄动”，很少有人去想“如何从一开始就不触发ta人 教训 / 惩罚 / 报复 / 威吓 / 制服 / 反击 的冲动”。</p>
+<p>你能不能从人的言行举止看出这个人在追求什么、在恐惧什么、处在什么样的心理状态？</p>
+<p>还是<strong>你根本就不关心这个，只想要这个人——任何人——不要从任何意义上打扰你？</strong></p>
+<p>你有没有想过，在对方眼里，你很可能已经把对方逼到了墙角？</p>
+<p>注意，这里并没有说你把对方逼到墙角的行为一定是你有过错——很可能的确是对方有问题，超出了对方的合法权益、侵入了你的权益范围——但是，这里在说的是<strong>你自己察觉到是为什么没有</strong>？</p>
+<p>没说谁对谁错，说的是你<strong>看不看得见</strong>？</p>
+<p>大多数被人欺负的人，盲目而狂热的相信“只要我老实本分，只关心我自己的事，就不应该也不会被别人针对”，却没有想过“只关心自己的事情”，翻个面就是<strong>不关心任何别人</strong>。</p>
+<p>这里说的“关心”，不是指“照顾”、“呵护”，“care about”，而是指“察觉”、“监察”、“be aware of”。有意无意的处在一个“对所有人都无知、也不在乎这种无知”的状态。</p>
+<p>何以见得？因为你问“被欺负”了的人“你觉得这有什么可能的原因？”，一般都会得到一个近乎随口敷衍的回答——“这个人就这样”、“天生邪恶”、“我哪知道”、“莫名其妙”、“有病”、“就是个疯子”、“精神扭曲”，更糟糕的还会反口一句“是要受害者反思是吧”。</p>
+<p>百分之九十九，甚至可以说是百分之百。</p>
+<p>“被欺负”的人对对方行为的确切机制、确切肇因“没有兴趣”，ta们往往更加急切的——甚至是单一的——关心“尽快要求群众给对方定罪量刑”、“从严从重从快”。</p>
+<p>而正因为“被欺负”时总是用这个“不用考虑理由，马上发动群众发起批判”的方法来对付，于是ta们就总是坚信“不用考虑到底是为什么”——因为这个过程里根本没有“搞清楚为什么”这个过程。</p>
+<p>久而久之，因为长期缺乏练习，于是果然也就真的缺乏这个能力了，想探求也只能模模糊糊看到个虚影，更糟糕的是，完全脱离证据和逻辑，总是以最恶意的想象径直补足对方的动机。</p>
+<p>越是这样，越是对自身的损失敏感，而一旦敏感的人觉察到了，就无法克制的反射性的、闪电般地直奔最邪恶，卑劣的解释。</p>
+<p>“我已经在痛苦之中，我现在什么都不管，我要给我造成痛苦的人付出代价，马上下地狱。”</p>
+<p>而“你欺负人”这个定罪只是“使之付出代价“的最本能手段，跟客观证据、逻辑关联、心理机制这些没有多大关系。</p>
+<p>把对方对自己所做的事情定性为“欺负”，这个定性本身就不但宣告了自己的洞察力的缺陷，还在主张“残疾人特权”——问题是你这个“盲目”是<strong>你自己闭着眼睛造成的。</strong></p>
+<p>因为观察对方的行为，得出教训 / 惩罚 / 报复 / 威吓 / 制服 / 反击，而不是什么狗屁不通的“欺负”，是人最基本的视力。</p>
+<p><strong>一个不容易被欺负的人，从来就不会将任何攻击性行为归类为“欺负”，哪怕是估计错误，都会估计出一个其他的定性。</strong></p>
+<p><strong>因为定性为“欺负”，意思是对方是一个反社会的疯子，意思是“我是个绝对善良的大好人，只有反社会的疯子才有可能对我有敌意”，对方一定是道德败坏而且头脑愚昧，也正因为对方毫无道德且愚昧至极，我根本猜不到ta是为什么要这么做。所以我只好放弃从源头上解决原因，只能靠练好肌肉打死ta。我只想知道我怎么可以练好肌肉吓死或者打死这些疯子。</strong></p>
+<p>而定性为那一连串的其他可能，在最低意义上也是认定对方“即使道德扭曲，但行为仍有他自己自洽的理性逻辑”。</p>
+<p>“ta认定自己是班上的老大，这个立场是扭曲的，但是在自认是老大的前提下，认为我有某个行为必须被打击以维护权威，这个思考对ta而言是理性的。对方不是一个疯子，做这事对他而言是存在超越风险和成本的必要性的。”</p>
+<p>这个判断本身，就比给人定性“欺负”的人多了多得多的内在的尊重，它在无声的声言“我不认同你的立场，但我仍然认为你有理性”，你在这些判断下作出的后续反应，会深刻的让对方意识到你的这个态度。</p>
+<p>而对方立刻会意识到两点——第一，你这个人不简单，除非现在准备杀死你，否则最好不要结怨；第二，你实际上对ta存在着深刻的尊重。</p>
+<p>因为黑社会老大对别人应有的尊重是有一个特殊的期待的——ta们不需要你违心的夸ta是好人，<strong>ta们真正愤怒的是被人当作是疯子</strong>。因为“有罪而理性的人”仍然是人——甚至这就是所有人的普遍状态——而<strong>疯子不是真正完整的的人类</strong>。</p>
+<p>“我打击了你一顿，你却把我做这事的动机定性为‘喜欢欺负人’，把自己的遭遇称为‘受欺负’，<strong>你就在无形中否定了我的基本人格</strong>。<strong>那么你必须为这种更深的侮辱得到更深的教训和惩罚。”</strong></p>
+<p><strong>没有人在“欺负人”，“欺负人”这个定性本身就是被动者的一种隐秘、懦弱然而却是极为狠毒的报复。</strong></p>
+<p>这种隐秘的狠毒，对手未必如我这样可以明确的清醒认知，但是人类对自己的人格被否定的直觉是不依赖于显性意识的，那是被百万年的进化写入动物本能的。对方说不出这个道理，但是你这个“隐秘”只够骗住对方的显意识，而这背后的狠毒根本瞒不过对方的潜意识。</p>
+<p>潜意识掌管着人的冲动，结果就是对方仅仅因为听说你跟别人讲“受了欺负”，就有难以遏制的冲动要给你一顿更刻骨铭心的报复。</p>
+<p>这一次比上一次下手会更重、更狠。</p>
+<p>因为第一次攻击你，对方往往有确切的理由。</p>
+<p>因为“欺负”扳机触发的，却是一种上百万年炼成的动物本能，那和“见了血肾上腺素上头完全察觉不到疼痛只想毁灭面前会动的一切”是一个级别的发作。</p>
+<p>这就是为什么把“欺负”挂在嘴边的人，往往会一轮又一轮的“受欺负”。</p>
+<p>因为“欺负定性”本身就是一种反杀，会激活对方心里的魔鬼。</p>
+<p>而你为什么会大脑一片空白，只会强迫性的、别无选择的、总是用“被欺负”来描述自己受到的“伤害”？</p>
+<p>那是因为你长期信仰“只管我自己”，导致了你对他人的观察能力的无能。</p>
+<p>会因此触发第一轮的打击，并在第一轮打击下下意识的冒出“欺负”定性，从而招来连番的、不断加深的、暴风骤雨般的几乎难以理解的狠辣攻击，是客观世界对信奉这种生活逻辑的人的惩戒。</p>
+<p>这是自然法。</p>
+<p><strong>自然法不容你只关心自己。</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Society/">Society</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%AC%BA%E8%B4%9F/">欺负</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/tan-lian-ai-shi-yao-shi-hou-jue-de-gai-ji-shi-zhi-sun-fen-shou-le/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">谈恋爱什么时候觉得该及时止损分手了?</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/mei-guo-shi-fou-ying-gai-che-chu-ji-hu-suo-you-zai-zhong-dong-de-jun-shi-cun-zai/">
+                        <span class="hidden-mobile">美国是否应该撤出几乎所有在中东的军事存在？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

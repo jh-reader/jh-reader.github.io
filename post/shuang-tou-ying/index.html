@@ -1,0 +1,583 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>双头鹰 - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="双头鹰">
+              
+                双头鹰
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      30
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">双头鹰</h1>
+            
+            <div class="markdown-body">
+              <p>在上次谈论俄罗斯的未来的时候，我们事实上仅仅只谈论了俄罗斯的短期战后策略。</p>
+<p>并没有涉及到一个更根本的问题——俄罗斯的长期解决方案是什么？</p>
+<p>即使在最乐观的场景下，俄罗斯全面突袭乌克兰也将<strong>深刻的损害俄欧关系的基本互信</strong>，即使事后欧洲因为无法忍受俄罗斯能源、资源、军事反制的压力而再次向俄妥协，俄欧关系也不可能在短期内（这可能足足二、三十年甚至长达40-50年）恢复到战前的水平。</p>
+<p>无论战争本身的胜负，即使考虑到德法自主的强烈愿望，欧洲都将因为这份深刻的记忆而对俄罗斯重新升起无法磨灭的戒心。</p>
+<p><strong>无论胜负，欧洲的大门都将在全面突袭乌克兰后对俄关闭——最多不过是无可奈何的留一条缝而已。</strong></p>
+<p>普京不可能对此抱有任何侥幸。</p>
+<p>ta必须在开战前对一切都尘埃落定之后俄罗斯必然要面对的俄欧关系战略冷却带来的俄罗斯的孤立危机预备一个答案。</p>
+<p>俄罗斯必须有一个真正解决问题、真正为整个俄罗斯民族带来<strong>历史性期盼的长期方案</strong>，一个新的民族性的愿景。</p>
+<p>这张真正的底牌最可能会是什么？</p>
+<h2 id="俄罗斯可能在战后启动迁都的历史进程——走向双都布局。"><a href="#俄罗斯可能在战后启动迁都的历史进程——走向双都布局。" class="headerlink" title="俄罗斯可能在战后启动迁都的历史进程——走向双都布局。"></a><strong>俄罗斯可能在战后启动迁都的历史进程——走向双都布局。</strong></h2><p>首先，迁都——或者说，近期的而言，<strong>双都化</strong>——为什么是必要的？</p>
+<p>实际上俄罗斯对北约的“纵深不足危机”，逻辑上是建立在“俄罗斯定都莫斯科-圣彼得堡”的基础之上。建立在“俄罗斯的人口重心极大的分布在西部边界一千公里内”这样一个基础事实上。</p>
+<p><strong>如果俄罗斯的人口重心不再一面倒的落在西部地区，而是在远东地区设立全新的、能容纳4000万人口的新城市群规划，使得俄罗斯的经济重心、文化重心、行政重心部分的向东移动到中部的叶卡捷琳堡、和东部的哈巴罗夫斯克呢？</strong></p>
+<p><strong>那样就形成一个双都结构——一个以俄罗斯的国家体量早已该采用的政治经济结构。</strong></p>
+<p><img src="https://pic4.zhimg.com/v2-fe59b34c77fffa68c9e520ccc415e6cf_b.jpg" srcset="/img/loading.gif" lazyload>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1170' height='1259'></svg>)可想而知，俄乌战争后，西方资本对再次进入俄罗斯市场会有巨大的心理阴影。大量的西方品牌因为制裁、供应链中断、自身通胀等综合原因的限制而大幅提价。</p>
+<p>它们所留下的巨大供应空白，毫无疑问将只能依赖东方战略伙伴的供应补足（因此在俄华人千万不要这个时候随便贸然回国，而应该立刻开始研究俄罗斯卖得最好的欧美日用品在中国有哪些供应商可以生产，立刻拿上它们的包装联系中国厂家开始参考，准备接手欧美市场）。</p>
+<p>而即使按照最一般的经济规律，<strong>这客观上就会造成物流成本最低的哈巴罗夫斯克、符拉迪沃斯托克一代出现迅猛的经济繁荣和移民浪潮。</strong></p>
+<p>可能造成满洲里、室韦、绥芬河等一系列中俄口岸城市的俄罗斯一侧的人口密集和迅速繁荣。客观上都会产生大量的建设需求、产生对特殊时期特殊经济政策、贸易政策、金融政策的强大需求。俄罗斯国内的资本和新生人口，很自然的会向远东聚集，尝试做个时代的淘金客。而ta们所需要的大量的生活、生产配套服务，会进一步的吸引更多的人前来定居。</p>
+<p><strong>它几乎必然的呼唤一个“远东经济特区”的出现。</strong></p>
+<h2 id="而这些，普京不可能在战前没有预见到。"><a href="#而这些，普京不可能在战前没有预见到。" class="headerlink" title="而这些，普京不可能在战前没有预见到。"></a>而这些，普京不可能在战前没有预见到。</h2><p>当俄乌之战尘埃落定，无论结果如何，俄罗斯都有有很大可能宣布<strong>“将在远东规划建设能容纳4000万人口的全新城市群，并依托该规划建立远东经济特区”的国家建设计划</strong>。</p>
+<p>这一全新的、宏伟的国家需求会充分调动俄罗斯内部的经济要素，大大的改善俄罗斯的经济颓势。</p>
+<p>这一全新的远东开发计划很自然的<strong>会大大的挖掘出俄罗斯天然的国家潜力</strong>，足以帮助失去“欧洲概念股”这一核心叙事的俄罗斯经济重新找到方向、信心和活力。</p>
+<p>也将成为俄罗斯下一个十年的国家叙事，世纪工程。最关键的是，<strong>这一需求是真实的，是内蕴回报的</strong>。</p>
+<p><strong>它事实上相当于在东北亚建立一个新的四千万人口的新兴国家</strong>。</p>
+<p><strong>这不是虚拟经济，不是“元宇宙”“NFT”这类流动性过剩催生出来的庞氏骗局。而是一个足以牵动世界经济的真实需求——华尔街会想尽办法撬开后门挤进来的。</strong></p>
+<p>而这项开发计划所必然附带的庞大的行政需求和安全需求，很自然的也会导致俄罗斯政治生态和军事布局的重心东移。同时战略性的分散圣彼得堡和莫斯科一线的安全压力。</p>
+<p>莫斯科和圣彼得堡作为“老城”当然还会享有相当长的重要地位（这也是为什么叶卡捷琳堡作为居间桥梁和中亚近邻，很可能会是这次东向政策另一大受惠者），但是它会越来越成为“天子守国门”式的缓慢的，然而却是趋势越来越明显的转向军事和防御。</p>
+<p>因为莫斯科缓冲不够，所以要严厉阻止乌克兰、芬兰和瑞典加入北约。</p>
+<p>“咄咄逼人的北约把刀架在俄罗斯的咽喉上”的前提，是俄罗斯的咽喉在刀尖上。</p>
+<p>如果半个首都移到了哈巴罗夫斯克呢？</p>
+<p>你耍得动四十米长的大刀吗？</p>
+<p>但是再定位的“莫斯科大军区“会反过来成为架在整个欧洲脖子上的大刀，躲无可躲。</p>
+<p>而反过头来看加入俄罗斯这一新玩家的东北亚牌局——俄罗斯的盟友包括110万常备军的朝鲜、200万常备军（含武警）的中国，对面是韩国、韩国背后的日本、日本背后的美国。</p>
+<p>韩国将立刻成为亚洲乌克兰，而日本则化身亚洲波兰。它们的身后，却不存在一个庞大的欧盟或者北约，而只有隔着太平洋力不从心的美国。</p>
+<p>俄罗斯将处在近乎近乎绝对的安全之中。</p>
+<p>因为在此局势下，韩国将别无选择全面亲中，以求中国不支持俄、朝对韩施压。只有全面亲中的韩国，可能平衡俄罗斯的压力，反而可以和俄罗斯进行一定贸易往来、从俄罗斯的远东布局建设计划中分得红利。</p>
+<p>如果韩国在这个条件下坚持亲美，朝鲜很可能会在中俄翼护之下发起统一之战，直接消灭掉韩国现政权。</p>
+<p>即使不真的发起攻击，韩国的产业资本和人力资源也将无法遏制的外逃，以免不知何时突发战事，走避不及。</p>
+<p>韩国在东北亚前线独自面对中俄朝三个核国家的合围，是万万没有任何侥幸可言的。</p>
+<p>韩国全面亲中，日本在东北亚——甚至整个亚洲——就陷入了全面空前孤立。日本也毫无选择，至少要全面的中立化，以免被“去军事化、去纳粹化”。</p>
+<p>这个力量对比是如此明显，以至于俄罗斯只要宣布转向远东，就会受到热烈欢迎——因为此时对日韩而言，与俄罗斯尽快建立唇亡齿寒的经济联系反而是最快最有效的自保手段。</p>
+<p>军事对抗绝不是理智选择。</p>
+<p>反过来，这一战略转向，会极大的扩大俄罗斯对欧盟和美国的战略筹码。</p>
+<p>整个莫斯科成了扼住欧洲命运的大手，只有俄罗斯对欧洲发起致命打击的可能，不存在欧洲致命还击的可能。</p>
+<p>过去的一千年，俄罗斯的全部屈辱，都来自定都莫斯科这一基本的战略格局。定都莫斯科本身就是一种掏心掏肺的亲欧姿态，是最深的投名状。</p>
+<p>这一点，甚至从卡捷琳娜时代就已经是如此了。</p>
+<p>而正因为如此，俄罗斯才给了欧洲绝对的主动权，长期的处在极端被动的低贱状态。</p>
+<p>一旦俄罗斯转过身去，背对欧洲，西伯利亚刺骨的寒冷才会真正冻醒欧洲的美梦，让他们回归到一个现实的、理性的、相称的对俄态度上来，从而真正的为俄罗斯带来自己久已不见的尊重和战略空间。</p>
+<p>严格意义上说，普京的俄乌之战的最大历史意义根本就不是关于乌克兰或者什么石油价格的。</p>
+<p>发动它的目的，就是为了慧剑斩情丝，断然的割裂内部对欧洲的一切幻想和留恋，借欧洲愚蠢而疯狂的制裁，将俄罗斯历史性的、不可逆的推向“真心实意向东看”的历史轨道，转向<strong>坐东向西，而非“背东向西，成为实至名归，而非虚有其名的</strong>双头鹰。</p>
+<p>注意——这与俄乌冲突的胜负没有关系，无论是胜是败，<strong>只要开战了、被彻底制裁了，这一进程就已经成功启动了</strong>。</p>
+<p>醉翁之意，恐不在酒，而在乎山水之间矣。这才是普京发动这一战真正的底牌。</p>
+<h2 id="欧美受激发动制裁，ta就已经赢了。因为完成东迁之后的俄罗斯，必将最终压倒欧洲。"><a href="#欧美受激发动制裁，ta就已经赢了。因为完成东迁之后的俄罗斯，必将最终压倒欧洲。" class="headerlink" title="欧美受激发动制裁，ta就已经赢了。因为完成东迁之后的俄罗斯，必将最终压倒欧洲。"></a>欧美受激发动制裁，ta就已经赢了。因为完成东迁之后的俄罗斯，必将最终压倒欧洲。</h2><p><strong>他要的恐怕是东迁，是俄罗斯未来百年的国运，乌克兰只是一个无关紧要的添头——对东迁后的俄罗斯，乌克兰这种缓冲并无什么巨大意义。</strong></p>
+<p><strong>这恐怕才是普京真正打算留下的遗产，是他为自己退休生涯的所做的铺垫。</strong></p>
+<p>他为自己准备的晚年，大概是要退居总设计师，去俄罗斯的南海边画一个圈。</p>
+<hr>
+<p>提醒一下各位，不要凭着这消息准备“炒房子”。</p>
+<p>一来，这种投资方式太过于笨重。</p>
+<p>二来，它不太现实——你不太可能仅仅因为一篇文章就下定决心，最多不过调集资金持币待购等消息。<strong>但中俄两国不是傻瓜，一旦宣布消息就会同时限购、限价、限租。</strong></p>
+<p>这类房产投资，几乎只有利于本地人（尤其是可以回乡的游子们）。</p>
+<p>两国政府不可能允许热钱提前吞噬这些政策的利好。不可能都还没有实质进展就让你们把房价和租金抬高三四倍，提前透支利好，挫伤未来移民和投资的积极性。</p>
+<p>它们更可能直接限购，按照规划提供低价土地给中标的项目方，保持地价低廉（也不可能不低廉，因为必然要大量开发荒地）来保证有序进行。</p>
+<p>更合理的投资方式，是梳理自己的实业资源，盘点俄语人才资源、俄罗斯市场人脉，考察可以切入的“欧美替代”选择。</p>
+<p>以及准备买入“东北振兴概念”的相关股票。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Changes/">Changes</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8F%8C%E5%A4%B4/">双头</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%B9%B0/">鹰</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-shuang-bao-tai-yi-ding-yao-fen-chu-ge-ge-di-di-jie-jie-mei-mei/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么双胞胎一定要分出哥哥弟弟/姐姐妹妹？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/cheng-nian-ren-de-shi-jie-huan-hui-you-yi-wu-fan-gu-de-shuang-xiang-ben-fu-ma/">
+                        <span class="hidden-mobile">成年人的世界还会有义无反顾的双向奔赴吗？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

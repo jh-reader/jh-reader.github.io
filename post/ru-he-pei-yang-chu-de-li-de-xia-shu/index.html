@@ -1,0 +1,578 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>如何培养出得力的下属？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="如何培养出得力的下属？">
+              
+                如何培养出得力的下属？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.5k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      25
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">如何培养出得力的下属？</h1>
+            
+            <div class="markdown-body">
+              <p>现在谈这个问题很奢侈啊。</p>
+<p>谈得上“培养下属”的场景，一般都出在有本事让人终身投靠的体系里面——比如央企国企、政府机构、科研院所、跨国企业。</p>
+<p>一般的私企——甚至包括一些规模很大的新生企业——往往涉及不到这么高深的问题。一来是其上下级关系不过是从一般的劳动力市场招聘而生成，能存续几年还不好说。往往还谈不到“培养”，就已经结束了。二来，是说句实话上司本身也颇为年轻和资浅，并无那么深厚的底蕴能谈得上“培养”后辈。</p>
+<p>所以这对大多数私企都只是伪问题。</p>
+<p>但我们只谈能使得这个关系成立的情形。</p>
+<p>首先，你要先核实清楚你跟这下属的关系强度本身能不能支撑“培养”这种行为。</p>
+<p>我给你们几个硬指标：</p>
+<p>1）你这组织要能管到下属的整个职业生涯直到结束的全周期，而不能只是管个两三年。注意，我不是说你真的必须管到这么多年，但你必须至少要有这个可能性或者至少这个打算、有这个规划。</p>
+<p>那意味着你这个组织要对成员的生老病死都有说法。你病了我将如何、你结婚了我当如何、你生子了我当如何……这其中必须没有哪个是“你若这样我们就会解除关系”（当然和尚庙、修道院这类有特殊规矩的除外），否则你其实没打算对别人的终极前途提供一个负责任的路线，你又凭什么让对方放心把自己的命运交到你手里去“培养”呢？</p>
+<p>2）你要有足够的东西去给人。什么叫“足够的东西”？一点工作技巧够不够？一点职业心得够不够？<strong>其实不够</strong>。</p>
+<p>你要有<strong>传承超过一代</strong>的玩意儿，才有资格谈对他人的<strong>培养</strong>。</p>
+<p>啥意思？不止是你，还有你的上一代甚至上上一代，都靠这个东西安身立命、成名成家，你才能凭着这个东西去指引下一代的命运。</p>
+<p>你才有<strong>培养</strong>他人的资格。</p>
+<p>不到这个“经过检验的确能让人寄托生命价值”的程度，那种传授也就是传授，不能随便称为<strong>培养</strong>。</p>
+<p>培养，是一种远超过“帮带”的关系。是为师为父那样亲近而权威的关系。</p>
+<p>培养者和被培养者之间绝不是简单的上下级而已。ta对你必有额外的权柄，你对ta必有额外的服从。没有这种强烈的纽带，所谓的“培养”不过是一句客气话罢了——遑论所谓“快速培养”呢？</p>
+<p>“培养”的真正宾语，其实是<strong>传人，</strong>只是因为“有事弟子服其劳”而导致这传人同时是一般意义上的“下属”，并非因此而是在“培养下属”。</p>
+<p>你对下属只该谈负责任的指挥、公平的奖惩，是谈不到“培养”的。</p>
+<p>有“岗前培训”，有“技能训练”但这都谈不上<strong>培养</strong>。岗前培训，技能训练，既是教育，同时也是测试，测试得不好就会淘汰的。说穿了是没有什么大责任、也没有什么强关心的。你行我就恭喜你，你不行我就抱歉换人。</p>
+<p>培养则是要开动脑筋、投入精力、发挥创意、甚至投入感情、冒着被辜负的风险去想办法把你弄好的行为。</p>
+<p>培训的中心是利润，是以利润为本的；培养的中心是人，是以获得更好的人为最终目的，可以忍受利润受到折损的。</p>
+<p>培养人的人是以得到一个最强的组织（甚至仅仅是最完美的传人）作为真正的“盈利”，而不是以获得最大的利润为盈利。</p>
+<p>现在你明白为什么这事一定要这么高的门槛了吗？</p>
+<p>低于这个门槛，劝你还是先以利润为中心，这个事不是你该乱试的。你自己都没活明白，你真敢拿这一套去左右信任你的人的命运吗？不要平白误人子弟。</p>
+<p>3）培养关系的另一个前提，是受培养的人得要有终身之志。</p>
+<p>接受培养是涉及到你人生走向的事情。你最好先想清楚你是要往那边走，你再请求人往那边培养你。</p>
+<p>你自己不知道准备往哪边走，你只是就近捞到谁就是谁来搭别人“培养”的便车，你真的是浪费彼此的感情和生命。</p>
+<p>所谓“快速培养”的秘诀，与其说是具体的什么教学技巧，不如说是选材的深刻洞察力。</p>
+<p>作为一个培养者，自己先要盘清楚自己有没有资格去培养别人——也就是上面的那两条，盘清楚了自己有资格，接下来就是看清楚培养对象是不是真的想走这条路。</p>
+<p>这光ta口里说是不够的。谁都看得出你这是一门好手艺，学明白了安身立命没问题，所以嘴头上喊着跪求培养的人多了去了。</p>
+<p>所以这是不够的，还要看ta多肯豁得出去、受得起多大的委屈、扛得住多大的挫折。要看ta知不知道自己在干嘛，自己对自己的志向要负什么样的责任。</p>
+<p>还要看人品、看做人的原则。</p>
+<p>一看，再看，直到你愿意拿被彻底辜负去赌。</p>
+<p>你掂量着“要是看走眼老子就认了”，那么你可以试一试了。</p>
+<p>你的条件到位了，对方也做到了能让你下得了这个赌注，那么你往后看吧——自然什么都是事半功倍的。</p>
+<p>如果你条件不满足、或者对方条件不满足，你就为了快速“提升生产力”，去跟人开口谈“培养”，那么大概率得到的不仅仅是事倍功半这种扫兴的挫折，更可能把原本可行的一般上下属关系搞砸，搞得对方提前跑路——人事两空。</p>
+<hr>
+<p>然后我们再看“得力”的问题。</p>
+<p>这里有一个至关重要的点，就是“得力”的定义是什么？</p>
+<p>是作为你的<strong>私人部下</strong>很好用吗？那么<strong>人家为什么要追求成为你的一个特别好用的私人助理呢</strong>？</p>
+<p>你如果不在这个位置上了，是可以保证带着ta走吗？如果你不能保证带对方走，那么你把对方塑造成“自己的得力下属”的立场是什么？这个问题你一定要先理顺，否则你会发现你的一切“培养”其实都是和对方意愿的精神拔河。</p>
+<p>这件事有几个可以考虑的切入口——</p>
+<p>A）主动照顾对方技能的通用性。</p>
+<p>也就是把精力主要放在培养对方的通用化技能上，关注有哪些通用化技能的提升对你的具体需求也有用处。所谓通用，是指你升迁、调遣、退出了，对方要服务于同一岗位的继任者时技能不发生大的浪费，或者对方离职了，ta的工作技能完全可以适用于其他公司的同类性质的岗位。</p>
+<p>简单来说，你要分清楚哪些是这个岗位的要求，哪些是<strong>你的要求</strong>。敦促对方向岗位要求努力，是顺势而为——因为对方自己也有这种需求；敦促对方适应你的<strong>个人要求，你就要对对方提供对等的补偿，否则这构成一种实质的掠夺。</strong></p>
+<p><strong>这反向的意味着你有改造自己的工作方式以适应主流最佳实践的必要。因为那意味着所有你的要求几乎都不是所谓个人的要求，而是对方无论换到哪一家企业都有极大概率要面对的同样的标准要求。</strong></p>
+<p>除非ta不打算做这种职位，否则ta无法通过换一个老板、换一家企业来回避这些必要的学习。那么ta才有最大的必要动力去配合你给予的各种历练和考验。</p>
+<p>B）顺应对方个人的理想。</p>
+<p>对方的志向是成为一个好的产品开发者，那么你安排相关的事务和训练自然事半功倍。在这一条的护航之下，你可以摆脱通用性顾虑带来的限制。</p>
+<p>这也是为什么上面如此强调意愿的能力。——对方的志向的确是可以借力之处，但那必须以对方的确有这样的志向为前提。</p>
+<p><strong>很多人的志向是伪志向，他们的真正志向是获得最大的资源尽情享乐，而所谓“产品”、“成果”、“服务”只是ta们看着个人趁手就近操起的吃饭家伙——这种所谓的“志向”是没资格得到额外的赞助的。</strong></p>
+<p><strong>最低限度的合格志向至少也是追求人类与自我的双赢——把人类 / 非利益相关方的某个人群的利益摆在至少不比本人的收益更低的地位上。</strong></p>
+<p>这不是因为你必须要很高的道德追求或者精神洁癖，而是因为持有这类志向的人强大了之后挟利要价、上蹿下跳搞手段的概率比较小。</p>
+<p>你不会想要培养出一群长壮了就从身边咬起的野兽。</p>
+<p>这是因为你总要<strong>保住自己的小命</strong>。</p>
+<p>（未完，待续）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Business/">Business</a>
+                    
+                      <a class="hover-with-bg" href="/categories/Business/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%B8%8B%E5%B1%9E/">下属</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%9F%B9%E5%85%BB/">培养</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ru-he-cheng-wei-yi-ge-shen-cang-bu-lu-you-cheng-fu-de-ren/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何成为一个深藏不露，有城府的人？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-ping-jia-ta-si-she-fa-bu-xiao-xi-cheng-e-luo-si-te-bie-jun-shi-xing-dong-yi-cui-hui-wu-fang-jia-wu-ren-ji-ji-liang-tan-ke/">
+                        <span class="hidden-mobile">如何评价塔斯社发布消息称俄罗斯特别军事行动已摧毁乌方456架无人机及2213辆坦克?</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>觉得周围人幼稚怎么办？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="觉得周围人幼稚怎么办？">
+              
+                觉得周围人幼稚怎么办？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      21
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">觉得周围人幼稚怎么办？</h1>
+            
+            <div class="markdown-body">
+              <p>觉得别人幼稚，主要注意两条：</p>
+<p>第一，对方没有给你评价权的话，不要说“你很幼稚”这样的话。</p>
+<p>你自己心里想想难免——这谁也控制不了，但你尽可能不要再对别人这么说。十全十美难以做到，但至少尽力而为。</p>
+<p>即使别人给了你评价权，你的评价也只能分享给对方自己指定的人群，不能四面八方到处传播。比如你去看病就是请医生对自己的健康做评价，这显然不意味着医生能见人就说你有什么什么病——很显然，人家问都没问你，你就开始对外宣传这人有什么什么病就更不必提了。</p>
+<p>这两条是治标之策。很多人觉得“治标不治本”是个贬义的话、衍生出一种诡异的态度——治不了本就不治标了。其实能标本兼治只是很罕见的情况，绝大多数情况你都是在治标。</p>
+<p>举个最现实的例子，你吃饭就是在治死亡的标，吃不成不老神仙，难道你就不吃了？</p>
+<p>2）<strong>所谓的幼稚，是指对方在依照本能的行为模式惯性前进。</strong>这或许使得对方缺少真正的自主性，<strong>但是不要小看那个主导ta的本能。</strong></p>
+<p>因为缺少自主性，难免使得对方自己的主观表达几乎都是无效的——ta许的愿、ta做的承诺、ta下的决心常常一度让你感动，但事实证明ta其实还不是自己的主人，根本无法兑现ta自己的意愿，这是幼稚这个中性词带有强烈的贬义根本原因——因为这种茫然无知的、无法追究的“失信特权”会让受害的人痛苦万分却又没有还手之力。让你自然而然的有报复的强烈冲动。</p>
+<p>这种普遍存在的报复冲动给“幼稚”这个词染上了深刻的负面色彩。以至于幼稚本来是个中性评价，现在已经在文化上被染黑了。这也是劝你们不要再轻易使用这个评价的原因。</p>
+<p>但如果这个人确实被你看出来是在按照默认的“自动驾驶程序”行动，ta只是在自己假装是驾驶员而茫然无知，<strong>这是否一定意味着“默认驾驶程序”本身不值得重视，很容易对付</strong>？</p>
+<p>这非常的不见得。</p>
+<p>全部的病毒和微生物都是使用非常机械的“自动驾驶程序”在活动。它们好对付吗？白蚁也是按照“自动驾驶程序”在活动，ta们好对付吗？</p>
+<p>人类身上的自动驾驶程序是非常凶猛而且强大的，有时候它甚至会出现倒挂现象——即幼稚的人比自主的人更难对付。</p>
+<p>举个典型的例子——子女用自杀、离家出走和不合作威胁父母，很可能是只是被强烈的情绪驱动不假思索的行为而已，但是这些行为却出了名的不好应对。女性和恋人赌气，大多数情况本人自己也说不清确切的原因，说出来的话，连自己本人也解释不了，根本不构成一个深思熟虑的计划，但是却同样不好应对。</p>
+<p>几乎每一个你会怒斥“幼稚”的行为，你都会发现就这件事本身而言，虽然当事人只是任由情绪推着走，但这个“情绪“本身却像一名深谋远虑、算无遗策的大战略家，几乎给你能做的所有的事都预备了同样、甚至更难应对的后手。以至于经常拿出全副精力千思万想的小心应对，还是眼睁睁的看着事情走向崩溃。</p>
+<p>这个“自动驾驶程序”自身集人类文明之大成，天生的和整个社会的构造血肉相连——有时你甚至分不清到底是社会塑造了它，该是它塑造了社会，看起来似乎它们是天生的一体。</p>
+<p>小孩子随口说出的跟你怄气的话，ta自己未必理解这话到底什么意思，但却一下可以把你架到政治不正确的墙角动弹不得。</p>
+<p><strong>人虽然幼稚，但这不意味着幼稚的人如果作为对手就好对付。</strong></p>
+<p>恰恰相反，越是幼稚的人作为对立方越是难对付。</p>
+<p><strong>幼稚行为本身对于幼稚者自身有强烈的保护作用。它不属于在运行这个守护程序的主体自己，就像机算机的操作系统并不是这台计算机自己写出来的一样。这计算机的用户自己写的程序也许乱七八糟，但是这机器上原装的系统和杀毒软件水平是非常高的。</strong></p>
+<p>幼稚真正的问题，是它天生的有反协同性、反组织性、反社会性。</p>
+<p>人之所以要成熟，其实并非如传说中的那样由愚蠢变得狠戾，好让侵犯者望而却步。恰恰相反，那个幼稚的本性本身就是非常凶猛和险恶的。</p>
+<p>成熟的方向是要把自己驯化，使得自己成为容易合作的对象，使得别人不要在和自己建立关系的时候犹豫、忧虑或干脆后撤，从而可以以广受欢迎和期待的合作对象的身份获得社会的支持。</p>
+<p>只有在“不考虑立场问题，这个行为模式会妨碍你与任何人合作”的意义上，才能将某个行为定性为幼稚。</p>
+<p>但人们往往只是在把自认为是社会主流的观点命题视作成熟的标准，而把一切不同意的意见视为“幼稚”。</p>
+<p>真正的幼稚指的是做题的方法，而不是指答案。是指其方法没有标准答案所拥有的方法上的有效性，不足以支撑其答案与标准答案分庭抗礼，而且方法有效性的差距大到其本人不应该察觉不到的地步，而不是指“答案不符合标准结论”。</p>
+<p>因为仅仅盲从所谓“主流答案”的人，有一个更初级的问题——主流答案自己就在逐渐的“多元化”之中。ta们不是通过完整的推理过程来认同这些答案，而仅仅是靠复述标准答案的文本来附和一个ta们自己不理解、自己也推导不出来的“免罚魔咒”。一旦主流答案多元化，这些人就会转而用“一篮子主流答案“作为评判标准，对优质的批评本质上就会变成“你的答案和这一篮子答案都不相同”。这意味着ta们自己其实没有过方法论的训练，顶多有“直觉统计学”的经验。</p>
+<p>而“幼稚”其实只能是对方法论品质不高的批评，而不是对结论本身的批评。这就意味着如果批评者本人不是基于方法论而是基于统计数据来持有答案，那么批评者本人是没有资格去评价对方幼稚的。</p>
+<p>这就是为什么大部分父母批评子女幼稚都没有令人信服的力量的根本原因——因为父母自身不能同时提供方法论上令人信服的建议和指导，而是在不断的空洞的强调自己的观点是如何的主流和具有“统计优势”。</p>
+<p>而姑且不论统计优势是否能够作为真理的充分证明，在多元化的现代，从子女的视角看去，这统计优势本身是否成立都会很可疑——在子女自己的舆论场里，显然子女所持有的观点才是“统计多数”。</p>
+<p>所以，相当多关于“幼稚”的批评其实都是离题的，这也是父母在子女教育中最常犯的错误之一。</p>
+<p>及时改正。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%B9%BC%E7%A8%9A/">幼稚</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/mei-guo-ming-huan-jing-gu-wen-qian-wang-e-hai-e-zhou-shi-zhui-ji-shen-wang-yuan-yin-zheng-diao-cha-ru-he-kan-dai-ci-shi/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">美国 5 名环境顾问前往俄亥俄州时坠机身亡，原因正调查，如何看待此事？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-sui-ge-ren-zi-chan-jie-jin-w-nian-shou-ru-w-xing-fu-gan-ji-hu-mei-you/">
+                        <span class="hidden-mobile">为什么25岁个人资产接近3000W，年收入70W，幸福感几乎没有？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

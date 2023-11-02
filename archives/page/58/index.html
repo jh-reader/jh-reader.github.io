@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>归档 - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 60vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="归档">
+              
+                归档
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">共计 2329 篇文章</p>
+  <hr>
+  
+  
+    
+      
+      <p class="h5">2023</p>
+    
+    <a href="/post/ru-he-kan-dai-nan-zi-shang-hai-tao-fang-li-hun-gei-yuan-fu-yang-fei-hai-zi-fu-yang-fei-yao-ru-he-cai-ding/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何看待男子上海4套房离婚给600元抚养费 ，孩子抚养费要如何裁定？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ma-si-ke-yong-zhu-zhan-shi-n-e-u-r-a-l-i-n-k-nao-ji-jie-kou-she-bei-you-na-xie-liang-dian-he-cao-dian-wei-lai-you-wang-ying-yong-zai-ren-nao-ma/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">马斯克用猪展示 Neuralink 脑机接口设备，有哪些亮点和槽点？未来有望应用在人脑吗？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/bi-er-gai-ci-cheng-g-p-t-shi-wo-yi-sheng-zhong-jian-dao-de-liang-xiang-zui-ju-ge-ming-xing-ji-zhu-zhi-yi-ru-he-kan-dai-gai-yan-lun/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">比尔·盖茨称「GPT 是我一生中见到的两项最具革命性技术之一」，如何看待该言论？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/yi-yu-de-feng-shi-bu-shi-tai-da-le/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">抑郁的「风」是不是太大了？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/zhao-guan-xi-dao-di-ying-bu-ying-gai/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">找关系到底应不应该?</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ji-zhu-shi-jia-zhi-zhong-li-de-ma/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">技术是价值中立的吗？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-guo-ren-lei-xian-zai-yao-zha-diao-di-qiu-you-shi-yao-ke-xing-de-fang-an-ma/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如果人类现在要炸掉地球有什么可行的方案吗？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ni-men-zen-yao-kan-ruo-pi-ping-wu-zi-you-ze-zan-mei-wu-yi-yi-zhe-ju-hua/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">你们怎么看「若批评无自由，则赞美无意义」这句话？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/wei-shi-yao-ren-men-bu-xi-huan-bei-pi-ping/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">为什么人们不喜欢被批评？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-he-kan-dai-hu-xi-jin-jian-yi-ge-di-bu-yao-ji-xu-da-gui-mo-jian-fang-cang-yi-yuan-sheng-xia-de-qian-yong-yu-zeng-jia-zheng-gui-yi-yuan-de-chuang-wei/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何看待胡锡进建议「各地不要继续大规模建方舱医院，省下的钱用于增加正规医院的床位」？可能带来哪些影响？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/nv-zi-shi-ming-ju-bao-tang-shan-hei-she-hui-tuan-huo-cheng-zao-qiu-jin-xiao-shi-bi-po-xia-gui-guan-gou-long-jing-fang-zhua-huo-ming-xian-fan-ju-ti-qin/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">女子实名举报唐山黑社会团伙，称遭囚禁 16 小时，逼迫下跪关狗笼，警方抓获 4 名嫌犯，具体情况如何？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/wei-shi-yao-xian-zai-de-zhong-guo-ren-ting-bu-de-yi-dian-pi-pan-xing-de-sheng-yin/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">为什么现在的中国人听不得一点批判性的声音？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-he-kan-dai-tai-wan-yuan-dong-ji-tuan-zai-da-lu-tou-zi-qi-ye-yin-wei-fa-wei-gui-bei-yi-fa-cha-chu-ru-he-ping-jia-tai-shang-zai-zhong-guo-jing-ji-fa-/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何看待台湾远东集团在大陆投资企业因违法违规被依法查处 ？如何评价台商在中国经济发展过程中发挥的作用？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/shi-yao-shi-zhi-xing-li/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">什么是执行力？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/wu-xing-tai-gao-mei-ren-neng-li-jie-zi-ji-zen-yao-ban/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">悟性太高没人能理解自己怎么办？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-he-kan-dai-sui-nv-hai-yu-nan-you-kai-fang-bei-fu-qin-fa-xian-hou-bei-da-gu-zhe/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何看待14岁女孩与男友开房被父亲发现后被打骨折？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ru-he-kan-dai-hong-wang-lun-tan-fa-bu-guan-bi-qing-shao-nian-you-xi-shi-yi-wan-jia-chang-he-suo-you-jiao-shi-de-hu-sheng/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">如何看待红网论坛发布“关闭青少年游戏，是亿万家长和所有教师的呼声”？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/bu-xiao-xin-ba-guan-shi-yin-pu-sa-da-sui-le-zen-yao-ban/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">不小心把观世音菩萨打碎了怎么办？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/ke-yi-yong-bing-qi-da-luo-she-lai-de-jian-ma/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">可以用兵器打落射来的箭吗 ？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+    
+    <a href="/post/e-luo-si-dao-di-wei-shi-yao-yao-da-wu-ke-lan/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">俄罗斯到底为什么要打乌克兰？</span>
+      <time style="float: right;">11-02</time>
+    </a>
+  
+</div>
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/archives/page/57/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/56/#board">56</a><a class="page-number" href="/archives/page/57/#board">57</a><span class="page-number current">58</span><a class="page-number" href="/archives/page/59/#board">59</a><a class="page-number" href="/archives/page/60/#board">60</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/117/#board">117</a><a class="extend next" rel="next" href="/archives/page/59/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

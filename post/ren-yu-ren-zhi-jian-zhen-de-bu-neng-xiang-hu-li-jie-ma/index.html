@@ -1,0 +1,581 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>人与人之间真的不能相互理解吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="人与人之间真的不能相互理解吗？">
+              
+                人与人之间真的不能相互理解吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      19
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">人与人之间真的不能相互理解吗？</h1>
+            
+            <div class="markdown-body">
+              <p>人与人之间的“理解”到底是什么？</p>
+<p>它是指对于同一段双方共同同意的文本表述，双方都表示自己已经处于一个自我满意且互相满意的无疑问状态，并且相信对方与自己的理解无异——即对这一预料的错误承担完全的自我责任。</p>
+<p>当你们到达这个状态，你们就可以足够有效的自称相互理解。</p>
+<p>注意这里面的要素：</p>
+<p>1）<strong>同一文本</strong></p>
+<p>你会发现有很多自称相互理解的人，居然没有同一文本。事后复盘，甲说出来的文本和乙说出来的版本，连文字都根本就不一样——甚至连条目都不一样。</p>
+<p>“你明明说xxx”</p>
+<p>“我根本不知道有xxx这一条”</p>
+<p>“我完全不记得你说过xxx”</p>
+<p>于是这种所谓的“相互理解”，可以说完全没有逻辑有效的基础。它仅仅只是一种当时安全感十足的自信而已。</p>
+<p>2）<strong>自我满意且无疑问</strong></p>
+<p>这一点极大的取决于人自我质疑和检验的能力。这是一个日积月累的过程，关于这个自我怀疑的技巧和策略问题，我们另外单独做探讨。</p>
+<p>但大体上，是将可以对自己提出的疑问都提出来，并通过自己的思索、调查和与对方的沟通、切磋，找到令自己满意的解答。</p>
+<p>有不少人在这里完全依赖直觉，只是在当时处在一个安全感十足的状态，相应的放松了自我质疑的力度和工作。</p>
+<p>尤其是还不成熟的年轻人们，常常不自知的以为反正理解不对也可以指望对方不追究，就像父母老师一直拿自己没办法一样。所以在这里根本就不投入什么真实的智力资源——不是按照自己的疑问是否还存在来判定自己是否理解，而是按自恃后果是否可被追究来判定自己是否满意。</p>
+<p>这一点，自然在人生中会有足够惨痛的教训来说明这样是不行的。</p>
+<p>父母的误将宠溺视作宽容，在这里会有遗害。宠溺和宽容的界限在哪里，则同样另作独立讨论。</p>
+<p>3）<strong>彼此满意且无疑问</strong></p>
+<p>首先要说明一条——一条条的复读文本，然后问对方“这有没有问题”，只是一种“签字的仪式”，和“理解”基本上是无关的。</p>
+<p>就像老师在课堂上问“大家对刚才讲的东西理解了吗？”一样，这只是一种焦虑驱动的无意识的自我保护，得到异口同声的“理解了”几乎毫无实际意义。</p>
+<p>当你提出“还有没有什么问题”的时候，对于大部分还没从学校回过神来的人（这包括刚开始谈恋爱的年轻男女）而言，这都是一个类似“你的智商比别人低吗”的问题。ta们的大脑很少会真的去思考还有什么问题，而是会去思考“我不是白痴”。</p>
+<p>——“没什么问题。”（“我不傻”）</p>
+<p>确认对方是否理解一致，需要靠从当前理解进一步的提出推论来检验。</p>
+<p>比如你说了一个牛顿定律，ta说理解了，那么你可以根据牛顿定律出一个假设场景，询问ta小球的末端速度是多少。</p>
+<p>ta回答的答案与你设想的一致， 那么你会觉得比ta单纯的回答“理解了”有意义得多。</p>
+<p>你应该准备了一系列这样的问题，你自己就没有问题可准备，那么“无疑问”这三字的实际含义不是<strong>理解到了问题都解决了</strong>，而是<strong>不理解到了根本提不出问题的程度</strong>。</p>
+<p>那样你们只是蒙着眼睛走进了屠宰场的牛罢了。</p>
+<p>甚至都可能不是同一个屠宰场。</p>
+<p>4）<strong>相信对方与自己的理解无异——即对这一预料的错误承担完全的自我责任。</strong></p>
+<p>这一句特意写这么长，是因为这一句是“人理解人”这件事实际的核心本质。</p>
+<p>所谓“我相信你理解了”，不是在指“我”决定册封一种描述，将它晋升为一种“客观事实”，而是指“我愿意为此认定承担完全的责任”。</p>
+<p><strong>这种责任，就是指如果你没理解，一定不只是是你理解的问题，而是也有我表达的问题；如果我理解错了，一定不只是你表达的问题，而是也有我理解的问题。</strong></p>
+<p>也就是“<strong>这至少部分怪我”</strong>。</p>
+<p>人与人之间，做到对任何一个叙述的绝对无歧见的一致理解，在客观上至少是永远没有足够的逻辑工具去确认的。也就是说想要找到一种可靠的、理性的、其成本可以承受的“理解状态确认器”是无法实现的。</p>
+<p>这基本上使得“A理解了B”永远无法被客观认证。</p>
+<p><strong>它只能被相信</strong>。</p>
+<p>只能通过对这一事实的信仰，通过愿赌服输的精神原则，通过自己的“担保”，将它强行升格为一种事实。</p>
+<p>这其实是一种信仰能力。</p>
+<p>换句话来说，两个人彼此达成任何一种可以良性运转的相互理解，在本质上即是达成了一种相互的<strong>信仰</strong>。</p>
+<p>我相信你理解了我，如果我错了，后果我愿意承担。</p>
+<p>我弃绝认定“这是你表达问题”，“这是你的理解问题”的权利，因为这和你的表达无关，是我自己对自己的考察满意，而决定接受这个表述的。</p>
+<p>也是我根据我亲自对你的考察和询问，来决定相信你对我的意思有正确理解的。</p>
+<p>对这两点，我都承担完全的责任。</p>
+<p><strong>不是因为我对“这意思你肯定正确理解了”有足够的把握，而是我对“如果这并非事实，我将竭尽全力与自己的愤恨战斗，并且我终将取胜”有决心，</strong></p>
+<p><strong>所以我说“我理解”，</strong></p>
+<p><strong>所以我说“我相信你也理解”。</strong></p>
+<p>这不是一种智慧的力量，而是一种信仰的力量。</p>
+<p>相互理解的要害，从来就不在于在智力上是否可以达到足够的高度，以至于可以超越文本给你打的智力挑战。</p>
+<p>你们错了——任何人都越不过任何文本的挑战。</p>
+<p>没有人能真的理解任何文本。</p>
+<p><strong>只是因为其理解的误差被别人宽容，而将这种误解算为了理解。</strong></p>
+<p><strong>理解的要害，不在于正确，而在于宽容。</strong></p>
+<p>当你思考对方是否理解了的时候，不要只去思考对方的智力状态是否达到了你要求的红线，而要去思考你对那必然会存在的误差是否能宽容。</p>
+<p>你能容，那么理解就是可能的。</p>
+<p>你能包容多少，理解就有多可能。</p>
+<p>你不能容，那么永远也别说出理解两个字——因为你一定是在实行双重标准——即将你的误差绝对的置于ta人的误差之上。</p>
+<p>而“<strong>如果这并非事实，我将竭尽全力与自己的愤恨战斗，并且我终将取胜”的决心是什么呢？</strong></p>
+<p><strong>是爱。</strong></p>
+<p><strong>理解，是爱的能力所绑定的一种福利。</strong></p>
+<p><strong>没有爱，就没有理解可言。</strong></p>
+<p><strong>没有对理解的信心和虔敬，你将寸步难行。</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8E%9F%E7%90%86/">原理</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%90%86%E8%A7%A3/">理解</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-bu-fen-bei-fang-ren-xi-huan-sheng-chi-shu-cai/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么部分北方人喜欢生吃蔬菜？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/ru-he-kan-dai-rui-xing-gong-bu-diao-cha-xian-shi-wei-zao-jiao-yi-jia-zhi-da-yi-pan-qian-xia-die-chao/">
+                        <span class="hidden-mobile">如何看待瑞幸公布调查显示伪造交易价值达 22 亿，盘前下跌超 80%？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

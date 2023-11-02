@@ -1,0 +1,583 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>怎么让自己保持自我？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="怎么让自己保持自我？">
+              
+                怎么让自己保持自我？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      21
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">怎么让自己保持自我？</h1>
+            
+            <div class="markdown-body">
+              <p>这个问题必须要分几段来说。</p>
+<p>1）首先，必须定义“自我”与“保持自我”。</p>
+<p>2）然后，人为什么要保持自我？</p>
+<p>3）如果决定保持自我，要如何做到？</p>
+<p>没有前两段的讨论，直接上方法论是没有意义的。</p>
+<p>首先，这里说保持自我的自我是指什么？</p>
+<p>是指“我”这个主体现在的总状态吗？</p>
+<p>那么，如果我明天换一件衣服，是否可以被看作失去了（至少一部分）自我？或者，我改变了对于某种问题的立场，是不是算作失去了（至少一部分）自我？</p>
+<p>是表示“一切我都自己拿主意，绝不跟别人一样”吗？那么这是不是表示人家都买宝马，我必须要买奔驰，否则我就失去了自我？</p>
+<p>我要保持的“自我”到底是指什么？</p>
+<p>是指我的性格特征吗？比如如果我原本很果断，现在变得很谨慎，我算是失去自我了吗？</p>
+<p>通过主张“保持自我”，我确切的来说在主张什么？</p>
+<p>先看看评论区里会有些什么答案。</p>
+<hr>
+<p>要分析这个问题，首先要看人们在什么情况下会用上“保持自我”这个短语。</p>
+<p>典型的包括以下场合：</p>
+<p>1）发现自己与主流意见（比如审美）一致得令自己失望。</p>
+<p>2）发现受到强大的外部压力——比如父母的强制要求，比如配偶的压力。</p>
+<p>3）发现自己打算放弃理想。</p>
+<p>4）发现自己想要逃避冲突，对人妥协。</p>
+<p>5）发现自己对他人言听计从。</p>
+<p>6）发现自己失去与他人不同之处。</p>
+<p>等等等等。</p>
+<p>如果你仔细的观察，你会发现<strong>其实“保持自我”这个决定是先于“找到自我”做出的</strong>。</p>
+<p>你还没有找到自我，甚至还不知道“自我”到底是什么，但你已经强烈的感受到“保持自我”必要性，已经为它行动了起来，甚至是为此付出了实实在在的牺牲——你与人分手、断然辞职、甚至有时不惜断绝家庭关系，就是为了“不失去自我”的这份坚持。</p>
+<p>某些时候我们忍不住会想“如果我那时不这么自我，那么是不是不会走到这一步”。</p>
+<p>无论自我是什么，无论它现在是什么，将来是什么，我都要想办法保卫它。</p>
+<p>人在说“保持自我”，其实是指<strong>要拥有自我</strong>，指要<strong>维持对自己的所有权</strong>。</p>
+<p>自我可以是混乱的，但要是我所造成的混乱。</p>
+<p>自我可以是变化的，但要是我所选择的变化。</p>
+<p>自我可以是迷茫的，但要是我所选择的迷茫。</p>
+<p>在我还不知道我是什么的时候，我通过抵抗一切他人来保持自我。</p>
+<p>无论如何，如果没有任何人能控制我，那么唯一控制着我的就当然是我自己。为了证明我没有被人控制，最可靠也是最能安抚我自己的方法，就是让他人对我的期望落空。</p>
+<p>无论你期待我变成什么样，也无论你是因为什么理由、什么动机做这种期待，总之，我不可以接受这种安排。</p>
+<p>因为我不能接受我变成他人期待的样子。</p>
+<p>正因为这样，年轻人的保持自我，常常表现为无穷无尽的叛逆。</p>
+<p>我在叛逆，我就还没有被控制，我就还是我的。</p>
+<p>无论附带后果是什么，我在所不惜。</p>
+<p>因为人若失去了自己，就算了赢得了一切，又有什么意义？</p>
+<hr>
+<p>那么保持对自我的控制权是不是一件应该做的事情呢？</p>
+<p>这个问题我们干脆直接跳过。</p>
+<p>直接谈你要怎么保持自我。</p>
+<p><strong>保持自我不要靠叛逆，要靠取消对方干预你的逻辑前提。</strong></p>
+<p>对方真正控制你的要害，在于对方的话的确能影响到你对自己的判断。比如，你的卷子每一次都是老师改的，那么这位老师说你应该如何加强学习，就会不可避免的影响到你的判断。</p>
+<p>你知道ta在这件事情上恐怕比你自己更权威，所以你不能不受ta的意见的严重影响。</p>
+<p>受了这种影响而又去硬抗、去叛逆，本身是不理性的，结果也不会好，多造成几次“叛逆了结果后果严重”的案例，你的“叛逆力”也会耗尽，结果反而更容易被实际上驯服。</p>
+<p>避免被控制的首要要害，是<strong>避免有人比你自己对你自己的了解更全面</strong>。</p>
+<p>医生可以在医学上比你了解更全，老师可以在学习上比你了解更全，家人可以在生活上比你了解更全，教练可以在运动上比你了解更全，</p>
+<p>但不应该有人在<strong>所有方面</strong>都比你自己了解你更全。</p>
+<p>因为对方并不了解你的全部情况，那么对方的意见你就有更从容的心态去面对。你自然会有更辩证的心态去看待那些适用的和不适用的方面。</p>
+<p><strong>对方自己都明白自己知道得太片面，自然也就不容易有那么大的信心来指点你的人生</strong>。ta要指点，必须得先知道你的现状和你的困境吧？无论多么好为人师，也没有办法在不知道这些信息的前提下有效地指点江山。</p>
+<p>对方可以因为某些具体专业的硬限制看得到你某些举措的“不合理”——因此提醒你存在这种不合理的隐患是一种友好的表示，但ta无法知道你是不是在基于某种全局的权衡而要接受这个“不合理”来换取别的方面的收益——因此直接指教你应该怎么做是一种不懂事的表现，那你更可以一笑置之了。</p>
+<p>这时，你将取得一个宝贵的平衡——你既知道对方<strong>是对的</strong>，<strong>也知道你自己是对的</strong>。</p>
+<p>——如果这样对方还要对你发出指教，你天然的就有很强的抵御力，可以不放在心上。</p>
+<p>很多年轻人喜欢坦诚相见，喜欢对闺蜜哥们袒露心扉，主要是因为扛不住寂寞孤独。但你要知道，孤独是自由的必然。</p>
+<p>你想要自由，你就等于在要孤独。你不能指望只获得自由而不同时获得孤独。</p>
+<p>甚至，这最终是一个不容你不选择、不容你不接受的终态。因为等你长大成人离家独立，父母将不再了解你的后半生，你的配偶也不了解你的前半生，你的工作伙伴不知你的生活，你的朋友不知你的工作。</p>
+<p>无论你愿不愿意，你都将最终会成为世界上唯一知道你自己的人，即使你想要依从他人的指引、想做一个完全放弃方向盘让别人掌舵的奴隶，你也<strong>办不到</strong>。</p>
+<p>自由而孤独是一种宿命，是一种命定的义务。你的自我最终必定归于你，根本就没有安排别的选择给你。</p>
+<p>作为刚刚走出巢穴的年轻人，你们在焦虑如何能保持自我。但其实无论你们如何焦虑和毫无作为，最终这个阶段都会无情的离你们而去。</p>
+<p>真正的最终悲剧，是因为真正的独立实在令人惊慌失措，人受了惊吓，于是把一生都用在了不断的尝试依附某个领导、某个偶像、某个恋人、某个朋友、某个子女……</p>
+<p>最后终于失败。</p>
+<p>这时候回首过去，才知道自己浪费了学会孤独的自由的机会，最终沉入“没有人可以依靠，而我无法依靠自己”的绝望之中。</p>
+<p>不知有多少人的下半生是想要抛弃自我而不可得嘞！</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%87%AA%E6%88%91/">自我</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/ji-du-tu-ru-he-chu-li-jia-ren-zai-xin-yang-shang-de-bu-li-jie-bu-zhi-chi-shen-zhi-zu-nao/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">基督徒如何处理家人在信仰上的不理解、不支持甚至阻挠？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-hui-you-ren-ren-wei-zhong-guo-ren-mei-you-zong-jiao-xin-yang-shen-zhi-shuo-zhong-guo-ren-mei-you-xin-yang/">
+                        <span class="hidden-mobile">为什么会有人认为中国人没有「宗教信仰」，甚至说中国人没有「信仰」？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

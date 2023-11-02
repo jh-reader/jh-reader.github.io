@@ -1,0 +1,583 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>什么才是门当户对？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="什么才是门当户对？">
+              
+                什么才是门当户对？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">什么才是门当户对？</h1>
+            
+            <div class="markdown-body">
+              <p>好好说一说门当户对的问题。</p>
+<p>因为这个问题对中国太重要了。</p>
+<p><strong>你们有没有想过，你们中的每一个人——每一个人——有多大的概率是名门之后？</strong></p>
+<p>如果你们算过名门世家和一般平民的生育率差异、子女幸存率差异。你们会看到一个很朴素的事实——从数学概率上讲，你的整个祖宗链条里完全没有名门背景的可能性几乎为零。</p>
+<p>中国一共只有几千个姓。即使折算掉易姓、自号、在极近的年代归化的成分，这几千个姓里也尽皆曾有过不折不扣的名门。</p>
+<p>而且是屡屡崛起的名门，层层叠叠的名门。</p>
+<p><strong>你们全部是世家子弟，例外的可能性接近于零。</strong></p>
+<p>只是，你们忘记了。</p>
+<p>你们曾有历经数代乃至数十代先人的血汗总结出的黄金一般的世家传承、家族经验。</p>
+<p>只是，你们忘记了。</p>
+<p>你们一忘，就归零了。</p>
+<p>多少代先人累世沉浮才明白的教训和禁忌，你们不知道了。只好从自己开始再经历这若干代人的沉浮去重新知道。</p>
+<p>是因为你不知道这些，你才失去了“门户”。</p>
+<p>你才有与别人的“门不当、户不对”。</p>
+<p>你连门户都没有，怎么和有门户的去“门当户对”呢？</p>
+<p><strong>不要误会，这不是在说你家不够有钱于是和别的“家资万贯的家庭”不“门当户对”。</strong></p>
+<p>对方如果因为这个来嫌弃你，那么你大可以放心——你有机会看着这家人在两代之内家破人亡，曲终人散去。</p>
+<p>这样看待门户的家庭，没有资格称“门户”。</p>
+<p>那不是你跟他们门户不对，而是他们跟你门户不对。</p>
+<p>谈得上门户的世家，懂得一种最朴素的道理——财富并不是最难获得的家族资源，传承和韧性才是。</p>
+<p>超越自身和时代的胸襟和自觉才是。</p>
+<p><strong>你要知道，你自己就是你后人的祖宗，是你自己家族的开创者。</strong></p>
+<p><strong>什么叫“门当户对”？——永世长存的家族和另一个永世长存的家族，永远门当户对。一时之间谁盛谁衰，对于永世长存的家族而言都只是次要的、暂时的起伏而已。</strong></p>
+<p>这才是讲究“门当户对”时正确的理解——不是嫌你穷，不是嫌你不走运，而是嫌你没有身为一个家族祖宗的自觉。</p>
+<p>这种自觉性其实正是谈婚论嫁的基本门槛。你真的迈过了这个门槛，那么明白道理的世家大族不会认为你真的有什么门不当户不对。永生的东西分什么贫富贵贱？</p>
+<p>你没这种自觉，那么就不是门当户对的问题，而是干脆最好不要祸害他人。</p>
+<p><strong>你有没有这个身为祖宗的自觉？</strong></p>
+<hr>
+<p><strong>什么叫做“身为祖宗的自觉”？你们不妨好好想一想清楚。</strong></p>
+<p><strong>你们能明白这是指什么，那么你们与这世上任何一家，都只有对方能不能配得起你的问题，没有你配不配得起对方的问题。</strong></p>
+<p><strong>而且真正的世家一定看得懂这一点。</strong></p>
+<p>看得到你有建立传承的自觉，对方就明白你这家族是必须重视的存在。</p>
+<p>无论现在的势力强弱、一时尊卑如何，与世长存的家族之间只能互相平视。</p>
+<p>这才是人人平等的根子——<strong>永恒者必与永恒者平等。</strong></p>
+<p>三代而亡的“富家”，只是不值得特别关注的烟尘。没有资格得到重视，也没有必要在意。他们彼此间的态度，也最终随着它们的消亡而毫无意义，当不当、对不对、都是虚无。</p>
+<p>能成其为门户的，尽皆门当户对。哪怕此时你贫他富，你“贱”他贵。</p>
+<p><strong>那么，到底什么是身为祖宗的自觉？</strong></p>
+<p>（7.9续）</p>
+<p><strong>所谓祖宗的自觉，就是不再仅从自身的立场来看待成功，而是把成功来做一种家族事业。</strong></p>
+<p>每一代的祖宗都不必力求速成，但要寻求为家族后代更进一步的夯实基础。</p>
+<p>一言以蔽之——要求事业，但更要求<strong>基业</strong>。</p>
+<p>代以代继，终有竟时。</p>
+<p>一人一代的能力总是有限的，机会总是难得的。世事无常，沉浮不定，祸福难料，因此若是总是存着“一定要在自己这一代当个富一代”的心，不断的心怀侥幸，急功近利，想要铤而走险、一蹴而就，反而往往容易导致久作不兴——你自己如此浮躁，哪里能积累起什么真优势？即使侥幸谋得浮财，家风不靖、根基不稳，这浮财不但不足以为福，反而足以为祸。</p>
+<p>这中间最大的问题就在于“每一代人都想要在自己这一代完成大翻身”这种投机策略。这种没有理心的焦虑感驱使着人不断的投机取巧，越是投机取巧失败，后半生为了达成这“目标”就越是要加倍投机取巧。</p>
+<p>要么一败涂地，要么侥幸成功，然后把侥幸当作成功之道，加倍下注，直到再次失去一切，还要更加深陷。</p>
+<p>以家族基业为考量中心的人就可以轻松的摆脱这种恶性循环。</p>
+<p>正确的家族战略，是每一代人都谋求为下一代创造更好的根基，哪怕每一代都只是拱一小卒，代代不息，也终有一天会走到“这一代人想不成功也难”的优势状态。而且这成功水到渠成，自自然然，且因为代代家风的建设积累，这成果足以持久，能循环光大。因着财富可以开枝散叶，将来越发同气连枝，从总体上就更加稳固。</p>
+<p>这对于身为列祖列宗的先辈们来说当然也是一种解脱。因为身为创业的先祖，你的任务就不再是在你这一代要如何谋得亿万身家，而只是为家族后代留下可以继承的一份正资产和充分可借鉴的经验教训、以及良好的教育而已。</p>
+<p>这是一种朴实的、踏实的、可以追求，不必依赖什么疯狂的幸运的目标。</p>
+<p>而且你会发现，一旦你的眼光不再是谋一世，而是为了谋万世，你做事反而容易有定性、有踏实的成果、有同志、有意料之外的帮助——反而比那些憋着心思必需一代成功的人们更容易获得真实的成功。</p>
+<p>（7.10更新）</p>
+<p>那么你的家族到底以什么为界？</p>
+<p>这一点万分的重要——<strong>基业所及，即为族人</strong>。</p>
+<p>不要——再强调一遍——<strong>不要以血缘为界</strong>。</p>
+<p>你的家族要立得住，要把与你基业相关的所有人都视为家族成员，而绝不能仅仅偏向你自己的亲属或者直系血亲。</p>
+<p>对志同道合处在同一生态中的平辈<strong>爱之如己</strong>，对托庇和仰赖这一生态生存并且尽力奉献的晚辈<strong>视如己出</strong>，这是你这个家族能拥有足够的资源和人才来应对未来风险所绝对不能少的安排。</p>
+<p>你越是爱惜自己的子女血亲，就越是要明白他们需要这些不同姓、不沾亲的兄弟姐妹叔伯姑姨。</p>
+<p>同姓族人是不容选择的，即使仅仅从概率上说，也很难支撑一个基业所必需的才智需求。等着每一代都同时出现大量的文武俊才，且绵延不绝这是非常困难的，也是短视的。</p>
+<p>家族必须存在一种机制能有效的吸收外部的人才。在古代，这靠的是乡谊、同僚、同窗、结交、联姻、收养、结拜。</p>
+<p>手段繁复，说明古人完全理解这个道理。可惜时过境迁，在现代，人际关系原子化，社会伦理个人化之后，原有的对乡党、同学、朋友、结拜兄弟甚至联姻配偶、亲生子女的社会性伦理约束已经几乎崩溃了。</p>
+<p>手段几乎已经尽数失效，但问题仍然存在，如之奈何？</p>
+<p>（未完，待续）</p>
+<p>下面这个集子，对于养成正确的家风都有关系，建议仔细的想想。</p>
+<p><a target="_blank" rel="noopener" href="https://zhihu.com/collection/378738313">家族答集</a>  </p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21545007/answer/554621411">为什么中国没有出现百年家族企业？而欧美家族企业很常见？</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%97%A8%E5%BD%93%E6%88%B7%E5%AF%B9/">门当户对</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/chang-sheng-bu-lao-shi-wan-quan-bu-ke-neng-ma/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">长生不老是完全不可能吗？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wei-he-gu-dai-zhan-zheng-du-qiang-diao-chang-jiang-tian-xian-chang-jiang-na-yao-chang-bie-de-di-fang-bu-neng-du-he-ma/">
+                        <span class="hidden-mobile">为何古代战争都强调长江天险？长江那么长，别的地方不能渡河吗？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

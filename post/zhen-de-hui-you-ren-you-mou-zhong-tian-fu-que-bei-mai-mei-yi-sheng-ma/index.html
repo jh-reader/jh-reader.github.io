@@ -1,0 +1,586 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Hexa">
+  <meta name="keywords" content="">
+  
+  <title>真的会有人有某种天赋却被埋没一生吗？ - JH Notes Reader</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"jh-reader.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":"UA-194950967-1","gtag":"UA-194950967-1","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>JH Notes Easy Reader</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/random.html">
+                <i class="iconfont icon-exp-fill"></i>
+                随机
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="真的会有人有某种天赋却被埋没一生吗？">
+              
+                真的会有人有某种天赋却被埋没一生吗？
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-11-02 19:58" pubdate>
+        2023年11月2日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      26
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">真的会有人有某种天赋却被埋没一生吗？</h1>
+            
+            <div class="markdown-body">
+              <p>老实说，人类是一种<strong>普遍有天赋</strong>的种族。</p>
+<p>你现在看到的所谓“知识精英”们令人称羡的专业技能，对大多数人来说都不存在智力上的天堑。</p>
+<p>找到一个恰当的老师，投入恰当的资源，在几个心理关口上遇到恰当的引导，没有半途而废，坚持改进个五年左右，投身市场成为强势服务供应者是一个大概率事件。</p>
+<p>借由跨界和合作，使优势的服务成为有统治力的创新服务，也是一个大概率事件。</p>
+<p>注意前面这个基数——这对大多数人都没有先天性的、生理条件上的障碍。</p>
+<p>只有极少数的专业例外——比如柔术杂技、百米短跑这类高度依赖生理条件的专业。</p>
+<p>甚至，在信息化的时代，连后天的门槛也在崩解。</p>
+<p>以前只有名门贵子才有机会接触的教育资源、特殊知识，现在也对一介平民不再是遥不可及，你要自学也罢、要钻研也罢，只要你想，虽然不至于像先天条件那么平均，但至少对中产阶级家庭也已经并没有什么天堑般不可逾越的障碍存在。</p>
+<p>藤校讲的也是一样的相对论和微积分，并不是富豪特供款。ta们的电脑是比你好一些，没准贵上个五六倍，但是也没有强大到你做不出能和他们相比的作品的程度。</p>
+<p>然而大多数人的天赋都没有转变成ta们的生存优势，没有成为ta们的护城河——也就是所谓的“被埋没了”。</p>
+<p>为什么？</p>
+<p>因为要坚持那五年到十年，需要极大量的“补强力”。</p>
+<p>你要学东西、要把自己的天赋变成别人可以用的、成熟的服务，你只需要满足一个要求——</p>
+<p><strong>当别人的话出现歧义，你哪怕就是补错了，也要把别人说的话往强版本补足，而不要往弱版本补足。</strong></p>
+<p><strong>举个例子——老师说你这题做错了，你要先相信“这题可能真的做错了，ta是在真诚指教我”的版本，而不能往“这题根本没错，ta就是想报复我昨天没主动给ta打招呼”。</strong></p>
+<p>注意，这不是叫你直接“认错”，而是如果你走补强的方向，你的第一动作是核实检查一遍，而不是翻白眼、抱怨和“反击”。</p>
+<p>这是“有天赋”的人“没天赋”的人的真正分野——不是ta们在生理上有什么巨大的差异，也不是ta们的家庭条件真有什么云泥之别。</p>
+<p>而全在于人生之中千千万万、无时无刻不存在的“补强还是补弱”的十字路口，你是往左转，还是往右转。</p>
+<p>你的人生到底最后兑现成怎么样，全看你的补强率是多少。</p>
+<p><strong>你不需要做到100%的事事处处补强。你可以——而且也只能够争取有效补强率尽量高一点。</strong></p>
+<p><strong>但有效补强率81%的人，命运有很大概率会比有效补强率79%的人好很多。</strong></p>
+<p><strong>不是“纵观一生总体好2%”，而是以复利模式在每一次选择上，一次又一次的叠加这102%。你一生有多少次选择，你就好出多少个102%。</strong></p>
+<p><strong>最终会有天壤之别。</strong></p>
+<p>既然补强这么好，为什么人们没有养成补强的习惯？</p>
+<p>因为补强意味着你很容易错把坏人当好人，然后受到伤害，遭受损失。也就是说，补强存在风险。</p>
+<p>而相对的，补弱在安全性上有福利——如果对方是坏人，你也把ta当了坏人，那么你正好防住；如果对方是好人，你把ta当了坏人，那么你只是安全过度了，你是没得到收益，但是你好歹没有受伤。</p>
+<p>也就是说，补强派有一定的概率补错，会因此遭受损失。尤其是在你的补强技能还很幼稚、思考能力还不够缜密、严谨的时候，你的误判率可能很高，以至于你的总收益甚至比补弱派还差。</p>
+<p>猜对了102%，猜错了98%。一样是一猜一计。</p>
+<p>这里才是问题所在——要想在战斗中养成成熟的补强技能，你要有相当大的一笔“启动资金”来“交学费”。</p>
+<p>家庭出身对人的一生影响是在这里有天壤之别——好的家庭善于传授补强的技巧，以至于这笔“学费”额度不高，并且这样的家庭也会更接受代自己的子女支付这笔成本。</p>
+<p>糟糕的家庭首先在这方面就缺少传承、父母自己就少有补强的经验而只有补强失败的教训，这导致子女如果想要突破补强的学徒期的学费额度本身就高，而家庭却恰恰因为自身的认识问题——更多的则是干脆出于贫穷（一直补弱，极易赤贫）——更缺少为子女承担这笔学费的意愿。</p>
+<p>看清楚，这里的家庭好坏，并不是看家庭资产的绝对值的。中产乃至贫寒之家也可以是乐于而且可以负担这笔学费的——因为乐于承担本身就可以大幅的降低这笔学费的数量；豪奢巨富之家也可以是不愿而且承担不起这笔学费的——因为不情愿本身就会大幅的抬升这学费的总额。</p>
+<p>看似巨大的差异，其实只是一个基本动作积累千万次的结果。</p>
+<p>人的命运是在这里分开了。</p>
+<p>但是，<strong>补强的准确率是可以提高的，你是可以做到既选择补强、又不至于因为误判而受到损失（或至少过大的损失）的。</strong></p>
+<p>关键在于补强的战略思想。</p>
+<p>假设我们把绝对善良和绝对智慧设为100分，把绝对邪恶和绝对愚蠢设为-100分。然后我们假设你自己对他人的直觉判断是对方的分数是Ex（Expectation），最终取值设为De（Decision），De与Ex的差值称为补强值En（Enhancement）。</p>
+<p>所谓补强，是指En始终大于0。</p>
+<p>那么你记住下面这个策略——</p>
+<p>1）当Ex小于等于0的时候，De = En。</p>
+<p>既把对方补强到大于0来回应。</p>
+<p>你的补强值可以是0.1，可以是0.001，但是无论如何要大于0。哪怕自己根本不认为对方高于0，完全是违心的、勉强的，也要当作大于0。</p>
+<p>大得再少也好，也要大于0。</p>
+<p>2）当Ex大于0时，De = Ex + En。</p>
+<p>即把对方按照比你直接判断的好一些来对待。</p>
+<p>同样，En可以是0.1，0.001，0.0001，但是一定要好一些。</p>
+<p>这个总策略要坚持，要如同刻在石头上那样坚持不变。</p>
+<p>在这个总前提不变的前提下，再谈起他的配套的策略。</p>
+<p>哪些配套策略呢？</p>
+<p>1）<strong>管控已经识别确认的恶人/补弱者的对话资格。</strong></p>
+<p>你不要忘了，你有一定的选择权。你很清楚对方是在补弱，而且是经过提醒、直接给出了反面的依据（或者反面的依据触手可及）的前提下执意补弱，那么你可以出于沟通效率原因直接取消或冻结对方的对话资格一段足够长的时间。</p>
+<p>也就是说，对方可以令你失望和意外的次数和场合，是可以由你掌握的。</p>
+<p><strong>在保持补强的前提下，先进行利害关系不那么尖锐的对话和交往。在这个阶段，静静地观察对方对于你有歧义、尤其是存在补弱空间的话作何反应。</strong></p>
+<p><strong>看看对方知不知道这条规则，是不是在奉行这条规则。</strong></p>
+<p>在这个阶段里，对方可能都不认识你是谁，也不知道你住哪里、叫什么、做什么的。你们的交往也许仅仅只是一起打了个球、联机打了个游戏、在某种公共场合一起参加了一个活动，或者你是参加展览，对方是个导游……</p>
+<p>也有可能是你写了篇东西，对方跑来评论。</p>
+<p><strong>这是个可进可退的阶段，你掌握着要不要进一步给予对方对话机会的绝对权利。</strong></p>
+<p><strong>在这个阶段，看出对方有显著的、牢固的、高频的补弱习惯，就取消对方的对话资格。</strong></p>
+<p><strong>一旦证实，宁可杀错一千，也不放过一个。</strong></p>
+<p><strong>直接从根源上治理你的对话环境。</strong></p>
+<p>这会战略性的的降低你补强而失望的概率，使你的补强成功率大为提高。</p>
+<p><strong>自身没有补强习惯的人，缺少ta人替其补强的价值，会导致极高的补强失误率。</strong></p>
+<p><strong>这不是什么人格歧视，而是有内在逻辑的技术性必然。这和“没有放冰箱的雪糕容易融化”一样，纯属客观的物理必然。</strong></p>
+<p>不必对对方作道德审判、价值判断，你也不需要去探究对方到底是好人还是坏人，甚至连补弱的具体原因也不需要深入的研究——类似文章评论者这样的人你一年不晓得遇到几百几千个，哪有可能有这么大的资源去一个个研究ta为什么总要把你的话补弱？</p>
+<p>你决定切断信道的理由完全是技术性的——纯粹是出于预期会无谓的亏损。这也不能被视为对对方的报复和处罚——人人都有采取消极行动避免损失的天然不可剥夺的权利，这不能被视为一种攻击和惩罚。</p>
+<p>但是注意，不要跑去对方面前讲“我拉黑你了”，拉黑是正当权利，但跑去讲这句话属于攻击行为。</p>
+<p>Business is business, nothing personal.</p>
+<p><strong>（未完，稍后待续）</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Clan/">Clan</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%A4%A9%E8%B5%8B/">天赋</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh" rel="nofollow noopener noopener">CC0 1.0 协议</a> 。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/post/zhen-de-hui-you-ren-you-mou-zhong-tian-fu-que-bei-mai-mei-yi-sheng-ma/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">真的会有人有某种天赋却被埋没一生吗？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/post/wei-shi-yao-xi-fang-ren-hui-zi-si-dao-bu-neng-li-jie-you-guo-cai-you-jia/">
+                        <span class="hidden-mobile">为什么西方人会自私到不能理解“有国才有家”？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "PwKrcb4wN3OOJaYPUdPzy8Ei-gzGzoHsz",
+          app_key: "Jy2jCTemIhTX9bBtpSyBDuYL",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://www.zhihu.com/people/mcbig" target="_blank" rel="nofollow noopener"><span>@John Hexa</span></a> <i class="iconfont icon-love"></i> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script defer>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) };
+      ga.l = +new Date;
+      ga('create', 'UA-194950967-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194950967-1"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-194950967-1');
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
